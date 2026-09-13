@@ -1,0 +1,200 @@
+{
+  "light": [
+    {
+      "id": "light-frame-wheelchair",
+      "name": "軽量車椅子",
+      "name_en": "Light-Frame Wheelchair",
+      "tier": 1,
+      "trait": "【敏捷】",
+      "range": "近接",
+      "damage": "d8",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "君は攻撃を行う時、ストレスを1つマークすることで射程内にいる別のクリーチャー1体を目標とすることができる。"
+      }
+    },
+    {
+      "id": "improved-light-frame-wheelchair",
+      "name": "改良型軽量車椅子",
+      "name_en": "Improved Light-Frame Wheelchair",
+      "tier": 2,
+      "trait": "【敏捷】",
+      "range": "近接",
+      "damage": "d8＋3",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "君は攻撃を行う時、ストレスを1つマークすることで射程内にいる別のクリーチャー1体を目標とすることができる。"
+      }
+    },
+    {
+      "id": "advanced-light-frame-wheelchair",
+      "name": "発展型軽量車椅子",
+      "name_en": "Advanced Light-Frame Wheelchair",
+      "tier": 3,
+      "trait": "【敏捷】",
+      "range": "近接",
+      "damage": "d8＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "君は攻撃を行う時、ストレスを1つマークすることで射程内にいる別のクリーチャー1体を目標とすることができる。"
+      }
+    },
+    {
+      "id": "legendary-light-frame-wheelchair",
+      "name": "伝説級軽量車椅子",
+      "name_en": "Legendary Light-Frame Wheelchair",
+      "tier": 4,
+      "trait": "【敏捷】",
+      "range": "近接",
+      "damage": "d8＋9",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "君は攻撃を行う時、ストレスを1つマークすることで射程内にいる別のクリーチャー1体を目標とすることができる。"
+      }
+    }
+  ],
+  "heavy": [
+    {
+      "id": "heavy-frame-wheelchair",
+      "name": "重量車椅子",
+      "name_en": "Heavy-Frame Wheelchair",
+      "tier": 1,
+      "trait": "【筋力】",
+      "range": "近接",
+      "damage": "d12＋3",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "重量",
+        "name_en": "Heavy",
+        "description": "回避－1"
+      }
+    },
+    {
+      "id": "improved-heavy-frame-wheelchair",
+      "name": "改良型重量車椅子",
+      "name_en": "Improved Heavy-Frame Wheelchair",
+      "tier": 2,
+      "trait": "【筋力】",
+      "range": "近接",
+      "damage": "d12＋6",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "重量",
+        "name_en": "Heavy",
+        "description": "回避－1"
+      }
+    },
+    {
+      "id": "advanced-heavy-frame-wheelchair",
+      "name": "発展型重量車椅子",
+      "name_en": "Advanced Heavy-Frame Wheelchair",
+      "tier": 3,
+      "trait": "【筋力】",
+      "range": "近接",
+      "damage": "d12＋9",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "重量",
+        "name_en": "Heavy",
+        "description": "回避－1"
+      }
+    },
+    {
+      "id": "legendary-heavy-frame-wheelchair",
+      "name": "伝説級重量車椅子",
+      "name_en": "Legendary Heavy-Frame Wheelchair",
+      "tier": 4,
+      "trait": "【筋力】",
+      "range": "近接",
+      "damage": "d12＋12",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "重量",
+        "name_en": "Heavy",
+        "description": "回避－1"
+      }
+    }
+  ],
+  "arcane": [
+    {
+      "id": "arcane-frame-wheelchair",
+      "name": "秘術車椅子",
+      "name_en": "Arcane-Frame Wheelchair",
+      "tier": 1,
+      "trait": "呪文発動",
+      "range": "遠距離",
+      "damage": "d6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "保証",
+        "name_en": "Reliable",
+        "description": "攻撃ロール＋1"
+      }
+    },
+    {
+      "id": "improved-arcane-frame-wheelchair",
+      "name": "改良型秘術車椅子",
+      "name_en": "Improved Arcane-Frame Wheelchair",
+      "tier": 2,
+      "trait": "呪文発動",
+      "range": "遠距離",
+      "damage": "d6＋3",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "保証",
+        "name_en": "Reliable",
+        "description": "攻撃ロール＋1"
+      }
+    },
+    {
+      "id": "advanced-arcane-frame-wheelchair",
+      "name": "発展型秘術車椅子",
+      "name_en": "Advanced Arcane-Frame Wheelchair",
+      "tier": 3,
+      "trait": "呪文発動",
+      "range": "遠距離",
+      "damage": "d6＋6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "保証",
+        "name_en": "Reliable",
+        "description": "攻撃ロール＋1"
+      }
+    },
+    {
+      "id": "legendary-arcane-frame-wheelchair",
+      "name": "伝説級秘術車椅子",
+      "name_en": "Legendary Arcane-Frame Wheelchair",
+      "tier": 4,
+      "trait": "呪文発動",
+      "range": "遠距離",
+      "damage": "d6＋9",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "保証",
+        "name_en": "Reliable",
+        "description": "攻撃ロール＋1"
+      }
+    }
+  ]
+}

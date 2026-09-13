@@ -1,0 +1,262 @@
+[
+  {
+    "name": "ブロードソード",
+    "tier": 1,
+    "trait": "敏捷",
+    "range": "近接",
+    "damage": "d8",
+    "damageType": "物理",
+    "burden": "片手用",
+    "feature": "<strong><em>保証：</em></strong>攻撃ロール＋1"
+  },
+  {
+    "name": "ロングソード",
+    "tier": 1,
+    "trait": "敏捷",
+    "range": "近接",
+    "damage": "d10＋3",
+    "damageType": "物理",
+    "burden": "両手用",
+    "feature": ""
+  },
+  {
+    "name": "バトルアックス",
+    "tier": 1,
+    "trait": "筋力",
+    "range": "近接",
+    "damage": "d10＋3",
+    "damageType": "物理",
+    "burden": "両手用",
+    "feature": ""
+  },
+  {
+    "name": "グレートソード",
+    "tier": 1,
+    "trait": "筋力",
+    "range": "近接",
+    "damage": "d10＋3",
+    "damageType": "物理",
+    "burden": "両手用",
+    "feature": "<strong><em>巨大：</em></strong>回避－1；攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+  },
+  {
+    "name": "メイス",
+    "tier": 1,
+    "trait": "筋力",
+    "range": "近接",
+    "damage": "d8＋1",
+    "damageType": "物理",
+    "burden": "片手用",
+    "feature": ""
+  },
+  {
+    "name": "ウォーハンマー",
+    "tier": 1,
+    "trait": "筋力",
+    "range": "近接",
+    "damage": "d12＋3",
+    "damageType": "物理",
+    "burden": "両手用",
+    "feature": "<strong><em>重量：</em></strong>回避－1"
+  },
+  {
+    "name": "ダガー",
+    "tier": 1,
+    "trait": "技巧",
+    "range": "近接",
+    "damage": "d8＋1",
+    "damageType": "物理",
+    "burden": "片手用",
+    "feature": ""
+  },
+  {
+    "name": "クオータースタッフ",
+    "tier": 1,
+    "trait": "本能",
+    "range": "近接",
+    "damage": "d10＋3",
+    "damageType": "物理",
+    "burden": "両手用",
+    "feature": ""
+  },
+  {
+    "name": "カトラス",
+    "tier": 1,
+    "trait": "存在",
+    "range": "近接",
+    "damage": "d8＋1",
+    "damageType": "物理",
+    "burden": "片手用",
+    "feature": ""
+  },
+  {
+    "name": "レイピア",
+    "tier": 1,
+    "trait": "存在",
+    "range": "近接",
+    "damage": "d8",
+    "damageType": "物理",
+    "burden": "片手用",
+    "feature": "<strong><em>高速：</em></strong>攻撃を行う時、君はストレスを1つマークして射程内にいるもう1体のクリーチャーを目標とすることができる。"
+  },
+  {
+    "name": "ハルバード",
+    "tier": 1,
+    "trait": "筋力",
+    "range": "至近距離",
+    "damage": "d10＋2",
+    "damageType": "物理",
+    "burden": "両手用",
+    "feature": "<strong><em>巨大：</em></strong>【技巧】－1"
+  },
+  {
+    "name": "スピア",
+    "tier": 1,
+    "trait": "技巧",
+    "range": "超遠距離",
+    "damage": "d8＋3",
+    "damageType": "物理",
+    "burden": "両手用",
+    "feature": ""
+  },
+  {
+    "name": "ショートボウ",
+    "tier": 1,
+    "trait": "敏捷",
+    "range": "遠距離",
+    "damage": "d6＋3",
+    "damageType": "物理",
+    "burden": "両手用",
+    "feature": ""
+  },
+  {
+    "name": "クロスボウ",
+    "tier": 1,
+    "trait": "技巧",
+    "range": "遠距離",
+    "damage": "d6＋1",
+    "damageType": "物理",
+    "burden": "片手用",
+    "feature": ""
+  },
+  {
+    "name": "ロングボウ",
+    "tier": 1,
+    "trait": "敏捷",
+    "range": "超遠距離",
+    "damage": "d8＋3",
+    "damageType": "物理",
+    "burden": "両手用",
+    "feature": "<strong><em>巨大：</em></strong>【技巧】－1"
+  },
+  {
+    "name": "秘術ガントレット",
+    "tier": 1,
+    "category": "primary",
+    "trait": "筋力",
+    "range": "近接",
+    "damage": "d10+3",
+    "damage_type": "魔法",
+    "burden": 2,
+    "feature": null
+  },
+  {
+    "name": "聖別アックス",
+    "tier": 1,
+    "category": "primary",
+    "trait": "筋力",
+    "range": "近接",
+    "damage": "d8+1",
+    "damage_type": "魔法",
+    "burden": 1,
+    "feature": null
+  },
+  {
+    "name": "輝く指輪",
+    "tier": 1,
+    "category": "primary",
+    "trait": "敏捷",
+    "range": "至近距離",
+    "damage": "d10+2",
+    "damage_type": "魔法",
+    "burden": 2,
+    "feature": null
+  },
+  {
+    "name": "ハンド・ルーンズ",
+    "tier": 1,
+    "category": "primary",
+    "trait": "本能",
+    "range": "至近距離",
+    "damage": "d10",
+    "damage_type": "魔法",
+    "burden": 1,
+    "feature": null
+  },
+  {
+    "name": "回帰ブレード",
+    "tier": 1,
+    "category": "primary",
+    "trait": "技巧",
+    "range": "近距離",
+    "damage": "d8",
+    "damage_type": "魔法",
+    "burden": 1,
+    "feature": "回帰：この武器は射程内に投擲すると、攻撃の直後に君の手の中に現れる。"
+  },
+  {
+    "name": "ショートスタッフ",
+    "tier": 1,
+    "category": "primary",
+    "trait": "本能",
+    "range": "近距離",
+    "damage": "d8+1",
+    "damage_type": "魔法",
+    "burden": 1,
+    "feature": null
+  },
+  {
+    "name": "デュアルスタッフ",
+    "tier": 1,
+    "category": "primary",
+    "trait": "本能",
+    "range": "遠距離",
+    "damage": "d6+3",
+    "damage_type": "魔法",
+    "burden": 2,
+    "feature": null
+  },
+  {
+    "name": "セプター",
+    "tier": 1,
+    "category": "primary",
+    "trait": "存在",
+    "range": "遠距離",
+    "damage": "d6",
+    "damage_type": "魔法",
+    "burden": 2,
+    "feature": "汎用：この武器は次のデータでも使用できる：【存在】、近接、d8。"
+  },
+  {
+    "name": "ワンド",
+    "tier": 1,
+    "category": "primary",
+    "trait": "知識",
+    "range": "遠距離",
+    "damage": "d6+1",
+    "damage_type": "魔法",
+    "burden": 1,
+    "feature": null
+  },
+  {
+    "name": "グレートスタッフ",
+    "tier": 1,
+    "category": "primary",
+    "trait": "知識",
+    "range": "超遠距離",
+    "damage": "d6",
+    "damage_type": "魔法",
+    "burden": 2,
+    "feature": "強力：攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+  }
+]

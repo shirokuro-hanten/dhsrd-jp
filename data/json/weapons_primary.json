@@ -1,0 +1,2087 @@
+{
+  "tier1-physical": [
+    {
+      "id": "broadsword",
+      "name": "ブロードソード",
+      "name_en": "Broadsword",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d8",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "保証",
+        "name_en": "Reliable",
+        "description": "攻撃ロール＋1"
+      }
+    },
+    {
+      "id": "longsword",
+      "name": "ロングソード",
+      "name_en": "Longsword",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d10＋3",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "battleaxe",
+      "name": "バトルアックス",
+      "name_en": "Battleaxe",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋3",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "greatsword",
+      "name": "グレートソード",
+      "name_en": "Greatsword",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋3",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "巨大",
+        "name_en": "Massive",
+        "description": "回避－1；攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+      }
+    },
+    {
+      "id": "mace",
+      "name": "メイス",
+      "name_en": "Mace",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋1",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "warhammer",
+      "name": "ウォーハンマー",
+      "name_en": "Warhammer",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d12＋3",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "重量",
+        "name_en": "Heavy",
+        "description": "回避－1"
+      }
+    },
+    {
+      "id": "dagger",
+      "name": "ダガー",
+      "name_en": "Dagger",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋1",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "quarterstaff",
+      "name": "クオータースタッフ",
+      "name_en": "Quarterstaff",
+      "trait": "本能",
+      "range": "近接",
+      "damage": "d10＋3",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "cutlass",
+      "name": "カトラス",
+      "name_en": "Cutlass",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋1",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "rapier",
+      "name": "レイピア",
+      "name_en": "Rapier",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "攻撃を行う時、君はストレスを1つマークして射程内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "halberd",
+      "name": "ハルバード",
+      "name_en": "Halberd",
+      "trait": "筋力",
+      "range": "至近距離",
+      "damage": "d10＋2",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "巨大",
+        "name_en": "Cumbersome",
+        "description": "【技巧】－1"
+      }
+    },
+    {
+      "id": "spear",
+      "name": "スピア",
+      "name_en": "Spear",
+      "trait": "技巧",
+      "range": "超遠距離",
+      "damage": "d8＋3",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "shortbow",
+      "name": "ショートボウ",
+      "name_en": "Shortbow",
+      "trait": "敏捷",
+      "range": "遠距離",
+      "damage": "d6＋3",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "crossbow",
+      "name": "クロスボウ",
+      "name_en": "Crossbow",
+      "trait": "技巧",
+      "range": "遠距離",
+      "damage": "d6＋1",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "longbow",
+      "name": "ロングボウ",
+      "name_en": "Longbow",
+      "trait": "敏捷",
+      "range": "超遠距離",
+      "damage": "d8＋3",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "巨大",
+        "name_en": "Cumbersome",
+        "description": "【技巧】－1"
+      }
+    }
+  ],
+  "tier1-magic": [
+    {
+      "id": "arcane-gauntlets",
+      "name": "アーケイン・ガントレッツ",
+      "name_en": "Arcane Gauntlets",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋3",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "hallowed-axe",
+      "name": "ハロウド・アックス",
+      "name_en": "Hallowed Axe",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋1",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "glowing-rings",
+      "name": "グロウイング・リングス",
+      "name_en": "Glowing Rings",
+      "trait": "敏捷",
+      "range": "至近距離",
+      "damage": "d10＋2",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "hand-runes",
+      "name": "ハンド・ルーンズ",
+      "name_en": "Hand Runes",
+      "trait": "本能",
+      "range": "至近距離",
+      "damage": "d10",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "returning-blade",
+      "name": "リターニング・ブレード",
+      "name_en": "Returning Blade",
+      "trait": "技巧",
+      "range": "近距離",
+      "damage": "d8",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "回帰",
+        "name_en": "Returning",
+        "description": "この武器は射程内に投擲すると、攻撃の直後に君の手の中に現れる。"
+      }
+    },
+    {
+      "id": "shortstaff",
+      "name": "ショートスタッフ",
+      "name_en": "Shortstaff",
+      "trait": "本能",
+      "range": "近距離",
+      "damage": "d8＋1",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "dualstaff",
+      "name": "デュアルスタッフ",
+      "name_en": "Dualstaff",
+      "trait": "本能",
+      "range": "遠距離",
+      "damage": "d6＋3",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "scepter",
+      "name": "セプター",
+      "name_en": "Scepter",
+      "trait": "存在",
+      "range": "遠距離",
+      "damage": "d6",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【存在】、近接、d8。"
+      }
+    },
+    {
+      "id": "wand",
+      "name": "ワンド",
+      "name_en": "Wand",
+      "trait": "知識",
+      "range": "遠距離",
+      "damage": "d6＋1",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "greatstaff",
+      "name": "グレートスタッフ",
+      "name_en": "Greatstaff",
+      "trait": "知識",
+      "range": "超遠距離",
+      "damage": "d6",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "強力",
+        "name_en": "Powerful",
+        "description": "攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+      }
+    }
+  ],
+  "tier2-physical": [
+    {
+      "id": "improved-broadsword",
+      "name": "改良型ブロードソード",
+      "name_en": "Improved Broadsword",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d8＋3",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "保証",
+        "name_en": "Reliable",
+        "description": "攻撃ロール＋1"
+      }
+    },
+    {
+      "id": "improved-longsword",
+      "name": "改良型ロングソード",
+      "name_en": "Improved Longsword",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d10＋6",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "improved-battleaxe",
+      "name": "改良型バトルアックス",
+      "name_en": "Improved Battleaxe",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋6",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "improved-greatsword",
+      "name": "改良型グレートソード",
+      "name_en": "Improved Greatsword",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋6",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "巨大",
+        "name_en": "Massive",
+        "description": "回避－1；攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+      }
+    },
+    {
+      "id": "improved-mace",
+      "name": "改良型メイス",
+      "name_en": "Improved Mace",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "improved-warhammer",
+      "name": "改良型ウォーハンマー",
+      "name_en": "Improved Warhammer",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d12＋6",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "重量",
+        "name_en": "Heavy",
+        "description": "回避－1"
+      }
+    },
+    {
+      "id": "improved-dagger",
+      "name": "改良型ダガー",
+      "name_en": "Improved Dagger",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "improved-quarterstaff",
+      "name": "改良型クオータースタッフ",
+      "name_en": "Improved Quarterstaff",
+      "trait": "本能",
+      "range": "近接",
+      "damage": "d10＋6",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "improved-cutlass",
+      "name": "改良型カトラス",
+      "name_en": "Improved Cutlass",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "improved-rapier",
+      "name": "改良型レイピア",
+      "name_en": "Improved Rapier",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋3",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "攻撃を行う時、君はストレスを1つマークして射程内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "improved-halberd",
+      "name": "改良型ハルバード",
+      "name_en": "Improved Halberd",
+      "trait": "筋力",
+      "range": "至近距離",
+      "damage": "d10＋5",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "大振り",
+        "name_en": "Cumbersome",
+        "description": "【技巧】－1"
+      }
+    },
+    {
+      "id": "improved-spear",
+      "name": "改良型スピア",
+      "name_en": "Improved Spear",
+      "trait": "技巧",
+      "range": "至近距離",
+      "damage": "d8＋6",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "improved-shortbow",
+      "name": "改良型ショートボウ",
+      "name_en": "Improved Shortbow",
+      "trait": "敏捷",
+      "range": "遠距離",
+      "damage": "d6＋6",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "improved-crossbow",
+      "name": "改良型クロスボウ",
+      "name_en": "Improved Crossbow",
+      "trait": "技巧",
+      "range": "遠距離",
+      "damage": "d6＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "improved-longbow",
+      "name": "改良型ロングボウ",
+      "name_en": "Improved Longbow",
+      "trait": "敏捷",
+      "range": "超遠距離",
+      "damage": "d8＋6",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "大振り",
+        "name_en": "Cumbersome",
+        "description": "【技巧】－1"
+      }
+    },
+    {
+      "id": "gilded-falchion",
+      "name": "ギルデッド・ファルシオン",
+      "name_en": "Gilded Falchion",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "強力",
+        "name_en": "Powerful",
+        "description": "攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+      }
+    },
+    {
+      "id": "knuckle-blades",
+      "name": "ナックル・ブレーズ",
+      "name_en": "Knuckle Blades",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋6",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "残忍",
+        "name_en": "Brutal",
+        "description": "君がダメージダイスのいずれかで最大値を振った時、ダメージダイスを追加で1つ振る。"
+      }
+    },
+    {
+      "id": "urok-broadsword",
+      "name": "ウローク・ブロードソード",
+      "name_en": "Urok Broadsword",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋3",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "致死",
+        "name_en": "Deadly",
+        "description": "君が大ダメージを与えた時、目標はHPを追加で1つマークする。"
+      }
+    },
+    {
+      "id": "bladed-whip",
+      "name": "ブレイデッド・ウィップ",
+      "name_en": "Bladed Whip",
+      "trait": "敏捷",
+      "range": "至近距離",
+      "damage": "d8＋3",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "攻撃を行う時、君はストレスを1つマークして射程内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "steelforged-halberd",
+      "name": "スティールフォージド・ハルバード",
+      "name_en": "Steelforged Halberd",
+      "trait": "筋力",
+      "range": "至近距離",
+      "damage": "d8＋4",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "恐怖",
+        "name_en": "Scary",
+        "description": "攻撃に成功したなら、目標はストレスを1つマークする。"
+      }
+    },
+    {
+      "id": "war-scythe",
+      "name": "ウォー・サイス",
+      "name_en": "War Scythe",
+      "trait": "技巧",
+      "range": "至近距離",
+      "damage": "d8＋5",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "保証",
+        "name_en": "Reliable",
+        "description": "攻撃ロール＋1"
+      }
+    },
+    {
+      "id": "blunderbuss",
+      "name": "ブランダーバス",
+      "name_en": "Blunderbuss",
+      "trait": "技巧",
+      "range": "近距離",
+      "damage": "d8＋6",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "再装填",
+        "name_en": "Reloading",
+        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器は発射できない。"
+      }
+    },
+    {
+      "id": "greatbow",
+      "name": "グレートボウ",
+      "name_en": "Greatbow",
+      "trait": "筋力",
+      "range": "遠距離",
+      "damage": "d6＋6",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "強力",
+        "name_en": "Powerful",
+        "description": "攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+      }
+    },
+    {
+      "id": "finehair-bow",
+      "name": "ファインヘア・ボウ",
+      "name_en": "Finehair Bow",
+      "trait": "敏捷",
+      "range": "超遠距離",
+      "damage": "d6＋5",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "保証",
+        "name_en": "Reliable",
+        "description": "攻撃ロール＋1"
+      }
+    }
+  ],
+  "tier2-magic": [
+    {
+      "id": "improved-arcane-gauntlets",
+      "name": "改良型アーケイン・ガントレッツ",
+      "name_en": "Improved Arcane Gauntlets",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋6",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "improved-hallowed-axe",
+      "name": "改良型ハロウド・アックス",
+      "name_en": "Improved Hallowed Axe",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋4",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "improved-glowing-rings",
+      "name": "改良型グロウイング・リングス",
+      "name_en": "Improved Glowing Rings",
+      "trait": "敏捷",
+      "range": "超遠距離",
+      "damage": "d10＋5",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "improved-hand-runes",
+      "name": "改良型ハンド・ルーンズ",
+      "name_en": "Improved Hand Runes",
+      "trait": "本能",
+      "range": "超遠距離",
+      "damage": "d10＋3",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "improved-returning-blade",
+      "name": "改良型リターニング・ブレード",
+      "name_en": "Improved Returning Blade",
+      "trait": "技巧",
+      "range": "近距離",
+      "damage": "d8＋3",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "回帰",
+        "name_en": "Returning",
+        "description": "この武器は射程内に投擲すると、攻撃の直後に君の手の中に現れる。"
+      }
+    },
+    {
+      "id": "improved-shortstaff",
+      "name": "改良型ショートスタッフ",
+      "name_en": "Improved Shortstaff",
+      "trait": "本能",
+      "range": "近距離",
+      "damage": "d8＋4",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "improved-dualstaff",
+      "name": "改良型デュアルスタッフ",
+      "name_en": "Improved Dualstaff",
+      "trait": "本能",
+      "range": "遠距離",
+      "damage": "d6＋6",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "improved-scepter",
+      "name": "改良型セプター",
+      "name_en": "Improved Scepter",
+      "trait": "存在",
+      "range": "遠距離",
+      "damage": "d6＋3",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【存在】、近接、d8＋3。"
+      }
+    },
+    {
+      "id": "improved-wand",
+      "name": "改良型ワンド",
+      "name_en": "Improved Wand",
+      "trait": "知識",
+      "range": "遠距離",
+      "damage": "d6＋4",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "improved-greatstaff",
+      "name": "改良型グレートスタッフ",
+      "name_en": "Improved Greatstaff",
+      "trait": "知識",
+      "range": "超遠距離",
+      "damage": "d6＋3",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "強力",
+        "name_en": "Powerful",
+        "description": "攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+      }
+    },
+    {
+      "id": "ego-blade",
+      "name": "エゴ・ブレード",
+      "name_en": "Ego Blade",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d12＋4",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "尊大",
+        "name_en": "Pompous",
+        "description": "この武器を使用するには【存在】が0以上でなければならない。"
+      }
+    },
+    {
+      "id": "casting-sword",
+      "name": "キャスティング・ソード",
+      "name_en": "Casting Sword",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋4",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【知識】、遠距離、d6＋3。"
+      }
+    },
+    {
+      "id": "devouring-dagger",
+      "name": "ディヴァウアリング・ダガー",
+      "name_en": "Devouring Dagger",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋4",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "恐怖",
+        "name_en": "Scary",
+        "description": "攻撃に成功したなら、目標はストレスを1つマークする。"
+      }
+    },
+    {
+      "id": "hammer-of-exota",
+      "name": "ハンマー・オヴ・エグゾタ",
+      "name_en": "Hammer of Exota",
+      "trait": "本能",
+      "range": "近接",
+      "damage": "d8＋6",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "噴出",
+        "name_en": "Eruptive",
+        "description": "近接射程内の目標に対する攻撃に成功した時、超遠距離射程内にいするその他全ての敵は、反応ロール（14）に成功しなければ半分のダメージを受ける。"
+      }
+    },
+    {
+      "id": "yutari-bloodbow",
+      "name": "ユタリ・ブラッドボウ",
+      "name_en": "Yutari Bloodbow",
+      "trait": "技巧",
+      "range": "遠距離",
+      "damage": "d6＋4",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "残忍",
+        "name_en": "Brutal",
+        "description": "君がダメージダイスのいずれかで最大値を振った時、ダメージダイスを追加で1つ振る。"
+      }
+    },
+    {
+      "id": "elder-bow",
+      "name": "エルダー・ボウ",
+      "name_en": "Elder Bow",
+      "trait": "本能",
+      "range": "遠距離",
+      "damage": "d6＋4",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "強力",
+        "name_en": "Powerful",
+        "description": "攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+      }
+    },
+    {
+      "id": "scepter-of-elias",
+      "name": "セプター・オヴ・エリアス",
+      "name_en": "Scepter of Elias",
+      "trait": "存在",
+      "range": "遠距離",
+      "damage": "d6＋3",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "活力",
+        "name_en": "Invigorating",
+        "description": "攻撃に成功したなら、d4を振る。4の目が出たなら、ストレスを1つ回復する。"
+      }
+    },
+    {
+      "id": "wand-of-enthrallment",
+      "name": "ワンド・オヴ・エンスロールメント",
+      "name_en": "Wand of Enthrallment",
+      "trait": "存在",
+      "range": "遠距離",
+      "damage": "d6＋4",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "説得力",
+        "name_en": "Persuasive",
+        "description": "君は【存在】ロールを行う前にストレスを1つマークしてその出目に＋2のボーナスを得ることができる。"
+      }
+    },
+    {
+      "id": "keepers-staff",
+      "name": "キーパーズ・スタッフ",
+      "name_en": "Keeper's Staff",
+      "trait": "知識",
+      "range": "遠距離",
+      "damage": "d6＋4",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "保証",
+        "name_en": "Reliable",
+        "description": "攻撃ロール＋1"
+      }
+    }
+  ],
+  "tier3-physical": [
+    {
+      "id": "advanced-broadsword",
+      "name": "発展型ブロードソード",
+      "name_en": "Advanced Broadsword",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d8＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "保証",
+        "name_en": "Reliable",
+        "description": "攻撃ロール＋1"
+      }
+    },
+    {
+      "id": "advanced-longsword",
+      "name": "発展型ロングソード",
+      "name_en": "Advanced Longsword",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d10＋9",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-battleaxe",
+      "name": "発展型バトルアックス",
+      "name_en": "Advanced Battleaxe",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋9",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-greatsword",
+      "name": "発展型グレートソード",
+      "name_en": "Advanced Greatsword",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋9",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "巨大",
+        "name_en": "Massive",
+        "description": "回避－1；攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+      }
+    },
+    {
+      "id": "advanced-mace",
+      "name": "発展型メイス",
+      "name_en": "Advanced Mace",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋7",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-warhammer",
+      "name": "発展型ウォーハンマー",
+      "name_en": "Advanced Warhammer",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d12＋9",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "重量",
+        "name_en": "Heavy",
+        "description": "回避－1"
+      }
+    },
+    {
+      "id": "advanced-dagger",
+      "name": "発展型ダガー",
+      "name_en": "Advanced Dagger",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋7",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-quarterstaff",
+      "name": "発展型クオータースタッフ",
+      "name_en": "Advanced Quarterstaff",
+      "trait": "本能",
+      "range": "近接",
+      "damage": "d10＋9",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-cutlass",
+      "name": "発展型カトラス",
+      "name_en": "Advanced Cutlass",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋7",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-rapier",
+      "name": "発展型レイピア",
+      "name_en": "Advanced Rapier",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "攻撃を行う時、君はストレスを1つマークして射程内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "advanced-halberd",
+      "name": "発展型ハルバード",
+      "name_en": "Advanced Halberd",
+      "trait": "筋力",
+      "range": "至近距離",
+      "damage": "d10＋8",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "大振り",
+        "name_en": "Cumbersome",
+        "description": "【技巧】－1"
+      }
+    },
+    {
+      "id": "advanced-spear",
+      "name": "発展型スピア",
+      "name_en": "Advanced Spear",
+      "trait": "技巧",
+      "range": "至近距離",
+      "damage": "d8＋9",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-shortbow",
+      "name": "発展型ショートボウ",
+      "name_en": "Advanced Shortbow",
+      "trait": "敏捷",
+      "range": "遠距離",
+      "damage": "d6＋9",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-crossbow",
+      "name": "発展型クロスボウ",
+      "name_en": "Advanced Crossbow",
+      "trait": "技巧",
+      "range": "遠距離",
+      "damage": "d6＋7",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-longbow",
+      "name": "発展型ロングボウ",
+      "name_en": "Advanced Longbow",
+      "trait": "敏捷",
+      "range": "超遠距離",
+      "damage": "d8＋9",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "大振り",
+        "name_en": "Cumbersome",
+        "description": "【技巧】－1"
+      }
+    },
+    {
+      "id": "flickerfly-blade",
+      "name": "フリッカーフライ・ブレード",
+      "name_en": "Flickerfly Blade",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d8＋5",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "鋭翼",
+        "name_en": "Sharpwing",
+        "description": "ダメージロールに【敏捷】に等しいボーナスを得る。"
+      }
+    },
+    {
+      "id": "bravesword",
+      "name": "ブレイヴソード",
+      "name_en": "Bravesword",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d12＋7",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "勇気",
+        "name_en": "Brave",
+        "description": "回避－1；大ダメージ閾値＋3"
+      }
+    },
+    {
+      "id": "hammer-of-wrath",
+      "name": "ハンマー・オヴ・ラス",
+      "name_en": "Hammer of Wrath",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋7",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "壊滅",
+        "name_en": "Devastating",
+        "description": "君は攻撃ロールを行う前にストレスを1つマークすることで、ダメージダイスとしてd20を使用することができる。"
+      }
+    },
+    {
+      "id": "labrys-axe",
+      "name": "ラビリス・アックス",
+      "name_en": "Labrys Axe",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋7",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "保護",
+        "name_en": "Protective",
+        "description": "防御値＋1"
+      }
+    },
+    {
+      "id": "meridian-cutlass",
+      "name": "メリディアン・カトラス",
+      "name_en": "Meridian Cutlass",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d10＋5",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "決闘",
+        "name_en": "Dueling",
+        "description": "目標の近距離射程内に他のクリーチャーがいない時、目標に対する君の攻撃ロールは有利を得る。"
+      }
+    },
+    {
+      "id": "retractable-saber",
+      "name": "リトラクタブル・セイバー",
+      "name_en": "Retractable Saber",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d10＋7",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "収納",
+        "name_en": "Retractable",
+        "description": "この刃は柄に隠して検知を避けることができる。"
+      }
+    },
+    {
+      "id": "double-flail",
+      "name": "デュアル・フレイル",
+      "name_en": "Double Flail",
+      "trait": "敏捷",
+      "range": "至近距離",
+      "damage": "d10＋8",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "強力",
+        "name_en": "Powerful",
+        "description": "攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+      }
+    },
+    {
+      "id": "talon-blades",
+      "name": "タロン・ブレーズ",
+      "name_en": "Talon Blades",
+      "trait": "技巧",
+      "range": "近距離",
+      "damage": "d10＋7",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "残忍",
+        "name_en": "Brutal",
+        "description": "君がダメージダイスのいずれかで最大値を振った時、ダメージダイスを追加で1つ振る。"
+      }
+    },
+    {
+      "id": "black-powder-revolver",
+      "name": "ブラック・パウダー・リヴォルヴァー",
+      "name_en": "Black Powder Revolver",
+      "trait": "技巧",
+      "range": "遠距離",
+      "damage": "d6＋8",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "再装填",
+        "name_en": "Reloading",
+        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器は発射できない。"
+      }
+    },
+    {
+      "id": "spiked-bow",
+      "name": "スパイクト・ボウ",
+      "name_en": "Spiked Bow",
+      "trait": "敏捷",
+      "range": "超遠距離",
+      "damage": "d6＋7",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【敏捷】、近接、d10＋3。"
+      }
+    }
+  ],
+  "tier3-magic": [
+    {
+      "id": "advanced-arcane-gauntlets",
+      "name": "発展型アーケイン・ガントレッツ",
+      "name_en": "Advanced Arcane Gauntlets",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋9",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-hallowed-axe",
+      "name": "発展型ハロウド・アックス",
+      "name_en": "Advanced Hallowed Axe",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋7",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-glowing-rings",
+      "name": "発展型グロウイング・リングス",
+      "name_en": "Advanced Glowing Rings",
+      "trait": "敏捷",
+      "range": "超遠距離",
+      "damage": "d10＋8",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-hand-runes",
+      "name": "発展型ハンド・ルーンズ",
+      "name_en": "Advanced Hand Runes",
+      "trait": "本能",
+      "range": "超遠距離",
+      "damage": "d10＋6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-returning-blade",
+      "name": "発展型リターニング・ブレード",
+      "name_en": "Advanced Returning Blade",
+      "trait": "技巧",
+      "range": "近距離",
+      "damage": "d8＋6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "回帰",
+        "name_en": "Returning",
+        "description": "この武器は射程内に投擲すると、攻撃の直後に君の手の中に現れる。"
+      }
+    },
+    {
+      "id": "advanced-shortstaff",
+      "name": "発展型ショートスタッフ",
+      "name_en": "Advanced Shortstaff",
+      "trait": "本能",
+      "range": "近距離",
+      "damage": "d8＋7",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-dualstaff",
+      "name": "発展型デュアルスタッフ",
+      "name_en": "Advanced Dualstaff",
+      "trait": "本能",
+      "range": "遠距離",
+      "damage": "d6＋9",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-scepter",
+      "name": "発展型セプター",
+      "name_en": "Advanced Scepter",
+      "trait": "存在",
+      "range": "遠距離",
+      "damage": "d6＋6",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【存在】、近接、d8＋3。"
+      }
+    },
+    {
+      "id": "advanced-wand",
+      "name": "発展型ワンド",
+      "name_en": "Advanced Wand",
+      "trait": "知識",
+      "range": "遠距離",
+      "damage": "d6＋7",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-greatstaff",
+      "name": "発展型グレートスタッフ",
+      "name_en": "Advanced Greatstaff",
+      "trait": "知識",
+      "range": "超遠距離",
+      "damage": "d6＋6",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "強力",
+        "name_en": "Powerful",
+        "description": "攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+      }
+    },
+    {
+      "id": "axe-of-fortunis",
+      "name": "アックス・オヴ・フォーチュニス",
+      "name_en": "Axe of Fortunis",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋8",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "幸運",
+        "name_en": "Lucky",
+        "description": "攻撃に失敗した時、君はストレスを1つマークして攻撃ロールを振り直すことができる。"
+      }
+    },
+    {
+      "id": "blessed-anlace",
+      "name": "ブレスド・アンリス",
+      "name_en": "Blessed Anlace",
+      "trait": "本能",
+      "range": "近接",
+      "damage": "d10＋6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "癒し",
+        "name_en": "Healing",
+        "description": "合間時間中、自動的にHPを1つ回復する。"
+      }
+    },
+    {
+      "id": "ghostblade",
+      "name": "ゴーストブレード",
+      "name_en": "Ghostblade",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d10＋7",
+      "damageType": "物理または魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "異界",
+        "name_en": "Otherworldly",
+        "description": "攻撃に成功した時、君は物理または魔法ダメージを与えることができる。"
+      }
+    },
+    {
+      "id": "runes-of-ruination",
+      "name": "ルーンズ・オヴ・ルイネーション",
+      "name_en": "Runes of Ruination",
+      "trait": "知識",
+      "range": "超遠距離",
+      "damage": "d20＋4",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "苦痛",
+        "name_en": "Painful",
+        "description": "君は攻撃に成功するたび、ストレスを1つマークしなければならない。"
+      }
+    },
+    {
+      "id": "widogast-pendant",
+      "name": "ウィドガスト・ペンダント",
+      "name_en": "Widogast Pendant",
+      "trait": "知識",
+      "range": "近距離",
+      "damage": "d10＋5",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "時間歪曲",
+        "name_en": "Timebending",
+        "description": "君は攻撃ロールを行った後で攻撃の目標を選ぶことができる。"
+      }
+    },
+    {
+      "id": "gilded-bow",
+      "name": "ギルデッド・ボウ",
+      "name_en": "Gilded Bow",
+      "trait": "技巧",
+      "range": "遠距離",
+      "damage": "d6＋7",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "自動修正",
+        "name_en": "Self-Correcting",
+        "description": "君がダメージダイスで1の目を出した時、そのダイスは（1ではなく）6ダメージを与える。"
+      }
+    },
+    {
+      "id": "firestaff",
+      "name": "ファイアースタッフ",
+      "name_en": "Firestaff",
+      "trait": "本能",
+      "range": "遠距離",
+      "damage": "d6＋7",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "燃焼",
+        "name_en": "Burning",
+        "description": "君がダメージダイスで6の目を出した時、目標はストレスを1つマークしなければならない。"
+      }
+    },
+    {
+      "id": "mage-orb",
+      "name": "メイジ・オーブ",
+      "name_en": "Mage Orb",
+      "trait": "知識",
+      "range": "遠距離",
+      "damage": "d6＋7",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "強力",
+        "name_en": "Powerful",
+        "description": "攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+      }
+    },
+    {
+      "id": "ilmari-s-rifle",
+      "name": "イルマリズ・ライフル",
+      "name_en": "Ilmari’s Rifle",
+      "trait": "技巧",
+      "range": "超遠距離",
+      "damage": "d6＋6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "再装填",
+        "name_en": "Reloading",
+        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器は発射できない。"
+      }
+    }
+  ],
+  "tier4-physical": [
+    {
+      "id": "legendary-broadsword",
+      "name": "伝説級ブロードソード",
+      "name_en": "Legendary Broadsword",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d8＋9",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "保証",
+        "name_en": "Reliable",
+        "description": "攻撃ロール＋1"
+      }
+    },
+    {
+      "id": "legendary-longsword",
+      "name": "伝説級ロングソード",
+      "name_en": "Legendary Longsword",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d10＋12",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-battleaxe",
+      "name": "伝説級バトルアックス",
+      "name_en": "Legendary Battleaxe",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋12",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-greatsword",
+      "name": "伝説級グレートソード",
+      "name_en": "Legendary Greatsword",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋12",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "巨大",
+        "name_en": "Massive",
+        "description": "回避－1；攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+      }
+    },
+    {
+      "id": "legendary-mace",
+      "name": "伝説級メイス",
+      "name_en": "Legendary Mace",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋10",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-warhammer",
+      "name": "伝説級ウォーハンマー",
+      "name_en": "Legendary Warhammer",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d12＋12",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "重量",
+        "name_en": "Heavy",
+        "description": "回避－1"
+      }
+    },
+    {
+      "id": "legendary-dagger",
+      "name": "伝説級ダガー",
+      "name_en": "Legendary Dagger",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋10",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-quarterstaff",
+      "name": "伝説級クオータースタッフ",
+      "name_en": "Legendary Quarterstaff",
+      "trait": "本能",
+      "range": "近接",
+      "damage": "d10＋12",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-cutlass",
+      "name": "伝説級カトラス",
+      "name_en": "Legendary Cutlass",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋10",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-rapier",
+      "name": "伝説級レイピア",
+      "name_en": "Legendary Rapier",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋9",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "攻撃を行う時、君はストレスを1つマークして射程内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "legendary-halberd",
+      "name": "伝説級ハルバード",
+      "name_en": "Legendary Halberd",
+      "trait": "筋力",
+      "range": "至近距離",
+      "damage": "d10＋11",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "大振り",
+        "name_en": "Cumbersome",
+        "description": "【技巧】－1"
+      }
+    },
+    {
+      "id": "legendary-spear",
+      "name": "伝説級スピア",
+      "name_en": "Legendary Spear",
+      "trait": "技巧",
+      "range": "超遠距離",
+      "damage": "d8＋12",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-shortbow",
+      "name": "伝説級ショートボウ",
+      "name_en": "Legendary Shortbow",
+      "trait": "敏捷",
+      "range": "遠距離",
+      "damage": "d6＋12",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-crossbow",
+      "name": "伝説級クロスボウ",
+      "name_en": "Legendary Crossbow",
+      "trait": "技巧",
+      "range": "遠距離",
+      "damage": "d6＋10",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-longbow",
+      "name": "伝説級ロングボウ",
+      "name_en": "Legendary Longbow",
+      "trait": "敏捷",
+      "range": "超遠距離",
+      "damage": "d8＋12",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "大振り",
+        "name_en": "Cumbersome",
+        "description": "【技巧】－1"
+      }
+    },
+    {
+      "id": "double-bladed-sword",
+      "name": "ダブルブレイデッド・ソード",
+      "name_en": "Double-Bladed Sword",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d10＋9",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "攻撃を行う時、君はストレスを1つマークして射程内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "concussion-gauntlet",
+      "name": "コンカッション・ガントレット",
+      "name_en": "Concussion Gauntlet",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋11",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "震盪",
+        "name_en": "Concussive",
+        "description": "攻撃に成功した時、君は希望を1つ消費して目標を遠距離射程まで押し出すことができる。"
+      }
+    },
+    {
+      "id": "sledge-axe",
+      "name": "スレッジ・アックス",
+      "name_en": "Sledge Axe",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d12＋13",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "破壊",
+        "name_en": "Destructive",
+        "description": "【敏捷】－1；攻撃に成功した時、至近距離射程内にいるすべての敵はストレスを1つマークしなければならない。"
+      }
+    },
+    {
+      "id": "curved-dagger",
+      "name": "カーヴド・ダガー",
+      "name_en": "Curved Dagger",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋9",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "鋸歯",
+        "name_en": "Serrated",
+        "description": "君がダメージダイスで1の目を振った時、そのダイスは（1ではなく）8ダメージを与える。"
+      }
+    },
+    {
+      "id": "extending-polearm",
+      "name": "エクステンディング・ポールアーム",
+      "name_en": "Extending Polearm",
+      "trait": "技巧",
+      "range": "至近距離",
+      "damage": "d8＋10",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "長柄",
+        "name_en": "Longhaft",
+        "description": "この武器による攻撃は射程内で一直線上にいるすべての敵を目標とする。"
+      }
+    },
+    {
+      "id": "swinging-ropeblade",
+      "name": "スインギング・ロープブレード",
+      "name_en": "Swinging Ropeblade",
+      "trait": "存在",
+      "range": "近距離",
+      "damage": "d8＋9",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "ひっかけ",
+        "name_en": "Grappling",
+        "description": "攻撃に成功した時、君は希望を1つ消費して、目標を拘束状態にするか、目標を君の近接射程内に引き込むことができる。"
+      }
+    },
+    {
+      "id": "ricochet-axes",
+      "name": "リコシェット・アックシズ",
+      "name_en": "Ricochet Axes",
+      "trait": "敏捷",
+      "range": "遠距離",
+      "damage": "d6＋11",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "跳弾",
+        "name_en": "Ricochet",
+        "description": "ストレスを1つ以上マークして、その数だけ攻撃の射程内にいる目標にヒットさせる。"
+      }
+    },
+    {
+      "id": "aantari-bow",
+      "name": "アーンタリ・ボウ",
+      "name_en": "Aantari Bow",
+      "trait": "技巧",
+      "range": "遠距離",
+      "damage": "d6＋11",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "保証",
+        "name_en": "Reliable",
+        "description": "攻撃ロール＋1"
+      }
+    },
+    {
+      "id": "hand-canon",
+      "name": "ハンド・キャノン",
+      "name_en": "Hand Canon",
+      "trait": "技巧",
+      "range": "超遠距離",
+      "damage": "d6＋12",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "再装填",
+        "name_en": "Reloading",
+        "description": "再装填：君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器は発射できない。"
+      }
+    }
+  ],
+  "tier4-magic": [
+    {
+      "id": "legendary-arcane-gauntlets",
+      "name": "伝説級アーケイン・ガントレッツ",
+      "name_en": "Legendary Arcane Gauntlets",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋12",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-hallowed-axe",
+      "name": "伝説級ハロウド・アックス",
+      "name_en": "Legendary Hallowed Axe",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋10",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-glowing-rings",
+      "name": "伝説級グロウイング・リングス",
+      "name_en": "Legendary Glowing Rings",
+      "trait": "敏捷",
+      "range": "至近距離",
+      "damage": "d10＋11",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-hand-runes",
+      "name": "伝説級ハンド・ルーンズ",
+      "name_en": "Legendary Hand Runes",
+      "trait": "本能",
+      "range": "至近距離",
+      "damage": "d10＋9",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-returning-blade",
+      "name": "伝説級リターニング・ブレード",
+      "name_en": "Legendary Returning Blade",
+      "trait": "技巧",
+      "range": "近距離",
+      "damage": "d8＋9",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "回帰",
+        "name_en": "Returning",
+        "description": "この武器は射程内に投擲すると、攻撃の直後に君の手の中に現れる。"
+      }
+    },
+    {
+      "id": "legendary-shortstaff",
+      "name": "伝説級ショートスタッフ",
+      "name_en": "Legendary Shortstaff",
+      "trait": "本能",
+      "range": "近距離",
+      "damage": "d8＋10",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-dualstaff",
+      "name": "伝説級デュアルスタッフ",
+      "name_en": "Legendary Dualstaff",
+      "trait": "本能",
+      "range": "遠距離",
+      "damage": "d6＋12",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-scepter",
+      "name": "伝説級セプター",
+      "name_en": "Legendary Scepter",
+      "trait": "存在",
+      "range": "遠距離",
+      "damage": "d6＋9",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【存在】、近接、d8＋3。"
+      }
+    },
+    {
+      "id": "legendary-wand",
+      "name": "伝説級ワンド",
+      "name_en": "Legendary Wand",
+      "trait": "知識",
+      "range": "遠距離",
+      "damage": "d6＋10",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-greatstaff",
+      "name": "伝説級グレートスタッフ",
+      "name_en": "Legendary Greatstaff",
+      "trait": "知識",
+      "range": "超遠距離",
+      "damage": "d6＋9",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "強力",
+        "name_en": "Powerful",
+        "description": "攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+      }
+    },
+    {
+      "id": "sword-of-light-and-flame",
+      "name": "ソード・オヴ・ライト・アンド・フレイム",
+      "name_en": "Sword of Light and Flame",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋11",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "高温",
+        "name_en": "Hot",
+        "description": "この武器は固い物質を切り裂くことができる。"
+      }
+    },
+    {
+      "id": "siphoning-gauntlets",
+      "name": "サイフォニング・ガントレッツ",
+      "name_en": "Siphoning Gauntlets",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d10＋9",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "生命力奪取",
+        "name_en": "Lifestealing",
+        "description": "攻撃に成功した時、d6を振る。6の目が出たなら、HPまたはストレスを1つ回復する。"
+      }
+    },
+    {
+      "id": "midas-scythe",
+      "name": "ミダス・サイス",
+      "name_en": "Midas Scythe",
+      "trait": "知識",
+      "range": "近接",
+      "damage": "d10＋9",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "強欲",
+        "name_en": "Greedy",
+        "description": "1包の金を消費して、君のダメージロールの習熟度に＋1のボーナスを得る。"
+      }
+    },
+    {
+      "id": "floating-bladeshards",
+      "name": "フローティング・ブレードシャーズ",
+      "name_en": "Floating BladeShards",
+      "trait": "本能",
+      "range": "近距離",
+      "damage": "d8＋9",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "強力",
+        "name_en": "Powerful",
+        "description": "攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+      }
+    },
+    {
+      "id": "bloodstaff",
+      "name": "ブラッドスタッフ",
+      "name_en": "Bloodstaff",
+      "trait": "本能",
+      "range": "遠距離",
+      "damage": "d20＋7",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "苦痛",
+        "name_en": "Painful",
+        "description": "君は攻撃に成功するたび、ストレスを1つマークしなければならない。"
+      }
+    },
+    {
+      "id": "thistlebow",
+      "name": "シスルボウ",
+      "name_en": "Thistlebow",
+      "trait": "本能",
+      "range": "遠距離",
+      "damage": "d6＋13",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "保証",
+        "name_en": "Reliable",
+        "description": "攻撃ロール＋1"
+      }
+    },
+    {
+      "id": "wand-of-essek",
+      "name": "ワンド・オヴ・エセク",
+      "name_en": "Wand of Essek",
+      "trait": "知識",
+      "range": "遠距離",
+      "damage": "d8＋13",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "時間歪曲",
+        "name_en": "Timebending",
+        "description": "君は攻撃ロールを行った後で攻撃の目標を選ぶことができる。"
+      }
+    },
+    {
+      "id": "magus-revolver",
+      "name": "メイガス・リヴォルヴァー",
+      "name_en": "Magus Revolver",
+      "trait": "技巧",
+      "range": "超遠距離",
+      "damage": "d6＋13",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "再装填",
+        "name_en": "Reloading",
+        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器は発射できない。"
+      }
+    },
+    {
+      "id": "fusion-groves",
+      "name": "フュージョン・グラヴズ",
+      "name_en": "Fusion Groves",
+      "trait": "知識",
+      "range": "超遠距離",
+      "damage": "d6＋9",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "絆",
+        "name_en": "Bonded",
+        "description": "君のダメージロールにレベルに等しいボーナスを得る。"
+      }
+    }
+  ]
+}

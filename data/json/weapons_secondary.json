@@ -1,0 +1,549 @@
+{
+  "tier1": [
+    {
+      "id": "shortsword",
+      "name": "ショートソード",
+      "name_en": "Shortsword",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d8",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "二刀流",
+        "name_en": "Paired",
+        "description": "近接射程内の目標に対するメイン武器のダメージ＋2"
+      }
+    },
+    {
+      "id": "round-shield",
+      "name": "ラウンド・シールド",
+      "name_en": "Round Shield",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "保護",
+        "name_en": "Protective",
+        "description": "防御力＋1"
+      }
+    },
+    {
+      "id": "tower-shield",
+      "name": "タワー・シールド",
+      "name_en": "Tower Shield",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "防壁",
+        "name_en": "Barrier",
+        "description": "防御力＋2；回避－1"
+      }
+    },
+    {
+      "id": "small-dagger",
+      "name": "スモール・ダガー",
+      "name_en": "Small Dagger",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "二刀流",
+        "name_en": "Paired",
+        "description": "近接射程内の目標に対するメイン武器のダメージ＋2"
+      }
+    },
+    {
+      "id": "whip",
+      "name": "ウィップ",
+      "name_en": "Whip",
+      "trait": "存在",
+      "range": "至近距離",
+      "damage": "d6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "威嚇",
+        "name_en": "Startling",
+        "description": "ストレスを1つマークすることで、ウィップを鳴らして近接射程内にいるすべての敵を近距離射程へ押し戻す。"
+      }
+    },
+    {
+      "id": "grappler",
+      "name": "グラップラー",
+      "name_en": "Grappler",
+      "trait": "技巧",
+      "range": "近距離",
+      "damage": "d6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "鉤",
+        "name_en": "Hooked",
+        "description": "攻撃が成功したなら、君は目標を近接射程内に引き寄せる。"
+      }
+    },
+    {
+      "id": "hand-crossbow",
+      "name": "ハンド・クロスボウ",
+      "name_en": "Hand Crossbow",
+      "trait": "技巧",
+      "range": "遠距離",
+      "damage": "d6＋1",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    }
+  ],
+  "tier2": [
+    {
+      "id": "improved-shortsword",
+      "name": "改良型ショートソード",
+      "name_en": "Improved Shortsword",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d8＋2",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "二刀流",
+        "name_en": "Paired",
+        "description": "近接射程内の目標に対するメイン武器のダメージ＋3"
+      }
+    },
+    {
+      "id": "improved-round-shield",
+      "name": "改良型ラウンド・シールド",
+      "name_en": "Improved Round Shield",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d4＋2",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "保護",
+        "name_en": "Protective",
+        "description": "防御力＋2"
+      }
+    },
+    {
+      "id": "improved-tower-shield",
+      "name": "改良型タワー・シールド",
+      "name_en": "Improved Tower Shield",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d6＋2",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "防壁",
+        "name_en": "Barrier",
+        "description": "防御力＋3；回避－1"
+      }
+    },
+    {
+      "id": "improved-small-dagger",
+      "name": "改良型スモール・ダガー",
+      "name_en": "Improved Small Dagger",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋2",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "二刀流",
+        "name_en": "Paired",
+        "description": "近接射程内の目標に対するメイン武器のダメージ＋3"
+      }
+    },
+    {
+      "id": "improved-whip",
+      "name": "改良型ウィップ",
+      "name_en": "Improved Whip",
+      "trait": "存在",
+      "range": "至近距離",
+      "damage": "d6＋2",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "威嚇",
+        "name_en": "Startling",
+        "description": "ストレスを1つマークすることで、ウィップを鳴らして近接射程内にいるすべての敵を近距離射程へ押し戻す。"
+      }
+    },
+    {
+      "id": "improved-grappler",
+      "name": "改良型グラップラー",
+      "name_en": "Improved Grappler",
+      "trait": "技巧",
+      "range": "近距離",
+      "damage": "d6＋2",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "鉤",
+        "name_en": "Hooked",
+        "description": "攻撃が成功したなら、君は目標を近接射程内に引き寄せる。"
+      }
+    },
+    {
+      "id": "improved-hand-crossbow",
+      "name": "改良型ハンド・クロスボウ",
+      "name_en": "Improved Hand Crossbow",
+      "trait": "技巧",
+      "range": "遠距離",
+      "damage": "d6＋3",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "spiked-shield",
+      "name": "スパイクト・シールド",
+      "name_en": "Spiked Shield",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d6＋2",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "一枚二役",
+        "name_en": "Double Duty",
+        "description": "防御力＋1；近接射程内でのメイン武器ダメージ＋1"
+      }
+    },
+    {
+      "id": "parrying-dagger",
+      "name": "パリィング・ダガー",
+      "name_en": "Parrying Dagger",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d6＋2",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "受け流し",
+        "name_en": "Parry",
+        "description": "君が攻撃された時、この武器のダメージダイスを振る。攻撃者のダメージダイスに君のダイスと同じ出目のものがあったなら、君が受けるダメージを合計する前に、攻撃者のダメージダイスからその出目を捨てる。"
+      }
+    },
+    {
+      "id": "returning-axe",
+      "name": "リターニング・アックス",
+      "name_en": "Returning Axe",
+      "trait": "敏捷",
+      "range": "近距離",
+      "damage": "d6＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "回帰",
+        "name_en": "Returning",
+        "description": "この武器は射程内に投擲すると、攻撃の直後に君の手の中に現れる。"
+      }
+    }
+  ],
+  "tier3": [
+    {
+      "id": "advanced-shortsword",
+      "name": "発展型ショートソード",
+      "name_en": "Advanced Shortsword",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d8＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "二刀流",
+        "name_en": "Paired",
+        "description": "近接射程内の目標に対するメイン武器のダメージ＋4"
+      }
+    },
+    {
+      "id": "advanced-round-shield",
+      "name": "発展型ラウンド・シールド",
+      "name_en": "Advanced Round Shield",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d4＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "保護",
+        "name_en": "Protective",
+        "description": "防御力＋3"
+      }
+    },
+    {
+      "id": "advanced-tower-shield",
+      "name": "発展型タワー・シールド",
+      "name_en": "Advanced Tower Shield",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d6＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "防壁",
+        "name_en": "Barrier",
+        "description": "防御力＋4；回避－1"
+      }
+    },
+    {
+      "id": "advanced-small-dagger",
+      "name": "発展型スモール・ダガー",
+      "name_en": "Advanced Small Dagger",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "二刀流",
+        "name_en": "Paired",
+        "description": "近接射程内の目標に対するメイン武器のダメージ＋4"
+      }
+    },
+    {
+      "id": "advanced-whip",
+      "name": "発展型ウィップ",
+      "name_en": "Advanced Whip",
+      "trait": "存在",
+      "range": "至近距離",
+      "damage": "d6＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "威嚇",
+        "name_en": "Startling",
+        "description": "ストレスを1つマークすることで、ウィップを鳴らして近接射程内にいるすべての敵を近距離射程へ押し戻す。"
+      }
+    },
+    {
+      "id": "advanced-grappler",
+      "name": "発展型グラップラー",
+      "name_en": "Advanced Grappler",
+      "trait": "技巧",
+      "range": "近距離",
+      "damage": "d6＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "鉤",
+        "name_en": "Hooked",
+        "description": "攻撃が成功したなら、君は目標を近接射程内に引き寄せる。"
+      }
+    },
+    {
+      "id": "advanced-hand-crossbow",
+      "name": "発展型ハンド・クロスボウ",
+      "name_en": "Advanced Hand Crossbow",
+      "trait": "技巧",
+      "range": "遠距離",
+      "damage": "d6＋5",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "buckler",
+      "name": "バックラー",
+      "name_en": "Buckler",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d4＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "反射",
+        "name_en": "Deflecting",
+        "description": "君は攻撃された時、防具スロットを1つマークして、回避に“その攻撃に対して利用可能な防御値”に等しいボーナスを得ることができる。"
+      }
+    },
+    {
+      "id": "powered-gauntlet",
+      "name": "パワード・ガントレット",
+      "name_en": "Powered Gauntlet",
+      "trait": "知識",
+      "range": "近距離",
+      "damage": "d6＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "充填",
+        "name_en": "Charged",
+        "description": "ストレスを1つマークして、メイン武器の攻撃1回に対する習熟度に＋1のボーナスを得る。"
+      }
+    },
+    {
+      "id": "hand-sling",
+      "name": "ハンド・スリング",
+      "name_en": "Hand Sling",
+      "trait": "技巧",
+      "range": "超遠距離",
+      "damage": "d6＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【技巧】、近距離、d8＋4。"
+      }
+    }
+  ],
+  "tier4": [
+    {
+      "id": "legendary-shortsword",
+      "name": "伝説級ショートソード",
+      "name_en": "Legendary Shortsword",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d8＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "二刀流",
+        "name_en": "Paired",
+        "description": "近接射程内の目標に対するメイン武器のダメージ＋5"
+      }
+    },
+    {
+      "id": "legendary-round-shield",
+      "name": "伝説級ラウンド・シールド",
+      "name_en": "Legendary Round Shield",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d4＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "保護",
+        "name_en": "Protective",
+        "description": "防御力＋4"
+      }
+    },
+    {
+      "id": "legendary-tower-shield",
+      "name": "伝説級タワー・シールド",
+      "name_en": "Legendary Tower Shield",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d6＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "防壁",
+        "name_en": "Barrier",
+        "description": "防御力＋5；回避－1"
+      }
+    },
+    {
+      "id": "legendary-small-dagger",
+      "name": "伝説級スモール・ダガー",
+      "name_en": "Legendary Small Dagger",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "二刀流",
+        "name_en": "Paired",
+        "description": "近接射程内の目標に対するメイン武器のダメージ＋5"
+      }
+    },
+    {
+      "id": "legendary-whip",
+      "name": "伝説級ウィップ",
+      "name_en": "Legendary Whip",
+      "trait": "存在",
+      "range": "至近距離",
+      "damage": "d6＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "威嚇",
+        "name_en": "Startling",
+        "description": "ストレスを1つマークすることで、ウィップを鳴らして近接射程内にいるすべての敵を近距離射程へ押し戻す。"
+      }
+    },
+    {
+      "id": "legendary-grappler",
+      "name": "伝説級グラップラー",
+      "name_en": "Legendary Grappler",
+      "trait": "技巧",
+      "range": "近距離",
+      "damage": "d6＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "鉤",
+        "name_en": "Hooked",
+        "description": "攻撃が成功したなら、君は目標を近接射程内に引き寄せる。"
+      }
+    },
+    {
+      "id": "legendary-hand-crossbow",
+      "name": "伝説級ハンド・クロスボウ",
+      "name_en": "Legendary Hand Crossbow",
+      "trait": "技巧",
+      "range": "遠距離",
+      "damage": "d6＋7",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "braveshield",
+      "name": "ブレイヴシールド",
+      "name_en": "Braveshield",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d4＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "庇護",
+        "name_en": "Sheltering",
+        "description": "君がマークした防具スロットは、君と君から近接射程内にいて同じダメージを受けたすべての味方のダメージを減少させる。"
+      }
+    },
+    {
+      "id": "knuckle-claws",
+      "name": "ナックル・クロウズ",
+      "name_en": "Knuckle Claws",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d6＋8",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "倍増",
+        "name_en": "Doubled Up",
+        "description": "君はメイン武器で攻撃を行う時、近接射程内にいるもう1体の目標にダメージを与えることができる。"
+      }
+    },
+    {
+      "id": "primer-shard",
+      "name": "プライマー・シャード",
+      "name_en": "Primer Shard",
+      "trait": "本能",
+      "range": "至近距離",
+      "damage": "d4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "照準",
+        "name_en": "Locked On",
+        "description": "攻撃に成功した時、同一の目標に対するメイン武器を用いた君の次の攻撃は自動的に成功する。"
+      }
+    }
+  ]
+}

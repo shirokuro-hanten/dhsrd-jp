@@ -1,0 +1,422 @@
+[
+  {
+    "id": "premium-bedroll",
+    "roll": 1,
+    "name": "高級寝袋",
+    "name_en": "Premium Bedroll",
+    "description": "<p>合間の際、君は自動的にストレスを1つ回復する。</p>"
+  },
+  {
+    "id": "piper-whistle",
+    "roll": 2,
+    "name": "笛",
+    "name_en": "Piper Whistle",
+    "description": "<p>この手作りの笛は独特の音色を奏でる。この笛を吹くと、その鋭い音色は半径1マイル（1.6km）先まで聞こえる。</p>"
+  },
+  {
+    "id": "charging-quiver",
+    "roll": 3,
+    "name": "進撃の矢筒",
+    "name_en": "Charging Quiver",
+    "description": "<p>この矢筒に保管された矢を用いて攻撃に成功した時、ダメージロールに現在のティアに等しいボーナスを得る。</p>"
+  },
+  {
+    "id": "alistairs-torch",
+    "roll": 4,
+    "name": "アリスターの松明",
+    "name_en": "Alistair’s Torch",
+    "description": "<p>この魔法の松明は意のままに火を灯すことができる。炎の光は本来より広い空間を満たす。これは洞窟1つを日中のように明るくすることができるほど強い。</p>"
+  },
+  {
+    "id": "speaking-orbs",
+    "roll": 5,
+    "name": "会話の球体",
+    "name_en": "Speaking Orbs",
+    "description": "<p>この2つ1組の球体を持っているクリーチャーは、どんな距離にあっても互いに意思疎通できるようになる。</p>"
+  },
+  {
+    "id": "manacles",
+    "roll": 6,
+    "name": "枷",
+    "name_en": "Manacles",
+    "description": "<p>この2つ1組の拘束具には鍵が1つ付いている。</p>"
+  },
+  {
+    "id": "arcane-cloak",
+    "roll": 7,
+    "name": "秘術の外套",
+    "name_en": "Arcane Cloak",
+    "description": "<p>この外套を着用している呪文発動特性を持つクリーチャーは、外套の色、質感、大きさを意のままに調整することができる。</p>"
+  },
+  {
+    "id": "woven-net",
+    "roll": 8,
+    "name": "織り網",
+    "name_en": "Woven Net",
+    "description": "<p>君はこの網を用いて【技巧】ロールを行い、小さなクリーチャーを罠にかけることができる。罠にかかった目標は、攻撃ロール（16）に成功すれば自由になることができる。</p>"
+  },
+  {
+    "id": "fire-jar",
+    "roll": 9,
+    "name": "上等な甕",
+    "name_en": "Fire Jar",
+    "description": "<p>君はこの甕に入っている奇妙な液体を注ぎ出すことで瞬時に炎を生み出すことができる。中身の液体は大休憩を取ると再生成される。</p>"
+  },
+  {
+    "id": "suspended-rod",
+    "roll": 10,
+    "name": "停止の杖",
+    "name_en": "Suspended Rod",
+    "description": "<p>この平たい棒にはルーン文字が刻まれている。君が起動させると、この杖は即座にその場で停止する。起動停止されるまで、この杖は動かず、重力法則に従わず、その場に留まり続ける。</p>"
+  },
+  {
+    "id": "glamour-stone",
+    "roll": 11,
+    "name": "魅惑の石",
+    "name_en": "Glamour Stone",
+    "description": "<p>この小石ほどの大きさの石を起動すると、君が見ることのできる者の姿を記憶する。希望を1つ消費することで、その姿を魔法的に君自身への幻影として再現する。</p>"
+  },
+  {
+    "id": "empty-chest",
+    "roll": 12,
+    "name": "空の櫃",
+    "name_en": "Empty Chest",
+    "description": "<p>この魔法の櫃は一見空に見える。特定の合言葉か行動を口にしてこの櫃を空けたなら、君はその中に収められたアイテムを見ることができる。</p>"
+  },
+  {
+    "id": "companion-case",
+    "roll": 13,
+    "name": "相棒ケース",
+    "name_en": "Companion Case",
+    "description": "<p>このケースは小動物の相棒1体にフィットできる。その相棒が中にいる間、動物とケースはあらゆるダメージと有害効果への耐性を有する。</p>"
+  },
+  {
+    "id": "piercing-arrows",
+    "roll": 14,
+    "name": "刺突の矢",
+    "name_en": "Piercing Arrows",
+    "description": "<p>休憩ごとに3回、君はこの矢の1本を用いた攻撃に成功した時、ダメージロールに習熟度を加えることができる。</p>"
+  },
+  {
+    "id": "valorstone",
+    "roll": 15,
+    "name": "勇気石",
+    "name_en": "Valorstone",
+    "description": "<p>この石は、特徴を持たない防具に取り付けることができる。その防具は以下の特性を得る。</p><p><b><em>耐久性<span class=\"en-sub\">Resilient</span>：</em></b>君が最後の防具スロットをマークする前にd6を振る。6の目が出たなら、防具スロットをマークすることなく深刻度を1段階ぶん軽減する。</p>"
+  },
+  {
+    "id": "skeleton-key",
+    "roll": 16,
+    "name": "万能鍵",
+    "name_en": "Skeleton Key",
+    "description": "<p>鍵のかかった扉を開けるためにこの鍵を使う時、君は【技巧】ロールに有利を得る。</p>"
+  },
+  {
+    "id": "arcane-prism",
+    "roll": 17,
+    "name": "秘術プリズム",
+    "name_en": "Arcane Prism",
+    "description": "<p>このプリズムを任意の場所に置いて起動する。そこから近距離射程内にいるすべての味方は呪文発動ロールに＋1のボーナスを得る。起動中、プリズムは動かせない。プリズムは一度起動解除すると次の大休憩まで再起動できない。</p>"
+  },
+  {
+    "id": "minor-stamina-potion-recipe",
+    "roll": 18,
+    "name": "初級スタミナポーションのレシピ",
+    "name_en": "Minor Stamina Potion Recipe",
+    "description": "<p>君は合間ムーヴとして、クリーチャー1体分の骨を用いて“初級スタミナポーション”を1つ作成することができる。</p>"
+  },
+  {
+    "id": "minor-hp-potion-recipe",
+    "roll": 19,
+    "name": "初級HPポーションのレシピ",
+    "name_en": "Minor HP Potion Recipe",
+    "description": "<p>君は合間ムーヴとして、小瓶1本分の血液を用いて“初級HPポーション”を1つ作成することができる。</p>"
+  },
+  {
+    "id": "tracking-compass",
+    "roll": 20,
+    "name": "追尾コンパス",
+    "name_en": "Tracking Compass",
+    "description": "<p>この2つのコンパスは、どんなに距離が離れていても互いを指し示す。</p>"
+  },
+  {
+    "id": "corrective-fairy",
+    "roll": 21,
+    "name": "矯正の妖精",
+    "name_en": "Corrective Fairy",
+    "description": "<p>この小さな妖精は、君の外耳のくぼみに座り、戦闘中に役立つ助言を囁く。小休憩ごと1回、君は攻撃ロールに有利を得ることができる。</p>"
+  },
+  {
+    "id": "gecko-gloves",
+    "roll": 22,
+    "name": "ヤモリ手袋",
+    "name_en": "Gecko Gloves",
+    "description": "<p>君は垂直な表面を登ったり天井を移動したりできる。</p>"
+  },
+  {
+    "id": "lorekeeper",
+    "roll": 23,
+    "name": "伝承記録書",
+    "name_en": "Lorekeeper",
+    "description": "<p>君はこの書物の中に最大3体の敵対的なクリーチャーの名前と詳細を記録することができる。君は記録したクリーチャーに対する行動ロールに＋1のボーナスを得る。</p>"
+  },
+  {
+    "id": "darksmoke-vial-recipe",
+    "roll": 24,
+    "name": "暗煙の小瓶のレシピ",
+    "name_en": "Darksmoke Vial Recipe",
+    "description": "<p>君は合間ムーヴとして、“暗煙の小瓶”を1つ作成することができる。</p>"
+  },
+  {
+    "id": "bloodstone",
+    "roll": 25,
+    "name": "血石",
+    "name_en": "Bloodstone",
+    "description": "<p>君はこの石を特徴を持たない武器に取り付けることができる。その武器は以下の特徴を得る。</p><p><b><em>残忍<span class=\"en-sub\">Brutal</span>：</em></b>君がダメージダイスのいずれかで最大値を振った時、ダメージダイスを追加で1つ振る。</p>"
+  },
+  {
+    "id": "greatstone",
+    "roll": 26,
+    "name": "偉大石",
+    "name_en": "Greatstone",
+    "description": "<p>君はこの石を特徴を持たない武器に取り付けることができる。その武器は以下の特徴を得る。</p><p><b><em>強力<span class=\"en-sub\">Powerful</span>：</em></b>攻撃に成功した時、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。</p>"
+  },
+  {
+    "id": "glider",
+    "roll": 27,
+    "name": "滑空器",
+    "name_en": "Glider",
+    "description": "<p>君は落下中、ストレスを1つマークしてこの小さな落下傘を展開し、地面まで安全に滑空することができる。</p>"
+  },
+  {
+    "id": "ring-of-silence",
+    "roll": 28,
+    "name": "沈黙の指輪",
+    "name_en": "Ring of Silence",
+    "description": "<p>希望を1つ消費してこの指輪を起動する。次の休憩まで、君の足音は無音になる。</p>"
+  },
+  {
+    "id": "soothing-pendant",
+    "roll": 29,
+    "name": "鎮静のペンダント",
+    "name_en": "Soothing Pendant",
+    "description": "<p>君が最後のストレスをマークする時、d6を振る。5以上の目が出たなら、そのストレスをマークしない。</p>"
+  },
+  {
+    "id": "double-flask",
+    "roll": 30,
+    "name": "二重フラスコ",
+    "name_en": "Double Flask",
+    "description": "<p>このフラスコには2種類の液体を入れておくことができる。君はフラスコの側面にある小さなスイッチを切り替えることで、2種類の液体を交換することができる。</p>"
+  },
+  {
+    "id": "bag-of-ficklesand",
+    "roll": 31,
+    "name": "気まぐれ砂の袋",
+    "name_en": "Bag of Ficklesand",
+    "description": "<p>君は【存在】ロール（10）に成功することで、この小さな砂袋を実際よりも重くまたは軽くすることができる。</p><p>さらに、君は【技巧】ロール（10）に成功することで、目標の顔に少量の砂を吹き付けて一時的に脆弱状態にすることができる。</p>"
+  },
+  {
+    "id": "ring-of-resistance",
+    "roll": 32,
+    "name": "抵抗の指輪",
+    "name_en": "Ring of Resistance",
+    "description": "<p>休憩ごとに1回、君は自分に対する攻撃が成功した後にこの指輪を起動して、ダメージを半分にすることができる。</p>"
+  },
+  {
+    "id": "phoenix-feather",
+    "roll": 33,
+    "name": "不死鳥の羽根",
+    "name_en": "Phoenix Feather",
+    "description": "<p>君が気絶した際に不死鳥の羽根を最低1枚持っているなら、君が傷を負うかどうかを決定するために行うロールに＋1のボーナスを得る。</p>"
+  },
+  {
+    "id": "box-of-many-things",
+    "roll": 34,
+    "name": "万物の箱",
+    "name_en": "Box of Many Things",
+    "description": "<p>大休憩ごとに1回、君はこの小箱を開けてd12を振ることができる。出た目が1〜6なら、箱は空である。7〜10なら、ランダムなコモンの消耗品が1つ入っている。11〜12なら、ランダムなコモンの消耗品が2つ入っている。</p>"
+  },
+  {
+    "id": "windblade-charm",
+    "roll": 35,
+    "name": "風刃のお守り",
+    "name_en": "Windblade Charm",
+    "description": "<p>君はこのお守りを射程が近接の武器に取り付けることができる。休憩ごとに3回、君はお守りを起動して近距離射程内の目標1体を攻撃することができる。</p>"
+  },
+  {
+    "id": "portal-seed",
+    "roll": 36,
+    "name": "ポータル種",
+    "name_en": "Portal Seed",
+    "description": "<p>君はこの種を地面に植え、その場所にポータルを生やすことができる。ポータルは24時間後に使用可能になる。君はこのポータルを使って、君が別のポータル種を植えた任意の場所に移動することができる。どんな量であれ、魔法ダメージを受けるとポータルは破壊される。</p>"
+  },
+  {
+    "id": "paragons-chain",
+    "roll": 37,
+    "name": "パラゴンの鎖",
+    "name_en": "Paragon’s Chain",
+    "description": "<p>君は合間ムーヴとして、大切にしている理想や原則について瞑想し、君の意思をこの鎖に集中させることができる。大休憩ごとに1回、君は希望を1つ消費して、その原則に直接合致するロールの際に希望ダイスとしてd20を振ることができる。</p>"
+  },
+  {
+    "id": "amulet-of-elusive",
+    "roll": 38,
+    "name": "逃走のアミュレット",
+    "name_en": "Amulet of Elusive",
+    "description": "<p>大休憩ごとに1回、君はこのアミュレットを起動して、移動するまで隠れ身状態になることができる。こうして隠れ身状態にある間、通常なら君が見える位置に敵が移動しても、君は見られない。</p>"
+  },
+  {
+    "id": "hope-locket",
+    "roll": 39,
+    "name": "希望のロケット",
+    "name_en": "Hope Locket",
+    "description": "<p>大休憩ごとに1回、君は希望を6つ持っているなら、君は希望を1つ消費してこのロケットに揺るぎない決意を吹き込むことができる。君は希望が0になった時、このロケットを使用して即座に希望を1つ得ることができる。ロケットを再度こうして使用するには、吹き込み直さなければならない。</p>"
+  },
+  {
+    "id": "infinite-bag",
+    "roll": 40,
+    "name": "無限の袋",
+    "name_en": "Infinite Bag",
+    "description": "<p>君がこの袋にアイテムを収納すると、そのアイテムは無尽蔵の空間を持つポケット次元に保管される。君は好きな時にアイテムを取り出せる。</p>"
+  },
+  {
+    "id": "stride-relic",
+    "roll": 41,
+    "name": "脚力の遺物",
+    "name_en": "Stride Relic",
+    "description": "<p>君は【敏捷】に＋1のボーナスを得る。君が運搬できる遺物は1つのみである。</p>"
+  },
+  {
+    "id": "bolster-relic",
+    "roll": 42,
+    "name": "強化の遺物",
+    "name_en": "Bolster Relic",
+    "description": "<p>君は【筋力】に＋1のボーナスを得る。君が運搬できる遺物は1つのみである。</p>"
+  },
+  {
+    "id": "control-relic",
+    "roll": 43,
+    "name": "制御の遺物",
+    "name_en": "Control Relic",
+    "description": "<p>君は【技巧】に＋1のボーナスを得る。君が運搬できる遺物は1つのみである。</p>"
+  },
+  {
+    "id": "attune-relic",
+    "roll": 44,
+    "name": "同調の遺物",
+    "name_en": "Attune Relic",
+    "description": "<p>君は【本能】に＋1のボーナスを得る。君が運搬できる遺物は1つのみである。</p>"
+  },
+  {
+    "id": "charm-relic",
+    "roll": 45,
+    "name": "魅力の遺物",
+    "name_en": "Charm Relic",
+    "description": "<p>君は【存在】に＋1のボーナスを得る。君が運搬できる遺物は1つのみである。</p>"
+  },
+  {
+    "id": "enlighten-relic",
+    "roll": 46,
+    "name": "啓蒙の遺物",
+    "name_en": "Enlighten Relic",
+    "description": "<p>君は【知識】に＋1のボーナスを得る。君が運搬できる遺物は1つのみである。</p>"
+  },
+  {
+    "id": "training-relic",
+    "roll": 47,
+    "name": "研鑽の遺物",
+    "name_en": "Training Relic",
+    "description": "<p>君は任意の経験1つに＋1のボーナスを得る。君が運搬できる遺物は1つのみである。</p>"
+  },
+  {
+    "id": "flickerfly-pendant",
+    "roll": 48,
+    "name": "フリッカーフライのペンダント",
+    "name_en": "Flickerfly Pendant",
+    "description": "<p>君がこのペンダントを運搬している間、物理ダメージを与える近接射程の君の武器は繊細な輝きを放ち、至近距離射程内の目標を攻撃できる。</p>"
+  },
+  {
+    "id": "lakestrider-boots",
+    "roll": 49,
+    "name": "湖渡りのブーツ",
+    "name_en": "Lakestrider Boots",
+    "description": "<p>君は水面を、あたかも柔らかい地面かのように歩くことができる。</p>"
+  },
+  {
+    "id": "clay-companion",
+    "roll": 50,
+    "name": "粘土の相棒",
+    "name_en": "Clay Companion",
+    "description": "<p>君がこの粘土玉で動物の相棒を作ると、それは本物の動物のように動く。たとえば、粘土の蜘蛛は粘土の糸を紡ぐことができ、粘土の鳥は飛ぶことができる。粘土の相棒は形状を跨いで記憶と自我を保持するが、各形態で新しい仕草を取り入れることができる。</p>"
+  },
+  {
+    "id": "mythic-dust-recipe",
+    "roll": 51,
+    "name": "神秘の塵のレシピ",
+    "name_en": "Mythic Dust Recipe",
+    "description": "<p>君は合間ムーヴとして、上質な金の塵ひと握りを使って“神秘の塵”を作成できる。</p>"
+  },
+  {
+    "id": "shard-of-memory",
+    "roll": 52,
+    "name": "記憶の結晶",
+    "name_en": "Shard of Memory",
+    "description": "<p>大休憩ごとに1回、君は想起コストを支払う代わりに希望を2つ消費することで保管枠から領域カードを1枚想起することができる。</p>"
+  },
+  {
+    "id": "gem-of-alacrity",
+    "roll": 53,
+    "name": "敏速の宝石",
+    "name_en": "Gem of Alacrity",
+    "description": "<p>君はこの宝石を武器に取り付けて、その武器を用いて攻撃を行う際に【敏捷】を使用することができる。</p>"
+  },
+  {
+    "id": "gem-of-might",
+    "roll": 54,
+    "name": "怪力の宝石",
+    "name_en": "Gem of Might",
+    "description": "<p>君はこの宝石を武器に取り付けて、その武器を用いて攻撃を行う際に【筋力】を使用することができる。</p>"
+  },
+  {
+    "id": "gem-of-precision",
+    "roll": 55,
+    "name": "精密の宝石",
+    "name_en": "Gem of Precision",
+    "description": "<p>君はこの宝石を武器に取り付けて、その武器を用いて攻撃を行う際に【技巧】を使用することができる。</p>"
+  },
+  {
+    "id": "gem-of-insight",
+    "roll": 56,
+    "name": "洞察の宝石",
+    "name_en": "Gem of Insight",
+    "description": "<p>君はこの宝石を武器に取り付けて、その武器を用いて攻撃を行う際に【本能】を使用することができる。</p>"
+  },
+  {
+    "id": "gem-of-audacity",
+    "roll": 57,
+    "name": "豪胆の宝石",
+    "name_en": "Gem of Audacity",
+    "description": "<p>君はこの宝石を武器に取り付けて、その武器を用いて攻撃を行う際に【存在】を使用することができる。</p>"
+  },
+  {
+    "id": "gem-of-sagacity",
+    "roll": 58,
+    "name": "聡明の宝石",
+    "name_en": "Gem of Sagacity",
+    "description": "<p>君はこの宝石を武器に取り付けて、その武器を用いて攻撃を行う際に【知識】を使用することができる。</p>"
+  },
+  {
+    "id": "ring-of-unbreakable-resolve",
+    "roll": 59,
+    "name": "破れぬ解決の指輪",
+    "name_en": "Ring of Unbreakable Resolve",
+    "description": "<p>セッションごとに1回、GMが恐怖を消費した時、君は希望を4つ消費してその恐怖を消費した効果を打ち消すことができる。</p>"
+  },
+  {
+    "id": "belt-of-unity",
+    "roll": 60,
+    "name": "団結のベルト",
+    "name_en": "Belt of Unity",
+    "description": "<p>セッションごとに1回、君は希望を5つ消費して（2人ではなく）3人のPCとの連携ロールを先導することができる。</p>"
+  }
+]

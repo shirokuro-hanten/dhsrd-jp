@@ -1,0 +1,214 @@
+/* ==================== */
+/* FLOATING MENU BUTTON */
+/* ==================== */
+
+.menu-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 0.4rem;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+}
+
+.menu-button span {
+  display: block;
+
+  width: 1.4rem;
+  height: 2px;
+
+  margin: 0.15rem 0;
+
+  background: #222;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+/* ==================== */
+/* MENU */
+/* ==================== */
+
+.site-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 900;
+
+  width: min(22rem, 90vw);
+  height: 100vh;
+
+  padding: 5rem 0 2rem;
+
+  overflow-y: auto;
+
+  background: #fff;
+  border-left: 1px solid #ccc;
+
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.12);
+
+  transform: translateX(100%);
+  visibility: hidden;
+
+  transition:
+    transform 0.2s ease,
+    visibility 0.2s ease;
+}
+
+.site-menu.is-open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+
+/* ==================== */
+/* MAIN MENU ITEMS */
+/* ==================== */
+
+.nav-item {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-item > a {
+  flex: 1;
+
+  display: block;
+
+  padding: 0.85rem 1rem;
+
+  color: #333;
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.nav-item > a:hover,
+.nav-item > a:focus {
+  color: #7a2f2f;
+  background: #f5f5f5;
+}
+
+
+/* ==================== */
+/* SUBMENU BUTTON */
+/* ==================== */
+
+.submenu-toggle {
+  flex: 0 0 3rem;
+
+  align-self: stretch;
+
+  padding: 0;
+
+  color: #555;
+  background: transparent;
+
+  border: 0;
+  border-left: 1px solid #e0e0e0;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease,
+    transform 0.2s ease;
+}
+
+.submenu-toggle:hover,
+.submenu-toggle:focus {
+  color: #7a2f2f;
+  background: #f5f5f5;
+}
+
+.submenu-toggle::after {
+  content: "＋";
+  font-size: 1rem;
+}
+
+.nav-item.is-open > .submenu-toggle::after {
+  content: "－";
+}
+
+
+/* ==================== */
+/* SUBMENU */
+/* ==================== */
+
+.submenu {
+  flex-basis: 100%;
+
+  padding: 0.25rem 0;
+
+  background: #f7f7f7;
+
+  border-top: 1px solid #ddd;
+}
+
+.submenu a {
+  display: block;
+
+  padding: 0.55rem 1rem 0.55rem 1.75rem;
+
+  color: #555;
+  text-decoration: none;
+
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.submenu a:hover,
+.submenu a:focus {
+  color: #7a2f2f;
+  background: #eee;
+}
+
+.submenu > .nav-item:last-child {
+  border-bottom: none;
+}
+
+/* ==================== */
+/* NESTED SUBMENU */
+/* ==================== */
+
+/* 第3階層 */
+.submenu .submenu > .nav-item > a,
+.submenu .submenu > a {
+  padding-left: 2.5rem;
+}
+
+/* 第4階層 */
+.submenu .submenu .submenu > .nav-item > a,
+.submenu .submenu .submenu > a {
+  padding-left: 3.25rem;
+}
+
+/* 第5階層 */
+.submenu .submenu .submenu .submenu > .nav-item > a,
+.submenu .submenu .submenu .submenu > a {
+  padding-left: 4rem;
+}
