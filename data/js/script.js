@@ -634,7 +634,7 @@ function createAdversaryStatBlock(adversary) {
   if (!display) return;
 
   display.innerHTML = `
-    <h4>${adversary.name}<span class="en-sub">${adversary.name_en}</span></h4>
+    <h3>${adversary.name}<span class="en-sub">${adversary.name_en}</span></h3>
     <p><b><em>ティア${adversary.tier}・${adversary.type}</em></b></p>
     <p><em>${adversary.description}</em></p>
     <p><b>動機と戦術：</b>${adversary["motives-and-tactics"]}</p>
@@ -649,7 +649,7 @@ function createAdversaryStatBlock(adversary) {
           : ""
       }
     </aside>
-    <h7>特徴</h7>
+    <h6>特徴</h6>
     ${adversary.features.map(feature => `
       <p class="feature"><b><em>${feature.name}<span class="en-sub">${feature.name_en}</span> — ${feature.type}：</em></b>${feature.description}</p>
     `).join("")}
@@ -716,7 +716,7 @@ function createEnvironmentStatBlock(environment) {
   if (!display) return;
 
   display.innerHTML = `
-    <h4>${environment.name}<span class="en-sub">${environment.name_en}</span></h4>
+    <h3>${environment.name}<span class="en-sub">${environment.name_en}</span></h3>
     <p><b><em>ティア${environment.tier}・${environment.type}</em></b></p>
     <p><em>${environment.description}</em></p>
     <p><b>影響：</b>${environment.impulses}</p>
@@ -726,7 +726,7 @@ function createEnvironmentStatBlock(environment) {
         <b>出現する敵：</b>${environment.potential_adversaries}
       </p>
     </aside>
-    <h7>特徴</h7>
+    <h6>特徴</h6>
     ${environment.features.map(feature => `
       <p class="feature">
         <b><em>${feature.name}<span class="en-sub">${feature.name_en}</span> — ${feature.type}：</em></b>
