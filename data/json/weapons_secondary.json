@@ -27,7 +27,7 @@
       "feature": {
         "name": "保護",
         "name_en": "Protective",
-        "description": "防御力＋1"
+        "description": "防具値＋1"
       }
     },
     {
@@ -42,7 +42,7 @@
       "feature": {
         "name": "防壁",
         "name_en": "Barrier",
-        "description": "防御力＋2；回避－1"
+        "description": "防具値＋2；回避値－1"
       }
     },
     {
@@ -130,7 +130,7 @@
       "feature": {
         "name": "保護",
         "name_en": "Protective",
-        "description": "防御力＋2"
+        "description": "防具値＋2"
       }
     },
     {
@@ -145,7 +145,7 @@
       "feature": {
         "name": "防壁",
         "name_en": "Barrier",
-        "description": "防御力＋3；回避－1"
+        "description": "防具値＋3；回避値－1"
       }
     },
     {
@@ -214,9 +214,9 @@
       "damageType": "物理",
       "burden": "片手用",
       "feature": {
-        "name": "一枚二役",
+        "name": "二役",
         "name_en": "Double Duty",
-        "description": "防御力＋1；近接射程内でのメイン武器ダメージ＋1"
+        "description": "防具値＋1；近接射程内でのメイン武器ダメージ＋1"
       }
     },
     {
@@ -278,7 +278,7 @@
       "feature": {
         "name": "保護",
         "name_en": "Protective",
-        "description": "防御力＋3"
+        "description": "防具値＋3"
       }
     },
     {
@@ -293,7 +293,7 @@
       "feature": {
         "name": "防壁",
         "name_en": "Barrier",
-        "description": "防御力＋4；回避－1"
+        "description": "防具値＋4；回避値－1"
       }
     },
     {
@@ -364,7 +364,7 @@
       "feature": {
         "name": "反射",
         "name_en": "Deflecting",
-        "description": "君は攻撃された時、防具スロットを1つマークして、回避に“その攻撃に対して利用可能な防御値”に等しいボーナスを得ることができる。"
+        "description": "君は攻撃された時、防具スロットを1つマークして、回避値に“その攻撃に対して利用可能な防具値”に等しいボーナスを得ることができる。"
       }
     },
     {
@@ -426,7 +426,7 @@
       "feature": {
         "name": "保護",
         "name_en": "Protective",
-        "description": "防御力＋4"
+        "description": "防具値＋4"
       }
     },
     {
@@ -441,7 +441,7 @@
       "feature": {
         "name": "防壁",
         "name_en": "Barrier",
-        "description": "防御力＋5；回避－1"
+        "description": "防具値＋5；回避値－1"
       }
     },
     {
@@ -527,14 +527,14 @@
       "feature": {
         "name": "倍増",
         "name_en": "Doubled Up",
-        "description": "君はメイン武器で攻撃を行う時、近接射程内にいるもう1体の目標にダメージを与えることができる。"
+        "description": "君はメイン武器で攻撃を行う時、近接射程内にいるもう1体の目標にもダメージを与えることができる。"
       }
     },
     {
       "id": "primer-shard",
       "name": "プライマー・シャード",
       "name_en": "Primer Shard",
-      "trait": "本能",
+      "trait": "直観",
       "range": "至近距離",
       "damage": "d4",
       "damageType": "物理",
@@ -543,6 +543,554 @@
         "name": "照準",
         "name_en": "Locked On",
         "description": "攻撃に成功した時、同一の目標に対するメイン武器を用いた君の次の攻撃は自動的に成功する。"
+      }
+    }
+  ],
+  "tier1-2": [
+    {
+      "id": "hatchet",
+      "name": "ハチェット",
+      "name_en": "Hatchet",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d8",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "追撃",
+        "name_en": "Follow-Up",
+        "description": "近接射程内でメイン武器を用いた攻撃に成功した時、君はストレスを1つマークして、この攻撃についての習熟度に＋1のボーナスを得ることができる。"
+      }
+    },
+    {
+      "id": "offhand-brass-knuckles",
+      "name": "オフハンド・ブラス・ナックルズ",
+      "name_en": "Offhand Brass Knuckles",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "二刀流",
+        "name_en": "Paired",
+        "description": "近接射程内の目標に対するメイン武器のダメージ＋2"
+      }
+    },
+    {
+      "id": "throwing-knives",
+      "name": "スローイング・ナイヴズ",
+      "name_en": "Throwing Knives",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "備蓄",
+        "name_en": "Stockpiled",
+        "description": "君は【敏捷】を用いた攻撃ロールを行うことで、この武器を近距離射程内の目標1体に投擲することができる。投擲したものを回収する必要はなく、君は常に次の1本を手に持っている。"
+      }
+    },
+    {
+      "id": "fighting-cloak",
+      "name": "ファイティング・クローク",
+      "name_en": "Fighting Cloak",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "中綿",
+        "name_en": "Padded",
+        "description": "ダメージ閾値＋2"
+      }
+    },
+    {
+      "id": "rune-shield",
+      "name": "ルーン・シールド",
+      "name_en": "Rune Shield",
+      "trait": "知識",
+      "range": "近接",
+      "damage": "d4",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "保護",
+        "name_en": "Protective",
+        "description": "防具値＋1"
+      }
+    },
+    {
+      "id": "focus-runes",
+      "name": "フォーカス・ルーンズ",
+      "name_en": "Focus Runes",
+      "trait": "直観",
+      "range": "至近距離",
+      "damage": "d6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "焦点",
+        "name_en": "Focused",
+        "description": "至近距離射程内の目標へのメイン武器のダメージ＋1"
+      }
+    }
+  ],
+  "tier2-2": [
+    {
+      "id": "improved-hatchet",
+      "name": "改良型ハチェット",
+      "name_en": "Improved Hatchet",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d8＋2",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "追撃",
+        "name_en": "Follow-Up",
+        "description": "近接射程内でメイン武器を用いた攻撃に成功した時、君はストレスを1つマークして、この攻撃についての習熟度に＋1のボーナスを得ることができる。"
+      }
+    },
+    {
+      "id": "improved-offhand-brass-knuckles",
+      "name": "改良型オフハンド・ブラス・ナックルズ",
+      "name_en": "Improved Offhand Brass Knuckles",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋2",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "二刀流",
+        "name_en": "Paired",
+        "description": "近接射程内の目標に対するメイン武器のダメージ＋3"
+      }
+    },
+    {
+      "id": "improved-throwing-knives",
+      "name": "改良型スローイング・ナイヴズ",
+      "name_en": "Improved Throwing Knives",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋2",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "備蓄",
+        "name_en": "Stockpiled",
+        "description": "君は【敏捷】を用いた攻撃ロールを行うことで、この武器を近距離射程内の目標1体に投擲することができる。投擲したものを回収する必要はなく、君は常に次の1本を手に持っている。"
+      }
+    },
+    {
+      "id": "improved-fighting-cloak",
+      "name": "改良型ファイティング・クローク",
+      "name_en": "Improved Fighting Cloak",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d4＋2",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "中綿",
+        "name_en": "Padded",
+        "description": "ダメージ閾値＋3"
+      }
+    },
+    {
+      "id": "improved-rune-shield",
+      "name": "改良型ルーン・シールド",
+      "name_en": "Improved Rune Shield",
+      "trait": "知識",
+      "range": "近接",
+      "damage": "d4＋2",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "保護",
+        "name_en": "Protective",
+        "description": "防具値＋2"
+      }
+    },
+    {
+      "id": "improved-focus-runes",
+      "name": "改良型フォーカス・ルーンズ",
+      "name_en": "Improved Focus Runes",
+      "trait": "直観",
+      "range": "至近距離",
+      "damage": "d6＋2",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "焦点",
+        "name_en": "Focused",
+        "description": "至近距離射程内の目標へのメイン武器のダメージ＋1"
+      }
+    },
+    {
+      "id": "collapsible-baton",
+      "name": "コラプシブル・バトン",
+      "name_en": "Collapsible Baton",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "非致死",
+        "name_en": "Nonlethal",
+        "description": "この武器を用いた攻撃によって目標がHPをマークする時、目標は（HPではなく）同じ数のストレスをマークする。"
+      }
+    },
+    {
+      "id": "eldritch-vambrace",
+      "name": "エルドリッチ・ヴァンブレイス",
+      "name_en": "Eldritch Vambrace",
+      "trait": "直観",
+      "range": "近接",
+      "damage": "d8",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "反射",
+        "name_en": "Deflecting",
+        "description": "君は攻撃された時、防具スロットを1つマークして、回避値に“その攻撃に対する君の防具値”に等しいボーナスを得ることができる。"
+      }
+    },
+    {
+      "id": "segmented-staff",
+      "name": "セグメンテッド・スタッフ",
+      "name_en": "Segmented Staff",
+      "trait": "敏捷",
+      "range": "超遠距離",
+      "damage": "d6＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "二役",
+        "name_en": "Double Duty",
+        "description": "防具値＋1；近接射程内でのメイン武器ダメージ＋1"
+      }
+    },
+    {
+      "id": "razor-wire",
+      "name": "レイザー・ワイアー",
+      "name_en": "Razor Wire",
+      "trait": "技巧",
+      "range": "超遠距離",
+      "damage": "d6＋3",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "絡みつき",
+        "name_en": "Entangling",
+        "description": "至近距離射程内の目標に対するメイン武器を用いた攻撃が成功した時、君は希望を1つ消費して、目標を一時的に脆弱状態にすることができる。"
+      }
+    }
+  ],
+  "tier3-2": [
+    {
+      "id": "advanced-hatchet",
+      "name": "発展型ハチェット",
+      "name_en": "Advanced Hatchet",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d8＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "追撃",
+        "name_en": "Follow-Up",
+        "description": "近接射程内でメイン武器を用いた攻撃に成功した時、君はストレスを1つマークして、この攻撃についての習熟度に＋1のボーナスを得ることができる。"
+      }
+    },
+    {
+      "id": "advanced-offhand-brass-knuckles",
+      "name": "発展型オフハンド・ブラス・ナックルズ",
+      "name_en": "Advanced Offhand Brass Knuckles",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "二刀流",
+        "name_en": "Paired",
+        "description": "近接射程内の目標に対するメイン武器のダメージ＋4"
+      }
+    },
+    {
+      "id": "advanced-throwing-knives",
+      "name": "発展型スローイング・ナイヴズ",
+      "name_en": "Advanced Throwing Knives",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "備蓄",
+        "name_en": "Stockpiled",
+        "description": "君は【敏捷】を用いた攻撃ロールを行うことで、この武器を近距離射程内の目標1体に投擲することができる。投擲したものを回収する必要はなく、君は常に次の1本を手に持っている。"
+      }
+    },
+    {
+      "id": "advanced-fighting-cloak",
+      "name": "発展型ファイティング・クローク",
+      "name_en": "Advanced Fighting Cloak",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d4＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "中綿",
+        "name_en": "Padded",
+        "description": "ダメージ閾値＋4"
+      }
+    },
+    {
+      "id": "advanced-rune-shield",
+      "name": "発展型ルーン・シールド",
+      "name_en": "Advanced Rune Shield",
+      "trait": "知識",
+      "range": "近接",
+      "damage": "d4＋4",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "保護",
+        "name_en": "Protective",
+        "description": "防具値＋3"
+      }
+    },
+    {
+      "id": "advanced-focus-runes",
+      "name": "発展型フォーカス・ルーンズ",
+      "name_en": "Advanced Focus Runes",
+      "trait": "直観",
+      "range": "至近距離",
+      "damage": "d6＋4",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "焦点",
+        "name_en": "Focused",
+        "description": "至近距離射程内の目標へのメイン武器のダメージ＋1"
+      }
+    },
+    {
+      "id": "tinkers-hammer",
+      "name": "ティンカーズ・ハンマー",
+      "name_en": "Tinker’s Hammer",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "信頼",
+        "name_en": "Trusty",
+        "description": "メイン武器で行う攻撃ロール＋1"
+      }
+    },
+    {
+      "id": "vorpal-shard",
+      "name": "ヴォーパル・シャード",
+      "name_en": "Vorpal Shard",
+      "trait": "知識",
+      "range": "近接",
+      "damage": "d4",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "標的",
+        "name_en": "Targeted",
+        "description": "君は武器攻撃に失敗した時、希望を1つ消費して、次の君の武器攻撃を成功させることができる。"
+      }
+    },
+    {
+      "id": "soul-chain",
+      "name": "ソウル・チェイン",
+      "name_en": "Soul Chain",
+      "trait": "存在",
+      "range": "至近距離",
+      "damage": "d6＋5",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "吸収",
+        "name_en": "Draining",
+        "description": "攻撃に成功した時、君は希望を1つ消費して、目標にストレスを1つマークさせることができる。目標がストレスをマークしたなら、君はストレスを1つ回復する。"
+      }
+    },
+    {
+      "id": "war-dart",
+      "name": "ウォー・ダート",
+      "name_en": "War Dart",
+      "trait": "敏捷",
+      "range": "遠距離",
+      "damage": "d6＋5",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【敏捷】、近接、d8＋5。"
+      }
+    }
+  ],
+  "tier4-2": [
+    {
+      "id": "legendary-hatchet",
+      "name": "伝説級ハチェット",
+      "name_en": "Advanced Hatchet",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d8＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "追撃",
+        "name_en": "Follow-Up",
+        "description": "近接射程内でメイン武器を用いた攻撃に成功した時、君はストレスを1つマークして、この攻撃についての習熟度に＋1のボーナスを得ることができる。"
+      }
+    },
+    {
+      "id": "legendary-offhand-brass-knuckles",
+      "name": "伝説級オフハンド・ブラス・ナックルズ",
+      "name_en": "Advanced Offhand Brass Knuckles",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "二刀流",
+        "name_en": "Paired",
+        "description": "近接射程内の目標に対するメイン武器のダメージ＋5"
+      }
+    },
+    {
+      "id": "legendary-throwing-knives",
+      "name": "伝説級スローイング・ナイヴズ",
+      "name_en": "Advanced Throwing Knives",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "備蓄",
+        "name_en": "Stockpiled",
+        "description": "君は【敏捷】を用いた攻撃ロールを行うことで、この武器を近距離射程内の目標1体に投擲することができる。投擲したものを回収する必要はなく、君は常に次の1本を手に持っている。"
+      }
+    },
+    {
+      "id": "legendary-fighting-cloak",
+      "name": "伝説級ファイティング・クローク",
+      "name_en": "Advanced Fighting Cloak",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d4＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "中綿",
+        "name_en": "Padded",
+        "description": "ダメージ閾値＋5"
+      }
+    },
+    {
+      "id": "legendary-rune-shield",
+      "name": "伝説級ルーン・シールド",
+      "name_en": "Advanced Rune Shield",
+      "trait": "知識",
+      "range": "近接",
+      "damage": "d4＋6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "保護",
+        "name_en": "Protective",
+        "description": "防具値＋4"
+      }
+    },
+    {
+      "id": "legendary-focus-runes",
+      "name": "伝説級フォーカス・ルーンズ",
+      "name_en": "Advanced Focus Runes",
+      "trait": "直観",
+      "range": "至近距離",
+      "damage": "d6＋6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "焦点",
+        "name_en": "Focused",
+        "description": "至近距離射程内の目標へのメイン武器のダメージ＋1"
+      }
+    },
+    {
+      "id": "void-needle",
+      "name": "ヴォイド・ニードル",
+      "name_en": "Void Needle",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d4＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "反転",
+        "name_en": "Inverted",
+        "description": "君は武器攻撃のロール結果が恐怖だった時、希望を1つ得る。"
+      }
+    },
+    {
+      "id": "echo-blade",
+      "name": "エコー・ブレード",
+      "name_en": "Echo Blade",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d4＋6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "倍増",
+        "name_en": "Doubled Up",
+        "description": "君はメイン武器での攻撃に成功した時、近接射程内にいるもう1体の目標にもダメージを与えることができる。"
+      }
+    },
+    {
+      "id": "mobius-orb",
+      "name": "メビウス・オーブ",
+      "name_en": "Möbius Orb",
+      "trait": "知識",
+      "range": "近接",
+      "damage": "d8＋6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "再帰",
+        "name_en": "Recursive",
+        "description": "君がダメージダイスで最大の目を振った時、ダメージダイスを追加で1つ振り、出た目を合計ダメージに加える。この特徴は繰り返し作動する。"
+      }
+    },
+    {
+      "id": "blackblood-tendril",
+      "name": "ブラックブラッド・テンドリル",
+      "name_en": "Blackblood Tendril",
+      "trait": "直観",
+      "range": "近距離",
+      "damage": "d6＋8",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "毒素",
+        "name_en": "Poisonous",
+        "description": "君が恐怖を出した攻撃によってHPをマークした目標は、同じ数のストレスをマークする。"
       }
     }
   ]

@@ -295,12 +295,24 @@ function loadWeaponData() {
           primaryWeaponData[`tier${tier}-physical`]
         );
         createWeaponTable(
+          `primary-tier-${tier}-physical-weapons-2`,
+          primaryWeaponData[`tier${tier}-physical-2`]
+        );
+        createWeaponTable(
           `primary-tier-${tier}-magic-weapons`,
           primaryWeaponData[`tier${tier}-magic`]
         );
         createWeaponTable(
+          `primary-tier-${tier}-magic-weapons-2`,
+          primaryWeaponData[`tier${tier}-magic-2`]
+        );
+        createWeaponTable(
           `secondary-tier-${tier}-weapons`,
           secondaryWeaponData[`tier${tier}`]
+        );
+        createWeaponTable(
+          `secondary-tier-${tier}-weapons-2`,
+          secondaryWeaponData[`tier${tier}-2`]
         );
       };
     });
@@ -412,19 +424,22 @@ function loadArmorData() {
     .then(response => response.json())
     .then(armorData => {
       for (let tier = 1; tier <= 4; tier++) {
-        createArmorTable(armorData, tier);
+        createArmorTable(
+          `tier-${tier}-armor`,
+          armorData[`tier${tier}`]
+        );
+        createArmorTable(
+          `tier-${tier}-armor-2`,
+          armorData[`tier${tier}-2`]
+        );
       };
     });
 };
 
-function createArmorTable(armorData, tier) {
-  const table = document.querySelector(`#tier-${tier}-armor`);
+function createArmorTable(tableId, armors) {
+  const table = document.querySelector(`#${tableId}`);
 
-  if (!table) return;
-
-  const tierArmor = armorData.filter(
-    item => item.tier === tier
-  );
+  if (!table || !armors) return;
 
   table.innerHTML = `
     <thead>
@@ -436,7 +451,7 @@ function createArmorTable(armorData, tier) {
       </tr>
     </thead>
     <tbody>
-      ${tierArmor.map(armor => `
+      ${armors.map(armor => `
         <tr>
           <th>
             ${armor.name}<br>
@@ -461,54 +476,71 @@ function loadLootData() {
   fetch("data/json/loots.json")
     .then(response => response.json())
     .then(lootData => {
-      createLootTable(lootData);
-    })
-    .catch(error => {
-      console.error("戦利品データの読み込みに失敗しました。", error);
+      const coreLeft = lootData.loots.filter(loot => loot.roll <= 30);
+      const coreRight = lootData.loots.filter(loot => loot.roll >= 31);
+
+      const additionalLeft = lootData["additional-loots"].filter(loot => loot.roll <= 30);
+      const additionalRight = lootData["additional-loots"].filter(loot => loot.roll >= 31);
+
+      createLootTable("loot-table-left", coreLeft);
+      createLootTable("loot-table-right", coreRight);
+
+      createLootTable("loot-table-2-left", additionalLeft);
+      createLootTable("loot-table-2-right", additionalRight);
     });
 }
 
-function createLootTable(lootData) {
-  const table = document.querySelector("#loot-table");
+function createLootTable(tableId, lootData) {
+  const table = document.querySelector(`#${tableId}`);
 
   if (!table) return;
 
   table.innerHTML = `
     <thead>
       <tr>
-        <th>結果</th>
+        <th>出目</th>
         <th>戦利品</th>
         <th>説明</th>
       </tr>
     </thead>
-    <tbody>
-      ${lootData.map(loot => `
-        <tr id="${loot.id}">
-          <td>${loot.roll}</td>
-          <th>
-            ${loot.name}<br>
-            <span class="en-sub">${loot.name_en}</span>
-          </th>
-          <td>${loot.description}</td>
-        </tr>
-      `).join("")}
-    </tbody>
+    <tbody></tbody>
   `;
+
+  const tbody = table.querySelector("tbody");
+
+  lootData.forEach(loot => {
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
+      <td>${loot.roll}</td>
+      <th>${loot.name}<br><span class="en-sub">${loot.name_en}</span></th>
+      <td>${loot.description}</td>
+    `;
+
+    tbody.appendChild(row);
+  });
 }
 
 function loadConsumableData() {
   fetch("data/json/consumables.json")
     .then(response => response.json())
     .then(consumableData => {
-      createConsumableTable(consumableData);
-    })
-    .catch(error => {
-      console.error("消耗品データの読み込みに失敗しました。", error);
+      const coreLeft = consumableData.consumables.filter(consumable => consumable.roll <= 30);
+      const coreRight = consumableData.consumables.filter(consumable => consumable.roll >= 31);
+
+      const additionalLeft = consumableData["additional-consumables"].filter(consumable => consumable.roll <= 30);
+      const additionalRight = consumableData["additional-consumables"].filter(consumable => consumable.roll >= 31);
+
+      createConsumableTable("consumable-table-left", coreLeft);
+      createConsumableTable("consumable-table-right", coreRight);
+
+      createConsumableTable("consumable-table-2-left", additionalLeft);
+      createConsumableTable("consumable-table-2-right", additionalRight);
     });
 }
 
-function createConsumableTable(consumableData) {
-  const table = document.querySelector("#consumable-table");
+function createConsumableTable(tableId, consumableData) {
+  const table = document.querySelector(`#${tableId}`);
 
   if (!table) return;
 
@@ -520,19 +552,25 @@ function createConsumableTable(consumableData) {
         <th>説明</th>
       </tr>
     </thead>
-    <tbody>
-      ${consumableData.map(consumable => `
-        <tr id="${consumable.id}">
-          <td>${consumable.roll}</td>
-          <th>
-            ${consumable.name}<br>
-            <span class="en-sub">${consumable.name_en}</span>
-          </th>
-          <td>${consumable.description}</td>
-        </tr>
-      `).join("")}
-    </tbody>
+    <tbody></tbody>
   `;
+
+  const tbody = table.querySelector("tbody");
+
+  consumableData.forEach(consumable => {
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
+      <td>${consumable.roll}</td>
+      <th>
+        ${consumable.name}<br>
+        <span class="en-sub">${consumable.name_en}</span>
+      </th>
+      <td>${consumable.description}</td>
+    `;
+
+    tbody.appendChild(row);
+  });
 }
 
 function loadAdversaryData() {

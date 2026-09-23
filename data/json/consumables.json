@@ -1,422 +1,846 @@
-[
-  {
-    "id": "stride-potion",
-    "roll": 1,
-    "name": "脚力ポーション",
-    "name_en": "Stride Potion",
-    "description": "<p>君は次の【敏捷】ロールに＋1のボーナスを得る。</p>"
-  },
-  {
-    "id": "bolster-potion",
-    "roll": 2,
-    "name": "強化ポーション",
-    "name_en": "Bolster Potion",
-    "description": "<p>君は次の【筋力】ロールに＋1のボーナスを得る。</p>"
-  },
-  {
-    "id": "control-potion",
-    "roll": 3,
-    "name": "制御ポーション",
-    "name_en": "Control Potion",
-    "description": "<p>君は次の【技巧】ロールに＋1のボーナスを得る。</p>"
-  },
-  {
-    "id": "attune-potion",
-    "roll": 4,
-    "name": "同調ポーション",
-    "name_en": "Attune Potion",
-    "description": "<p>君は次の【本能】ロールに＋1のボーナスを得る。</p>"
-  },
-  {
-    "id": "charm-potion",
-    "roll": 5,
-    "name": "魅了ポーション",
-    "name_en": "Charm Potion",
-    "description": "<p>君は次の【存在】ロールに＋1のボーナスを得る。</p>"
-  },
-  {
-    "id": "enlighten-potion",
-    "roll": 6,
-    "name": "啓蒙ポーション",
-    "name_en": "Enlighten Potion",
-    "description": "<p>君は次の【知識】ロールに＋1のボーナスを得る。</p>"
-  },
-  {
-    "id": "minor-health-potion",
-    "roll": 7,
-    "name": "初級健康ポーション",
-    "name_en": "Minor Health Potion",
-    "description": "<p>HPを1d4つ回復する。</p>"
-  },
-  {
-    "id": "minor-stamina-potion",
-    "roll": 8,
-    "name": "初級スタミナポーション",
-    "name_en": "Minor Stamina Potion",
-    "description": "<p>ストレスを1d4つ回復する。</p>"
-  },
-  {
-    "id": "grindletooth-venom",
-    "roll": 9,
-    "name": "グリンドルトゥース毒",
-    "name_en": "Grindletooth Venom",
-    "description": "<p>君はこの毒を物理ダメージを与える武器1つに塗布することで、その武器をを用いて行う次の1回のダメージロールにd6を加えることができる。</p>"
-  },
-  {
-    "id": "varik-leaves",
-    "roll": 10,
-    "name": "ヴァリクの葉",
-    "name_en": "Varik Leaves",
-    "description": "<p>君はこの2枚1組の葉を食べることで即座に希望を2つ得ることができる。</p>"
-  },
-  {
-    "id": "vial-of-moondrip",
-    "roll": 11,
-    "name": "月の雫の小瓶",
-    "name_en": "Vial of Moondrip",
-    "description": "<p>この小瓶の中身を飲んだなら、君は次の休憩まで完全な暗闇の中でものを見ることができる。</p>"
-  },
-  {
-    "id": "unstable-arcane-shard",
-    "roll": 12,
-    "name": "不安定な秘術結晶",
-    "name_en": "Unstable Arcane Shard",
-    "description": "<p>君は【技巧】ロールを行うことで、この結晶を遠距離射程内の敵集団に投げることができる。君が成功した目標は1d20の魔法ダメージを受ける。</p>"
-  },
-  {
-    "id": "potion-of-stability",
-    "roll": 13,
-    "name": "安定のポーション",
-    "name_en": "Potion of Stability",
-    "description": "<p>君はこのポーションを飲むことで、合間ムーヴを追加で1つ選ぶことができる。</p>"
-  },
-  {
-    "id": "improved-grindletooth-venom",
-    "roll": 14,
-    "name": "強化グリンドルトゥース毒",
-    "name_en": "Improved Grindletooth Venom",
-    "description": "<p>君はこの毒を物理ダメージを与える武器1つに塗布することで、その武器をを用いて行う次の1回のダメージロールにd8を加えることができる。</p>"
-  },
-  {
-    "id": "morphing-clay",
-    "roll": 15,
-    "name": "変形粘土",
-    "name_en": "Morphing Clay",
-    "description": "<p>君は希望を1つ消費してこの粘土を使用することで、自分の顔を変形させて次の休憩まで自分だと認識されないものにできる。</p>"
-  },
-  {
-    "id": "vial-of-darksmoke",
-    "roll": 16,
-    "name": "暗煙の小瓶",
-    "name_en": "Vial of Darksmoke",
-    "description": "<p>敵が君を攻撃する時、この小瓶を使用して君の【敏捷】に等しい数のd6を振る。その攻撃に対する君の回避に最も高い出目を加える。</p>"
-  },
-  {
-    "id": "jumping-root",
-    "roll": 17,
-    "name": "跳躍の根",
-    "name_en": "Jumping Root",
-    "description": "<p>この根を食べることで、ロール不要で1回、遠距離射程まで跳躍する。</p>"
-  },
-  {
-    "id": "snap-powder",
-    "roll": 18,
-    "name": "活気の粉",
-    "name_en": "Snap Powder",
-    "description": "<p>ストレスを1つマークして、HPを1つ回復する。</p>"
-  },
-  {
-    "id": "health-potion",
-    "roll": 19,
-    "name": "健康ポーション",
-    "name_en": "Health Potion",
-    "description": "<p>HPを1d4つ回復する。</p>"
-  },
-  {
-    "id": "stamina-potion",
-    "roll": 20,
-    "name": "スタミナポーション",
-    "name_en": "Stamina Potion",
-    "description": "<p>ストレスを1d4つ回復する。</p>"
-  },
-  {
-    "id": "armor-stitcher",
-    "roll": 21,
-    "name": "防具継当て",
-    "name_en": "Armor Stitcher",
-    "description": "<p>君はこの継当てを使用することで、任意の数の希望を消費して同じ数の防具スロットを回復することができる。</p>"
-  },
-  {
-    "id": "gill-salve",
-    "roll": 22,
-    "name": "エラ軟膏",
-    "name_en": "Gill Salve",
-    "description": "<p>君はこの軟膏を首に塗布することで、（レベル×1分）のあいだ水中で呼吸することができる。</p>"
-  },
-  {
-    "id": "replication-parchment",
-    "roll": 23,
-    "name": "複製の羊皮紙",
-    "name_en": "Replication Parchment",
-    "description": "<p>この1片の羊皮紙を別の羊皮紙に触れさせることで、君は2枚目の羊皮紙の内容を完全に複製できる。一度使用すると、この羊皮紙はただの紙になる。</p>"
-  },
-  {
-    "id": "improved-arcane-shard",
-    "roll": 24,
-    "name": "強化秘術結晶",
-    "name_en": "Improved Arcane Shard",
-    "description": "<p>君は【技巧】ロールを行うことで、この結晶を遠距離射程内の敵集団に投げることができる。君が成功した目標は2d20の魔法ダメージを受ける。</p>"
-  },
-  {
-    "id": "major-stride-potion",
-    "roll": 25,
-    "name": "上級脚力ポーション",
-    "name_en": "Major Stride Potion",
-    "description": "<p>君は次の【敏捷】ロールに＋1のボーナスを得る。</p>"
-  },
-  {
-    "id": "major-bolster-potion",
-    "roll": 26,
-    "name": "上級強化ポーション",
-    "name_en": "Major Bolster Potion",
-    "description": "<p>君は次の休憩まで【筋力】ロールに＋1のボーナスを得る。</p>"
-  },
-  {
-    "id": "major-control-potion",
-    "roll": 27,
-    "name": "上級制御ポーション",
-    "name_en": "Major Control Potion",
-    "description": "<p>君は次の休憩まで【技巧】ロールに＋1のボーナスを得る。</p>"
-  },
-  {
-    "id": "major-attune-potion",
-    "roll": 28,
-    "name": "上級同調ポーション",
-    "name_en": "Major Attune Potion",
-    "description": "<p>君は次の休憩まで【本能】ロールに＋1のボーナスを得る。</p>"
-  },
-  {
-    "id": "major-charm-potion",
-    "roll": 29,
-    "name": "上級魅了ポーション",
-    "name_en": "Major Charm Potion",
-    "description": "<p>君は次の休憩まで【存在】ロールに＋1のボーナスを得る。</p>"
-  },
-  {
-    "id": "major-enlighten-potion",
-    "roll": 30,
-    "name": "上級啓蒙ポーション",
-    "name_en": "Major Enlighten Potion",
-    "description": "<p>君は次の休憩まで【知識】ロールに＋1のボーナスを得る。</p>"
-  },
-  {
-    "id": "blood-of-the-yorgi",
-    "roll": 31,
-    "name": "ヨルギの血",
-    "name_en": "Blood of the Yorgi",
-    "description": "<p>君はこの血を飲んでその場から姿を消し、君が見ることのできる超遠距離射程内の一点に瞬時に姿を現すことができる。</p>"
-  },
-  {
-    "id": "homets-secret-potion",
-    "roll": 32,
-    "name": "ホメットの秘密ポーション",
-    "name_en": "Homet’s Secret Potion",
-    "description": "<p>このポーションを飲んだ後、君が次に成功した攻撃はクリティカル成功になる。</p>"
-  },
-  {
-    "id": "redthorn-saliva",
-    "roll": 33,
-    "name": "赤茨の分泌液",
-    "name_en": "Redthorn Saliva",
-    "description": "<p>君はこの分泌液を物理ダメージを与える武器に塗り、その武器を用いた君の次のダメージロールにd12を加えることができる。</p>"
-  },
-  {
-    "id": "channelstone",
-    "roll": 34,
-    "name": "伝導石",
-    "name_en": "Channelstone",
-    "description": "<p>君はこの石を使用して、保管枠から呪文または魔導書を1枚取得し、それを1回使用して、保管枠に戻すことができる。</p>"
-  },
-  {
-    "id": "mythic-dust",
-    "roll": 35,
-    "name": "神秘の塵",
-    "name_en": "Mythic Dust",
-    "description": "<p>君はこの塵を魔法ダメージを与える武器に塗り、その武器を用いた君の次のダメージロールにd12を加えることができる。</p>"
-  },
-  {
-    "id": "acidpaste",
-    "roll": 36,
-    "name": "酸糊",
-    "name_en": "Acidpaste",
-    "description": "<p>この糊は鮮やかな閃光を放ちながら壁やその他の表面を溶かす。</p>"
-  },
-  {
-    "id": "hopehold-flare",
-    "roll": 37,
-    "name": "希望保持の光",
-    "name_en": "Hopehold Flare",
-    "description": "<p>君がこの光を使用したなら、近距離射程内にいる味方は希望を1つ消費する際にd6を振る。6の目が出たなら、その味方はその希望を消費せずに効果を得る。この光は場面が終了するまで持続する。</p>"
-  },
-  {
-    "id": "major-arcane-shard",
-    "roll": 38,
-    "name": "上級秘術結晶",
-    "name_en": "Major Arcane Shard",
-    "description": "<p>君は【技巧】ロールを行ってこの結晶を遠距離射程内にいる敵の一団に投げることができる。君が成功した目標は4d20の魔法ダメージを受ける。</p>"
-  },
-  {
-    "id": "featherbone",
-    "roll": 39,
-    "name": "羽根骨",
-    "name_en": "Featherbone",
-    "description": "<p>君はこの骨を使用して（レベル×1分）のあいだ自分の落下速度を制御することができる。</p>"
-  },
-  {
-    "id": "circle-of-the-void",
-    "roll": 40,
-    "name": "虚空の円",
-    "name_en": "Circle of the Void",
-    "description": "<p>ストレスを1つマークして、遠距離射程まで広がる虚空を作り出す。虚空内ではいかなる魔法も発動できず、虚空内のクリーチャーは魔法ダメージに耐性を得る。</p>"
-  },
-  {
-    "id": "sun-tree-sap",
-    "roll": 41,
-    "name": "太陽木の樹液",
-    "name_en": "Sun Tree Sap",
-    "description": "<p>この樹液を摂取してd6を振る。5〜6の目が出たなら、HPを2つ回復する。2〜4の目が出たなら、ストレスを3つ回復する。1の目が出たなら、死のベールを見通して変化して戻り、傷跡を1つ得る。</p>"
-  },
-  {
-    "id": "dripfang-poison",
-    "roll": 42,
-    "name": "ドリップファング毒",
-    "name_en": "Dripfang Poison",
-    "description": "<p>この毒を摂取したクリーチャーは8d10の直接魔法ダメージを受ける。</p>"
-  },
-  {
-    "id": "major-health-potion",
-    "roll": 43,
-    "name": "上級健康ポーション",
-    "name_en": "Major Health Potion",
-    "description": "<p>1d4＋2個のHPを回復する。</p>"
-  },
-  {
-    "id": "major-stamina-potion",
-    "roll": 44,
-    "name": "上級スタミナポーション",
-    "name_en": "Major Stamina Potion",
-    "description": "<p>1d4＋2個のストレスを回復する。</p>"
-  },
-  {
-    "id": "ogre-musk",
-    "roll": 45,
-    "name": "オーガの麝香",
-    "name_en": "Ogre Musk",
-    "description": "<p>君はこの麝香を使用して、次の休憩まで、通常の手段であれ魔法的な手段であれ、あらゆる者からの追跡を防ぐことができる。</p>"
-  },
-  {
-    "id": "wingsprout",
-    "roll": 46,
-    "name": "翼生え",
-    "name_en": "Wingsprout",
-    "description": "<p>君は魔法の翼を得て、（レベル×1分）のあいだ飛行できるようになる。</p>"
-  },
-  {
-    "id": "jar-of-lost-voices",
-    "roll": 47,
-    "name": "失われし声の甕",
-    "name_en": "Jar of Lost Voices",
-    "description": "<p>君はこの甕を開けて、（【本能】×1分）のあいだ耳をつんざく声のこだまを放つことができる。遠距離射程内にいて音に備えていないクリーチャーは、6d8の魔法ダメージを受ける。</p>"
-  },
-  {
-    "id": "dragonbloom-tea",
-    "roll": 48,
-    "name": "ドラゴンブルーム茶",
-    "name_en": "Dragonbloom Tea",
-    "description": "<p>君はこのお茶を飲んで炎のブレス攻撃を放つことができる。近距離射程内で君の前にいすすべての敵に対して【本能】ロールを行うこと。君が成功した目標は、君の習熟度を用いたd20の物理ダメージを受ける。</p>"
-  },
-  {
-    "id": "bridge-seed",
-    "roll": 49,
-    "name": "橋種",
-    "name_en": "Bridge Seed",
-    "description": "<p>君のいる場所から遠距離射程内の一点へ分厚い蔦が伸びる。君はその蔦を登るか渡ることができる。蔦は次の小休憩時に消える。</p>"
-  },
-  {
-    "id": "sleeping-sap",
-    "roll": 50,
-    "name": "催眠の樹液",
-    "name_en": "Sleeping Sap",
-    "description": "<p>君はこのポーションを飲んで一晩の休憩のあいだ眠りにつくことができる。起床時、君はストレスをすべて回復する。</p>"
-  },
-  {
-    "id": "feast-of-xuria",
-    "roll": 51,
-    "name": "ザリアの馳走",
-    "name_en": "Feast of Xuria",
-    "description": "<p>君はこの食事をたべてHPとストレスを全て回復し、希望を1d4つ得ることができる。</p>"
-  },
-  {
-    "id": "bonding-honey",
-    "roll": 52,
-    "name": "絆の蜂蜜",
-    "name_en": "Bonding Honey",
-    "description": "<p>この蜂蜜を使用すると、2つの物体を永続的に貼り付けることができる。</p>"
-  },
-  {
-    "id": "shrinking-potion",
-    "roll": 53,
-    "name": "縮小ポーション",
-    "name_en": "Shrinking Potion",
-    "description": "<p>君はこのポーションを飲んで、体の大きさを半分にすることができる。この姿は君が自ら解除するか次の休憩まで持続する。この姿でいる間、君は【敏捷】に＋2のボーナスを、習熟度に－1のペナルティを得る。</p>"
-  },
-  {
-    "id": "growing-potion",
-    "roll": 54,
-    "name": "成長ポーション",
-    "name_en": "Growing Potion",
-    "description": "<p>君はこのポーションを飲んで、体の大きさを2倍にすることができる。この姿は君が自ら解除するか次の休憩まで持続する。この姿でいる間、君は【筋力】に＋2、習熟度に＋1のボーナスを得る。</p>"
-  },
-  {
-    "id": "knowledge-stone",
-    "roll": 55,
-    "name": "知識の石",
-    "name_en": "Knowledge Stone",
-    "description": "<p>君が死亡した時にこの石を持っていたなら、味方1人は君の準備枠からカード1枚を自分の準備枠または保管枠に取得することができる。味方がこの知識を取得した後、この石は砕ける。</p>"
-  },
-  {
-    "id": "sweet-moss",
-    "roll": 56,
-    "name": "甘苔",
-    "name_en": "Sweet Moss",
-    "description": "<p>君は休憩中にこの苔を摂取して、HPまたはストレスを1d10個回復することができる。</p>"
-  },
-  {
-    "id": "blinding-orb",
-    "roll": 57,
-    "name": "盲目の球体",
-    "name_en": "Blinding Orb",
-    "description": "<p>君はこの球体を起動して明るい閃光を生むことができる。近距離射程内にいるすべての目標は、HPをマークするまで脆弱状態になる。</p>"
-  },
-  {
-    "id": "death-tea",
-    "roll": 58,
-    "name": "死茶",
-    "name_en": "Death Tea",
-    "description": "<p>このお茶を飲んだ後、君は攻撃にクリティカル成功すると目標を即死させることができる。次の大休憩までに攻撃をクリティカル成功させなかったなら、君は死ぬ。</p>"
-  },
-  {
-    "id": "mirror-of-marigold",
-    "roll": 59,
-    "name": "マリーゴールドの鏡",
-    "name_en": "Mirror of Marigold",
-    "description": "<p>君はダメージを受けた時、希望を1つ消費してそのダメージを取り消すことができる。その後、この鏡は砕け散る。</p>"
-  },
-  {
-    "id": "stardrop",
-    "roll": 60,
-    "name": "星の雫",
-    "name_en": "Stardrop",
-    "description": "<p>君はこの星の雫を使用して彗星の嵐を召喚することができる。この嵐は超遠距離射程内にいるすべての目標に8d20の物理ダメージを与える。</p>"
-  }
-]
+{
+  "consumables": [
+    {
+      "id": "stride-potion",
+      "roll": 1,
+      "name": "脚力ポーション",
+      "name_en": "Stride Potion",
+      "description": "<p>君は次の【敏捷】ロールに＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "bolster-potion",
+      "roll": 2,
+      "name": "強化ポーション",
+      "name_en": "Bolster Potion",
+      "description": "<p>君は次の【筋力】ロールに＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "control-potion",
+      "roll": 3,
+      "name": "制御ポーション",
+      "name_en": "Control Potion",
+      "description": "<p>君は次の【技巧】ロールに＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "attune-potion",
+      "roll": 4,
+      "name": "同調ポーション",
+      "name_en": "Attune Potion",
+      "description": "<p>君は次の【本能】ロールに＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "charm-potion",
+      "roll": 5,
+      "name": "魅了ポーション",
+      "name_en": "Charm Potion",
+      "description": "<p>君は次の【存在】ロールに＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "enlighten-potion",
+      "roll": 6,
+      "name": "啓蒙ポーション",
+      "name_en": "Enlighten Potion",
+      "description": "<p>君は次の【知識】ロールに＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "minor-health-potion",
+      "roll": 7,
+      "name": "初級健康ポーション",
+      "name_en": "Minor Health Potion",
+      "description": "<p>HPを1d4つ回復する。</p>"
+    },
+    {
+      "id": "minor-stamina-potion",
+      "roll": 8,
+      "name": "初級スタミナポーション",
+      "name_en": "Minor Stamina Potion",
+      "description": "<p>ストレスを1d4つ回復する。</p>"
+    },
+    {
+      "id": "grindletooth-venom",
+      "roll": 9,
+      "name": "グリンドルトゥース毒",
+      "name_en": "Grindletooth Venom",
+      "description": "<p>君はこの毒を物理ダメージを与える武器1つに塗布することで、その武器をを用いて行う次の1回のダメージロールにd6を加えることができる。</p>"
+    },
+    {
+      "id": "varik-leaves",
+      "roll": 10,
+      "name": "ヴァリクの葉",
+      "name_en": "Varik Leaves",
+      "description": "<p>君はこの2枚1組の葉を食べることで即座に希望を2つ得ることができる。</p>"
+    },
+    {
+      "id": "vial-of-moondrip",
+      "roll": 11,
+      "name": "月の雫の小瓶",
+      "name_en": "Vial of Moondrip",
+      "description": "<p>この小瓶の中身を飲んだなら、君は次の休憩まで完全な暗闇の中でものを見ることができる。</p>"
+    },
+    {
+      "id": "unstable-arcane-shard",
+      "roll": 12,
+      "name": "不安定な秘術結晶",
+      "name_en": "Unstable Arcane Shard",
+      "description": "<p>君は【技巧】ロールを行うことで、この結晶を遠距離射程内の敵集団に投げることができる。君が成功した目標は1d20の魔法ダメージを受ける。</p>"
+    },
+    {
+      "id": "potion-of-stability",
+      "roll": 13,
+      "name": "安定のポーション",
+      "name_en": "Potion of Stability",
+      "description": "<p>君はこのポーションを飲むことで、合間ムーヴを追加で1つ選ぶことができる。</p>"
+    },
+    {
+      "id": "improved-grindletooth-venom",
+      "roll": 14,
+      "name": "強化グリンドルトゥース毒",
+      "name_en": "Improved Grindletooth Venom",
+      "description": "<p>君はこの毒を物理ダメージを与える武器1つに塗布することで、その武器をを用いて行う次の1回のダメージロールにd8を加えることができる。</p>"
+    },
+    {
+      "id": "morphing-clay",
+      "roll": 15,
+      "name": "変形粘土",
+      "name_en": "Morphing Clay",
+      "description": "<p>君は希望を1つ消費してこの粘土を使用することで、自分の顔を変形させて次の休憩まで自分だと認識されないものにできる。</p>"
+    },
+    {
+      "id": "vial-of-darksmoke",
+      "roll": 16,
+      "name": "暗煙の小瓶",
+      "name_en": "Vial of Darksmoke",
+      "description": "<p>敵が君を攻撃する時、この小瓶を使用して君の【敏捷】に等しい数のd6を振る。その攻撃に対する君の回避に最も高い出目を加える。</p>"
+    },
+    {
+      "id": "jumping-root",
+      "roll": 17,
+      "name": "跳躍の根",
+      "name_en": "Jumping Root",
+      "description": "<p>この根を食べることで、ロール不要で1回、遠距離射程まで跳躍する。</p>"
+    },
+    {
+      "id": "snap-powder",
+      "roll": 18,
+      "name": "活気の粉",
+      "name_en": "Snap Powder",
+      "description": "<p>ストレスを1つマークして、HPを1つ回復する。</p>"
+    },
+    {
+      "id": "health-potion",
+      "roll": 19,
+      "name": "健康ポーション",
+      "name_en": "Health Potion",
+      "description": "<p>HPを1d4つ回復する。</p>"
+    },
+    {
+      "id": "stamina-potion",
+      "roll": 20,
+      "name": "スタミナポーション",
+      "name_en": "Stamina Potion",
+      "description": "<p>ストレスを1d4つ回復する。</p>"
+    },
+    {
+      "id": "armor-stitcher",
+      "roll": 21,
+      "name": "防具継当て",
+      "name_en": "Armor Stitcher",
+      "description": "<p>君はこの継当てを使用することで、任意の数の希望を消費して同じ数の防具スロットを回復することができる。</p>"
+    },
+    {
+      "id": "gill-salve",
+      "roll": 22,
+      "name": "エラ軟膏",
+      "name_en": "Gill Salve",
+      "description": "<p>君はこの軟膏を首に塗布することで、（レベル×1分）のあいだ水中で呼吸することができる。</p>"
+    },
+    {
+      "id": "replication-parchment",
+      "roll": 23,
+      "name": "複製の羊皮紙",
+      "name_en": "Replication Parchment",
+      "description": "<p>この1片の羊皮紙を別の羊皮紙に触れさせることで、君は2枚目の羊皮紙の内容を完全に複製できる。一度使用すると、この羊皮紙はただの紙になる。</p>"
+    },
+    {
+      "id": "improved-arcane-shard",
+      "roll": 24,
+      "name": "強化秘術結晶",
+      "name_en": "Improved Arcane Shard",
+      "description": "<p>君は【技巧】ロールを行うことで、この結晶を遠距離射程内の敵集団に投げることができる。君が成功した目標は2d20の魔法ダメージを受ける。</p>"
+    },
+    {
+      "id": "major-stride-potion",
+      "roll": 25,
+      "name": "上級脚力ポーション",
+      "name_en": "Major Stride Potion",
+      "description": "<p>君は次の【敏捷】ロールに＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "major-bolster-potion",
+      "roll": 26,
+      "name": "上級強化ポーション",
+      "name_en": "Major Bolster Potion",
+      "description": "<p>君は次の休憩まで【筋力】ロールに＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "major-control-potion",
+      "roll": 27,
+      "name": "上級制御ポーション",
+      "name_en": "Major Control Potion",
+      "description": "<p>君は次の休憩まで【技巧】ロールに＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "major-attune-potion",
+      "roll": 28,
+      "name": "上級同調ポーション",
+      "name_en": "Major Attune Potion",
+      "description": "<p>君は次の休憩まで【本能】ロールに＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "major-charm-potion",
+      "roll": 29,
+      "name": "上級魅了ポーション",
+      "name_en": "Major Charm Potion",
+      "description": "<p>君は次の休憩まで【存在】ロールに＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "major-enlighten-potion",
+      "roll": 30,
+      "name": "上級啓蒙ポーション",
+      "name_en": "Major Enlighten Potion",
+      "description": "<p>君は次の休憩まで【知識】ロールに＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "blood-of-the-yorgi",
+      "roll": 31,
+      "name": "ヨルギの血",
+      "name_en": "Blood of the Yorgi",
+      "description": "<p>君はこの血を飲んでその場から姿を消し、君が見ることのできる超遠距離射程内の一点に瞬時に姿を現すことができる。</p>"
+    },
+    {
+      "id": "homets-secret-potion",
+      "roll": 32,
+      "name": "ホメットの秘密ポーション",
+      "name_en": "Homet’s Secret Potion",
+      "description": "<p>このポーションを飲んだ後、君が次に成功した攻撃はクリティカル成功になる。</p>"
+    },
+    {
+      "id": "redthorn-saliva",
+      "roll": 33,
+      "name": "赤茨の分泌液",
+      "name_en": "Redthorn Saliva",
+      "description": "<p>君はこの分泌液を物理ダメージを与える武器に塗り、その武器を用いた君の次のダメージロールにd12を加えることができる。</p>"
+    },
+    {
+      "id": "channelstone",
+      "roll": 34,
+      "name": "伝導石",
+      "name_en": "Channelstone",
+      "description": "<p>君はこの石を使用して、保管枠から呪文または魔導書を1枚取得し、それを1回使用して、保管枠に戻すことができる。</p>"
+    },
+    {
+      "id": "mythic-dust",
+      "roll": 35,
+      "name": "神秘の塵",
+      "name_en": "Mythic Dust",
+      "description": "<p>君はこの塵を魔法ダメージを与える武器に塗り、その武器を用いた君の次のダメージロールにd12を加えることができる。</p>"
+    },
+    {
+      "id": "acidpaste",
+      "roll": 36,
+      "name": "酸糊",
+      "name_en": "Acidpaste",
+      "description": "<p>この糊は鮮やかな閃光を放ちながら壁やその他の表面を溶かす。</p>"
+    },
+    {
+      "id": "hopehold-flare",
+      "roll": 37,
+      "name": "希望保持の光",
+      "name_en": "Hopehold Flare",
+      "description": "<p>君がこの光を使用したなら、近距離射程内にいる味方は希望を1つ消費する際にd6を振る。6の目が出たなら、その味方はその希望を消費せずに効果を得る。この光は場面が終了するまで持続する。</p>"
+    },
+    {
+      "id": "major-arcane-shard",
+      "roll": 38,
+      "name": "上級秘術結晶",
+      "name_en": "Major Arcane Shard",
+      "description": "<p>君は【技巧】ロールを行ってこの結晶を遠距離射程内にいる敵の一団に投げることができる。君が成功した目標は4d20の魔法ダメージを受ける。</p>"
+    },
+    {
+      "id": "featherbone",
+      "roll": 39,
+      "name": "羽根骨",
+      "name_en": "Featherbone",
+      "description": "<p>君はこの骨を使用して（レベル×1分）のあいだ自分の落下速度を制御することができる。</p>"
+    },
+    {
+      "id": "circle-of-the-void",
+      "roll": 40,
+      "name": "虚空の円",
+      "name_en": "Circle of the Void",
+      "description": "<p>ストレスを1つマークして、遠距離射程まで広がる虚空を作り出す。虚空内ではいかなる魔法も発動できず、虚空内のクリーチャーは魔法ダメージに耐性を得る。</p>"
+    },
+    {
+      "id": "sun-tree-sap",
+      "roll": 41,
+      "name": "太陽木の樹液",
+      "name_en": "Sun Tree Sap",
+      "description": "<p>この樹液を摂取してd6を振る。5〜6の目が出たなら、HPを2つ回復する。2〜4の目が出たなら、ストレスを3つ回復する。1の目が出たなら、死のベールを見通して変化して戻り、傷跡を1つ得る。</p>"
+    },
+    {
+      "id": "dripfang-poison",
+      "roll": 42,
+      "name": "ドリップファング毒",
+      "name_en": "Dripfang Poison",
+      "description": "<p>この毒を摂取したクリーチャーは8d10の直接魔法ダメージを受ける。</p>"
+    },
+    {
+      "id": "major-health-potion",
+      "roll": 43,
+      "name": "上級健康ポーション",
+      "name_en": "Major Health Potion",
+      "description": "<p>1d4＋2個のHPを回復する。</p>"
+    },
+    {
+      "id": "major-stamina-potion",
+      "roll": 44,
+      "name": "上級スタミナポーション",
+      "name_en": "Major Stamina Potion",
+      "description": "<p>1d4＋2個のストレスを回復する。</p>"
+    },
+    {
+      "id": "ogre-musk",
+      "roll": 45,
+      "name": "オーガの麝香",
+      "name_en": "Ogre Musk",
+      "description": "<p>君はこの麝香を使用して、次の休憩まで、通常の手段であれ魔法的な手段であれ、あらゆる者からの追跡を防ぐことができる。</p>"
+    },
+    {
+      "id": "wingsprout",
+      "roll": 46,
+      "name": "翼生え",
+      "name_en": "Wingsprout",
+      "description": "<p>君は魔法の翼を得て、（レベル×1分）のあいだ飛行できるようになる。</p>"
+    },
+    {
+      "id": "jar-of-lost-voices",
+      "roll": 47,
+      "name": "失われし声の甕",
+      "name_en": "Jar of Lost Voices",
+      "description": "<p>君はこの甕を開けて、（【本能】×1分）のあいだ耳をつんざく声のこだまを放つことができる。遠距離射程内にいて音に備えていないクリーチャーは、6d8の魔法ダメージを受ける。</p>"
+    },
+    {
+      "id": "dragonbloom-tea",
+      "roll": 48,
+      "name": "ドラゴンブルーム茶",
+      "name_en": "Dragonbloom Tea",
+      "description": "<p>君はこのお茶を飲んで炎のブレス攻撃を放つことができる。近距離射程内で君の前にいすすべての敵に対して【本能】ロールを行うこと。君が成功した目標は、君の習熟度を用いたd20の物理ダメージを受ける。</p>"
+    },
+    {
+      "id": "bridge-seed",
+      "roll": 49,
+      "name": "橋種",
+      "name_en": "Bridge Seed",
+      "description": "<p>君のいる場所から遠距離射程内の一点へ分厚い蔦が伸びる。君はその蔦を登るか渡ることができる。蔦は次の小休憩時に消える。</p>"
+    },
+    {
+      "id": "sleeping-sap",
+      "roll": 50,
+      "name": "催眠の樹液",
+      "name_en": "Sleeping Sap",
+      "description": "<p>君はこのポーションを飲んで一晩の休憩のあいだ眠りにつくことができる。起床時、君はストレスをすべて回復する。</p>"
+    },
+    {
+      "id": "feast-of-xuria",
+      "roll": 51,
+      "name": "ザリアの馳走",
+      "name_en": "Feast of Xuria",
+      "description": "<p>君はこの食事をたべてHPとストレスを全て回復し、希望を1d4つ得ることができる。</p>"
+    },
+    {
+      "id": "bonding-honey",
+      "roll": 52,
+      "name": "絆の蜂蜜",
+      "name_en": "Bonding Honey",
+      "description": "<p>この蜂蜜を使用すると、2つの物体を永続的に貼り付けることができる。</p>"
+    },
+    {
+      "id": "shrinking-potion",
+      "roll": 53,
+      "name": "縮小ポーション",
+      "name_en": "Shrinking Potion",
+      "description": "<p>君はこのポーションを飲んで、体の大きさを半分にすることができる。この姿は君が自ら解除するか次の休憩まで持続する。この姿でいる間、君は【敏捷】に＋2のボーナスを、習熟度に－1のペナルティを得る。</p>"
+    },
+    {
+      "id": "growing-potion",
+      "roll": 54,
+      "name": "成長ポーション",
+      "name_en": "Growing Potion",
+      "description": "<p>君はこのポーションを飲んで、体の大きさを2倍にすることができる。この姿は君が自ら解除するか次の休憩まで持続する。この姿でいる間、君は【筋力】に＋2、習熟度に＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "knowledge-stone",
+      "roll": 55,
+      "name": "知識の石",
+      "name_en": "Knowledge Stone",
+      "description": "<p>君が死亡した時にこの石を持っていたなら、味方1人は君の準備枠からカード1枚を自分の準備枠または保管枠に取得することができる。味方がこの知識を取得した後、この石は砕ける。</p>"
+    },
+    {
+      "id": "sweet-moss",
+      "roll": 56,
+      "name": "甘苔",
+      "name_en": "Sweet Moss",
+      "description": "<p>君は休憩中にこの苔を摂取して、HPまたはストレスを1d10個回復することができる。</p>"
+    },
+    {
+      "id": "blinding-orb",
+      "roll": 57,
+      "name": "盲目の球体",
+      "name_en": "Blinding Orb",
+      "description": "<p>君はこの球体を起動して明るい閃光を生むことができる。近距離射程内にいるすべての目標は、HPをマークするまで脆弱状態になる。</p>"
+    },
+    {
+      "id": "death-tea",
+      "roll": 58,
+      "name": "死茶",
+      "name_en": "Death Tea",
+      "description": "<p>このお茶を飲んだ後、君は攻撃にクリティカル成功すると目標を即死させることができる。次の大休憩までに攻撃をクリティカル成功させなかったなら、君は死ぬ。</p>"
+    },
+    {
+      "id": "mirror-of-marigold",
+      "roll": 59,
+      "name": "マリーゴールドの鏡",
+      "name_en": "Mirror of Marigold",
+      "description": "<p>君はダメージを受けた時、希望を1つ消費してそのダメージを取り消すことができる。その後、この鏡は砕け散る。</p>"
+    },
+    {
+      "id": "stardrop",
+      "roll": 60,
+      "name": "星の雫",
+      "name_en": "Stardrop",
+      "description": "<p>君はこの星の雫を使用して彗星の嵐を召喚することができる。この嵐は超遠距離射程内にいるすべての目標に8d20の物理ダメージを与える。</p>"
+    }
+  ],
+  "additional-consumables": [
+    {
+      "id": "warding-candle",
+      "roll": 1,
+      "name": "防護の蝋燭",
+      "name_en": "Warding Candle",
+      "description": "<p>君はこの蝋燭に火を灯して、近距離射程内の範囲を光輪で満たすことができる。光輪の外にいるクリーチャーは、中にいるクリーチャーに悪意を抱いているなら、光輪の中に入れない。この蝋燭は1時間のあいだ燃え続ける。</p>"
+    },
+    {
+      "id": "iridian-dust",
+      "roll": 2,
+      "name": "イリディアンの粉",
+      "name_en": "Iridian Dust",
+      "description": "<p>この色とりどりの粉末はあらゆるものに付着し、これを浴びたクリーチャーが隠れ身状態になるのを防ぐ。</p>"
+    },
+    {
+      "id": "verglasian-seed",
+      "roll": 3,
+      "name": "ヴァーグラシアンの種",
+      "name_en": "Verglasian Seed",
+      "description": "<p>君はこの氷の欠片を使って、近距離射程までの水の範囲を瞬時に凍らせることができる。</p>"
+    },
+    {
+      "id": "cupbearers-bezoar",
+      "roll": 4,
+      "name": "酌取りの胃石",
+      "name_en": "Cupbearer’s Bezoar",
+      "description": "<p>この胃石を飲み込んだ者は、次の大休憩まで毒に完全耐性を得ることができる。</p>"
+    },
+    {
+      "id": "mossmantle-potion",
+      "roll": 5,
+      "name": "苔衣のポーション",
+      "name_en": "Mossmantle Potion",
+      "description": "<p>このお茶を飲んだ者は、次の休憩まで自然環境に完全に溶け込むことができる。</p>"
+    },
+    {
+      "id": "lyrebird-lozenge",
+      "roll": 6,
+      "name": "コトドリののど飴",
+      "name_en": "Lyrebird Lozenge",
+      "description": "<p>こののど飴を口の中で溶かした者は、場面の終了時まで、過去に聞いたことのある任意の声を完璧に真似ることができる。</p>"
+    },
+    {
+      "id": "vial-of-featherfall",
+      "roll": 7,
+      "name": "軟着陸の小瓶",
+      "name_en": "Vial of Featherfall",
+      "description": "<p>このポーションを飲んだ者は、以降10分のあいだ、落下によるダメージを無視できる。</p>"
+    },
+    {
+      "id": "chimeric-saliva",
+      "roll": 8,
+      "name": "キマイラの唾液",
+      "name_en": "Chimeric Saliva",
+      "description": "<p>君はこの唾液を物理ダメージを与える武器に塗り、次の休憩までその武器のダメージ種別を魔法に変化させることができる。</p>"
+    },
+    {
+      "id": "packet-of-space-dust",
+      "roll": 9,
+      "name": "宇宙塵の小袋",
+      "name_en": "Packet of Space Dust",
+      "description": "<p>この塵を浴びたものは空気より軽くなる。小袋にはピクニックバスケットの中身を覆うのに十分な量の塵が入っており、その効果は1時間のあいだ継続する。</p>"
+    },
+    {
+      "id": "pipeweed",
+      "roll": 10,
+      "name": "パイプウィード",
+      "name_en": "Pipeweed",
+      "description": "<p>君は小休憩中に合間ムーヴ“ストレス回復”を選択した時、この酩酊作用のない葉を吸うことで、ストレスを追加で1つ回復できる。合間ムーヴ“ストレス回復”を選択した他のPCも、この利益を得る。</p>"
+    },
+    {
+      "id": "deathseers-powder",
+      "roll": 11,
+      "name": "死見者の粉",
+      "name_en": "Deathseer’s Powder",
+      "description": "<p>この粉末を死んだばかりの死体に振りかけると、その者の最期の1分間を再現する霊体を召喚することができる。</p>"
+    },
+    {
+      "id": "slayers-salt",
+      "roll": 12,
+      "name": "狩人の塩",
+      "name_en": "Slayer’s Salt",
+      "description": "<p>この塩を窓枠や敷居に沿って線状に撒くと、アンデッドのクリーチャーが越えられない魔法の障壁を作り出せる。この効果は線を崩れるまで継続する。</p>"
+    },
+    {
+      "id": "yakamel-milk",
+      "roll": 13,
+      "name": "ヤカメルの乳",
+      "name_en": "Yakamel Milk",
+      "description": "<p>このミルクを飲んで以降、君が次にHPを1つ以上回復した時、HPを追加で1つ回復する。</p>"
+    },
+    {
+      "id": "glowmoss-mushroom",
+      "roll": 14,
+      "name": "輝苔茸",
+      "name_en": "Glowmoss Mushroom",
+      "description": "<p>このキノコは細かく割くと、次の大休憩まで鮮やかな青い光を放つようになる。</p>"
+    },
+    {
+      "id": "red-ooze-oil",
+      "roll": 15,
+      "name": "レッド・ウーズの油",
+      "name_en": "Red Ooze Oil",
+      "description": "<p>この油は武器に塗ることができる。次にその武器での攻撃に成功した時、君は1d8の追加魔法ダメージを与え、目標を一時的に着火状態にする。着火状態の目標は、スポットライトを受けるたびに1d4の魔法ダメージを受ける。</p>"
+    },
+    {
+      "id": "instant-camp",
+      "roll": 16,
+      "name": "携帯野営地",
+      "name_en": "Instant Camp",
+      "description": "<p>この小さな機械仕掛けの箱を広げると、6人が安全に過ごせる大きさの野営用テントになる。このテントは次の大休憩の終了時に折りたたまれる。</p>"
+    },
+    {
+      "id": "bundle-of-spiderlegs",
+      "roll": 17,
+      "name": "蜘蛛脚の束",
+      "name_en": "Bundle of Spiderlegs",
+      "description": "<p>この蜘蛛の脚を食べた者は、次の休憩まで壁の上を歩けるようになる。</p>"
+    },
+    {
+      "id": "ciscan-fog-bottle",
+      "roll": 18,
+      "name": "シスカン霧の壺",
+      "name_en": "Ciscan Fog Bottle",
+      "description": "<p>この壺を割ると、近距離射程内の範囲が魔法の霧で満たされる。この霧に入ったクリーチャーはストレスを1つ回復し、隠れ身状態になる。</p>"
+    },
+    {
+      "id": "snapthorn-seed",
+      "roll": 19,
+      "name": "スナップソーンの種",
+      "name_en": "Snapthorn Seed",
+      "description": "<p>この種は自分が見ることのできる地点に投げられる。種は爆発して絡みつく蔓になり、その地点から近距離射程内にいるすべてのクリーチャーを一時的に拘束状態にする。</p>"
+    },
+    {
+      "id": "sprite-bottle",
+      "roll": 20,
+      "name": "スプライトの壺",
+      "name_en": "Sprite Bottle",
+      "description": "<p>君が最後のHPをマークした時、この壺が砕け、中にいるスプライトが解放される。スプライトは君のHPをすべて回復した後、定命界を去る。</p>"
+    },
+    {
+      "id": "gravity-bomb",
+      "roll": 21,
+      "name": "重力爆弾",
+      "name_en": "Gravity Bomb",
+      "description": "<p>この桃ほどの大きさの機械仕掛けの球体は、遠距離射程内の一点に投げることができる。球体は内破し、その地点から近距離射程内にあるすべてのクリーチャーと物体を、近接射程内に引き寄せる。</p>"
+    },
+    {
+      "id": "gossip-flower",
+      "roll": 22,
+      "name": "噂花",
+      "name_en": "Gossip Flower",
+      "description": "<p>この種は土に植えることができる。種は急速に成長して小さな花を咲かせ、最長1週間のあいだ花が聞いたものすべてを記録する。摘み取られると、この花は記録した内容を実際の時間で再現した後、しおれる。</p>"
+    },
+    {
+      "id": "displacement-token",
+      "roll": 23,
+      "name": "転位のトークン",
+      "name_en": "Displacement Token",
+      "description": "<p>このトークンを飲み込むと、君自身の幻を2体生み出し、それを操ることができる。それぞれの幻は、ダメージを受けるか、次の休憩まで持続する。</p>"
+    },
+    {
+      "id": "night-hags-dust",
+      "roll": 24,
+      "name": "ナイト・ハグの粉",
+      "name_en": "Night Hag’s Dust",
+      "description": "<p>この粉は、敵キャラクターの顔に吹きかけて、次の大休憩までそのキャラクターがストレスを回復するのを妨げることができる。</p>"
+    },
+    {
+      "id": "self-sewing-thread",
+      "roll": 25,
+      "name": "自己縫合の糸",
+      "name_en": "Self-Sewing Thread",
+      "description": "<p>君はこの糸を使用して、HPを1つ、または防具スロットを2つ回復できる。</p>"
+    },
+    {
+      "id": "stonemasons-fortune",
+      "roll": 26,
+      "name": "石工の幸運",
+      "name_en": "Stonemason’s Fortune",
+      "description": "<p>この灰色の煉瓦を地面に投げると、即座に高さ6フィート、幅10フィート、奥行き2フィート（高さ1.8m、幅3m、奥行き0.6m）の固い石壁となる。</p>"
+    },
+    {
+      "id": "mnemonic-potion",
+      "roll": 27,
+      "name": "記憶のポーション",
+      "name_en": "Mnemonic Potion",
+      "description": "<p>このポーションを飲んだ者は、希望を消費せずに経験を1つ使用できる。</p>"
+    },
+    {
+      "id": "salamander-salve",
+      "roll": 28,
+      "name": "サラマンダーの軟膏",
+      "name_en": "Salamander Salve",
+      "description": "<p>この軟膏を肌に塗った者は、次の休憩まで熱に完全耐性を得る。</p>"
+    },
+    {
+      "id": "green-ooze-oil",
+      "roll": 29,
+      "name": "グリーン・ウーズの油",
+      "name_en": "Green Ooze Oil",
+      "description": "<p>この油は武器に塗ることができる。次にその武器で攻撃に成功した時、君は1d8の追加魔法ダメージを与え、目標を一時的に腐食状態にする。腐食状態の間、目標はダメージ閾値に－2のペナルティを受ける。</p>"
+    },
+    {
+      "id": "sunlight-orb",
+      "roll": 30,
+      "name": "日光球",
+      "name_en": "Sunlight Orb",
+      "description": "<p>君はこの球体を砕いて、超遠距離射程内の範囲を、以降24時間のあいだ太陽光に照らされた昼間のように見せることができる。</p>"
+    },
+    {
+      "id": "moonlight-orb",
+      "roll": 31,
+      "name": "月光球",
+      "name_en": "Moonlight Orb",
+      "description": "<p>君はこの球体を砕いて、超遠距離射程内の範囲を、以降24時間のあいだ、月明かりに照らされた夜間のように見せることができる。</p>"
+    },
+    {
+      "id": "midas-flask",
+      "roll": 32,
+      "name": "ミダスのフラスコ",
+      "name_en": "Midas Flask",
+      "description": "<p>この小さなフラスコの錬金液をありふれたアイテムに注ぐと、そのアイテムを瞬時に1包の金へと変えることができる。</p>"
+    },
+    {
+      "id": "staff-of-reversal",
+      "roll": 33,
+      "name": "反転のスタッフ",
+      "name_en": "Staff of Reversal",
+      "description": "<p>この杖を地面に叩きつけて折ると、遠距離射程内にある魔法的な変身または効果1つを反転させることができる。</p>"
+    },
+    {
+      "id": "berserkers-brew",
+      "roll": 34,
+      "name": "狂戦士の酒",
+      "name_en": "Berserker’s Brew",
+      "description": "<p>この少量の液体を飲んだ者は、【直観】に等しいぶんだけ（最低1）、【筋力】にボーナスを得て、【技巧】と【知識】にペナルティを受ける。この効果は、死亡ムーヴを行うか、次の休憩まで持続する。</p>"
+    },
+    {
+      "id": "emberite-shard",
+      "roll": 35,
+      "name": "エンバーライトの結晶",
+      "name_en": "Emberite Shard",
+      "description": "<p>遠距離射程内の一点を選ぶ。その地点から近距離射程内にいるすべての目標は、反応ロール（16）に成功しなければ、3d6の魔法ダメージを受けて一時的に炎上状態になる。炎上状態のクリーチャーは、行動ロールを行うたびにd4を振る。1の目が出たなら、HPを1つマークする。4の目がが出たなら炎上状態を解除する。</p>"
+    },
+    {
+      "id": "arcticite-shard",
+      "roll": 36,
+      "name": "アークティサイトの結晶",
+      "name_en": "Arcticite Shard",
+      "description": "<p>遠距離射程内の一点を選ぶ。その地点から近距離射程内にいるすべての目標は、反応ロール（16）に成功しなければ、3d6の魔法ダメージを受け、凍りついて一時的に拘束状態になる。</p>"
+    },
+    {
+      "id": "fulgurite-shard",
+      "roll": 37,
+      "name": "フルグライトの結晶",
+      "name_en": "Fulgurite Shard",
+      "description": "<p>遠距離射程内の一点を選ぶ。その地点から近距離射程内にいるすべての目標は、反応ロール（16）に成功しなければ、3d6の魔法ダメージを受け、雷がその範囲を駆け巡ってストレスを1d4つマークする。</p>"
+    },
+    {
+      "id": "demiurges-draught",
+      "roll": 38,
+      "name": "デミウルゴスの麦酒",
+      "name_en": "Demiurge’s Draught",
+      "description": "<p>この麦酒を飲んだ者は、次に攻撃ロールに成功するまで、習熟度に＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "cockerel-claw-tea",
+      "roll": 39,
+      "name": "雄鶏の爪茶",
+      "name_en": "Cockerel Claw Tea",
+      "description": "<p>このお茶を飲んだ者は、あたかも大休憩を取ったかのように特徴をリセットする。</p>"
+    },
+    {
+      "id": "potion-of-vigilance",
+      "roll": 40,
+      "name": "警戒のポーション",
+      "name_en": "Potion of Vigilance",
+      "description": "<p>このポーションを飲んだ者は、HPを1つマークするまで、回避値に＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "cacophonous-concoction",
+      "roll": 41,
+      "name": "不協和音の調合薬",
+      "name_en": "Cacophonous Concoction",
+      "description": "<p>このポーションを飲んでから1時間のあいだの君の言動は、見聞きしても言い表せない。君について見たこと、聞いたこと、その他の方法で感じたことを伝えようとしても、支離滅裂な内容になる。</p>"
+    },
+    {
+      "id": "nightmare-mead",
+      "roll": 42,
+      "name": "悪夢の蜂蜜酒",
+      "name_en": "Nightmare Mead",
+      "description": "<p>このポーションを飲んだ者は、次に目を合わせた人物の最も深い恐怖を知ることができる。そうしたなら、GMは恐怖を1つ得る。</p>"
+    },
+    {
+      "id": "stake-of-abjuration",
+      "roll": 43,
+      "name": "防御の杭",
+      "name_en": "Stake of Abjuration",
+      "description": "<p>君はこの杭を地面に打ち込んで、宣言を1つ行うことができる。次の休憩まで、この杭から遠距離射程内でその宣言に違反したクリーチャーは、ストレスを1つマークしなければならない。杭は次の休憩まで持続し、その時点で砕け散る。</p>"
+    },
+    {
+      "id": "psychopomps-shroud",
+      "roll": 44,
+      "name": "霊魂案内人の衣",
+      "name_en": "Psychopomp’s Shroud",
+      "description": "<p>君はこの衣を死んだばかりのクリーチャーの死体にかけることができる。そのクリーチャーの魂はこの衣の中に入り、次の日の出まで君の助手として霊体となる。霊魂はその時点で死の帳を越え、衣と共に去っていく。</p>"
+    },
+    {
+      "id": "phial-of-deep-ink",
+      "roll": 45,
+      "name": "深淵のインク瓶",
+      "name_en": "Phial of Deep Ink",
+      "description": "<p>このインク瓶を飲んだ者は、以後1時間のあいだ、自分とほぼ同じ大きさの頭足類へと変身する。君はゴムのような皮膚、柔らかな骨、水中で呼吸する能力を得て、合計8本になるまで新たな手足が生えてくる。</p>"
+    },
+    {
+      "id": "mesmers-tonic",
+      "roll": 46,
+      "name": "メスマーの強壮剤",
+      "name_en": "Mesmer’s Tonic",
+      "description": "<p>この強壮剤を飲むと、次の休憩まで、君に聞こえるのは至近距離射程内にいるクリーチャーの表層思考のみになる。</p>"
+    },
+    {
+      "id": "invisibility-potion",
+      "roll": 47,
+      "name": "透明化の水薬",
+      "name_en": "Invisibility Potion",
+      "description": "<p>君は、他のクリーチャーにダメージを与えるか、次の休憩まで、隠れ身状態になる。</p>"
+    },
+    {
+      "id": "formoid-serum",
+      "roll": 48,
+      "name": "フォルモイド血清",
+      "name_en": "Formoid Serum",
+      "description": "<p>君はこの水薬を飲み、場面の終了時まで1600万匹のアリの群れになることができる。君の装備、戦利品、特徴すべて保持され、使用可能である。</p>"
+    },
+    {
+      "id": "steelskin-salve",
+      "roll": 49,
+      "name": "鋼肌の軟膏",
+      "name_en": "Steelskin Salve",
+      "description": "<p>君はこの軟膏を肌に塗り、場面の終了時までダメージ閾値に自分のティアに等しいボーナスを得ることができる。</p>"
+    },
+    {
+      "id": "godlings-pomelo",
+      "roll": 50,
+      "name": "小神のザボン",
+      "name_en": "Godling’s Pomelo",
+      "description": "<p>君はこの柑橘類の果実を食べ、HPとストレスをすべて回復することができる。</p>"
+    },
+    {
+      "id": "snakeskin-spirit",
+      "roll": 51,
+      "name": "蛇肌の火酒",
+      "name_en": "Snakeskin Spirit",
+      "description": "<p>君はこの水薬を飲むことで、皮膚を表層を脱ぎ捨て、傷跡を1つ癒すことができる。</p>"
+    },
+    {
+      "id": "magic-users-malison",
+      "roll": 52,
+      "name": "魔法使いの呪詛",
+      "name_en": "Magic-User’s Malison",
+      "description": "<p>この囚われた呪文使いの霊魂を解放すると、君は自分の保管枠にあるカードの呪文を1つを、あたかも準備枠にあるかのように発動できる。これは永続的に保管枠にあるカードには機能しない。</p>"
+    },
+    {
+      "id": "quintessential-severant",
+      "roll": 53,
+      "name": "真髄の快刀",
+      "name_en": "Quintessential Severant",
+      "description": "<p>君はこの魔法の刃を使って、魔法的または形而上学的な結びつきを1つ断ち切ることができる。たとえば、付与魔法、契約、魔法的な繋がり、神性な誓約などである。そうしたなら、この刃は砕け散る。</p>"
+    },
+    {
+      "id": "mask-of-the-echoed-self",
+      "roll": 54,
+      "name": "こだまの仮面",
+      "name_en": "Mask of the Echoed Self",
+      "description": "<p>君は次のレベルアップ中にこの仮面を着用することで、自分の特性の任意の値を入れ替えることができる。そうしたなら、この仮面が君の永久的な顔になる。</p>"
+    },
+    {
+      "id": "necroprancers-bell",
+      "roll": 55,
+      "name": "死霊術師の鈴",
+      "name_en": "Necroprancer’s Bell",
+      "description": "<p>君はこの錆びた舌のない鈴を地面に叩きつけて砕くことで、骸骨の乗騎を召喚し地中から這い出させ、次の日の出まで君に従わせることができる。</p>"
+    },
+    {
+      "id": "drakemantle",
+      "roll": 56,
+      "name": "ドレイクマント",
+      "name_en": "Drakemantle",
+      "description": "<p>君はこの魔法の古代竜の皮を使うことで、場面の終了時まで竜の特徴を得ることができる。場面の終了時、この皮はぼろぼろに崩れ落ちる。それまでの間、君は飛行でき、ダメージ閾値に＋5、習熟度に＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "gamblers-fallacy",
+      "roll": 57,
+      "name": "賭博師の誤謬",
+      "name_en": "Gambler’s Fallacy",
+      "description": "<p>君は豚の形をしたこの投入口の付いた陶器の壺に、金の包を任意の数だけ入れて消費できる。この壺は遠距離射程内の一点に向かって投げると爆発し、その地点から近距離射程内にいるすべてのクリーチャーに、消費した金1包ごとに1d20の魔法ダメージを与える。壺の中にある金はすべて破壊される。</p>"
+    },
+    {
+      "id": "lionheart-tonic",
+      "roll": 58,
+      "name": "獅子心の強壮剤",
+      "name_en": "Lionheart Tonic",
+      "description": "<p>君はこの強壮剤を飲むことで、ロール結果が恐怖となるまで習熟度に＋1のボーナスを得る。</p>"
+    },
+    {
+      "id": "tears-of-the-undying-hero",
+      "roll": 59,
+      "name": "死せざる英雄の涙",
+      "name_en": "Tears of the Undying Hero",
+      "description": "<p>この水薬を飲むと、次の大休憩まで死が君に触れることはなくなる。君は最後のHPをマークするところで、死亡ムーヴを行う代わりに、最期の行動ロールを1つ行った後、夢なきまどろみに落ちる。この状態は、味方が合間ムーヴ“応急治療”を選択して君のHPを回復するまで継続する。</p>"
+    },
+    {
+      "id": "featherstep-potion",
+      "roll": 60,
+      "name": "羽根足の水薬",
+      "name_en": "Featherstep Potion",
+      "description": "<p>君はこの水薬を飲むことで、足首から小さな翼を生やし、次の休憩まで回避値に自分のティアに等しいボーナスを得ることができる。</p>"
+    }
+  ]
+}

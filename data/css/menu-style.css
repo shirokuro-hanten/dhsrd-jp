@@ -41,7 +41,6 @@
     opacity 0.2s ease;
 }
 
-
 /* ==================== */
 /* MENU */
 /* ==================== */
@@ -111,7 +110,6 @@
   background: #f5f5f5;
 }
 
-
 /* ==================== */
 /* SUBMENU BUTTON */
 /* ==================== */
@@ -153,7 +151,6 @@
 .nav-item.is-open > .submenu-toggle::after {
   content: "－";
 }
-
 
 /* ==================== */
 /* SUBMENU */
@@ -205,10 +202,4 @@
 .submenu .submenu .submenu > .nav-item > a,
 .submenu .submenu .submenu > a {
   padding-left: 3.25rem;
-}
-
-/* 第5階層 */
-.submenu .submenu .submenu .submenu > .nav-item > a,
-.submenu .submenu .submenu .submenu > a {
-  padding-left: 4rem;
 }

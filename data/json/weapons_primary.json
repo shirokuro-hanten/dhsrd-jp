@@ -10,7 +10,7 @@
       "damageType": "物理",
       "burden": "片手用",
       "feature": {
-        "name": "保証",
+        "name": "確実",
         "name_en": "Reliable",
         "description": "攻撃ロール＋1"
       }
@@ -49,7 +49,7 @@
       "feature": {
         "name": "巨大",
         "name_en": "Massive",
-        "description": "回避－1；攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+        "description": "回避値－1；攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
       }
     },
     {
@@ -75,7 +75,7 @@
       "feature": {
         "name": "重量",
         "name_en": "Heavy",
-        "description": "回避－1"
+        "description": "回避値－1"
       }
     },
     {
@@ -93,7 +93,7 @@
       "id": "quarterstaff",
       "name": "クオータースタッフ",
       "name_en": "Quarterstaff",
-      "trait": "本能",
+      "trait": "直観",
       "range": "近接",
       "damage": "d10＋3",
       "damageType": "物理",
@@ -123,7 +123,7 @@
       "feature": {
         "name": "高速",
         "name_en": "Quick",
-        "description": "攻撃を行う時、君はストレスを1つマークして射程内にいるもう1体のクリーチャーを目標とすることができる。"
+        "description": "君は攻撃を行う時、ストレスを1つマークして、射程内にいるもう1体のクリーチャーを目標とすることができる。"
       }
     },
     {
@@ -228,7 +228,7 @@
       "id": "hand-runes",
       "name": "ハンド・ルーンズ",
       "name_en": "Hand Runes",
-      "trait": "本能",
+      "trait": "直観",
       "range": "至近距離",
       "damage": "d10",
       "damageType": "魔法",
@@ -247,14 +247,14 @@
       "feature": {
         "name": "回帰",
         "name_en": "Returning",
-        "description": "この武器は射程内に投擲すると、攻撃の直後に君の手の中に現れる。"
+        "description": "この武器は、射程内に投擲すると、攻撃の直後に君の手の中に現れる。"
       }
     },
     {
       "id": "shortstaff",
       "name": "ショートスタッフ",
       "name_en": "Shortstaff",
-      "trait": "本能",
+      "trait": "直観",
       "range": "近距離",
       "damage": "d8＋1",
       "damageType": "魔法",
@@ -265,7 +265,7 @@
       "id": "dualstaff",
       "name": "デュアルスタッフ",
       "name_en": "Dualstaff",
-      "trait": "本能",
+      "trait": "直観",
       "range": "遠距離",
       "damage": "d6＋3",
       "damageType": "魔法",
@@ -325,7 +325,7 @@
       "damageType": "物理",
       "burden": "片手用",
       "feature": {
-        "name": "保証",
+        "name": "確実",
         "name_en": "Reliable",
         "description": "攻撃ロール＋1"
       }
@@ -364,7 +364,7 @@
       "feature": {
         "name": "巨大",
         "name_en": "Massive",
-        "description": "回避－1；攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+        "description": "回避値－1；攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
       }
     },
     {
@@ -390,7 +390,7 @@
       "feature": {
         "name": "重量",
         "name_en": "Heavy",
-        "description": "回避－1"
+        "description": "回避値－1"
       }
     },
     {
@@ -408,7 +408,7 @@
       "id": "improved-quarterstaff",
       "name": "改良型クオータースタッフ",
       "name_en": "Improved Quarterstaff",
-      "trait": "本能",
+      "trait": "直観",
       "range": "近接",
       "damage": "d10＋6",
       "damageType": "物理",
@@ -438,7 +438,7 @@
       "feature": {
         "name": "高速",
         "name_en": "Quick",
-        "description": "攻撃を行う時、君はストレスを1つマークして射程内にいるもう1体のクリーチャーを目標とすることができる。"
+        "description": "君は攻撃を行う時、ストレスを1つマークして、射程内にいるもう1体のクリーチャーを目標とすることができる。"
       }
     },
     {
@@ -551,7 +551,7 @@
     },
     {
       "id": "bladed-whip",
-      "name": "ブレイデッド・ウィップ",
+      "name": "ブレーデッド・ウィップ",
       "name_en": "Bladed Whip",
       "trait": "敏捷",
       "range": "至近距離",
@@ -561,7 +561,7 @@
       "feature": {
         "name": "高速",
         "name_en": "Quick",
-        "description": "攻撃を行う時、君はストレスを1つマークして射程内にいるもう1体のクリーチャーを目標とすることができる。"
+        "description": "君は攻撃を行う時、ストレスを1つマークして、射程内にいるもう1体のクリーチャーを目標とすることができる。"
       }
     },
     {
@@ -574,9 +574,9 @@
       "damageType": "物理",
       "burden": "両手用",
       "feature": {
-        "name": "恐怖",
+        "name": "威圧",
         "name_en": "Scary",
-        "description": "攻撃に成功したなら、目標はストレスを1つマークする。"
+        "description": "攻撃に成功したなら、目標はストレスを1つマークしなければならない。"
       }
     },
     {
@@ -589,7 +589,7 @@
       "damageType": "物理",
       "burden": "両手用",
       "feature": {
-        "name": "保証",
+        "name": "確実",
         "name_en": "Reliable",
         "description": "攻撃ロール＋1"
       }
@@ -606,7 +606,7 @@
       "feature": {
         "name": "再装填",
         "name_en": "Reloading",
-        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器は発射できない。"
+        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器を発射できない。"
       }
     },
     {
@@ -634,7 +634,7 @@
       "damageType": "物理",
       "burden": "両手用",
       "feature": {
-        "name": "保証",
+        "name": "確実",
         "name_en": "Reliable",
         "description": "攻撃ロール＋1"
       }
@@ -678,7 +678,7 @@
       "id": "improved-hand-runes",
       "name": "改良型ハンド・ルーンズ",
       "name_en": "Improved Hand Runes",
-      "trait": "本能",
+      "trait": "直観",
       "range": "超遠距離",
       "damage": "d10＋3",
       "damageType": "魔法",
@@ -697,14 +697,14 @@
       "feature": {
         "name": "回帰",
         "name_en": "Returning",
-        "description": "この武器は射程内に投擲すると、攻撃の直後に君の手の中に現れる。"
+        "description": "この武器は、射程内に投擲すると、攻撃の直後に君の手の中に現れる。"
       }
     },
     {
       "id": "improved-shortstaff",
       "name": "改良型ショートスタッフ",
       "name_en": "Improved Shortstaff",
-      "trait": "本能",
+      "trait": "直観",
       "range": "近距離",
       "damage": "d8＋4",
       "damageType": "魔法",
@@ -715,7 +715,7 @@
       "id": "improved-dualstaff",
       "name": "改良型デュアルスタッフ",
       "name_en": "Improved Dualstaff",
-      "trait": "本能",
+      "trait": "直観",
       "range": "遠距離",
       "damage": "d6＋6",
       "damageType": "魔法",
@@ -775,7 +775,7 @@
       "feature": {
         "name": "尊大",
         "name_en": "Pompous",
-        "description": "この武器を使用するには【存在】が0以上でなければならない。"
+        "description": "【存在】が0以上でなければこの武器は使用できない。"
       }
     },
     {
@@ -803,16 +803,16 @@
       "damageType": "魔法",
       "burden": "片手用",
       "feature": {
-        "name": "恐怖",
+        "name": "威圧",
         "name_en": "Scary",
-        "description": "攻撃に成功したなら、目標はストレスを1つマークする。"
+        "description": "攻撃に成功したなら、目標はストレスを1つマークしなければならない。"
       }
     },
     {
       "id": "hammer-of-exota",
       "name": "ハンマー・オヴ・エグゾタ",
       "name_en": "Hammer of Exota",
-      "trait": "本能",
+      "trait": "直観",
       "range": "近接",
       "damage": "d8＋6",
       "damageType": "魔法",
@@ -820,7 +820,7 @@
       "feature": {
         "name": "噴出",
         "name_en": "Eruptive",
-        "description": "近接射程内の目標に対する攻撃に成功した時、超遠距離射程内にいするその他全ての敵は、反応ロール（14）に成功しなければ半分のダメージを受ける。"
+        "description": "近接射程内の目標に対する攻撃に成功した時、超遠距離射程内にいるその他全ての敵は、反応ロール（14）に成功しなければ半分のダメージを受ける。"
       }
     },
     {
@@ -842,7 +842,7 @@
       "id": "elder-bow",
       "name": "エルダー・ボウ",
       "name_en": "Elder Bow",
-      "trait": "本能",
+      "trait": "直観",
       "range": "遠距離",
       "damage": "d6＋4",
       "damageType": "魔法",
@@ -880,7 +880,7 @@
       "feature": {
         "name": "説得力",
         "name_en": "Persuasive",
-        "description": "君は【存在】ロールを行う前にストレスを1つマークしてその出目に＋2のボーナスを得ることができる。"
+        "description": "君は【存在】ロールを行う前にストレスを1つマークして、その合計値に＋2のボーナスを得ることができる。"
       }
     },
     {
@@ -893,7 +893,7 @@
       "damageType": "魔法",
       "burden": "両手用",
       "feature": {
-        "name": "保証",
+        "name": "確実",
         "name_en": "Reliable",
         "description": "攻撃ロール＋1"
       }
@@ -910,7 +910,7 @@
       "damageType": "物理",
       "burden": "片手用",
       "feature": {
-        "name": "保証",
+        "name": "確実",
         "name_en": "Reliable",
         "description": "攻撃ロール＋1"
       }
@@ -949,7 +949,7 @@
       "feature": {
         "name": "巨大",
         "name_en": "Massive",
-        "description": "回避－1；攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+        "description": "回避値－1；攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
       }
     },
     {
@@ -975,7 +975,7 @@
       "feature": {
         "name": "重量",
         "name_en": "Heavy",
-        "description": "回避－1"
+        "description": "回避値－1"
       }
     },
     {
@@ -993,7 +993,7 @@
       "id": "advanced-quarterstaff",
       "name": "発展型クオータースタッフ",
       "name_en": "Advanced Quarterstaff",
-      "trait": "本能",
+      "trait": "直観",
       "range": "近接",
       "damage": "d10＋9",
       "damageType": "物理",
@@ -1023,7 +1023,7 @@
       "feature": {
         "name": "高速",
         "name_en": "Quick",
-        "description": "攻撃を行う時、君はストレスを1つマークして射程内にいるもう1体のクリーチャーを目標とすることができる。"
+        "description": "君は攻撃を行う時、ストレスを1つマークして、射程内にいるもう1体のクリーチャーを目標とすることができる。"
       }
     },
     {
@@ -1116,7 +1116,7 @@
       "feature": {
         "name": "勇気",
         "name_en": "Brave",
-        "description": "回避－1；大ダメージ閾値＋3"
+        "description": "回避値－1；大ダメージ閾値＋3"
       }
     },
     {
@@ -1131,7 +1131,7 @@
       "feature": {
         "name": "壊滅",
         "name_en": "Devastating",
-        "description": "君は攻撃ロールを行う前にストレスを1つマークすることで、ダメージダイスとしてd20を使用することができる。"
+        "description": "君は攻撃ロールを行う前にストレスを1つマークし、ダメージダイスとしてd20を使用することができる。"
       }
     },
     {
@@ -1146,7 +1146,7 @@
       "feature": {
         "name": "保護",
         "name_en": "Protective",
-        "description": "防御値＋1"
+        "description": "防具値＋1"
       }
     },
     {
@@ -1181,7 +1181,7 @@
     },
     {
       "id": "double-flail",
-      "name": "デュアル・フレイル",
+      "name": "ダブル・フレイル",
       "name_en": "Double Flail",
       "trait": "敏捷",
       "range": "至近距離",
@@ -1221,7 +1221,7 @@
       "feature": {
         "name": "再装填",
         "name_en": "Reloading",
-        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器は発射できない。"
+        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器を発射できない。"
       }
     },
     {
@@ -1278,7 +1278,7 @@
       "id": "advanced-hand-runes",
       "name": "発展型ハンド・ルーンズ",
       "name_en": "Advanced Hand Runes",
-      "trait": "本能",
+      "trait": "直観",
       "range": "超遠距離",
       "damage": "d10＋6",
       "damageType": "魔法",
@@ -1297,14 +1297,14 @@
       "feature": {
         "name": "回帰",
         "name_en": "Returning",
-        "description": "この武器は射程内に投擲すると、攻撃の直後に君の手の中に現れる。"
+        "description": "この武器は、射程内に投擲すると、攻撃の直後に君の手の中に現れる。"
       }
     },
     {
       "id": "advanced-shortstaff",
       "name": "発展型ショートスタッフ",
       "name_en": "Advanced Shortstaff",
-      "trait": "本能",
+      "trait": "直観",
       "range": "近距離",
       "damage": "d8＋7",
       "damageType": "魔法",
@@ -1315,7 +1315,7 @@
       "id": "advanced-dualstaff",
       "name": "発展型デュアルスタッフ",
       "name_en": "Advanced Dualstaff",
-      "trait": "本能",
+      "trait": "直観",
       "range": "遠距離",
       "damage": "d6＋9",
       "damageType": "魔法",
@@ -1382,7 +1382,7 @@
       "id": "blessed-anlace",
       "name": "ブレスド・アンリス",
       "name_en": "Blessed Anlace",
-      "trait": "本能",
+      "trait": "直観",
       "range": "近接",
       "damage": "d10＋6",
       "damageType": "魔法",
@@ -1457,7 +1457,7 @@
       "id": "firestaff",
       "name": "ファイアースタッフ",
       "name_en": "Firestaff",
-      "trait": "本能",
+      "trait": "直観",
       "range": "遠距離",
       "damage": "d6＋7",
       "damageType": "魔法",
@@ -1495,7 +1495,7 @@
       "feature": {
         "name": "再装填",
         "name_en": "Reloading",
-        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器は発射できない。"
+        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器を発射できない。"
       }
     }
   ],
@@ -1510,7 +1510,7 @@
       "damageType": "物理",
       "burden": "片手用",
       "feature": {
-        "name": "保証",
+        "name": "確実",
         "name_en": "Reliable",
         "description": "攻撃ロール＋1"
       }
@@ -1549,7 +1549,7 @@
       "feature": {
         "name": "巨大",
         "name_en": "Massive",
-        "description": "回避－1；攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
+        "description": "回避値－1；攻撃が成功したなら、ダメージダイスを追加で1つ振り、最も低い出目を捨てる。"
       }
     },
     {
@@ -1575,7 +1575,7 @@
       "feature": {
         "name": "重量",
         "name_en": "Heavy",
-        "description": "回避－1"
+        "description": "回避値－1"
       }
     },
     {
@@ -1593,7 +1593,7 @@
       "id": "legendary-quarterstaff",
       "name": "伝説級クオータースタッフ",
       "name_en": "Legendary Quarterstaff",
-      "trait": "本能",
+      "trait": "直観",
       "range": "近接",
       "damage": "d10＋12",
       "damageType": "物理",
@@ -1623,7 +1623,7 @@
       "feature": {
         "name": "高速",
         "name_en": "Quick",
-        "description": "攻撃を行う時、君はストレスを1つマークして射程内にいるもう1体のクリーチャーを目標とすることができる。"
+        "description": "君は攻撃を行う時、ストレスを1つマークして、射程内にいるもう1体のクリーチャーを目標とすることができる。"
       }
     },
     {
@@ -1690,9 +1690,9 @@
       }
     },
     {
-      "id": "double-bladed-sword",
-      "name": "ダブルブレイデッド・ソード",
-      "name_en": "Double-Bladed Sword",
+      "id": "dual-bladed-sword",
+      "name": "デュアルブレイデッド・ソード",
+      "name_en": "Dual-Bladed Sword",
       "trait": "敏捷",
       "range": "近接",
       "damage": "d10＋9",
@@ -1701,13 +1701,13 @@
       "feature": {
         "name": "高速",
         "name_en": "Quick",
-        "description": "攻撃を行う時、君はストレスを1つマークして射程内にいるもう1体のクリーチャーを目標とすることができる。"
+        "description": "君は攻撃を行う時、ストレスを1つマークして、射程内にいるもう1体のクリーチャーを目標とすることができる。"
       }
     },
     {
-      "id": "concussion-gauntlet",
-      "name": "コンカッション・ガントレット",
-      "name_en": "Concussion Gauntlet",
+      "id": "impact-gauntlet",
+      "name": "インパクト・ガントレット",
+      "name_en": "Impact Gauntlet",
       "trait": "筋力",
       "range": "近接",
       "damage": "d10＋11",
@@ -1750,9 +1750,9 @@
       }
     },
     {
-      "id": "extending-polearm",
-      "name": "エクステンディング・ポールアーム",
-      "name_en": "Extending Polearm",
+      "id": "extended-polearm",
+      "name": "エクステンデッド・ポールアーム",
+      "name_en": "Extended Polearm",
       "trait": "技巧",
       "range": "至近距離",
       "damage": "d8＋10",
@@ -1760,7 +1760,7 @@
       "burden": "両手用",
       "feature": {
         "name": "長柄",
-        "name_en": "Longhaft",
+        "name_en": "Long",
         "description": "この武器による攻撃は射程内で一直線上にいるすべての敵を目標とする。"
       }
     },
@@ -1790,7 +1790,7 @@
       "burden": "両手用",
       "feature": {
         "name": "跳弾",
-        "name_en": "Ricochet",
+        "name_en": "Bouncing",
         "description": "ストレスを1つ以上マークして、その数だけ攻撃の射程内にいる目標にヒットさせる。"
       }
     },
@@ -1804,7 +1804,7 @@
       "damageType": "物理",
       "burden": "両手用",
       "feature": {
-        "name": "保証",
+        "name": "確実",
         "name_en": "Reliable",
         "description": "攻撃ロール＋1"
       }
@@ -1821,7 +1821,7 @@
       "feature": {
         "name": "再装填",
         "name_en": "Reloading",
-        "description": "再装填：君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器は発射できない。"
+        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器を発射できない。"
       }
     }
   ],
@@ -1863,7 +1863,7 @@
       "id": "legendary-hand-runes",
       "name": "伝説級ハンド・ルーンズ",
       "name_en": "Legendary Hand Runes",
-      "trait": "本能",
+      "trait": "直観",
       "range": "至近距離",
       "damage": "d10＋9",
       "damageType": "魔法",
@@ -1882,14 +1882,14 @@
       "feature": {
         "name": "回帰",
         "name_en": "Returning",
-        "description": "この武器は射程内に投擲すると、攻撃の直後に君の手の中に現れる。"
+        "description": "この武器は、射程内に投擲すると、攻撃の直後に君の手の中に現れる。"
       }
     },
     {
       "id": "legendary-shortstaff",
       "name": "伝説級ショートスタッフ",
       "name_en": "Legendary Shortstaff",
-      "trait": "本能",
+      "trait": "直観",
       "range": "近距離",
       "damage": "d8＋10",
       "damageType": "魔法",
@@ -1900,7 +1900,7 @@
       "id": "legendary-dualstaff",
       "name": "伝説級デュアルスタッフ",
       "name_en": "Legendary Dualstaff",
-      "trait": "本能",
+      "trait": "直観",
       "range": "遠距離",
       "damage": "d6＋12",
       "damageType": "魔法",
@@ -1958,7 +1958,7 @@
       "damageType": "魔法",
       "burden": "両手用",
       "feature": {
-        "name": "高温",
+        "name": "赤熱",
         "name_en": "Hot",
         "description": "この武器は固い物質を切り裂くことができる。"
       }
@@ -1973,7 +1973,7 @@
       "damageType": "魔法",
       "burden": "両手用",
       "feature": {
-        "name": "生命力奪取",
+        "name": "生命吸収",
         "name_en": "Lifestealing",
         "description": "攻撃に成功した時、d6を振る。6の目が出たなら、HPまたはストレスを1つ回復する。"
       }
@@ -1997,7 +1997,7 @@
       "id": "floating-bladeshards",
       "name": "フローティング・ブレードシャーズ",
       "name_en": "Floating BladeShards",
-      "trait": "本能",
+      "trait": "直観",
       "range": "近距離",
       "damage": "d8＋9",
       "damageType": "魔法",
@@ -2012,7 +2012,7 @@
       "id": "bloodstaff",
       "name": "ブラッドスタッフ",
       "name_en": "Bloodstaff",
-      "trait": "本能",
+      "trait": "直観",
       "range": "遠距離",
       "damage": "d20＋7",
       "damageType": "魔法",
@@ -2027,13 +2027,13 @@
       "id": "thistlebow",
       "name": "シスルボウ",
       "name_en": "Thistlebow",
-      "trait": "本能",
+      "trait": "直観",
       "range": "遠距離",
       "damage": "d6＋13",
       "damageType": "魔法",
       "burden": "両手用",
       "feature": {
-        "name": "保証",
+        "name": "確実",
         "name_en": "Reliable",
         "description": "攻撃ロール＋1"
       }
@@ -2065,7 +2065,7 @@
       "feature": {
         "name": "再装填",
         "name_en": "Reloading",
-        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器は発射できない。"
+        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器を発射できない。"
       }
     },
     {
@@ -2081,6 +2081,1214 @@
         "name": "絆",
         "name_en": "Bonded",
         "description": "君のダメージロールにレベルに等しいボーナスを得る。"
+      }
+    }
+  ],
+  "tier1-physical-2": [
+    {
+      "id": "katana",
+      "name": "カタナ",
+      "name_en": "Katana",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d10＋3",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "君は攻撃を行う時、ストレスを1つマークして、射程内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "brass-knuckles",
+      "name": "ブラス・ナックルズ",
+      "name_en": "Brass Knuckles",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋1",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "scimitar",
+      "name": "シミター",
+      "name_en": "Scimitar",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋1",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "twisted-dagger",
+      "name": "ツイステッド・ダガー",
+      "name_en": "Twisted Dagger",
+      "trait": "知識",
+      "range": "近接",
+      "damage": "d8",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "貫通",
+        "name_en": "Piercing",
+        "description": "この武器が与えるダメージは、目標の大ダメージが－2のペナルティを持つものとして扱う。"
+      }
+    },
+    {
+      "id": "whipsword",
+      "name": "ウィップソード",
+      "name_en": "Whipsword",
+      "trait": "技巧",
+      "range": "至近距離",
+      "damage": "d8",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【技巧】、近接、d10。"
+      }
+    },
+    {
+      "id": "rope-dart",
+      "name": "ロープ・ダート",
+      "name_en": "Rope Dart",
+      "trait": "直観",
+      "range": "近距離",
+      "damage": "d6＋1",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    }
+  ],
+  "tier1-magic-2": [
+    {
+      "id": "brightsword",
+      "name": "ブライトソード",
+      "name_en": "Brightsword",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋3",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "shadowblade",
+      "name": "シャドウブレード",
+      "name_en": "Shadowblade",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8",
+      "damageType": "物理／魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "異界",
+        "name_en": "Otherworldly",
+        "description": "攻撃に成功した時、君は物理または魔法ダメージを与えることができる。"
+      }
+    },
+    {
+      "id": "enchanted-chakram",
+      "name": "エンチャンテッド・チャクラム",
+      "name_en": "Enchanted Chakram",
+      "trait": "技巧",
+      "range": "近距離",
+      "damage": "d6＋1",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "跳飛",
+        "name_en": "Ricochet",
+        "description": "この武器は、投擲すると、君の手に戻ってくる。君は攻撃を行った時、ストレスを1つマークして、その攻撃の1体目の目標の至近距離内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "casting-dagger",
+      "name": "キャスティング・ダガー",
+      "name_en": "Casting Dagger",
+      "trait": "直観",
+      "range": "近距離",
+      "damage": "d6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【直観】、近接、d8。"
+      }
+    },
+    {
+      "id": "runelock-pistol",
+      "name": "ルーンロック・ピストル",
+      "name_en": "Runelock Pistol",
+      "trait": "知識",
+      "range": "遠距離",
+      "damage": "d6＋3",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "再装填",
+        "name_en": "Reloading",
+        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器を発射できない。"
+      }
+    },
+    {
+      "id": "arcane-rifle",
+      "name": "アーケイン・ライフル",
+      "name_en": "Arcane Rifle",
+      "trait": "敏捷",
+      "range": "超遠距離",
+      "damage": "d10＋3",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "照準",
+        "name_en": "Aimed",
+        "description": "目標が君の至近距離射程または君の味方の近接射程内にいるなら、君の攻撃は不利を受ける。君はストレスを1つマークして、このペナルティを無視することができる。"
+      }
+    }
+  ],
+  "tier2-physical-2": [
+    {
+      "id": "improved-katana",
+      "name": "改良型カタナ",
+      "name_en": "Improved Katana",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d10＋6",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "君は攻撃を行う時、ストレスを1つマークして、射程内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "improved-brass-knuckles",
+      "name": "改良型ブラス・ナックルズ",
+      "name_en": "Improved Brass Knuckles",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "improved-scimitar",
+      "name": "改良型シミター",
+      "name_en": "Improved Scimitar",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "improved-twisted-dagger",
+      "name": "改良型ツイステッド・ダガー",
+      "name_en": "Improved Twisted Dagger",
+      "trait": "知識",
+      "range": "近接",
+      "damage": "d8＋3",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "貫通",
+        "name_en": "Piercing",
+        "description": "この武器が与えるダメージは、目標の大ダメージが－2のペナルティを持つものとして扱う。"
+      }
+    },
+    {
+      "id": "improved-whipsword",
+      "name": "改良型ウィップソード",
+      "name_en": "Improved Whipsword",
+      "trait": "技巧",
+      "range": "至近距離",
+      "damage": "d8＋3",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【技巧】、近接、d10＋3。"
+      }
+    },
+    {
+      "id": "improved-rope-dart",
+      "name": "改良型ロープ・ダート",
+      "name_en": "Improved Rope Dart",
+      "trait": "直観",
+      "range": "近距離",
+      "damage": "d6＋4",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "war-pick",
+      "name": "ウォー・ピック",
+      "name_en": "War Pick",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋3",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "致死",
+        "name_en": "Deadly",
+        "description": "君が大ダメージを与えた時、目標はHPを追加で1つマークする。"
+      }
+    },
+    {
+      "id": "cane-sword",
+      "name": "ケイン・ソード",
+      "name_en": "Cane Sword",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋4",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "収納",
+        "name_en": "Retractable",
+        "description": "この刃は柄に隠して検知を避けることができる。"
+      }
+    },
+    {
+      "id": "bladed-fan",
+      "name": "ブレーデッド・ファン",
+      "name_en": "Bladed Fan",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋3",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "受け流し",
+        "name_en": "Parry",
+        "description": "君が攻撃された時、この武器のダメージダイスを振る。攻撃者のダメージダイスの目で君のダイスと同じ目が出たなら、君が受けるダメージを合計する前に、一致した出目は攻撃者のダメージダイスから除外される。"
+      }
+    },
+    {
+      "id": "cyrurgiens-scalpel",
+      "name": "サイラーギエンズ・スカルペル",
+      "name_en": "Cyrurgien’s Scalpel",
+      "trait": "知識",
+      "range": "近接",
+      "damage": "d8＋3",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "威圧",
+        "name_en": "Scary",
+        "description": "攻撃に成功したなら、目標はストレスを1つマークしなければならない。"
+      }
+    },
+    {
+      "id": "javelins",
+      "name": "ジャヴェリンズ",
+      "name_en": "Javelins",
+      "trait": "敏捷",
+      "range": "至近距離",
+      "damage": "d6＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "備蓄",
+        "name_en": "Stockpiled",
+        "description": "君は【敏捷】を用いた攻撃ロールを行うことで、この武器を遠距離射程内の目標1体に投擲することができる。投擲したものを回収する必要はなく、君は常に次の1本を手に持っている。"
+      }
+    },
+    {
+      "id": "lance",
+      "name": "ランス",
+      "name_en": "Lance",
+      "trait": "直観",
+      "range": "至近距離",
+      "damage": "d6＋5",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "大振り",
+        "name_en": "Cumbersome",
+        "description": "【技巧】－1"
+      }
+    }
+  ],
+  "tier2-magic-2": [
+    {
+      "id": "improved-brightsword",
+      "name": "改良型ブライトソード",
+      "name_en": "Improved Brightsword",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋6",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "improved-shadowblade",
+      "name": "改良型シャドウブレード",
+      "name_en": "Improved Shadowblade",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋3",
+      "damageType": "物理／魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "異界",
+        "name_en": "Otherworldly",
+        "description": "攻撃に成功した時、君は物理または魔法ダメージを与えることができる。"
+      }
+    },
+    {
+      "id": "improved-enchanted-chakram",
+      "name": "改良型エンチャンテッド・チャクラム",
+      "name_en": "Improved Enchanted Chakram",
+      "trait": "技巧",
+      "range": "近距離",
+      "damage": "d6＋4",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "跳飛",
+        "name_en": "Ricochet",
+        "description": "この武器は、投擲すると、君の手に戻ってくる。君は攻撃を行った時、ストレスを1つマークして、その攻撃の1体目の目標の至近距離内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "improved-casting-dagger",
+      "name": "改良型キャスティング・ダガー",
+      "name_en": "Improved Casting Dagger",
+      "trait": "直観",
+      "range": "近距離",
+      "damage": "d6＋3",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【直観】、近接、d8＋3。"
+      }
+    },
+    {
+      "id": "improved-runelock-pistol",
+      "name": "改良型ルーンロック・ピストル",
+      "name_en": "Improved Runelock Pistol",
+      "trait": "知識",
+      "range": "遠距離",
+      "damage": "d6＋6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "再装填",
+        "name_en": "Reloading",
+        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器を発射できない。"
+      }
+    },
+    {
+      "id": "improved-arcane-rifle",
+      "name": "改良型アーケイン・ライフル",
+      "name_en": "Improved Arcane Rifle",
+      "trait": "敏捷",
+      "range": "超遠距離",
+      "damage": "d10＋6",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "照準",
+        "name_en": "Aimed",
+        "description": "目標が君の至近距離射程または君の味方の近接射程内にいるなら、君の攻撃は不利を受ける。君はストレスを1つマークして、このペナルティを無視することができる。"
+      }
+    },
+    {
+      "id": "enchanted-shillelagh",
+      "name": "エンチャンテッド・シャレイリ",
+      "name_en": "Enchanted Shillelagh",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋3",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "保護",
+        "name_en": "Protective",
+        "description": "防具値＋1"
+      }
+    },
+    {
+      "id": "displacement-razor",
+      "name": "ディスプレイスメント・レイザー",
+      "name_en": "Displacement Razor",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋3",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "偏在",
+        "name_en": "Omnipresent",
+        "description": "君は超遠距離射程内の目標に対して攻撃も行えるが、その場合は不利で攻撃しなければならない。"
+      }
+    },
+    {
+      "id": "spellbound-bangles",
+      "name": "スペルバウンド・バングルズ",
+      "name_en": "Spellbound Bangles",
+      "trait": "知識",
+      "range": "近接",
+      "damage": "d10＋6",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "fury-gem",
+      "name": "フューリー・ジェム",
+      "name_en": "Fury Gem",
+      "trait": "直観",
+      "range": "近距離",
+      "damage": "d8＋3",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "燃焼",
+        "name_en": "Burning",
+        "description": "君がダメージダイスで最大の目を出した時、目標はストレスを1つマークしなければならない。"
+      }
+    },
+    {
+      "id": "enchanted-lute",
+      "name": "エンチャンテッド・リュート",
+      "name_en": "Enchanted Lute",
+      "trait": "存在",
+      "range": "近距離",
+      "damage": "d8＋3",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "活力",
+        "name_en": "Invigorating",
+        "description": "攻撃に成功したなら、d4を振る。4の目が出たなら、ストレスを1つ回復する。"
+      }
+    },
+    {
+      "id": "splintershaft-bow",
+      "name": "スプリンターシャフト・ボウ",
+      "name_en": "Splintershaft Bow",
+      "trait": "敏捷",
+      "range": "遠距離",
+      "damage": "d6＋6",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "掃射",
+        "name_en": "Volleyed",
+        "description": "希望を1つ消費して、射程内にいるクリーチャーの集団を目標とする。君が成功した目標は半分のダメージを受ける。"
+      }
+    }
+  ],
+  "tier3-physical-2": [
+    {
+      "id": "advanced-katana",
+      "name": "発展型カタナ",
+      "name_en": "Advanced Katana",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d10＋9",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "君は攻撃を行う時、ストレスを1つマークして、射程内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "advanced-brass-knuckles",
+      "name": "発展型ブラス・ナックルズ",
+      "name_en": "Advanced Brass Knuckles",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋7",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-scimitar",
+      "name": "発展型シミター",
+      "name_en": "Advanced Scimitar",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋7",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-twisted-dagger",
+      "name": "発展型ツイステッド・ダガー",
+      "name_en": "Advanced Twisted Dagger",
+      "trait": "知識",
+      "range": "近接",
+      "damage": "d8＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "貫通",
+        "name_en": "Piercing",
+        "description": "この武器が与えるダメージは、目標の大ダメージが－2のペナルティを持つものとして扱う。"
+      }
+    },
+    {
+      "id": "advanced-whipsword",
+      "name": "発展型ウィップソード",
+      "name_en": "Advanced Whipsword",
+      "trait": "技巧",
+      "range": "至近距離",
+      "damage": "d8＋6",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【技巧】、近接、d10＋6。"
+      }
+    },
+    {
+      "id": "advanced-rope-dart",
+      "name": "発展型ロープ・ダート",
+      "name_en": "Advanced Rope Dart",
+      "trait": "直観",
+      "range": "近距離",
+      "damage": "d6＋7",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "blitz-hammer",
+      "name": "ブリッツ・ハンマー",
+      "name_en": "Blitz Hammer",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋7",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "加速",
+        "name_en": "Accelerator",
+        "description": "場面ごとに1回、ストレスを1つマークして、遠距離射程へ移動してから攻撃を行う。この攻撃についての習熟度に＋1のボーナスを得る。"
+      }
+    },
+    {
+      "id": "platinum-estoc",
+      "name": "プラティナム・エストク",
+      "name_en": "Platinum Estoc",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋7",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "貫通",
+        "name_en": "Piercing",
+        "description": "この武器が与えるダメージは、目標の大ダメージが－2のペナルティを持つものとして扱う。"
+      }
+    },
+    {
+      "id": "soldiers-pike",
+      "name": "ソルジャーズ・パイク",
+      "name_en": "Soldier’s Pike",
+      "trait": "敏捷",
+      "range": "至近距離",
+      "damage": "d10＋5",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "補強",
+        "name_en": "Braced",
+        "description": "この武器の射程内にいる敵キャラクターが君にダメージを与えた時、君はストレスを2つマークして、その敵キャラクターにHPを1つマークさせることができる。"
+      }
+    },
+    {
+      "id": "chained-scythe",
+      "name": "チェインド・サイス",
+      "name_en": "Chained Scythe",
+      "trait": "直観",
+      "range": "至近距離",
+      "damage": "d10＋5",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "君は攻撃を行う時、ストレスを1つマークして、射程内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "singing-sword",
+      "name": "シンギング・ソード",
+      "name_en": "Singing Sword",
+      "trait": "存在",
+      "range": "至近距離",
+      "damage": "d8＋5",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "強化",
+        "name_en": "Bolstering",
+        "description": "君が攻撃にクリティカル成功した時、近距離射程内にいるすべてのPCは希望を1つ得る。"
+      }
+    },
+    {
+      "id": "bladed-star",
+      "name": "ブレーデッド・スター",
+      "name_en": "Bladed Star",
+      "trait": "知識",
+      "range": "近距離",
+      "damage": "d6＋7",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "反発",
+        "name_en": "Rebounding",
+        "description": "この武器は、投擲すると君の手に戻ってくる。攻撃に失敗した時、君は不利で振り直すことができる。"
+      }
+    }
+  ],
+  "tier3-magic-2": [
+    {
+      "id": "advanced-brightsword",
+      "name": "発展型ブライトソード",
+      "name_en": "Advanced Brightsword",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋9",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "advanced-shadowblade",
+      "name": "発展型シャドウブレード",
+      "name_en": "Advanced Shadowblade",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋6",
+      "damageType": "物理／魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "異界",
+        "name_en": "Otherworldly",
+        "description": "攻撃に成功した時、君は物理または魔法ダメージを与えることができる。"
+      }
+    },
+    {
+      "id": "advanced-enchanted-chakram",
+      "name": "発展型エンチャンテッド・チャクラム",
+      "name_en": "Advanced Enchanted Chakram",
+      "trait": "技巧",
+      "range": "近距離",
+      "damage": "d6＋7",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "跳飛",
+        "name_en": "Ricochet",
+        "description": "この武器は、投擲すると、君の手に戻ってくる。君は攻撃を行った時、ストレスを1つマークして、その攻撃の1体目の目標の至近距離内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "advanced-casting-dagger",
+      "name": "発展型キャスティング・ダガー",
+      "name_en": "Advanced Casting Dagger",
+      "trait": "直観",
+      "range": "近距離",
+      "damage": "d6＋6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【直観】、近接、d8＋6。"
+      }
+    },
+    {
+      "id": "advanced-runelock-pistol",
+      "name": "発展型ルーンロック・ピストル",
+      "name_en": "Advanced Runelock Pistol",
+      "trait": "知識",
+      "range": "遠距離",
+      "damage": "d6＋9",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "再装填",
+        "name_en": "Reloading",
+        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器を発射できない。"
+      }
+    },
+    {
+      "id": "advanced-arcane-rifle",
+      "name": "発展型アーケイン・ライフル",
+      "name_en": "Advanced Arcane Rifle",
+      "trait": "敏捷",
+      "range": "超遠距離",
+      "damage": "d10＋9",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "照準",
+        "name_en": "Aimed",
+        "description": "目標が君の至近距離射程または君の味方の近接射程内にいるなら、君の攻撃は不利を受ける。君はストレスを1つマークして、このペナルティを無視することができる。"
+      }
+    },
+    {
+      "id": "rocket-maul",
+      "name": "ロケット・モール",
+      "name_en": "Rocket Maul",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋7",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "震盪",
+        "name_en": "Concussive",
+        "description": "攻撃に成功した時、君は希望を1つ消費して目標を遠距離射程まで押し出すことができる。"
+      }
+    },
+    {
+      "id": "crystal-spear",
+      "name": "クリスタル・スピア",
+      "name_en": "Crystal Spear",
+      "trait": "技巧",
+      "range": "至近距離",
+      "damage": "d10＋6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "貫通",
+        "name_en": "Piercing",
+        "description": "この武器が与えるダメージは、目標の大ダメージが－2のペナルティを持つものとして扱う。"
+      }
+    },
+    {
+      "id": "arc-wand",
+      "name": "アーク・ワンド",
+      "name_en": "Arc Wand",
+      "trait": "存在",
+      "range": "近距離",
+      "damage": "d8＋6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "跳弾",
+        "name_en": "Bouncing",
+        "description": "任意の数のストレスをマークして、その数だけ攻撃の射程内にいる追加のクリーチャーを目標とする。"
+      }
+    },
+    {
+      "id": "rime-scepter",
+      "name": "ライム・セプター",
+      "name_en": "Rime Scepter",
+      "trait": "知識",
+      "range": "近距離",
+      "damage": "d8＋6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "凍結",
+        "name_en": "Freezing",
+        "description": "この武器による攻撃が目標にHPを2つ以上マークさせた時、その目標は一時的に拘束状態になる。"
+      }
+    },
+    {
+      "id": "gunblade",
+      "name": "ガンブレード",
+      "name_en": "Gunblade",
+      "trait": "敏捷",
+      "range": "遠距離",
+      "damage": "d6＋6",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【敏捷】、近接、d8＋6（物理）。"
+      }
+    },
+    {
+      "id": "staff-of-augma",
+      "name": "スタッフ・オヴ・オーグマ",
+      "name_en": "Staff of Augma",
+      "trait": "直観",
+      "range": "遠距離",
+      "damage": "d6＋7",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "触媒",
+        "name_en": "Catalytic",
+        "description": "触媒：攻撃に成功した時、君はストレスを1つマークして、近距離射程内の味方1体が行う次の攻撃ロールに＋3のボーナスを与えることができる。"
+      }
+    }
+  ],
+  "tier4-physical-2": [
+    {
+      "id": "legendary-katana",
+      "name": "伝説級カタナ",
+      "name_en": "Legendary Katana",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d10＋12",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "君は攻撃を行う時、ストレスを1つマークして、射程内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "legendary-brass-knuckles",
+      "name": "伝説級ブラス・ナックルズ",
+      "name_en": "Legendary Brass Knuckles",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d8＋10",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-scimitar",
+      "name": "伝説級シミター",
+      "name_en": "Legendary Scimitar",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋10",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-twisted-dagger",
+      "name": "伝説級ツイステッド・ダガー",
+      "name_en": "Legendary Twisted Dagger",
+      "trait": "知識",
+      "range": "近接",
+      "damage": "d8＋9",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "貫通",
+        "name_en": "Piercing",
+        "description": "この武器が与えるダメージは、目標の大ダメージが－2のペナルティを持つものとして扱う。"
+      }
+    },
+    {
+      "id": "legendary-whipsword",
+      "name": "伝説級ウィップソード",
+      "name_en": "Legendary Whipsword",
+      "trait": "技巧",
+      "range": "至近距離",
+      "damage": "d8＋9",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【技巧】、近接、d10＋9。"
+      }
+    },
+    {
+      "id": "legendary-rope-dart",
+      "name": "伝説級ロープ・ダート",
+      "name_en": "Legendary Rope Dart",
+      "trait": "直観",
+      "range": "近距離",
+      "damage": "d6＋10",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "severed-dragon-claw",
+      "name": "セヴァード・ドラゴン・クロウ",
+      "name_en": "Severed Dragon Claw",
+      "trait": "直観",
+      "range": "近接",
+      "damage": "d10＋11",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "破壊",
+        "name_en": "Destructive",
+        "description": "【敏捷】－1；攻撃に成功した時、至近距離射程内にいるすべての敵はストレスを1つマークしなければならない。"
+      }
+    },
+    {
+      "id": "infinite-staff",
+      "name": "インフィニット・スタッフ",
+      "name_en": "Infinite Staff",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d10＋9",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "延長",
+        "name_en": "Extending",
+        "description": "君はこの武器の射程を超遠距離まで延長できる。君は攻撃ロールに、延長した射程1段階（近接から至近距離、至近距離から近距離、近距離から遠距離など）につき－1のペナルティを受ける。"
+      }
+    },
+    {
+      "id": "bec-de-corbin",
+      "name": "ベク・ド・コルバン",
+      "name_en": "Bec de Corbin",
+      "trait": "敏捷",
+      "range": "至近距離",
+      "damage": "d10＋9",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "壊滅",
+        "name_en": "Devastating",
+        "description": "君は攻撃ロールを行う前にストレスを1つマークし、ダメージダイスとしてd20を使用することができる。"
+      }
+    },
+    {
+      "id": "black-powder-serpentine",
+      "name": "ブラック・パウダー・サーペンティン",
+      "name_en": "Black Powder Serpentine",
+      "trait": "筋力",
+      "range": "遠距離",
+      "damage": "d8＋12",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "着火",
+        "name_en": "Incendiary",
+        "description": "【敏捷】－1；攻撃に成功した時、目標の至近距離射程内にいるすべてのクリーチャーはHPを1つマークしなければならない。"
+      }
+    },
+    {
+      "id": "clockwork-crossbow",
+      "name": "クロックワーク・クロスボウ",
+      "name_en": "Clockwork Crossbow",
+      "trait": "技巧",
+      "range": "遠距離",
+      "damage": "d6＋11",
+      "damageType": "物理",
+      "burden": "片手用",
+      "feature": {
+        "name": "高速",
+        "name_en": "Quick",
+        "description": "君は攻撃を行う時、ストレスを1つマークして、射程内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "arquebus",
+      "name": "アーキバス",
+      "name_en": "Arquebus",
+      "trait": "知識",
+      "range": "遠距離",
+      "damage": "d8＋10",
+      "damageType": "物理",
+      "burden": "両手用",
+      "feature": {
+        "name": "再装填",
+        "name_en": "Reloading",
+        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器を発射できない。"
+      }
+    }
+  ],
+  "tier4-magic-2": [
+    {
+      "id": "legendary-brightsword",
+      "name": "伝説級ブライトソード",
+      "name_en": "Legendary Brightsword",
+      "trait": "筋力",
+      "range": "近接",
+      "damage": "d10＋12",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": null
+    },
+    {
+      "id": "legendary-shadowblade",
+      "name": "伝説級シャドウブレード",
+      "name_en": "Legendary Shadowblade",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋9",
+      "damageType": "物理／魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "異界",
+        "name_en": "Otherworldly",
+        "description": "攻撃に成功した時、君は物理または魔法ダメージを与えることができる。"
+      }
+    },
+    {
+      "id": "legendary-enchanted-chakram",
+      "name": "伝説級エンチャンテッド・チャクラム",
+      "name_en": "Legendary Enchanted Chakram",
+      "trait": "技巧",
+      "range": "近距離",
+      "damage": "d6＋10",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "跳飛",
+        "name_en": "Ricochet",
+        "description": "この武器は、投擲すると、君の手に戻ってくる。君は攻撃を行った時、ストレスを1つマークして、その攻撃の1体目の目標の至近距離内にいるもう1体のクリーチャーを目標とすることができる。"
+      }
+    },
+    {
+      "id": "legendary-casting-dagger",
+      "name": "伝説級キャスティング・ダガー",
+      "name_en": "Legendary Casting Dagger",
+      "trait": "直観",
+      "range": "近距離",
+      "damage": "d6＋9",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "汎用",
+        "name_en": "Versatile",
+        "description": "この武器は次のデータでも使用できる：【直観】、近接、d8＋9。"
+      }
+    },
+    {
+      "id": "legendary-runelock-pistol",
+      "name": "伝説級ルーンロック・ピストル",
+      "name_en": "Legendary Runelock Pistol",
+      "trait": "知識",
+      "range": "遠距離",
+      "damage": "d6＋12",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "再装填",
+        "name_en": "Reloading",
+        "description": "君が攻撃を行った後、d6を振る。1の目が出たなら、君はストレスを1つマークして再装填するまでこの武器を発射できない。"
+      }
+    },
+    {
+      "id": "legendary-arcane-rifle",
+      "name": "伝説級アーケイン・ライフル",
+      "name_en": "Legendary Arcane Rifle",
+      "trait": "敏捷",
+      "range": "超遠距離",
+      "damage": "d10＋12",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "照準",
+        "name_en": "Aimed",
+        "description": "目標が君の至近距離射程または君の味方の近接射程内にいるなら、君の攻撃は不利を受ける。君はストレスを1つマークして、このペナルティを無視することができる。"
+      }
+    },
+    {
+      "id": "starmetal-blade",
+      "name": "スターメタル・ブレード",
+      "name_en": "Starmetal Blade",
+      "trait": "敏捷",
+      "range": "近接",
+      "damage": "d8＋10",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "鋸歯",
+        "name_en": "Serrated",
+        "description": "君がダメージダイスで1の目を振った時、そのダイスは（1ではなく）8ダメージを与える。"
+      }
+    },
+    {
+      "id": "adders-fang",
+      "name": "アダーズ・ファング",
+      "name_en": "Adder’s Fang",
+      "trait": "技巧",
+      "range": "近接",
+      "damage": "d8＋9",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "有毒",
+        "name_en": "Venomous",
+        "description": "君がこの武器で中ダメージ以上を与えた時、目標は一時的に脆弱状態になる。"
+      }
+    },
+    {
+      "id": "demons-edge",
+      "name": "デーモンズ・エッジ",
+      "name_en": "Demon’s Edge",
+      "trait": "存在",
+      "range": "近接",
+      "damage": "d8＋10",
+      "damageType": "魔法",
+      "burden": "片手用",
+      "feature": {
+        "name": "動揺",
+        "name_en": "Disturbing",
+        "description": "君がこの武器を用いてクリーチャーを倒した時、近距離射程内にいるすべての敵キャラクターはストレスを1つマークしなければならない。"
+      }
+    },
+    {
+      "id": "storm-gods-greataxe",
+      "name": "ストーム・ゴッズ・グレートアックス",
+      "name_en": "Storm God’s Greataxe",
+      "trait": "筋力",
+      "range": "至近距離",
+      "damage": "d10＋9",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "跳弾",
+        "name_en": "Bouncing",
+        "description": "任意の数のストレスをマークして、その数だけ攻撃の射程内にいる追加のクリーチャーを目標とする。"
+      }
+    },
+    {
+      "id": "ethereal-zweihander",
+      "name": "イセリアル・ツヴァイヘンデル",
+      "name_en": "Ethereal Zweihänder",
+      "trait": "直観",
+      "range": "至近距離",
+      "damage": "d10＋9",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "霊妙",
+        "name_en": "Ethereal",
+        "description": "君はストレスを1つマークしてこの武器を召喚しなければならない。この武器は場面の終了時まで持続する。"
+      }
+    },
+    {
+      "id": "gravity-arbalest",
+      "name": "グラヴィティ・アルバレスト",
+      "name_en": "Gravity Arbalest",
+      "trait": "知識",
+      "range": "遠距離",
+      "damage": "d8＋6",
+      "damageType": "魔法",
+      "burden": "両手用",
+      "feature": {
+        "name": "磁力",
+        "name_en": "Magnetic",
+        "description": "君はこの武器を用いて攻撃する時、希望を1つ消費して、目標の至近距離射程内にいるすべての敵キャラクターに反応ロール（16）を行わせることができる。失敗したクリーチャーはストレスを1つマークしなければならず、目標の近接射程内に引き寄せられる。"
       }
     }
   ]

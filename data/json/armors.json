@@ -1,418 +1,830 @@
-[
-  {
-    "id": "gambeson-armor",
-    "tier": 1,
-    "name": "ギャンべゾン・アーマー",
-    "name_en": "Gambeson Armor",
-    "thresholds": "5／11",
-    "score": 3,
-    "feature": {
-      "name": "柔軟",
-      "name_en": "Flexible",
-      "description": "回避＋1"
+{
+  "tier1": [
+    {
+      "id": "gambeson-armor",
+      "name": "ギャンべゾン・アーマー",
+      "name_en": "Gambeson Armor",
+      "thresholds": "5／11",
+      "score": 3,
+      "feature": {
+        "name": "柔軟",
+        "name_en": "Flexible",
+        "description": "回避値＋1"
+      }
+    },
+    {
+      "id": "leather-armor",
+      "name": "レザー・アーマー",
+      "name_en": "Leather Armor",
+      "thresholds": "6／13",
+      "score": 3,
+      "feature": null
+    },
+    {
+      "id": "chainmail-armor",
+      "name": "チェインメイル・アーマー",
+      "name_en": "Chainmail Armor",
+      "thresholds": "7／15",
+      "score": 4,
+      "feature": {
+        "name": "重装",
+        "name_en": "Heavy",
+        "description": "回避値－1"
+      }
+    },
+    {
+      "id": "full-plate-armor",
+      "name": "フル・プレート・アーマー",
+      "name_en": "Full Plate Armor",
+      "thresholds": "8／17",
+      "score": 4,
+      "feature": {
+        "name": "超重装",
+        "name_en": "Very Heavy",
+        "description": "回避値－2、【敏捷】－1"
+      }
     }
-  },
-  {
-    "id": "leather-armor",
-    "tier": 1,
-    "name": "レザー・アーマー",
-    "name_en": "Leather Armor",
-    "thresholds": "6／13",
-    "score": 3,
-    "feature": null
-  },
-  {
-    "id": "chainmail-armor",
-    "tier": 1,
-    "name": "チェインメイル・アーマー",
-    "name_en": "Chainmail Armor",
-    "thresholds": "7／15",
-    "score": 4,
-    "feature": {
-      "name": "重装",
-      "name_en": "Heavy",
-      "description": "回避－1"
+  ],
+  "tier2": [
+    {
+      "id": "improved-gambeson-armor",
+      "name": "改良型ギャンべゾン・アーマー",
+      "name_en": "Improved Gambeson Armor",
+      "thresholds": "7／16",
+      "score": 4,
+      "feature": {
+        "name": "柔軟",
+        "name_en": "Flexible",
+        "description": "回避値＋1"
+      }
+    },
+    {
+      "id": "improved-leather-armor",
+      "name": "改良型レザー・アーマー",
+      "name_en": "Improved Leather Armor",
+      "thresholds": "9／20",
+      "score": 4,
+      "feature": null
+    },
+    {
+      "id": "improved-chainmail-armor",
+      "name": "改良型チェインメイル・アーマー",
+      "name_en": "Improved Chainmail Armor",
+      "thresholds": "11／24",
+      "score": 5,
+      "feature": {
+        "name": "重装",
+        "name_en": "Heavy",
+        "description": "回避値－1"
+      }
+    },
+    {
+      "id": "improved-full-plate-armor",
+      "name": "改良型フル・プレート・アーマー",
+      "name_en": "Improved Full Plate Armor",
+      "thresholds": "13／28",
+      "score": 5,
+      "feature": {
+        "name": "超重装",
+        "name_en": "Very Heavy",
+        "description": "回避値－2、【敏捷】－1"
+      }
+    },
+    {
+      "id": "elundrian-chain-armor",
+      "name": "エランドリアン・チェイン・アーマー",
+      "name_en": "Elundrian Chain Armor",
+      "thresholds": "9／21",
+      "score": 4,
+      "feature": {
+        "name": "防護",
+        "name_en": "Warded",
+        "description": "君はダメージ閾値と照らし合わせる前に、適用前の魔法ダメージを防御値の分だけ減少させる。"
+      }
+    },
+    {
+      "id": "harrowbone-armor",
+      "name": "ハロウボーン・アーマー",
+      "name_en": "Harrowbone Armor",
+      "thresholds": "9／21",
+      "score": 4,
+      "feature": {
+        "name": "耐久性",
+        "name_en": "Resilient",
+        "description": "君が最後の防具スロットをマークする前、d6を振る。6の目が出たなら、防具スロットをマークすることなく深刻度を閾値1段階ぶん軽減する。"
+      }
+    },
+    {
+      "id": "irontree-breastplate-armor",
+      "name": "アイアンツリー・ブレストプレート・アーマー",
+      "name_en": "Irontree Breastplate Armor",
+      "thresholds": "9／20",
+      "score": 4,
+      "feature": {
+        "name": "増強",
+        "name_en": "Reinforced",
+        "description": "君が最後の防具スロットをマークした時、防具スロットを最低1つ回復するまでダメージ閾値を2上昇させる。"
+      }
+    },
+    {
+      "id": "runetan-floating-armor",
+      "name": "ルーンタン・フローティング・アーマー",
+      "name_en": "Runetan Floating Armor",
+      "thresholds": "9／20",
+      "score": 4,
+      "feature": {
+        "name": "遷移",
+        "name_en": "Shifting",
+        "description": "君は攻撃の目標になった時、防具スロットを1つマークして君に対するその攻撃に不利を課すことができる。"
+      }
+    },
+    {
+      "id": "rosewild-armor",
+      "name": "ローズワイルド・アーマー",
+      "name_en": "Rosewild Armor",
+      "thresholds": "11／23",
+      "score": 5,
+      "feature": {
+        "name": "希望変換",
+        "name_en": "Hopeful",
+        "description": "君は希望を消費するところで、（希望を消費する代わりに）防具スロットをマークすることができる。"
+      }
     }
-  },
-  {
-    "id": "full-plate-armor",
-    "tier": 1,
-    "name": "フル・プレート・アーマー",
-    "name_en": "Full Plate Armor",
-    "thresholds": "8／17",
-    "score": 4,
-    "feature": {
-      "name": "超重装",
-      "name_en": "Very Heavy",
-      "description": "回避－2、【敏捷】－1"
+  ],
+  "tier3": [
+    {
+      "id": "advanced-gambeson-armor",
+      "name": "発展型ギャンべゾン・アーマー",
+      "name_en": "Advanced Gambeson Armor",
+      "thresholds": "9／23",
+      "score": 5,
+      "feature": {
+        "name": "柔軟",
+        "name_en": "Flexible",
+        "description": "回避値＋1"
+      }
+    },
+    {
+      "id": "advanced-leather-armor",
+      "name": "発展型レザー・アーマー",
+      "name_en": "Advanced Leather Armor",
+      "thresholds": "11／27",
+      "score": 5,
+      "feature": null
+    },
+    {
+      "id": "advanced-chainmail-armor",
+      "name": "発展型チェインメイル・アーマー",
+      "name_en": "Advanced Chainmail Armor",
+      "thresholds": "13／31",
+      "score": 6,
+      "feature": {
+        "name": "重装",
+        "name_en": "Heavy",
+        "description": "回避値－1"
+      }
+    },
+    {
+      "id": "advanced-full-plate-armor",
+      "name": "発展型フル・プレート・アーマー",
+      "name_en": "Advanced Full Plate Armor",
+      "thresholds": "15／35",
+      "score": 6,
+      "feature": {
+        "name": "超重装",
+        "name_en": "Very Heavy",
+        "description": "回避値－2、【敏捷】－1"
+      }
+    },
+    {
+      "id": "spiked-plate-armor",
+      "name": "スパイクト・プレート・アーマー",
+      "name_en": "Spiked Plate Armor",
+      "thresholds": "10／25",
+      "score": 5,
+      "feature": {
+        "name": "鋭利",
+        "name_en": "Sharp",
+        "description": "近接射程内の目標に対する攻撃に成功したなら、ダメージロールにd4を加えられる。"
+      }
+    },
+    {
+      "id": "bellamoi-fine-armor",
+      "name": "ベラモイ・ファイン・アーマー",
+      "name_en": "Bellamoi Fine Armor",
+      "thresholds": "11／27",
+      "score": 5,
+      "feature": {
+        "name": "金メッキ",
+        "name_en": "Gilded",
+        "description": "【存在】＋1"
+      }
+    },
+    {
+      "id": "dragonscale-armor",
+      "name": "ドラゴンスケイル・アーマー",
+      "name_en": "Dragonscale Armor",
+      "thresholds": "11／27",
+      "score": 5,
+      "feature": {
+        "name": "貫通不可",
+        "name_en": "Impenetrable",
+        "description": "小休憩ごとに1回、君は最後のHPをマークするところで、（HPの代わりに）ストレスを1つマークすることができる。"
+      }
+    },
+    {
+      "id": "bladefare-armor",
+      "name": "ブレードフェア・アーマー",
+      "name_en": "Bladefare Armor",
+      "thresholds": "16／39",
+      "score": 6,
+      "feature": {
+        "name": "物理的",
+        "name_en": "Physical",
+        "description": "君は防具スロットをマークして魔法ダメージを減少させることができない。"
+      }
+    },
+    {
+      "id": "monetts-cloak",
+      "name": "モネッツ・クローク",
+      "name_en": "Monett's Cloak",
+      "thresholds": "16／39",
+      "score": 6,
+      "feature": {
+        "name": "魔法的",
+        "name_en": "Magic",
+        "description": "君は防具スロットをマークして物理ダメージを減少させることができない。"
+      }
+    },
+    {
+      "id": "runes-of-fortification",
+      "name": "ルーンズ・オヴ・フォルティフィケーション",
+      "name_en": "Runes of Fortification",
+      "thresholds": "17／43",
+      "score": 6,
+      "feature": {
+        "name": "苦痛",
+        "name_en": "Painful",
+        "description": "君は防具スロットを1つマークするたび、ストレスを1つマークしなければならない。"
+      }
     }
-  },
-
-  {
-    "id": "improved-gambeson-armor",
-    "tier": 2,
-    "name": "改良型ギャンべゾン・アーマー",
-    "name_en": "Improved Gambeson Armor",
-    "thresholds": "7／16",
-    "score": 4,
-    "feature": {
-      "name": "柔軟",
-      "name_en": "Flexible",
-      "description": "回避＋1"
+  ],
+  "tier4": [
+    {
+      "id": "legendary-gambeson-armor",
+      "name": "伝説級ギャンべゾン・アーマー",
+      "name_en": "Legendary Gambeson Armor",
+      "thresholds": "11／32",
+      "score": 6,
+      "feature": {
+        "name": "柔軟",
+        "name_en": "Flexible",
+        "description": "回避値＋1"
+      }
+    },
+    {
+      "id": "legendary-leather-armor",
+      "name": "伝説級レザー・アーマー",
+      "name_en": "Legendary Leather Armor",
+      "thresholds": "13／36",
+      "score": 6,
+      "feature": null
+    },
+    {
+      "id": "legendary-chainmail-armor",
+      "name": "伝説級チェインメイル・アーマー",
+      "name_en": "Legendary Chainmail Armor",
+      "thresholds": "15／40",
+      "score": 7,
+      "feature": {
+        "name": "重装",
+        "name_en": "Heavy",
+        "description": "回避値－1"
+      }
+    },
+    {
+      "id": "legendary-full-plate-armor",
+      "name": "伝説級フル・プレート・アーマー",
+      "name_en": "Legendary Full Plate Armor",
+      "thresholds": "17／44",
+      "score": 7,
+      "feature": {
+        "name": "超重装",
+        "name_en": "Very Heavy",
+        "description": "回避値－2、【敏捷】－1"
+      }
+    },
+    {
+      "id": "full-fortified-armor",
+      "name": "フル・フォーティファイド・アーマー",
+      "name_en": "Full Fortified Armor",
+      "thresholds": "15／40",
+      "score": 4,
+      "feature": {
+        "name": "要塞化",
+        "name_en": "Fortified",
+        "description": "君は防具スロットを1つマークする時、攻撃の深刻度を（1段階ではなく）2段階ぶん軽減する。"
+      }
+    },
+    {
+      "id": "channeling-armor",
+      "name": "チャネリング・アーマー",
+      "name_en": "Channeling Armor",
+      "thresholds": "13／36",
+      "score": 5,
+      "feature": {
+        "name": "伝導",
+        "name_en": "Channeling",
+        "description": "呪文発動ロール＋1"
+      }
+    },
+    {
+      "id": "dunamis-silkchain",
+      "name": "デュナミス・シルクチェイン",
+      "name_en": "Dunamis Silkchain",
+      "thresholds": "13／36",
+      "score": 7,
+      "feature": {
+        "name": "時間減速",
+        "name_en": "Timeslowing",
+        "description": "防具スロットを1つマークしてd4を振り、出た目を“判定前の攻撃に対する君の回避値”にボーナスとして加える。"
+      }
+    },
+    {
+      "id": "emberwoven-armor",
+      "name": "エンバーウーヴン・アーマー",
+      "name_en": "Emberwoven Armor",
+      "thresholds": "13／36",
+      "score": 6,
+      "feature": {
+        "name": "燃焼",
+        "name_en": "Burning",
+        "description": "敵は、近接射程内にいる君を攻撃する時、ストレスを1つマークする。"
+      }
+    },
+    {
+      "id": "veritas-opal-armor",
+      "name": "ヴェリタス・オパール・アーマー",
+      "name_en": "Veritas Opal Armor",
+      "thresholds": "13／36",
+      "score": 6,
+      "feature": {
+        "name": "真実追求",
+        "name_en": "Truthseeking",
+        "description": "近距離射程内にいる他のクリーチャーが嘘をつくと、この防具が輝く。"
+      }
+    },
+    {
+      "id": "savior-chainmail",
+      "name": "サヴォワール・チェインメイル",
+      "name_en": "Savior Chainmail",
+      "thresholds": "18／48",
+      "score": 8,
+      "feature": {
+        "name": "困難",
+        "name_en": "Difficult",
+        "description": "すべてのキャラクター特性と回避値－1"
+      }
     }
-  },
-  {
-    "id": "improved-leather-armor",
-    "tier": 2,
-    "name": "改良型レザー・アーマー",
-    "name_en": "Improved Leather Armor",
-    "thresholds": "9／20",
-    "score": 4,
-    "feature": null
-  },
-  {
-    "id": "improved-chainmail-armor",
-    "tier": 2,
-    "name": "改良型チェインメイル・アーマー",
-    "name_en": "Improved Chainmail Armor",
-    "thresholds": "11／24",
-    "score": 5,
-    "feature": {
-      "name": "重装",
-      "name_en": "Heavy",
-      "description": "回避－1"
+  ],
+  "tier1-2": [
+    {
+      "id": "mage-robes",
+      "name": "メイジ・ローブス",
+      "name_en": "Mage Robes",
+      "thresholds": "4／10",
+      "score": 2,
+      "feature": {
+        "name": "強化",
+        "name_en": "Enchanted",
+        "description": "君のダメージ閾値に呪文発動特性に等しいボーナスを得る。"
+      }
+    },
+    {
+      "id": "brigandine-armor",
+      "name": "ブリガンディン・アーマー",
+      "name_en": "Brigandine Armor",
+      "thresholds": "6／12",
+      "score": 3,
+      "feature": {
+        "name": "裏打ち",
+        "name_en": "Lined",
+        "description": "ストレスを1つマークして、小ダメージを打ち消す。"
+      }
+    },
+    {
+      "id": "scale-mail-armor",
+      "name": "スケイル・メイル・アーマー",
+      "name_en": "Scale Mail Armor",
+      "thresholds": "7／14",
+      "score": 3,
+      "feature": {
+        "name": "大振り",
+        "name_en": "Cumbersome",
+        "description": "【技巧】－1"
+      }
+    },
+    {
+      "id": "banded-armor",
+      "name": "バンデッド・アーマー",
+      "name_en": "Banded Armor",
+      "thresholds": "8／16",
+      "score": 4,
+      "feature": {
+        "name": "かさばり",
+        "name_en": "Bulky",
+        "description": "回避値－1；君は大ダメージを受けた時、ストレスを1つマークしなければならない。"
+      }
     }
-  },
-  {
-    "id": "improved-full-plate-armor",
-    "tier": 2,
-    "name": "改良型フル・プレート・アーマー",
-    "name_en": "Improved Full Plate Armor",
-    "thresholds": "13／28",
-    "score": 5,
-    "feature": {
-      "name": "超重装",
-      "name_en": "Very Heavy",
-      "description": "回避－2、【敏捷】－1"
+  ],
+  "tier2-2": [
+    {
+      "id": "improved-mage-robes",
+      "name": "改良型メイジ・ローブス",
+      "name_en": "Improved Mage Robes",
+      "thresholds": "6／15",
+      "score": 3,
+      "feature": {
+        "name": "強化",
+        "name_en": "Enchanted",
+        "description": "君のダメージ閾値に呪文発動特性に等しいボーナスを得る。"
+      }
+    },
+    {
+      "id": "improved-brigandine-armor",
+      "name": "改良型ブリガンディン・アーマー",
+      "name_en": "Improved Brigandine Armor",
+      "thresholds": "9／19",
+      "score": 4,
+      "feature": {
+        "name": "裏打ち",
+        "name_en": "Lined",
+        "description": "ストレスを1つマークして、小ダメージを打ち消す。"
+      }
+    },
+    {
+      "id": "improved-scale-mail-armor",
+      "name": "改良型スケイル・メイル・アーマー",
+      "name_en": "Improved Scale Mail Armor",
+      "thresholds": "11／23",
+      "score": 5,
+      "feature": {
+        "name": "大振り",
+        "name_en": "Cumbersome",
+        "description": "【技巧】－1"
+      }
+    },
+    {
+      "id": "improved-banded-armor",
+      "name": "改良型バンデッド・アーマー",
+      "name_en": "Improved Banded Armor",
+      "thresholds": "13／27",
+      "score": 5,
+      "feature": {
+        "name": "かさばり",
+        "name_en": "Bulky",
+        "description": "回避値－1；君は大ダメージを受けた時、ストレスを1つマークしなければならない。"
+      }
+    },
+    {
+      "id": "enchanters-robes",
+      "name": "エンチャンターズ・ローブス",
+      "name_en": "Enchanter’s Robes",
+      "thresholds": "9／20",
+      "score": 4,
+      "feature": {
+        "name": "記憶術",
+        "name_en": "Mnemonic",
+        "description": "場面ごとに1回、君は保管枠にある領域カード1枚を想起コストを支払わずに想起できる。"
+      }
+    },
+    {
+      "id": "hawkguards-mantle",
+      "name": "ホークガーズ・マントル",
+      "name_en": "Hawkguard’s Mantle",
+      "thresholds": "9／20",
+      "score": 4,
+      "feature": {
+        "name": "滑空",
+        "name_en": "Gliding",
+        "description": "君は遠距離射程まで滑空でき、落下によるダメージに完全耐性を持つ。"
+      }
+    },
+    {
+      "id": "spidersilk-tunic",
+      "name": "スパイダーシルク・チュニック",
+      "name_en": "Spidersilk Tunic",
+      "thresholds": "9／20",
+      "score": 4,
+      "feature": {
+        "name": "壁登り",
+        "name_en": "Wall-Crawling",
+        "description": "回避値＋1；君は壁の上を、そこが地面かのように軽々と歩くことができる。"
+      }
+    },
+    {
+      "id": "stormthread-habit",
+      "name": "ストームスレッド・ハビット",
+      "name_en": "Stormthread Habit",
+      "thresholds": "9／20",
+      "score": 4,
+      "feature": {
+        "name": "魔力吸収",
+        "name_en": "Absorbing",
+        "description": "場面ごとに1回、君は魔法ダメージを受けた時、防具スロットを1つ回復できる。"
+      }
+    },
+    {
+      "id": "tyris-soft-armor",
+      "name": "ティリス・ソフト・アーマー",
+      "name_en": "Tyris Soft Armor",
+      "thresholds": "8／18",
+      "score": 5,
+      "feature": {
+        "name": "静音",
+        "name_en": "Quiet",
+        "description": "君は静かに移動するために行うロールに＋2のボーナスを得る。"
+      }
+    },
+    {
+      "id": "wyrdwood-splint-armor",
+      "name": "ウィルドウッド・スプリント・アーマー",
+      "name_en": "Wyrdwood Splint Armor",
+      "thresholds": "10／21",
+      "score": 5,
+      "feature": {
+        "name": "高速移動",
+        "name_en": "Quick-Striding",
+        "description": "君は拘束状態にならず、行動ロールの一部として遠距離射程まで移動できる。"
+      }
+    },
+    {
+      "id": "trollhide-cuirass",
+      "name": "トロルハイド・クイラス",
+      "name_en": "Trollhide Cuirass",
+      "thresholds": "11／23",
+      "score": 5,
+      "feature": {
+        "name": "自己修復",
+        "name_en": "Self-Healing",
+        "description": "君が休憩を取った時、防具スロットを1つ回復する。"
+      }
+    },
+    {
+      "id": "gilded-sunplate",
+      "name": "ギルデッド・サンプレート",
+      "name_en": "Gilded Sunplate",
+      "thresholds": "12／26",
+      "score": 5,
+      "feature": {
+        "name": "きらびやか",
+        "name_en": "Resplendent",
+        "description": "場面ごとに1回、君は希望を消費した時、防具スロットを1つ回復できる。"
+      }
     }
-  },
-  {
-    "id": "elundrian-chain-armor",
-    "tier": 2,
-    "name": "エランドリアン・チェイン・アーマー",
-    "name_en": "Elundrian Chain Armor",
-    "thresholds": "9／21",
-    "score": 4,
-    "feature": {
-      "name": "防護",
-      "name_en": "Warded",
-      "description": "君はダメージ閾値と照らし合わせる前に、適用前の魔法ダメージを防御値の分だけ減少させる。"
+  ],
+  "tier3-2": [
+    {
+      "id": "advanced-mage-robes",
+      "name": "発展型メイジ・ローブス",
+      "name_en": "Advanced Mage Robes",
+      "thresholds": "8／22",
+      "score": 4,
+      "feature": {
+        "name": "強化",
+        "name_en": "Enchanted",
+        "description": "君のダメージ閾値に呪文発動特性に等しいボーナスを得る。"
+      }
+    },
+    {
+      "id": "advanced-brigandine-armor",
+      "name": "発展型ブリガンディン・アーマー",
+      "name_en": "Advanced Brigandine Armor",
+      "thresholds": "11／26",
+      "score": 5,
+      "feature": {
+        "name": "裏打ち",
+        "name_en": "Lined",
+        "description": "ストレスを1つマークして、小ダメージを打ち消す。"
+      }
+    },
+    {
+      "id": "advanced-scale-mail-armor",
+      "name": "発展型スケイル・メイル・アーマー",
+      "name_en": "Advanced Scale Mail Armor",
+      "thresholds": "13／30",
+      "score": 6,
+      "feature": {
+        "name": "大振り",
+        "name_en": "Cumbersome",
+        "description": "【技巧】－1"
+      }
+    },
+    {
+      "id": "advanced-banded-armor",
+      "name": "発展型バンデッド・アーマー",
+      "name_en": "Advanced Banded Armor",
+      "thresholds": "15／34",
+      "score": 6,
+      "feature": {
+        "name": "かさばり",
+        "name_en": "Bulky",
+        "description": "回避値－1；君は大ダメージを受けた時、ストレスを1つマークしなければならない。"
+      }
+    },
+    {
+      "id": "granminsters-finery",
+      "name": "グランミンスターズ・ファイナリー",
+      "name_en": "Granminster’s Finery",
+      "thresholds": "11／27",
+      "score": 2,
+      "feature": {
+        "name": "絢爛",
+        "name_en": "Magnificent",
+        "description": "君の防具値に【存在】に等しいボーナスを得る。"
+      }
+    },
+    {
+      "id": "astral-raiment",
+      "name": "アストラル・レイメント",
+      "name_en": "Astral Raiment",
+      "thresholds": "11／27",
+      "score": 5,
+      "feature": {
+        "name": "星光",
+        "name_en": "Stellar",
+        "description": "ストレスを1つマークして、呪文発動ロール1回に有利を得る。"
+      }
+    },
+    {
+      "id": "cloverweave-cloak",
+      "name": "クローバーウィーヴ・クローク",
+      "name_en": "Cloverweave Cloak",
+      "thresholds": "11／27",
+      "score": 5,
+      "feature": {
+        "name": "運の恵み",
+        "name_en": "Fortune-Favored",
+        "description": "場面ごとに1回、君は希望失敗を恐怖成功に変えることができる。"
+      }
+    },
+    {
+      "id": "skywardens-lamellar",
+      "name": "スカイウォーデンズ・ラメラー",
+      "name_en": "Skywarden’s Lamellar",
+      "thresholds": "11／27",
+      "score": 5,
+      "feature": {
+        "name": "警戒",
+        "name_en": "Vigilant",
+        "description": "回避値＋2"
+      }
+    },
+    {
+      "id": "bloodstone-plate-armor",
+      "name": "ブラッドストーン・プレート・アーマー",
+      "name_en": "Bloodstone Plate Armor",
+      "thresholds": "13／35",
+      "score": 6,
+      "feature": {
+        "name": "血の渇望",
+        "name_en": "Bloodthirsty",
+        "description": "君が近接射程内の武器攻撃にクリティカル成功した時、HPを1つ回復する。"
+      }
+    },
+    {
+      "id": "deep-forged-coral-armor",
+      "name": "ディープフォージド・コーラル・アーマー",
+      "name_en": "Deep-Forged Coral Armor",
+      "thresholds": "13／35",
+      "score": 6,
+      "feature": {
+        "name": "水生",
+        "name_en": "Aquatic",
+        "description": "君は水中で呼吸でき、水面化での【敏捷】ロールに有利を得る。"
+      }
     }
-  },
-  {
-    "id": "harrowbone-armor",
-    "tier": 2,
-    "name": "ハロウボーン・アーマー",
-    "name_en": "Harrowbone Armor",
-    "thresholds": "9／21",
-    "score": 4,
-    "feature": {
-      "name": "耐久性",
-      "name_en": "Resilient",
-      "description": "君が最後の防具スロットをマークする前、d6を振る。6の目が出たなら、防具スロットをマークすることなく深刻度を閾値1段階ぶん軽減する。"
+  ],
+  "tier4-2": [
+    {
+      "id": "legendary-mage-robes",
+      "name": "伝説級メイジ・ローブス",
+      "name_en": "Legendary Mage Robes",
+      "thresholds": "10／31",
+      "score": 5,
+      "feature": {
+        "name": "強化",
+        "name_en": "Enchanted",
+        "description": "君のダメージ閾値に呪文発動特性に等しいボーナスを得る。"
+      }
+    },
+    {
+      "id": "legendary-brigandine-armor",
+      "name": "伝説級ブリガンディン・アーマー",
+      "name_en": "Legendary Brigandine Armor",
+      "thresholds": "13／35",
+      "score": 6,
+      "feature": {
+        "name": "裏打ち",
+        "name_en": "Lined",
+        "description": "ストレスを1つマークして、小ダメージを打ち消す。"
+      }
+    },
+    {
+      "id": "legendary-scale-mail-armor",
+      "name": "伝説級スケイル・メイル・アーマー",
+      "name_en": "Legendary Scale Mail Armor",
+      "thresholds": "15／39",
+      "score": 6,
+      "feature": {
+        "name": "大振り",
+        "name_en": "Cumbersome",
+        "description": "【技巧】－1"
+      }
+    },
+    {
+      "id": "legendary-banded-armor",
+      "name": "伝説級バンデッド・アーマー",
+      "name_en": "Legendar Banded Armor",
+      "thresholds": "17／43",
+      "score": 7,
+      "feature": {
+        "name": "かさばり",
+        "name_en": "Bulky",
+        "description": "回避値－1；君は大ダメージを受けた時、ストレスを1つマークしなければならない。"
+      }
+    },
+    {
+      "id": "darkweave-shroud",
+      "name": "ダークウィーヴ・シュラウド",
+      "name_en": "Darkweave Shroud",
+      "thresholds": "13／36",
+      "score": 5,
+      "feature": {
+        "name": "幽霊歩き",
+        "name_en": "Ghostwalker",
+        "description": "休憩ごとに1回、ストレスを1つマークして、固い物体をすり抜けて近距離射程まで移動する。"
+      }
+    },
+    {
+      "id": "godbound-laminar",
+      "name": "ゴッドバウンド・ラミナー",
+      "name_en": "Godbound Laminar",
+      "thresholds": "13／36",
+      "score": 6,
+      "feature": {
+        "name": "神性",
+        "name_en": "Divine",
+        "description": "君が防具スロットを1つマークした時、希望を1つ得る。"
+      }
+    },
+    {
+      "id": "circle-forged-dreadplate",
+      "name": "サークルフォージド・ドレッドプレート",
+      "name_en": "Circle-Forged Dreadplate",
+      "thresholds": "14／38",
+      "score": 6,
+      "feature": {
+        "name": "呪い",
+        "name_en": "Accursed",
+        "description": "君が攻撃によってHPをマークした時、d4を振る。4の目が出たなら、攻撃者は君がマークしたHPに等しい数のストレスをマークする。"
+      }
+    },
+    {
+      "id": "rune-forged-exosuit",
+      "name": "ルーンフォージド・エクソスート",
+      "name_en": "Rune-Forged Exosuit",
+      "thresholds": "12／39",
+      "score": 7,
+      "feature": {
+        "name": "同調",
+        "name_en": "Attuned",
+        "description": "君の準備枠内の領域カードの最大数は1減少するが、君はダメージ閾値にティアに等しいボーナスを得る。"
+      }
+    },
+    {
+      "id": "hallowed-heroplate",
+      "name": "ハロウド・ヒーロープレート",
+      "name_en": "Hallowed Heroplate",
+      "thresholds": "13／35",
+      "score": 7,
+      "feature": {
+        "name": "祝福",
+        "name_en": "Blessed",
+        "description": "大休憩ごとに1回、君は死亡ムーヴ“決死の覚悟”を行う前に、任意の数の希望を消費することができる。消費した希望の数だけ、希望ダイスの出目にボーナスを得る。"
+      }
+    },
+    {
+      "id": "resonant-harness",
+      "name": "レゾナント・ハーネス",
+      "name_en": "Resonant Harness",
+      "thresholds": "15／40",
+      "score": 7,
+      "feature": {
+        "name": "硝子質",
+        "name_en": "Vitreous",
+        "description": "君は大ダメージ以上を受けるところで、防具スロットを2つマークして、そのダメージを打ち消すことができる。そうしたなら、君は合間ムーヴとして防具を修理するまで、ダメージ閾値に－5のペナルティを受ける。"
+      }
     }
-  },
-  {
-    "id": "irontree-breastplate-armor",
-    "tier": 2,
-    "name": "アイアンツリー・ブレストプレート・アーマー",
-    "name_en": "Irontree Breastplate Armor",
-    "thresholds": "9／20",
-    "score": 4,
-    "feature": {
-      "name": "増強",
-      "name_en": "Reinforced",
-      "description": "君が最後の防具スロットをマークした時、防具スロットを最低1つ回復するまでダメージ閾値を2上昇させる。"
-    }
-  },
-  {
-    "id": "runetan-floating-armor",
-    "tier": 2,
-    "name": "ルーンタン・フローティング・アーマー",
-    "name_en": "Runetan Floating Armor",
-    "thresholds": "9／20",
-    "score": 4,
-    "feature": {
-      "name": "遷移",
-      "name_en": "Shifting",
-      "description": "君は攻撃の目標になった時、防具スロットを1つマークして君に対するその攻撃に不利を課すことができる。"
-    }
-  },
-  {
-    "id": "rosewild-armor",
-    "tier": 2,
-    "name": "ローズワイルド・アーマー",
-    "name_en": "Rosewild Armor",
-    "thresholds": "11／23",
-    "score": 5,
-    "feature": {
-      "name": "希望変換",
-      "name_en": "Hopeful",
-      "description": "君は希望を消費するところで、（希望を消費する代わりに）防具スロットをマークすることができる。"
-    }
-  },
-
-  {
-    "id": "advanced-gambeson-armor",
-    "tier": 3,
-    "name": "発展型ギャンべゾン・アーマー",
-    "name_en": "Advanced Gambeson Armor",
-    "thresholds": "9／23",
-    "score": 5,
-    "feature": {
-      "name": "柔軟",
-      "name_en": "Flexible",
-      "description": "回避＋1"
-    }
-  },
-  {
-    "id": "advanced-leather-armor",
-    "tier": 3,
-    "name": "発展型レザー・アーマー",
-    "name_en": "Advanced Leather Armor",
-    "thresholds": "11／27",
-    "score": 5,
-    "feature": null
-  },
-  {
-    "id": "advanced-chainmail-armor",
-    "tier": 3,
-    "name": "発展型チェインメイル・アーマー",
-    "name_en": "Advanced Chainmail Armor",
-    "thresholds": "13／31",
-    "score": 6,
-    "feature": {
-      "name": "重装",
-      "name_en": "Heavy",
-      "description": "回避－1"
-    }
-  },
-  {
-    "id": "advanced-full-plate-armor",
-    "tier": 3,
-    "name": "発展型フル・プレート・アーマー",
-    "name_en": "Advanced Full Plate Armor",
-    "thresholds": "15／35",
-    "score": 6,
-    "feature": {
-      "name": "超重装",
-      "name_en": "Very Heavy",
-      "description": "回避－2、【敏捷】－1"
-    }
-  },
-  {
-    "id": "bellamoi-fine-armor",
-    "tier": 3,
-    "name": "ベラモイ・ファイン・アーマー",
-    "name_en": "Bellamoi Fine Armor",
-    "thresholds": "11／27",
-    "score": 5,
-    "feature": {
-      "name": "金メッキ",
-      "name_en": "Gilded",
-      "description": "【存在】＋1"
-    }
-  },
-  {
-    "id": "dragonscale-armor",
-    "tier": 3,
-    "name": "ドラゴンスケイル・アーマー",
-    "name_en": "Dragonscale Armor",
-    "thresholds": "11／27",
-    "score": 5,
-    "feature": {
-      "name": "貫通不可",
-      "name_en": "Impenetrable",
-      "description": "小休憩ごとに1回、君は最後のHPをマークするところで、（HPの代わりに）ストレスを1つマークすることができる。"
-    }
-  },
-  {
-    "id": "spiked-plate-armor",
-    "tier": 3,
-    "name": "スパイクト・プレート・アーマー",
-    "name_en": "Spiked Plate Armor",
-    "thresholds": "10／25",
-    "score": 5,
-    "feature": {
-      "name": "鋭利",
-      "name_en": "Sharp",
-      "description": "近接射程内の目標に対する攻撃に成功したなら、ダメージロールにd4を加えられる。"
-    }
-  },
-  {
-    "id": "bladefare-armor",
-    "tier": 3,
-    "name": "ブレードフェア・アーマー",
-    "name_en": "Bladefare Armor",
-    "thresholds": "16／39",
-    "score": 6,
-    "feature": {
-      "name": "物理的",
-      "name_en": "Physical",
-      "description": "君は防具スロットをマークして魔法ダメージを減少させることができない。"
-    }
-  },
-  {
-    "id": "monetts-cloak",
-    "tier": 3,
-    "name": "モネッツ・クローク",
-    "name_en": "Monett's Cloak",
-    "thresholds": "16／39",
-    "score": 6,
-    "feature": {
-      "name": "魔法的",
-      "name_en": "Magic",
-      "description": "君は防具スロットをマークして物理ダメージを減少させることができない。"
-    }
-  },
-  {
-    "id": "runes-of-fortification",
-    "tier": 3,
-    "name": "ルーンズ・オヴ・フォルティフィケーション",
-    "name_en": "Runes of Fortification",
-    "thresholds": "17／43",
-    "score": 6,
-    "feature": {
-      "name": "苦痛",
-      "name_en": "Painful",
-      "description": "君は防具スロットを1つマークするたび、ストレスを1つマークしなければならない。"
-    }
-  },
-
-  {
-    "id": "legendary-gambeson-armor",
-    "tier": 4,
-    "name": "伝説級ギャンべゾン・アーマー",
-    "name_en": "Legendary Gambeson Armor",
-    "thresholds": "11／32",
-    "score": 6,
-    "feature": {
-      "name": "柔軟",
-      "name_en": "Flexible",
-      "description": "回避＋1"
-    }
-  },
-  {
-    "id": "legendary-leather-armor",
-    "tier": 4,
-    "name": "伝説級レザー・アーマー",
-    "name_en": "Legendary Leather Armor",
-    "thresholds": "13／36",
-    "score": 6,
-    "feature": null
-  },
-  {
-    "id": "legendary-chainmail-armor",
-    "tier": 4,
-    "name": "伝説級チェインメイル・アーマー",
-    "name_en": "Legendary Chainmail Armor",
-    "thresholds": "15／40",
-    "score": 7,
-    "feature": {
-      "name": "重装",
-      "name_en": "Heavy",
-      "description": "回避－1"
-    }
-  },
-  {
-    "id": "legendary-full-plate-armor",
-    "tier": 4,
-    "name": "伝説級フル・プレート・アーマー",
-    "name_en": "Legendary Full Plate Armor",
-    "thresholds": "17／44",
-    "score": 7,
-    "feature": {
-      "name": "超重装",
-      "name_en": "Very Heavy",
-      "description": "回避－2、【敏捷】－1"
-    }
-  },
-  {
-    "id": "dunamis-silkchain",
-    "tier": 4,
-    "name": "デュナミス・シルクチェイン",
-    "name_en": "Dunamis Silkchain",
-    "thresholds": "13／36",
-    "score": 7,
-    "feature": {
-      "name": "時間減速",
-      "name_en": "Timeslowing",
-      "description": "防具スロットを1つマークしてd4を振り、出た目を“判定前の攻撃に対する君の回避”にボーナスとして加える。"
-    }
-  },
-  {
-    "id": "channeling-armor",
-    "tier": 4,
-    "name": "チャネリング・アーマー",
-    "name_en": "Channeling Armor",
-    "thresholds": "13／36",
-    "score": 5,
-    "feature": {
-      "name": "伝導",
-      "name_en": "Channeling",
-      "description": "呪文発動ロール＋1"
-    }
-  },
-  {
-    "id": "emberwoven-armor",
-    "tier": 4,
-    "name": "エンバーウーヴン・アーマー",
-    "name_en": "Emberwoven Armor",
-    "thresholds": "13／36",
-    "score": 6,
-    "feature": {
-      "name": "燃焼",
-      "name_en": "Burning",
-      "description": "敵は、近接射程内にいる君を攻撃する時、ストレスを1つマークする。"
-    }
-  },
-  {
-    "id": "full-fortified-armor",
-    "tier": 4,
-    "name": "フル・フォルティファイド・アーマー",
-    "name_en": "Full Fortified Armor",
-    "thresholds": "15／40",
-    "score": 4,
-    "feature": {
-      "name": "要塞化",
-      "name_en": "Fortified",
-      "description": "君は防具スロットを1つマークする時、攻撃の深刻度を（1段階ではなく）2段階ぶん軽減する。"
-    }
-  },
-  {
-    "id": "veritas-opal-armor",
-    "tier": 4,
-    "name": "ヴェリタス・オパール・アーマー",
-    "name_en": "Veritas Opal Armor",
-    "thresholds": "13／36",
-    "score": 6,
-    "feature": {
-      "name": "真実追求",
-      "name_en": "Truthseeking",
-      "description": "近距離射程内にいる他のクリーチャーが嘘をつくと、この防具が輝く。"
-    }
-  },
-  {
-    "id": "savior-chainmail",
-    "tier": 4,
-    "name": "サヴォワール・チェインメイル",
-    "name_en": "Savior Chainmail",
-    "thresholds": "18／48",
-    "score": 8,
-    "feature": {
-      "name": "困難",
-      "name_en": "Difficult",
-      "description": "すべてのキャラクター特性と回避－1"
-    }
-  }
-]
+  ]
+}
