@@ -7,8 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadArmorData();
   loadLootData();
   loadConsumableData();
-  loadAdversaryData();
-  loadEnvironmentData();
+  initSelectors();
 });
 
 // メニュー
@@ -573,62 +572,69 @@ function createConsumableTable(tableId, consumableData) {
   });
 }
 
-function loadAdversaryData() {
-  fetch("data/json/adversaries.json")
-    .then(response => response.json())
-    .then(adversaryData => {
-      const select = document.querySelector("#adversary-select");
+let adversaryData = {};
+let environmentData = {};
+function initSelectors() {
+  Promise.all([
+    fetch("data/json/adversaries.json").then(response => response.json()),
+    fetch("data/json/environments.json").then(response => response.json())
+  ])
+    .then(([adversaries, environments]) => {
+      adversaryData = adversaries;
+      environmentData = environments;
 
-      if (!select) return;
+      document.querySelector("#adversary-tier-select").addEventListener("change", updateAdversarySelector);
+      document.querySelector("#adversary-select").addEventListener("change", updateAdversaryStatBlock);
 
-      select.innerHTML = `
-        <option value="" disabled>表示する敵を選択</option>
-      `;
+      document.querySelector("#environment-tier-select").addEventListener("change", updateEnvironmentSelector);
+      document.querySelector("#environment-select").addEventListener("change", updateEnvironmentStatBlock);
 
-      for (let tier = 1; tier <= 4; tier++) {
-        const tierAdversaries = adversaryData.filter(
-          adversary => adversary.tier === tier
-        );
-
-        if (tierAdversaries.length === 0) continue;
-
-        const tierLabel = document.createElement("option");
-
-        tierLabel.value = "";
-        tierLabel.disabled = true;
-        tierLabel.textContent = `------ティア${tier}------`;
-
-        select.appendChild(tierLabel);
-
-        tierAdversaries.forEach(adversary => {
-          const option = document.createElement("option");
-
-          option.value = adversary.id;
-          option.textContent = adversary.name;
-
-          if (adversary.id === "acid-burrower") {
-            option.selected = true;
-          }
-
-          select.appendChild(option);
-        });
-      }
-
-      select.addEventListener("change", () => {
-        const selectedAdversary = adversaryData.find(
-          adversary => adversary.id === select.value
-        );
-
-        if (!selectedAdversary) return;
-
-        createAdversaryStatBlock(selectedAdversary);
-      });
+      updateAdversarySelector();
+      updateEnvironmentSelector();
     });
 }
 
-function createAdversaryStatBlock(adversary) {
-  const display = document.querySelector(
-    "#adversary-stat-block-display"
+function updateAdversarySelector() {
+  const tierKey = document.querySelector("#adversary-tier-select").value;
+  const adversaries = adversaryData[`tier-${tierKey}`];
+  const selector = document.querySelector("#adversary-select");
+
+  selector.innerHTML = `
+    <option value="" disabled selected>表示する敵キャラクターを選択</option>
+  `;
+
+  updateSelector(selector, adversaries);
+}
+
+function updateEnvironmentSelector() {
+  const tierKey = document.querySelector("#environment-tier-select").value;
+  const environments = environmentData[`tier-${tierKey}`];
+  const selector = document.querySelector("#environment-select");
+
+  selector.innerHTML = `
+    <option value="" disabled selected>表示する環境を選択</option>
+  `;
+
+  updateSelector(selector, environments);
+}
+
+function updateSelector(selector, items) {
+  items.forEach(item => {
+    const option = document.createElement("option");
+    option.value = item.id;
+    option.textContent = item.name;
+    selector.appendChild(option);
+  });
+
+  //if (items.length > 0) selector.selectedIndex = 1;
+}
+
+function updateAdversaryStatBlock() {
+  const display = document.querySelector("#adversary-stat-block-display");
+  const tierKey = document.querySelector("#adversary-tier-select").value;
+  const id = document.querySelector("#adversary-select").value;
+  const adversary = adversaryData[`tier-${tierKey}`].find(
+    adversary => adversary.id === id
   );
 
   if (!display) return;
@@ -655,62 +661,13 @@ function createAdversaryStatBlock(adversary) {
     `).join("")}
   `;
 }
-function loadEnvironmentData() {
-  fetch("data/json/environments.json")
-    .then(response => response.json())
-    .then(environmentData => {
-      const select = document.querySelector("#environment-select");
 
-      if (!select) return;
-
-      select.innerHTML = `
-        <option value="" disabled>表示する環境を選択</option>
-      `;
-
-      for (let tier = 1; tier <= 4; tier++) {
-        const tierEnvironments = environmentData.filter(
-          environment => environment.tier === tier
-        );
-
-        if (tierEnvironments.length === 0) continue;
-
-        const tierLabel = document.createElement("option");
-
-        tierLabel.value = "";
-        tierLabel.disabled = true;
-        tierLabel.textContent = `------ティア${tier}------`;
-
-        select.appendChild(tierLabel);
-
-        tierEnvironments.forEach(environment => {
-          const option = document.createElement("option");
-
-          option.value = environment.id;
-          option.textContent = environment.name;
-
-          if (environment.id === "abandoned-grove") {
-            option.selected = true;
-          }
-
-          select.appendChild(option);
-        });
-      }
-
-      select.addEventListener("change", () => {
-        const selectedEnvironment = environmentData.find(
-          environment => environment.id === select.value
-        );
-
-        if (!selectedEnvironment) return;
-
-        createEnvironmentStatBlock(selectedEnvironment);
-      });
-    });
-}
-
-function createEnvironmentStatBlock(environment) {
-  const display = document.querySelector(
-    "#environment-stat-block-display"
+function updateEnvironmentStatBlock() {
+  const display = document.querySelector("#environment-stat-block-display");
+  const tierKey = document.querySelector("#environment-tier-select").value;
+  const id = document.querySelector("#environment-select").value;
+  const environment = environmentData[`tier-${tierKey}`].find(
+    environment => environment.id === id
   );
 
   if (!display) return;

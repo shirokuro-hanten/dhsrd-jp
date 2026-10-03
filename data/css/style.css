@@ -28,6 +28,7 @@ body {
   color: #222;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
   font-size: 16px;
+  /* font-feature-settings: "palt"; */
   line-height: 1.75;
 }
 
@@ -167,6 +168,11 @@ article {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.5rem;
 }
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.5rem;
+}
 
 aside {
   background: #ddd;
@@ -212,16 +218,26 @@ thead {
   border-bottom: 2px solid #222;
 }
 th, td {
+  line-height: 1.2;
   min-width: 5em;
   padding: 0.5rem 0.75rem;
   text-align: left;
 }
 th {
   font-weight: bold;
-  line-height: 1.2;
 }
 tbody tr:nth-child(odd) {
   background: #d5d5d5;
+}
+.weapon th:nth-child(6),
+.weapon td:nth-child(6),
+.wheelchair th:nth-child(7),
+.wheelchair td:nth-child(7),
+.armor th:nth-child(4),
+.armor td:nth-child(4),
+.item th:nth-child(3),
+.item td:nth-child(3) {
+  line-height: normal;
 }
 
 img {
@@ -236,20 +252,13 @@ img {
 /* ==================== */
 
 .reference {
-  padding: 0;
-
-  color: #7a2f2f;
-
-  background: transparent;
-
-  border: 0;
-  border-bottom: 1px dotted #7a2f2f;
-
+  color: #000;
   cursor: pointer;
+  text-decoration: underline dotted 1px;
+  text-underline-offset: 3px;
 }
-
 .reference:hover {
-  color: #a13d3d;
+  color: #325cbc;
 }
 
 /* ==================== */
@@ -271,6 +280,7 @@ select, input {
 .adversary-statblock {
   margin: 1.5rem 0;
   padding: 1rem;
+  max-width: 30rem;
   background: #eee;
   border: 1px solid #888;
   border-radius: 12px;
@@ -281,6 +291,7 @@ select, input {
 .environment-statblock {
   margin: 1.5rem 0;
   padding: 1rem;
+  max-width: 30rem;
   border: 1px solid #888;
   border-radius: 12px;
 }
@@ -296,9 +307,11 @@ select, input {
 .environment-statblock .feature-text {
   padding-left: 1rem;
 }
-.adversary-statblock ul.feature-text,
-.environment-statblock ul.feature-text {
-  padding-left: 2rem;
+.adversary-statblock ul,
+.adversary-statblock ol,
+.environment-statblock ul,
+.environment-statblock ol {
+  padding-left: 2.2rem;
 }
 
 /* ==================== */
@@ -307,7 +320,8 @@ select, input {
 
 .reference-popup {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
   z-index: 1000;
 
   width: min(420px, calc(100vw - 2rem));
@@ -339,15 +353,6 @@ select, input {
 
 .reference-popup[hidden] {
   display: none;
-}
-
-/* ポップアップ内の見出し */
-.reference-popup h2,
-.reference-popup h3,
-.reference-popup h4,
-.reference-popup h5,
-.reference-popup h6 {
-  margin-top: 0;
 }
 
 /* 元の項目が article / li などの場合の余計な余白を抑える */

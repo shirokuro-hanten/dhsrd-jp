@@ -188,6 +188,14 @@
     </div>
 
     <div class="nav-item">
+      <a href="#supplemental-campaign-mechanics">補足的キャンペーンメカニクス</a>
+      <button class="submenu-toggle" type="button" aria-label="補足的キャンペーンメカニクスを展開" aria-expanded="false"></button>
+      <div class="submenu" hidden>
+        <a href=""></a>
+      </div>
+    </div>
+
+    <div class="nav-item">
       <a href="#appendix">付録</a>
       <button class="submenu-toggle" type="button" aria-label="付録を展開" aria-expanded="false"></button>
       <div class="submenu" hidden>
@@ -213,7 +221,6 @@
 
   <section class="foreword">
     <p>このサイトは、<a href="https://www.daggerheart.com/srd/">『Daggerheart System Reference Document 1.0』</a>を非公式に日本語化したものです。</p>
-    <p>現在、一部の項（SRD1.0のティア2以降およびSRD2.0の敵キャラクター、SRD2.0の環境、SRD2.0のキャンペーン設定）が未整備です。順次追加しますのでお待ちください。</p>
     <p>本サイト内の訳語、訳文、解釈は管理人によるものであり、公式見解ではありません。実卓では、GMの解釈や裁定に従ってください。</p>
     <p>本製品には、『Daggerheart System Reference Document 2.0』（© Critical Role, LLC.）の素材が含まれており、これらはDarrington Press Community Gaming License（DPCGL）の条件に基づいて提供されています。詳細については、<a href="https://www.daggerheart.com">https://www.daggerheart.com</a>をご覧ください。他者による過去の改変はありません。<br>This product includes materials from the Daggerheart System Reference Document 2.0, © Critical Role, LLC. under the terms of the Darrington Press Community Gaming (DPCGL) License. More information can be found at <a href="https://www.daggerheart.com">https://www.daggerheart.com</a>. There are no previous modifications by others.</p>
     <p>本サイト内の訳文は、有償／無償を問わずセッション、配信、二次創作物などにご利用いただいて構いませんが、必ず権利元のガイドラインを確認、遵守してください。</p>
@@ -356,7 +363,7 @@
     </ul>
     <p>キャラクターシートの「<b><ruby>所持品<rt>Inventory</rt></ruby></b>」の欄に以下のアイテムを追加すること：</p>
     <ul>
-      <li>松明、50フィート（15m）分のロープ、基本物資、金1包（キャラクターシート左側の列にある「<ruby>金<rt>Gold</rt></ruby>＞<ruby>包<rt>Handfuls</rt></ruby>」の欄を1つマークする）</li>
+      <li>松明、50フィート（15m）分のロープ、基本物資、金1握り（キャラクターシート左側の列にある「<ruby>金<rt>Gold</rt></ruby>＞<ruby>握り<rt>Handfuls</rt></ruby>」の欄を1つマークする）</li>
       <li>初級健康ポーション（HPを1d4つ回復）、または初級スタミナポーション（ストレスを1d4つ回復）</li>
       <li>キャラクターガイドに記載されているクラス固有のアイテムのうち1つ</li>
       <li>（該当する場合のみ）君が選択した呪文を持ち歩くためのクラス固有のアイテム</li>
@@ -594,7 +601,7 @@
           <p><em><b>楽才<span class="en-sub">Gifted Performer</span>：</b></em>君は3種類の歌を演奏でき、それぞれ大休憩ごとに1回ずつ使用可能である。どのように演奏して他者に記載された利益を与えるのか説明すること：</p>
           <ul>
             <li><em><b>安らぎの歌<span class="en-sub">Relaxing Song</span>：</b></em>君と近距離射程内にいるすべての味方はHPを1つ回復する。</li>
-            <li><em><b>壮大な歌<span class="en-sub">Epic Song</span>：</b></em>近距離射程内の目標1体を一時的に脆弱状態にする。</li>
+            <li><em><b>壮大な歌<span class="en-sub">Epic Song</span>：</b></em>近距離射程内の目標1体を一時的に<a href="#vulnerable" class="reference">脆弱状態</a>にする。</li>
             <li><em><b>胸に響く歌<span class="en-sub">Heartbreaking Song</span>：</b></em>君と近距離射程内にいるすべての味方は希望を1つ得る。</li>
           </ul>
 
@@ -697,7 +704,7 @@
           <ul>
             <li><em><b>火<span class="en-sub">Fire</span>：</b></em>君はダメージを与える攻撃や呪文に関する習熟度に＋1のボーナスを得る。</li>
             <li><em><b>土<span class="en-sub">Earth</span>：</b></em>君はHPをマークする際、マークするHPの数だけ<b>d6</b>を振る。6の目が出た分だけ、マークするHPの数を1減らす。</li>
-            <li><em><b>水<span class="en-sub">Water</span>：</b></em>君に対する攻撃が成功した時、君は<b>ストレスを1つマークする</b>ことで、攻撃者を一時的に脆弱状態にすることができる。</li>
+            <li><em><b>水<span class="en-sub">Water</span>：</b></em>君に対する攻撃が成功した時、君は<b>ストレスを1つマークする</b>ことで、攻撃者を一時的に<a href="#vulnerable" class="reference">脆弱状態</a>にすることができる。</li>
             <li><em><b>風<span class="en-sub">Air</span>：</b></em>君は回避値に＋1のボーナスを得て、飛行が可能になる。</li>
           </ul>
         </article>
@@ -787,7 +794,7 @@
               <p>（コヨーテ、ハイエナ、オオカミなど）</p>
               <p><em>【筋力】＋2</em>｜<em>回避値＋1</em><br><em>近接、【筋力】、d8＋2（物理）</em></p>
               <p><b>以下に有利を得る：</b>攻撃、疾走、追跡</p>
-              <p><em><b>足止め攻撃<span class="en-sub">Hobbling Strike</span>：</b></em>君は近接射程内の目標に対する攻撃に成功した時、<b>ストレスを1つマーク</b>して、その目標を一時的に脆弱状態にすることができる。</p>
+              <p><em><b>足止め攻撃<span class="en-sub">Hobbling Strike</span>：</b></em>君は近接射程内の目標に対する攻撃に成功した時、<b>ストレスを1つマーク</b>して、その目標を一時的に<a href="#vulnerable" class="reference">脆弱状態</a>にすることができる。</p>
               <p><em><b>群れ狩猟<span class="en-sub">Pack Hunting</span>：</b></em>君は“君の直前に行動した味方と同じ目標”に対する攻撃に成功した時、ダメージロールに<b>d8</b>を加える。</p>
             </article>
 
@@ -807,7 +814,7 @@
               <p><em>【技巧】＋1</em>｜<em>回避値＋2</em><br><em>近接、【技巧】、d6＋1（物理）</em></p>
               <p><b>以下に有利を得る：</b>攻撃、登攀、隠密</p>
               <p><em><b>毒牙<span class="en-sub">Venomous Bite</span>：</b></em>君が近接射程内の目標に対する攻撃に成功した時、目標は一時的に毒状態になる。毒状態のクリーチャーは、行動するたびに<b>1d10</b>の直接物理ダメージを受ける。</p>
-              <p><em><b>蜘蛛糸<span class="en-sub">Webslinger</span>：</b></em>君は冒険と戦闘の両面で役立つ丈夫な蜘蛛糸を作り出せる。この蜘蛛糸はクリーチャー1体を支えられるだけの耐久性がある。君は近距離射程内の目標に対する【技巧】ロールに成功することで、目標を一時的に拘束状態にできる。</p>
+              <p><em><b>蜘蛛糸<span class="en-sub">Webslinger</span>：</b></em>君は冒険と戦闘の両面で役立つ丈夫な蜘蛛糸を作り出せる。この蜘蛛糸はクリーチャー1体を支えられるだけの耐久性がある。君は近距離射程内の目標に対する【技巧】ロールに成功することで、目標を一時的に<a href="#restrained" class="reference">拘束状態</a>にできる。</p>
             </article>
           </div>
 
@@ -838,7 +845,7 @@
               <p><em>【敏捷】＋1</em>｜<em>回避値＋2</em><br><em>近接、【敏捷】、d8＋1（物理）</em></p>
               <p><b>以下に有利を得る：</b>跳躍、道探し、疾走</p>
               <p><em><b>運搬<span class="en-sub">Carrier</span>：</b></em>君は移動時に同意する味方を最大2体まで運搬することができる。</p>
-              <p><em><b>踏みつけ<span class="en-sub">Trample</span>：</b></em><b>ストレスを1つマーク</b>して、近距離射程まで直線上を移動し、その直線の近接射程内にいるすべての目標に対して攻撃を行う。君が成功した目標は、君の習熟度を用いたd8＋1の物理ダメージを受け、一時的に脆弱状態になる。</p>
+              <p><em><b>踏みつけ<span class="en-sub">Trample</span>：</b></em><b>ストレスを1つマーク</b>して、近距離射程まで直線上を移動し、その直線の近接射程内にいるすべての目標に対して攻撃を行う。君が成功した目標は、君の習熟度を用いたd8＋1の物理ダメージを受け、一時的に<a href="#vulnerable" class="reference">脆弱状態</a>になる。</p>
             </article>
 
             <article id="striking-serpent">
@@ -878,7 +885,7 @@
               <p><em>【筋力】＋2</em>｜<em>回避値＋2</em><br><em>近接、【筋力】、d12＋8（物理）</em></p>
               <p><b>以下に有利を得る：</b>攻撃、隠密、疾走</p>
               <p><em><b>運搬<span class="en-sub">Carrier</span>：</b></em>君は移動時に同意する味方を最大2体まで運搬することができる。</p>
-              <p><em><b>獰猛な牙<span class="en-sub">Vicious Maul</span>：</b></em>君は目標に対する攻撃に成功した時、<b>希望を1つ消費</b>して、その目標を一時的に脆弱状態にし、この攻撃について習熟度に＋1のボーナスを得る。</p>
+              <p><em><b>獰猛な牙<span class="en-sub">Vicious Maul</span>：</b></em>君は目標に対する攻撃に成功した時、<b>希望を1つ消費</b>して、その目標を一時的に<a href="#vulnerable" class="reference">脆弱状態</a>にし、この攻撃について習熟度に＋1のボーナスを得る。</p>
             </article>
 
             <article id="mighty-lizard">
@@ -887,7 +894,7 @@
               <p><em>【直観】＋2</em>｜<em>回避値＋1</em><br><em>近接、【直観】、d10＋7（物理）</em></p>
               <p><b>以下に有利を得る：</b>攻撃、隠密、追跡</p>
               <p><em><b>物理防御<span class="en-sub">Physical Defense</span>：</b></em>君はダメージ閾値に＋3のボーナスを得る。</p>
-              <p><em><b>噛み砕き<span class="en-sub">Snapping Strike</span>：</b></em>君は近接射程内の目標に対する攻撃に成功した時、<b>希望を1つ消費</b>して、相手を顎で挟み込み、一時的に拘束状態かつ脆弱状態にすることができる。</p>
+              <p><em><b>噛み砕き<span class="en-sub">Snapping Strike</span>：</b></em>君は近接射程内の目標に対する攻撃に成功した時、<b>希望を1つ消費</b>して、相手を顎で挟み込み、一時的に<a href="#restrained" class="reference">拘束状態</a>かつ<a href="#vulnerable" class="reference">脆弱状態</a>にすることができる。</p>
             </article>
 
             <article id="great-winged-beast">
@@ -905,7 +912,7 @@
               <p><em>【敏捷】＋2</em>｜<em>回避値＋4</em><br><em>近接、【敏捷】、d10＋6（物理）</em></p>
               <p><b>以下に有利を得る：</b>攻撃、水泳、追跡</p>
               <p><em><b>水生<span class="en-sub">Aquatic</span>：</b></em>君は水中で自然に呼吸と移動ができる。</p>
-              <p><em><b>獰猛な牙<span class="en-sub">Vicious Maul</span>：</b></em>君は目標に対する攻撃に成功した時、<b>希望を1つ消費</b>して、その目標を脆弱状態にし、この攻撃について習熟度に＋1のボーナスを得ることができる。</p>
+              <p><em><b>獰猛な牙<span class="en-sub">Vicious Maul</span>：</b></em>君は目標に対する攻撃に成功した時、<b>希望を1つ消費</b>して、その目標を<a href="#vulnerable" class="reference">脆弱状態</a>にし、この攻撃について習熟度に＋1のボーナスを得ることができる。</p>
             </article>
 
             <article id="legendary-beast">
@@ -936,7 +943,7 @@
               <p><em>【筋力】＋3</em>｜<em>回避値＋1</em><br><em>近接、【筋力】、d12＋12（物理）</em></p>
               <p><b>以下に有利を得る：</b>探知、保護、威嚇、疾走</p>
               <p><em><b>運搬<span class="en-sub">Carrier</span>：</b></em>君は移動時に同意する味方を最大4体まで運搬することができる。</p>
-              <p><em><b>潰滅<span class="en-sub">Demolish</span>：</b></em><b>希望を1つ消費</b>して、遠距離射程まで直線上を移動し、その直線の近接射程内にいるすべての目標に対して攻撃を行う。君が成功した目標は、君の習熟度を用いたd8＋10の物理ダメージを受け、一時的に脆弱状態になる。</p>
+              <p><em><b>潰滅<span class="en-sub">Demolish</span>：</b></em><b>希望を1つ消費</b>して、遠距離射程まで直線上を移動し、その直線の近接射程内にいるすべての目標に対して攻撃を行う。君が成功した目標は、君の習熟度を用いたd8＋10の物理ダメージを受け、一時的に<a href="#vulnerable" class="reference">脆弱状態</a>になる。</p>
               <p><em><b>不撓<span class="en-sub">Undaunted</span>：</b></em>君はすべてのダメージ閾値に＋2のボーナスを得る。</p>
             </article>
 
@@ -963,7 +970,7 @@
               <p>（ダイオウイカ、クジラなど）</p>
               <p><em>【敏捷】＋3</em>｜<em>回避値＋3</em><br><em>近接、【敏捷】、d10＋10（物理）</em></p>
               <p><b>以下に有利を得る：</b>探知、保護、威嚇、追跡</p>
-              <p><em><b>海の支配者<span class="en-sub">Ocean Master</span>：</b></em>君は水中で自然に呼吸と移動ができる。君は近接射程内の目標に対する攻撃に成功した時、その目標を一時的に拘束状態にできる。</p>
+              <p><em><b>海の支配者<span class="en-sub">Ocean Master</span>：</b></em>君は水中で自然に呼吸と移動ができる。君は近接射程内の目標に対する攻撃に成功した時、その目標を一時的に<a href="#restrained" class="reference">拘束状態</a>にできる。</p>
               <p><em><b>不屈<span class="en-sub">Unyielding</span>：</b></em>君が防具スロットを1つマークする時、<b>d6</b>をロールする。出目が5以上だったなら、防具スロットをマークすることなくダメージの深刻度を1段階ぶん軽減することができる。</p>
             </article>
 
@@ -1008,14 +1015,14 @@
         <ul>
           <li>君は物理ダメージの深刻度を閾値1段階ぶん軽減させる（大ダメージなら中ダメージに、中ダメージなら小ダメージに、小ダメージならダメージなしになる）。</li>
           <li>君はダメージロールに現在の暴走ダイスの値を加える。</li>
-          <li>君は拘束状態と脆弱状態にならない。</li>
+          <li>君は<a href="#restrained" class="reference">拘束状態</a>と<a href="#vulnerable" class="reference">脆弱状態</a>にならない。</li>
         </ul>
         <blockquote>
           <p><em><b>ヒント：</b>君の暴走ダイスがd4で、現在4の面が上を向いているなら、次に目が大きくなる時はダイスを取り除く。ただし、暴走ダイスがd6になっており、現在4の面が上を向いているなら、次に目が大きくなる時は5の面を上にする。この場合、ダイスを取り除くのは7以上にする必要が生じた時である。</em></p>
         </blockquote>
 
         <h3>ガーディアンのサブクラス<span class="en-sub">Guardian Subclasses</span></h3>
-        <p><em><b><a href="#stalwart">ストルワート</a></b>と<b><a href="#vengance">ヴェンジャンス</a></b>から、いずれかのサブクラスを選ぶこと。</em></p>
+        <p><em><b><a href="#stalwart" class="reference">ストルワート</a></b>と<b><a href="#vengance" class="reference">ヴェンジャンス</a></b>から、いずれかのサブクラスを選ぶこと。</em></p>
 
         <article id="stalwart">
           <h4 class="subclass">ストルワート<span class="en-sub">Stalwart</span></h4>
@@ -1213,7 +1220,7 @@
         <p><em><b>ローグの身かわし<span class="en-sub">Rogue's Dodge</span>：</b></em><b>希望を3つ消費</b>して、回避値に＋2のボーナスを得る。このボーナスは、君に対する攻撃が次に成功するか、次の休憩まで継続する。</p>
 
         <h5>クラス特徴<span class="en-sub">Class Features</span></h5>
-        <p><em><b>隠匿<span class="en-sub">Cloaked</span>：</b></em>君は隠れ身状態になるところで、代わりに隠匿状態になる。隠匿状態の間、君は隠れ身状態の利益に加えて、通常なら敵キャラクターから見られる位置に移動してもじっとしていれば見られずにすむ。君が敵キャラクターの視線内で攻撃を行うかムーヴを終了したなら、君はもはや隠匿状態ではなくなる。</p>
+        <p><em><b>隠匿<span class="en-sub">Cloaked</span>：</b></em>君は<a href="#hidden" class="reference">隠れ身状態</a>になるところで、代わりに隠匿状態になる。隠匿状態の間、君は隠れ身状態の利益に加えて、通常なら敵キャラクターから見られる位置に移動してもじっとしていれば見られずにすむ。君が敵キャラクターの視線内で攻撃を行うかムーヴを終了したなら、君はもはや隠匿状態ではなくなる。</p>
         <p><em><b>急所攻撃<span class="en-sub">Sneak Attack</span>：</b></em>君が攻撃に成功した時、君が隠匿状態にあるか、君の目標の近接射程内に味方がいるなら、君のティアに等しい数の<b>d6</b>をダメージロールに加える。</p>
         <ul>
           <li>レベル1→ティア1</li>
@@ -1237,11 +1244,11 @@
 
           <h5>専門特徴<span class="en-sub">Specialized Features</span></h5>
           <p><em><b>暗雲<span class="en-sub">Dark Cloud</span>：</b></em><b>呪文発動ロール（15）</b>を行う。成功したなら、一時的な暗雲を生み出し、近距離射程内の任意の範囲を覆い隠す。この雲の中にいる者は外側を見ることができず、外にいる者は内側を見ることができない。この雲に視線を遮られている敵キャラクターにとって、君は隠匿状態とみなされる。</p>
-          <p><em><b>アドレナリン<span class="en-sub">Adrenaline</span>：</b></em>君が脆弱状態にある間、ダメージロールに君のレベルを加える。</p>
+          <p><em><b>アドレナリン<span class="en-sub">Adrenaline</span>：</b></em>君が<a href="#vulnerable" class="reference">脆弱状態</a>にある間、ダメージロールに君のレベルを加える。</p>
 
           <h5>極意特徴<span class="en-sub">Mastery Features</span></h5>
           <p><em><b>儚き影<span class="en-sub">Fleeting Shadow</span>：</b></em>君の回避値に永続的な＋1のボーナスを得る。君は特徴“影渡り”を使用して超遠距離射程まで移動できる。</p>
-          <p><em><b>姿消し<span class="en-sub">Vanishing Act</span>：</b></em><b>ストレスを1つマークして</b>、任意のタイミングで隠匿状態になる。この特徴によって隠匿状態になった時、君が拘束状態だったなら自動的にそれを解除する。君は恐怖をロールするか次の休憩までこの隠匿状態を維持する。</p>
+          <p><em><b>姿消し<span class="en-sub">Vanishing Act</span>：</b></em><b>ストレスを1つマークして</b>、任意のタイミングで隠匿状態になる。この特徴によって隠匿状態になった時、君が<a href="#restrained" class="reference">拘束状態</a>だったなら自動的にそれを解除する。君は恐怖をロールするか次の休憩までこの隠匿状態を維持する。</p>
         </article>
 
         <article id="syndicate">
@@ -1667,7 +1674,7 @@
           <h5>基礎特徴<span class="en-sub">Foundation Feature</span></h5>
           <p><em><b>調合毒<span class="en-sub">Toxic Concoctions</span>：</b></em><b>ストレスを1つマーク</b>して、このカードの上に<b>1d4＋1</b>個のトークンを置く。君は武器攻撃に成功した時、トークンを1つ消費して、目標に毒を付与することができる。君が習得している毒は以下の通り：</p>
           <ul>
-            <li><em><b>幽霊の花びら<span class="en-sub">Ghost Petal</span>：</b></em>目標は一時的に脆弱状態になる。</li>
+            <li><em><b>幽霊の花びら<span class="en-sub">Ghost Petal</span>：</b></em>目標は一時的に<a href="#vulnerable" class="reference">脆弱状態</a>になる。</li>
             <li><em><b>墓場の胞子<span class="en-sub">Grave Spore</span>：</b></em>目標はストレスも1つマークしなければならない。</li>
             <li><em><b>ヒルの雑草<span class="en-sub">Leech Weed</span>：</b></em>君はこの攻撃で<b>1d6</b>の追加ダメージを与える。</li>
           </ul>
@@ -1677,7 +1684,7 @@
           <p><em><b>毒全書<span class="en-sub">Poison Compendium</span>：</b></em>君が習得している毒に以下が追加される：</p>
           <ul>
             <li><em><b>夜半の蔦<span class="en-sub">Midnight Vine</span>：</b></em>目標はストレスを1つマークしてこの状態を解除するまで攻撃ロールに不利を受ける。</li>
-            <li><em><b>ゴーゴンの根<span class="en-sub">Midnight Vine</span>：</b></em>目標は一時的に拘束状態になる。</li>
+            <li><em><b>ゴーゴンの根<span class="en-sub">Midnight Vine</span>：</b></em>目標は一時的に<a href="#restrained" class="reference">拘束状態</a>になる。</li>
           </ul>
           <p><em><b>双牙<span class="en-sub">Twin Fang</span>：</b></em>君は死印状態の目標に自分が習得している毒を付与した時、トークンを追加で1つ消費して、自分が習得しているもう1つの毒の効果も付与することができる。</p>
 
@@ -1720,7 +1727,7 @@
         <hr>
 
         <h5>ブロウラーの希望特徴<span class="en-sub">Brawler’s Hope Feature</span></h5>
-        <p><em><b>戦闘体勢<span class="en-sub">Square Up</span>：</b></em><b>希望を3つ消費</b>して、近距離射程内の目標1体を威圧して一時的に脆弱状態にする。</p>
+        <p><em><b>戦闘体勢<span class="en-sub">Square Up</span>：</b></em><b>希望を3つ消費</b>して、近距離射程内の目標1体を威圧して一時的に<a href="#vulnerable" class="reference">脆弱状態</a>にする。</p>
 
         <h5>クラス特徴<span class="en-sub">Class Features</span></h5>
         <p><em><b>我は武器なり<span class="en-sub">I Am the Weapon</span>：</b></em>君の素手攻撃はいかなる刃にも引けを取らないほど強力である。他に装備武器がない間、君は“ブロウラーの一撃”というメイン武器を装備していることになる。この武器は、君が選んだ特性を使用し、射程は近接で、君の習熟度に基づいて<b>d8＋d6</b>の物理ダメージを与える（d8とd6の両方が習熟度に応じて増加する）。この武器を装備している間、君は回避値に＋1のボーナスを得る。</p>
@@ -1797,7 +1804,7 @@
           <p><em><b>異界：</b></em>君は攻撃に成功した時、物理ダメージまたは魔法ダメージを与えることができる。</p>
           
           <h6>ティア3</h6>
-          <p><em><b>掴み：</b></em>君は近接射程内の攻撃に成功した時、<b>集中力を1つ消費</b>するか<b>ストレスを1つマーク</b>することで、目標を一時的に拘束状態にするか、近距離射程まで投げ飛ばすことができる。</p>
+          <p><em><b>掴み：</b></em>君は近接射程内の攻撃に成功した時、<b>集中力を1つ消費</b>するか<b>ストレスを1つマーク</b>することで、目標を一時的に<a href="#restrained" class="reference">拘束状態</a>にするか、近距離射程まで投げ飛ばすことができる。</p>
           <p><em><b>威圧：</b></em>攻撃に成功した場合、目標はストレスを1つマークしなければならない。</p>
           <p><em><b>安定：</b></em>君は（防具スロットの代わりに）<b>集中力を1つ消費</b>することで、ダメージを軽減できる。</p>
           <p><em><b>警戒：</b></em>君は攻撃の目標となった時、<b>ストレスを1つマーク</b>して、その攻撃に対する回避値に<b>d6</b>のボーナスを得ることができる。</p>
@@ -1841,7 +1848,7 @@
         <p><em><b>契約の恵み<span class="en-sub">Patron’s Boon</span>：</b></em>君はロールに失敗した時、<b>希望を3つ消費</b>して、有利で振り直すことができる。</p>
 
         <h5>クラス特徴<span class="en-sub">Class Features</span></h5>
-        <p><em><b>契約<span class="en-sub">Patron’s Pact</span>：</b></em>君は力を得るのと引き換えに超自然的な存在（神、妖精、悪魔など）に身を捧げた。君のキャラクターシートにその存在の名前を記入し、GMと相談してその影響範囲（自然、混沌、知恵、悪戯、愛、戦争、正義、死など）を決めること。君は契約相手の影響範囲に関連する行動ロールを行う前に、恩寵を1つ消費して契約相手の助けを借りることができる。契約ダイスを振り、出た目を合計値に加える。契約ダイスは<b>d6</b>で始まり、レベル5で<b>d8</b>になる。</p>
+        <p><em><b>主人との契約<span class="en-sub">Patron’s Pact</span>：</b></em>君は力を得るのと引き換えに超自然的な存在（神、妖精、悪魔など）に身を捧げた。君のキャラクターシートにその存在の名前を記入し、GMと相談してその影響範囲（自然、混沌、知恵、悪戯、愛、戦争、正義、死など）を決めること。君は契約相手の影響範囲に関連する行動ロールを行う前に、恩寵を1つ消費して契約相手の助けを借りることができる。契約ダイスを振り、出た目を合計値に加える。契約ダイスは<b>d6</b>で始まり、レベル5で<b>d8</b>になる。</p>
         <p><em><b>恩寵<span class="en-sub">Favor</span>：</b></em>君は初期状態で恩寵を3つ持つ。君は合間ムーヴを使用して、自分の契約相手を讃えることができる。その様子を描写し、君の呪文発動特性に等しい恩寵を得る。加えて、君は行動ロールに希望成功した時、希望の代わりに恩寵を1つ得ることを選択できる。</p>
         <blockquote>
           <p><em><b>注：</b></em>君が一度に保持できる恩寵は、最大で6つまでである。</p>
@@ -1885,11 +1892,11 @@
         </aside>
 
         <h3>ウォーロックのサブクラス<span class="en-sub">Warlock Subclasses</span></h3>
-        <p><em>不死の契約</em>と<em>憤怒の契約</em>から、いずれかのサブクラスを選ぶこと。</p>
+        <p><em>不滅の契約</em>と<em>憤怒の契約</em>から、いずれかのサブクラスを選ぶこと。</p>
 
         <article id="pact-of-the-endless">
-          <h4 class="subclass">不死の契約<span class="en-sub">Pact of the Endless</span></h4>
-          <p>敵に立ち向かい、死を免れたいなら、不死の契約をプレイしよう。</p>
+          <h4 class="subclass">不滅の契約<span class="en-sub">Pact of the Endless</span></h4>
+          <p>敵に立ち向かい、死を免れたいなら、不滅の契約をプレイしよう。</p>
 
           <h5>呪文発動特性<span class="en-sub">Spellcast Trait</span></h5>
           <p>【存在】</p>
@@ -1984,7 +1991,7 @@
           </tbody>
         </table>
 
-        <h4>ウィッチのサブクラス<span class="en-sub">Witch Subclasses</span></h4>
+        <h3>ウィッチのサブクラス<span class="en-sub">Witch Subclasses</span></h3>
         <p><em><b>ヘッジ</b>と<b>ムーン</b>から、いずれかのサブクラスを選ぶこと。</em></p>
 
         <article id="hedge">
@@ -2222,7 +2229,7 @@
 
         <h5>血統特徴<span class="en-sub">Ancestry Features</span></h5>
         <p><em><b>ネコの本能<span class="en-sub">Feline Instincts</span>：</b></em>君は【敏捷】ロールを行う時、<b>希望を2つ消費</b>して、希望ダイスを振り直すことができる。</p>
-        <p><em><b>飛び出す爪<span class="en-sub">Retracting Claws</span>：</b></em><b>【敏捷】ロール</b>を行い、近接射程内の目標1体を引っ掻く。成功したなら、目標は一時的に脆弱状態になる。</p>
+        <p><em><b>飛び出す爪<span class="en-sub">Retracting Claws</span>：</b></em><b>【敏捷】ロール</b>を行い、近接射程内の目標1体を引っ掻く。成功したなら、目標は一時的に<a href="#vulnerable" class="reference">脆弱状態</a>になる。</p>
       </article>
 
       <article id="orc">
@@ -2240,7 +2247,7 @@
 
         <h5>血統特徴<span class="en-sub">Ancestry Features</span></h5>
         <p><em><b>水陸両生<span class="en-sub">Amphibious</span>：</b></em>君は水中でも自然に呼吸と移動ができる。</p>
-        <p><em><b>長い舌<span class="en-sub">Long Tongue</span>：</b></em>君は長い舌を使って近接射程内にあるものに掴みかかることができる。<b>ストレスを1つマーク</b>して、舌を“君の習熟度を用いて<b>d12</b>の物理ダメージを与える【技巧】武器”として使用する。</p>
+        <p><em><b>舌伸ばし<span class="en-sub">Long Tongue</span>：</b></em>君は長い舌を使って近接射程内にあるものに掴みかかることができる。<b>ストレスを1つマーク</b>して、舌を“君の習熟度を用いて<b>d12</b>の物理ダメージを与える【技巧】武器”として使用する。</p>
       </article>
 
       <article id="simiah">
@@ -2345,8 +2352,8 @@
 
       <article id="highborne">
         <h4 class="community">貴族育ち<span class="en-sub">Highborne</span></h4>
-        <p><ruby>貴族生まれ<rt>ハイボーン</rt></ruby>の共同体の一員であるということは、社会の上層部において、優雅で豪華、そして威信に満ちた生活に慣れ親しんでいることを意味する。伝統的に、ハイボーンのコミュニティの構成員は、途方もない物的資産を保有している。その形態はコミュニティによってさまざまであり、金やその他の鉱物、土地、あるいは生産手段の支配権などが含まれますが、この地位には常に権力と影響力が伴います。ハイボーンは称号や所有物を非常に重視しており、その階層内での社会的流動性はほとんどありません。ハイボーンのコミュニティの構成員は、その莫大な富を用いて人々や経済に影響を与える能力を持つため、多くの場合、居住地域の政治的・経済的状況を支配しています。こうした地域に住む経済的に恵まれない人々の健康と安全は、多くの場合、このハイボーンの支配階級が、利益よりも被支配者の福祉を優先できるかどうかにかかっている。</p>
-        <p><em>貴族生まれはたいてい、愛想が良く、率直で、狡猾で、進取の気性に富み、派手で、動じない性格である。</em></p>
+        <p><ruby>貴族育ち<rt>ハイボーン</rt></ruby>の共同体の一員であるということは、社会の上層部において、優雅で豪華、そして威信に満ちた生活に慣れ親しんでいることを意味する。伝統的に、貴族育ちの共同体の構成員は、途方もない物的資産を保有している。その形態は共同体によってさまざまである——金その他の鉱物、土地、あるいは生産手段の支配権など——が、この地位には常に権力と影響力が伴う。貴族育ちは称号や所有物を非常に重視しており、階級内で社会的な流動性はほとんどない。貴族育ちの共同体の構成員は、その莫大な富を用いて人々や経済に影響を与える力を持つため、多くの場合、居住地域の政治的、経済的状況を支配している。そうした地域に住む経済的に恵まれない人々の健康と安全は、多くの場合、この貴族育ちの支配階級が、利益よりも被支配者の福祉を優先できるかどうかにかかっている。</p>
+        <p><em>貴族育ちに多い性格：愛想が良い、率直、狡猾、進取の気性に富む、派手、動じない。</em></p>
 
         <h5>共同体特徴<span class="en-sub">Community Feature</span></h5>
         <p><em><b>特権<span class="en-sub">Privilege</span>：</b></em>貴族を味方につけたり、価格交渉を行ったり、自分の評判を活かして望むものを手に入れたりするためのロールに有利を得る。</p>
@@ -2486,6 +2493,7 @@
 
     <section id="transformations" class="subchapter">
       <h2>変異<span class="en-sub">Transformations</span></h2>
+      <p><em>※訳注：この項目はSRD2.0で追加されたものである。</em></p>
       <p>変異は、君のキャラクター自身と、キャラクターと世界の関わり方における根本的な変化を表す。これはキャラクターのアイデンティティを構成する選択的要素であり、GMはキャンペーンの中で物語の一環として付与することもできるし、自身の裁量でキャラクター作成時の選択肢として提示することもできる。</p>
       <p>変異には、メカニクス上の利点と欠点の両方がある。変異カードを取得する際は、代償という概念を受け入れ、利益を得るために負担を引き受ける必要がある。そのため、プレイヤーには、変異に関する物語を充実、強化するために、関連する場面では常に変異の負の効果をGMに思い出してもらうことをお勧めする。</p>
       <p>変異カードは、準備枠の上限数には数えない。君のキャラクターが変異を得た時は、そのカードを、あたかもキャラクターの出自の一部であるかのように、準備枠に追加すること。この変異が君のキャラクターを肉体的および精神的にどのように変えるのか考えてほしい——助けが必要な場合は、各変身カードに参考となる質問が記載されている。</p>
@@ -2501,7 +2509,7 @@
 
       <article id="demigod">
         <h4 class="transformation">デミゴッド<span class="en-sub">Demigod</span></h4>
-        <p>デミゴッド（半神）とは、定命の生き物ながら神々の血が流れるもののことである。彼らが力を得るのは通常、神を親に持つか、信じがたい偉業を成し遂げるか、神からの賜物を受けることによってである。多くのデミゴッドは定命の血統の典型的な一員と変わらない外見をしているが、みな微かな輝きを放ち、瞳に光を宿している。また、彼らは真珠のような光沢や金属のような肌を持つことでも知られ、力が現れるに従って体が大きくなったり、その力に関連した身体的特徴を身につけたりすることもある。微神、忘れられし神、新神、その他さまざまな神の血が流れているため、同じ外見のデミゴッドは一人として存在しない。</p>
+        <p>デミゴッド（半神）とは、定命の生き物ながら神々の血が流れる者のことである。彼らが力を得るのは通常、神を親に持つか、信じがたい偉業を成し遂げるか、神からの賜物を受けることによってである。多くのデミゴッドは定命の血統の典型的な一員と変わらない外見をしているが、みな微かな輝きを放ち、瞳に光を宿している。また、彼らは真珠のような光沢や金属のような肌を持つことでも知られ、力が現れるに従って体が大きくなったり、その力に関連した身体的特徴を身につけたりすることもある。微神、忘れられし神、新神、その他さまざまな神の血が流れているため、同じ外見のデミゴッドは一人として存在しない。</p>
         <p>デミゴッドには神の力の断片が備わっているが、デミゴッドが受け継ぐものすべてが祝福だとは限らない。彼らは自分に適した任務においては卓越した能力を発揮することが多いが、彼らに課せられた期待に応えることは、しばしば困難を極め、多大な犠牲を伴う。</p>
 
         <h5>変異特徴<span class="en-sub">Transformation Features</span></h5>
@@ -2929,7 +2937,7 @@
     <section id="stress" class="subchapter">
       <h2>ストレス<span class="en-sub">Stress</span></h2>
       <p><b>ストレス</b>は、キャラクターが耐えることのできる精神的、肉体的、感情的な負担の度合いを表す。すべてのクラスは、初期状態で6つのストレススロットを持っている。利用可能なストレススロットの数は、レベルアップするにつれて最大12個まで増やすことができる。一部の特殊能力や効果は、起動するキャラクターがストレスをマークする必要がある。また、GMはGMムーヴとして、あるいは行動ロールの代償、複雑さ、弊害を表現するために、PCにストレスをマークするよう要求することができる。</p>
-      <p>キャラクターは、最後のストレスをマークすると脆弱状態（「状態」参照）になる。これはストレスのマークを最低1つ回復するまで継続する。</p>
+      <p>キャラクターは、最後のストレスをマークすると<a href="#vulnerable" class="reference">脆弱状態</a>（「状態」参照）になる。これはストレスのマークを最低1つ回復するまで継続する。</p>
       <p>キャラクターは、ストレスを1つ以上マークしなければならないのにそれができない場合、代わりにHPを1つマークする。ストレスがすべてマークされているなら、ストレスをマークする必要のあるムーヴは使用できない。</p>
       <p>PCは合間ムーヴ（「合間」参照）を行うことで、ストレスを回復することができる。PCのストレスの最大値はクラスによって決定されるが、レベルアップ、能力、その他の効果によって増加することもある。</p>
     </section>
@@ -3232,56 +3240,56 @@
         <p><em>プレイヤーはキャラクター作成時にティア1のメイン武器を1つ選ぶことができる。キャンペーンを通じ、GMはPCのレベルアップに応じてその他の武器を使用可能にすることができる。</em></p>
         
         <h4>ティア1（レベル1）物理武器<span class="en-sub">Tier 1 (Level 1) Physical Weapons</span></h4>
-        <table id="primary-tier-1-physical-weapons"></table>
+        <table id="primary-tier-1-physical-weapons" class="weapon"></table>
         <h6>（2.0）ティア1（レベル1）物理武器</h6>
-        <table id="primary-tier-1-physical-weapons-2"></table>
+        <table id="primary-tier-1-physical-weapons-2" class="weapon"></table>
         
         <h4>ティア1（レベル1）魔法武器<span class="en-sub">Tier 1 (Level 1) Magic Weapons</span></h4>
         <blockquote>
           <p><em>魔法武器はすべて呪文発動特性を必要とする</em></p>
         </blockquote>
-        <table id="primary-tier-1-magic-weapons"></table>
+        <table id="primary-tier-1-magic-weapons" class="weapon"></table>
         <h6>（2.0）ティア1（レベル1）魔法武器</h6>
-        <table id="primary-tier-1-magic-weapons-2"></table>
+        <table id="primary-tier-1-magic-weapons-2" class="weapon"></table>
         
         <h4>ティア2（レベル2〜4）物理武器<span class="en-sub">Tier 2 (Level 2-4) Physical Weapons</span></h4>
-        <table id="primary-tier-2-physical-weapons"></table>
+        <table id="primary-tier-2-physical-weapons" class="weapon"></table>
         <h6>（2.0）ティア2（レベル2〜4）：物理武器</h6>
-        <table id="primary-tier-2-physical-weapons-2"></table>
+        <table id="primary-tier-2-physical-weapons-2" class="weapon"></table>
         
         <h4>ティア2（レベル2〜4）魔法武器<span class="en-sub">Tier 2 (Level 2-4) Magic Weapons</span></h4>
         <blockquote>
           <p><em>魔法武器はすべて呪文発動特性を必要とする</em></p>
         </blockquote>
-        <table id="primary-tier-2-magic-weapons"></table>
+        <table id="primary-tier-2-magic-weapons" class="weapon"></table>
         <h6>（2.0）ティア2（レベル2〜4）魔法武器</h6>
-        <table id="primary-tier-2-magic-weapons-2"></table>
+        <table id="primary-tier-2-magic-weapons-2" class="weapon"></table>
         
         <h4>ティア3（レベル5〜7）物理武器<span class="en-sub">Tier 3 (Level 5-7) Physical Weapons</span></h4>
-        <table id="primary-tier-3-physical-weapons"></table>
+        <table id="primary-tier-3-physical-weapons" class="weapon"></table>
         <h6>（2.0）ティア3（レベル5〜7）物理武器</h6>
-        <table id="primary-tier-3-physical-weapons-2"></table>
+        <table id="primary-tier-3-physical-weapons-2" class="weapon"></table>
         
         <h4>ティア3（レベル5〜7）魔法武器<span class="en-sub">Tier 3 (Level 5-7) Magic Weapons</span></h4>
         <blockquote>
           <p><em>魔法武器はすべて呪文発動特性を必要とする</em></p>
         </blockquote>
-        <table id="primary-tier-3-magic-weapons"></table>
+        <table id="primary-tier-3-magic-weapons" class="weapon"></table>
         <h6>（2.0）ティア3（レベル5〜7）魔法武器</h6>
-        <table id="primary-tier-3-magic-weapons-2"></table>
+        <table id="primary-tier-3-magic-weapons-2" class="weapon"></table>
         
         <h4>ティア4（レベル8〜10）物理武器<span class="en-sub">Tier 4 (Level 8-10) Physical Weapons </span></h4>
-        <table id="primary-tier-4-physical-weapons"></table>
+        <table id="primary-tier-4-physical-weapons" class="weapon"></table>
         <h6>（2.0）ティア4（レベル8〜10）物理武器</h6>
-        <table id="primary-tier-4-physical-weapons-2"></table>
+        <table id="primary-tier-4-physical-weapons-2" class="weapon"></table>
         
         <h4>ティア4（レベル8〜10）魔法武器<span class="en-sub">Tier 4 (Level 8-10) Magic Weapons</span></h4>
         <blockquote>
           <p><em>魔法武器はすべて呪文発動特性を必要とする</em></p>
         </blockquote>
-        <table id="primary-tier-4-magic-weapons"></table>
+        <table id="primary-tier-4-magic-weapons" class="weapon"></table>
         <h6>（2.0）ティア4（レベル8〜10）魔法武器</h6>
-        <table id="primary-tier-4-magic-weapons-2"></table>
+        <table id="primary-tier-4-magic-weapons-2" class="weapon"></table>
       </article>
 
       <article id="secondary-weapon-tables">
@@ -3295,19 +3303,19 @@
         <table id="secondary-tier-1-weapons-2"></table>
         
         <h4>ティア2（レベル2〜4）<span class="en-sub">Tier 2 (Level 2-4)</span></h4>
-        <table id="secondary-tier-2-weapons"></table>
+        <table id="secondary-tier-2-weapons" class="weapon"></table>
         <h6>（2.0）ティア2（レベル2〜4）</h6>
-        <table id="secondary-tier-2-weapons-2"></table>
+        <table id="secondary-tier-2-weapons-2" class="weapon"></table>
         
         <h4>ティア3（レベル5〜7）<span class="en-sub">Tier 3 (Level 5-7)</span></h4>
-        <table id="secondary-tier-3-weapons"></table>
+        <table id="secondary-tier-3-weapons" class="weapon"></table>
         <h6>（2.0）ティア3（レベル5〜7）</h6>
-        <table id="secondary-tier-3-weapons-2"></table>
+        <table id="secondary-tier-3-weapons-2" class="weapon"></table>
         
         <h4>ティア4（レベル8〜10）<span class="en-sub">Tier 4 (Level 8-10)</span></h4>
-        <table id="secondary-tier-4-weapons"></table>
+        <table id="secondary-tier-4-weapons" class="weapon"></table>
         <h6>（2.0）ティア4（レベル8〜10）</h6>
-        <table id="secondary-tier-4-weapons-2"></table>
+        <table id="secondary-tier-4-weapons-2" class="weapon"></table>
     </section>
 
     <section id="combat-wheelchair" class="subchapter">
@@ -3355,19 +3363,19 @@
       <article id="light-frame-models">
         <h6>軽量フレームモデル<span class="en-sub">Light Frame Models</span></h6>
         <p>これらの車椅子は頑丈でありながらフレームが軽量なため、キャラクターの動きに合わせてよりアクロバティックな動きが可能となる。これらのモデルは、スピードと機動性を重視する冒険者に最適である。</p>
-        <table id="light-frame-models-table"></table>
+        <table id="light-frame-models-table" class="wheelchair"></table>
       </article>
       
       <article id="heavy-frame-models">
         <h6>重量フレームモデル<span class="en-sub">Heavy Frame Models</span></h6>
         <p>これらの車椅子はフレームがかさばり、重量もあるため、その重さをキャラクターの攻撃に利用することができる。その反面、標的として目立ちやすくもなる。</p>
-        <table id="heavy-frame-models-table"></table>
+        <table id="heavy-frame-models-table" class="wheelchair"></table>
       </article>
       
       <article id="arcane-frame-models">
         <h6>秘術フレームモデル<span class="en-sub">Arcane Frame Models</span></h6>
         <p>これらの車椅子のフレームは君のキャラクター自身とその魔法に同調しているため、椅子を通じて呪文を発動することが可能になる。他のメイン魔法武器とは異なり、秘術フレームモデルでは、それを用いて攻撃を行う際に使用する特性を指定しない。その代わりに、サブクラスで指定されている呪文発動特性を使用する。</p>
-        <table id="arcane-frame-models-table"></table>
+        <table id="arcane-frame-models-table" class="wheelchair"></table>
       </article>
     </section>
   
@@ -3375,9 +3383,9 @@
       <h2>防具<span class="en-sub">Armor</span></h2>
       <p>すべての防具には、名称、基本ダメージ閾値、基本防具値がある。中には特徴も持つ防具もある。</p>
       <ul>
-        <li>防具の<b>基本防具値</b>は、追加のボーナスを加えて合計防具値を算出される前の、着用者に提供される防具スロットの数を示す。PCの防具値が12を超えることはない。</li>
-        <li>防具の<b>基本閾値</b>は、ボーナスを加算して最終的なダメージ閾値を算出する前の、着用者の中ダメージ閾値と大ダメージ閾値を決定する。キャラクターシートの「<ruby>ダメージと健康状態<rt>Damage & Health</rt></ruby>」の項にキャラクターのダメージ閾値を記入する際は、必ずその値にキャラクターのレベルを加える。</li>
-        <li>防具の<b>特徴</b>は、その防具を装備している間に効力を有する特殊ルールである。</li>
+        <li id="base-score">防具の<b>基本防具値</b>は、追加のボーナスを加えて合計防具値を算出される前の、着用者に提供される防具スロットの数を示す。PCの防具値が12を超えることはない。</li>
+        <li id="base-thresholds">防具の<b>基本閾値</b>は、ボーナスを加算して最終的なダメージ閾値を算出する前の、着用者の中ダメージ閾値と大ダメージ閾値を決定する。キャラクターシートの「<ruby>ダメージと健康状態<rt>Damage & Health</rt></ruby>」の項にキャラクターのダメージ閾値を記入する際は、必ずその値にキャラクターのレベルを加える。</li>
+        <li id="armor-feature">防具の<b>特徴</b>は、その防具を装備している間に効力を有する特殊ルールである。</li>
       </ul>
       <p>防具を装備していない場合、キャラクターの基本防具値は0、中ダメージ閾値は自分のレベルに等しい値、大ダメージ閾値は自分のレベルの2倍の値となる。</p>
 
@@ -3390,24 +3398,24 @@
         <h3>防具表<span class="en-sub">Armor Tables</span></h3>
 
         <h4>ティア1（レベル1）<span class="en-sub">Tier 1 (Level 1)</span></h4>
-        <table id="tier-1-armor"></table>
+        <table id="tier-1-armor" class="armor"></table>
         <h6>（2.0）ティア1（レベル1）</h6>
-        <table id="tier-1-armor-2"></table>
+        <table id="tier-1-armor-2" class="armor"></table>
 
         <h4>ティア2（レベル2〜4）<span class="en-sub">Tier 2 (Level 2-4)</span></h4>
-        <table id="tier-2-armor"></table>
+        <table id="tier-2-armor" class="armor"></table>
         <h6>（2.0）ティア2（レベル2〜4）</h6>
-        <table id="tier-2-armor-2"></table>
+        <table id="tier-2-armor-2" class="armor"></table>
 
         <h4>ティア3（レベル5〜7）<span class="en-sub">Tier 3 (Level 5-7)</span></h4>
-        <table id="tier-3-armor"></table>
+        <table id="tier-3-armor" class="armor"></table>
         <h6>（2.0）ティア3（レベル5〜7）</h6>
-        <table id="tier-3-armor-2"></table>
+        <table id="tier-3-armor-2" class="armor"></table>
 
         <h4>ティア4（レベル8〜10）<span class="en-sub">Tier 4 (Level 8-10)</span></h4>
-        <table id="tier-4-armor"></table>
+        <table id="tier-4-armor" class="armor"></table>
         <h6>（2.0）ティア4（レベル8〜10）</h6>
-        <table id="tier-4-armor-2"></table>
+        <table id="tier-4-armor-2" class="armor"></table>
       </article>
     </section>
 
@@ -3430,8 +3438,8 @@
         <em>以下の表は、ダガーハートのコアセットに含まれるアイテムである。</em>
       </blockquote>
       <div class="grid-2">
-        <table id="loot-table-left"></table>
-        <table id="loot-table-right"></table>
+        <table id="loot-table-left" class="item"></table>
+        <table id="loot-table-right" class="item"></table>
       </div>
 
       <h6>追加アイテム<span class="en-sub">Additional Items</span></h6>
@@ -3439,8 +3447,8 @@
         <em>以下の表は、『Hope & Fear Expansion Set』に含まれるアイテムである。</em>
       </blockquote>
       <div class="grid-2">
-        <table id="loot-table-2-left"></table>
-        <table id="loot-table-2-right"></table>
+        <table id="loot-table-2-left" class="item"></table>
+        <table id="loot-table-2-right" class="item"></table>
       </div>
     </section>
 
@@ -3460,8 +3468,8 @@
         <em>以下の表は、ダガーハートのコアセットに含まれる消耗品である。</em>
       </blockquote>
       <div class="grid-2">
-        <table id="consumable-table-left"></table>
-        <table id="consumable-table-right"></table>
+        <table id="consumable-table-left" class="item"></table>
+        <table id="consumable-table-right" class="item"></table>
       </div>
 
       <h6>追加の消耗品<span class="en-sub">Additional Items</span></h6>
@@ -3469,15 +3477,15 @@
         <em>以下の表は、『Hope & Fear Expansion Set』に含まれる消耗品である。</em>
       </blockquote>
       <div class="grid-2">
-        <table id="consumable-table-2-left"></table>
-        <table id="consumable-table-2-right"></table>
+        <table id="consumable-table-2-left" class="item"></table>
+        <table id="consumable-table-2-right" class="item"></table>
       </div>
     </section>
 
     <section id="gold" class="subchapter">
       <h2>金<span class="en-sub">Gold</span></h2>
-      <p>金は、キャラクターがどれだけの富を持っているかを表す抽象的な尺度であり、<b>包</b>、<b>袋</b>、<b>箱</b>という単位で測られる。10包が1袋に相当し、10袋が1箱に相当する。ある分類のスロットをすべてマークした状態でさらにその分類の金を獲得した際は、次の分類のスロットをマークして、現在の分類のスロットのマークをすべて消すこと。</p>
-      <p>たとえば、君が9包の金を持っている状態でさらに1包を得たなら、（包をマークするのではなく）袋を1つマークして包のマークをすべて消す。君が9袋を持っている状態でさらに1袋を得たなら、箱を1つマークして袋のマークをすべて消す。</p>
+      <p>金は、キャラクターがどれだけの富を持っているかを表す抽象的な尺度であり、<b>握り</b>、<b>袋</b>、<b>箱</b>という単位で測られる。10握りが1袋に相当し、10袋が1箱に相当する。ある分類のスロットをすべてマークした状態でさらにその分類の金を獲得した際は、次の分類のスロットをマークして、現在の分類のスロットのマークをすべて消すこと。</p>
+      <p>たとえば、君が9握りの金を持っている状態でさらに1握りを得たなら、（握りをマークするのではなく）袋を1つマークして握りのマークをすべて消す。君が9袋を持っている状態でさらに1袋を得たなら、箱を1つマークして袋のマークをすべて消す。</p>
       <p>1箱より多くを持つことはできないため、金スロットがすべてマークされているなら、さらなる金を獲得する前に、一部の金を消費するか、別の場所に保管する必要がある。</p>
 
       <aside>
@@ -4179,11 +4187,11 @@
           <tbody>
             <tr>
               <td>冒険者パーティ1組分の食事（1夜）</td>
-              <td>1包</td>
+              <td>1握り</td>
             </tr>
             <tr>
               <td>標準的な宿屋の部屋（1夜）</td>
-              <td>1包</td>
+              <td>1握り</td>
             </tr>
             <tr>
               <td>高級な宿屋の部屋（1夜）</td>
@@ -4191,7 +4199,7 @@
             </tr>
             <tr>
               <td>荷馬車便</td>
-              <td>2包</td>
+              <td>2握り</td>
             </tr>
             <tr>
               <td>乗騎（馬、ロバなど）</td>
@@ -4199,11 +4207,11 @@
             </tr>
             <tr>
               <td>専門的な道具</td>
-              <td>3包</td>
+              <td>3握り</td>
             </tr>
             <tr>
               <td>上等な服</td>
-              <td>3包</td>
+              <td>3握り</td>
             </tr>
             <tr>
               <td>高級な服</td>
@@ -4211,7 +4219,7 @@
             </tr>
             <tr>
               <td>ティア1装備（武器、防具）</td>
-              <td>1〜5包</td>
+              <td>1〜5握り</td>
             </tr>
             <tr>
               <td>ティア2装備（武器、防具）</td>
@@ -4239,7 +4247,7 @@
         <h6>秘術捕縛</h6>
         <p class="indent"><em><b>選択肢：</b></em>戦闘が開始した時、気に入ったPC1人を選ぶ。</p>
         <p class="indent"><em><b>作動条件：</b></em>ある戦闘中に初めて、気に入ったPCが近距離射程におり、攻撃をヒットさせた時。</p>
-        <p class="indent"><em><b>効果：</b></em>その敵キャラクターに対して修正値＋6で攻撃ロールを行う。成功したなら、目標は強力な魔法の触手によって一時的に拘束状態になる。</p>
+        <p class="indent"><em><b>効果：</b></em>その敵キャラクターに対して修正値＋6で攻撃ロールを行う。成功したなら、目標は強力な魔法の触手によって一時的に<a href="#restrained" class="reference">拘束状態</a>になる。</p>
 
         <article id="npc-feature-examples">
           <h4>NPC特徴の例<span class="en-sub">NPC Feature Examples</span></h4>
@@ -4260,7 +4268,7 @@
 
           <h6>夜の中へ</h6>
           <p class="indent"><em><b>条件：</b></em>PCたちがこのNPCと共に大休憩を開始する。</p>
-          <p class="indent"><em><b>効果：</b></em>1d4を振る。2以下の目が出たなら、このNPCはPCたちが眠っている間にパーティから金1包みを盗んだ後、夜の中へ姿を消す。</p>
+          <p class="indent"><em><b>効果：</b></em>1d4を振る。2以下の目が出たなら、このNPCはPCたちが眠っている間にパーティから金1握りを盗んだ後、夜の中へ姿を消す。</p>
         </article>
       </article>
 
@@ -4330,7 +4338,9 @@
             <p>敵キャラクターの種別はティアに併記されている。敵キャラクターの<b>種別</b>は、衝突において担う役割を表す。敵キャラクターの種別は以下の通り：</p>
             <ul>
               <li><b>暴力：</b>頑強；強力な攻撃を繰り出す。</li>
-              <li><b>大群：</b>単一クリーチャーとして行動する同一のクリーチャーの集団。</li>
+              <li><b>大群：</b>単一クリーチャーとして行動する同一のクリーチャーの集団。<br>
+                <blockquote><em><b>注：</b>大群のデータブロック内の各HPが表すクリーチャー数は、“X／HP”の形式で示されている。たとえば、2／HPの大群のHPが3つなら、6体1組であることを表している。</em></blockquote>
+              </li>
               <li><b>指導：</b>他の敵キャラクターを指揮、召喚する。</li>
               <li><b>雑魚：</b>簡単に倒せるが、集団になると危険。</li>
               <li><b>射撃：</b>接近戦では脆弱だが、遠距離から高ダメージを与える。</li>
@@ -4547,9 +4557,9 @@
           <h4>ティア別の敵キャラクター<span class="en-sub">Adversaries by Tier</span></h4>
           <p>このセクションには以下のデータブロックが含まれる：</p>
 
-          <div class="grid-2">
-            <article id="tier-1-adversaries">
-              <h5>ティア1（レベル1）<span class="en-sub">Tier 1 (Level 1)</span></h5>
+          <article id="tier-1-adversaries">
+            <h5>ティア1（レベル1）<span class="en-sub">Tier 1 (Level 1)</span></h5>
+            <div class="grid-4">
               <ul>
                 <li>アシッド・バロワー</li>
                 <li>ベア</li>
@@ -4558,12 +4568,14 @@
                 <li>廷臣</li>
                 <li>ディープルートの防衛者</li>
                 <li>ダイア・ウルフ</li>
-                <li>ジャイアント・モスキートス</li>
-                <li>ジャイアント・ラット</li>
-                <li>ジャイアント・スコーピオン</li>
+                <li>巨大モスキートの群れ</li>
+                <li>巨大ラット</li>
+                <li>巨大スコーピオン</li>
                 <li>グラス・スネーク</li>
                 <li>歩兵</li>
                 <li>弓の衛兵</li>
+              </ul>
+              <ul>
                 <li>剣の衛兵</li>
                 <li>衛兵隊長</li>
                 <li>稲妻ナイフ団の山賊</li>
@@ -4574,29 +4586,33 @@
                 <li>稲妻ナイフ団の影</li>
                 <li>稲妻ナイフ団の狙撃手</li>
                 <li>商人</li>
-                <li>マイナー・ケイオス・エレメンタル</li>
-                <li>マイナー・ファイアー・エレメンタル</li>
-                <li>マイナー・デーモン</li>
-                <li>マイナー・トリエント</li>
+                <li>下級ケイオス・エレメンタル</li>
+                <li>下級ファイアー・エレメンタル</li>
+                <li>下級デーモン</li>
+              </ul>
+              <ul>
+                <li>下級トリエント</li>
                 <li>グリーン・ウーズ</li>
                 <li>小型グリーン・ウーズ</li>
                 <li>レッド・ウーズ</li>
                 <li>小型レッド・ウーズ</li>
                 <li>小貴族</li>
                 <li>海賊船長</li>
-                <li>海賊の急襲隊</li>
-                <li>海賊のならず者</li>
+                <li>海賊の襲撃隊</li>
+                <li>海賊の乱暴者</li>
                 <li>傭兵</li>
                 <li>スケルトンの弓使い</li>
                 <li>スケルトンの底浚い</li>
                 <li>スケルトンの騎士</li>
+              </ul>
+              <ul>
                 <li>スケルトンの戦士</li>
                 <li>呪文剣士</li>
                 <li>ラットの大群</li>
                 <li>シルヴァンの兵士</li>
                 <li>タングル・ブランブルの大群</li>
                 <li>タングル・ブランブル</li>
-                <li>武具の達人</li>
+                <li>武具使い</li>
                 <li>ヤング・ドライアド</li>
                 <li>屈強ゾンビ</li>
                 <li>継ぎはぎ巨大ゾンビ</li>
@@ -4604,30 +4620,36 @@
                 <li>よろめきゾンビ</li>
                 <li>ゾンビの群れ</li>
               </ul>
-            </article>
+            </div>
+          </article>
 
-            <article id="tier-2-adversaries">
-              <h5>ティア2（レベル2〜4）<span class="en-sub">Tier 2 (Level 2-4)</span></h5>
+          <article id="tier-2-adversaries">
+            <h5>ティア2（レベル2〜4）<span class="en-sub">Tier 2 (Level 2-4)</span></h5>
+            <div class="grid-4">
               <ul>
-                <li>弓兵戦隊</li>
+                <li>弓兵部隊</li>
                 <li>見習い暗殺者</li>
                 <li>暗殺者の毒使い</li>
                 <li>達人暗殺者</li>
                 <li>バトル・ボックス</li>
                 <li>ケイオス・スカル</li>
-                <li>徴収兵</li>
+                <li>徴集兵</li>
                 <li>遊女</li>
-                <li>カルト教団の名人</li>
-                <li>カルト教団の牙</li>
+                <li>カルト教団の熟練者</li>
+              </ul>
+              <ul>
+                <li>カルト教団の爪牙</li>
                 <li>カルト教団の新入り</li>
                 <li>デモニック・ハウンドの群れ</li>
-                <li>エレクトリック・イール</li>
+                <li>エレクトリック・イールの群れ</li>
                 <li>精鋭兵</li>
                 <li>フェイルド・エクスペリメント</li>
                 <li>ジャイアントの獣使い</li>
                 <li>ジャイアントの喧嘩屋</li>
                 <li>ジャイアントの新兵</li>
-                <li>ジャイアント・イーグル</li>
+              </ul>
+              <ul>
+                <li>巨大イーグル</li>
                 <li>ゴーゴン</li>
                 <li>ジュヴナイル・フリッカーフライ</li>
                 <li>王国騎士</li>
@@ -4636,6 +4658,8 @@
                 <li>ミノタウロスの壊し屋</li>
                 <li>モータル・ハンター</li>
                 <li>王室顧問</li>
+              </ul>
+              <ul>
                 <li>秘密の守り人</li>
                 <li>シャーク</li>
                 <li>セイレーン</li>
@@ -4646,10 +4670,12 @@
                 <li>ストーンレイス</li>
                 <li>戦闘魔術師</li>
               </ul>
-            </article>
+            </div>
+          </article>
 
-            <article id="tier-3-adversaries">
-              <h5>ティア3（レベル5〜7）<span class="en-sub">Tier 3 (Level 5-7)</span></h5>
+          <article id="tier-3-adversaries">
+            <h5>ティア3（レベル5〜7）<span class="en-sub">Tier 3 (Level 5-7)</span></h5>
+            <div class="grid-4">
               <ul>
                 <li>アダルト・フリッカーフライ</li>
                 <li>貪欲のデーモン</li>
@@ -4657,53 +4683,69 @@
                 <li>傲慢のデーモン</li>
                 <li>嫉妬のデーモン</li>
                 <li>憤怒のデーモン</li>
+              </ul>
+              <ul>
                 <li>ダイア・バット</li>
                 <li>ドライアド</li>
                 <li>エレメンタル・スパーク</li>
-                <li>グレーター・アース・エレメンタル</li>
-                <li>グレーター・ウォーター・エレメンタル</li>
+                <li>上級アース・エレメンタル</li>
+                <li>上級ウォーター・エレメンタル</li>
                 <li>大型グリーン・ウーズ</li>
+              </ul>
+              <ul>
                 <li>ヒュドラ</li>
                 <li>君主</li>
                 <li>スタッグ・ナイト</li>
                 <li>オーク樹のトリエント</li>
                 <li>トリエントの苗木</li>
                 <li>ヴァンパイアの頭目</li>
+              </ul>
+              <ul>
                 <li>ヴァンパイア</li>
                 <li>ヴォルト・ガーディアンの看守</li>
                 <li>ヴォルト・ガーディアンの歩哨</li>
-                <li>ヴォルト・ガーディアンの砲塔</li>
+                <li>ヴォルト・ガーディアンの砲兵</li>
                 <li>ヤング・アイス・ドラゴン</li>
               </ul>
-            </article>
+            </div>
+          </article>
 
-            <article id="tier-4-adversaries">
-              <h5>ティア4（レベル8〜10）<span class="en-sub">Tier 4 (Level 8-10)</span></h5>
+          <article id="tier-4-adversaries">
+            <h5>ティア4（レベル8〜10）<span class="en-sub">Tier 4 (Level 8-10)</span></h5>
+            <div class="grid-4">
               <ul>
                 <li>大死霊術師</li>
                 <li>堕落した突撃部隊</li>
                 <li>堕落した魔術師</li>
                 <li>堕落将軍：王国壊し</li>
                 <li>堕落将軍：不敗の闘士</li>
+              </ul>
+              <ul>
                 <li>聖別弓使い</li>
                 <li>聖別兵士</li>
                 <li>高位熾天使</li>
                 <li>クラーケン</li>
-                <li>破滅の占い師</li>
+                <li>オラクル・オヴ・ドゥーム</li>
+              </ul>
+              <ul>
                 <li>外方界のアボミネーション</li>
                 <li>外方界のコラプター</li>
                 <li>外方界のスロール</li>
-                <li>ヴォルカニック・ドラゴン：黒曜石の捕食者</li>
-                <li>ヴォルカニック・ドラゴン：溶けた天罰</li>
-                <li>ヴォルカニック・ドラゴン：灰の暴君</li>
+                <li>ヴォルカニック・ドラゴン：黒曜の捕食獣</li>
+                <li>ヴォルカニック・ドラゴン：溶けた天災獣</li>
+              </ul>
+              <ul>
+                <li>ヴォルカニック・ドラゴン：灰燼の暴獣</li>
                 <li>完成化ゾンビ</li>
                 <li>ゾンビ軍団</li>
               </ul>
-            </article>
-          </div>
+            </div>
+          </article>
 
-          <h4>（2.0）ティア別の敵キャラクター<span class="en-sub">Adversaries by Tier</span></h4>
+          <h4>【2.0】ティア別の敵キャラクター<span class="en-sub">Adversaries by Tier</span></h4>
+          <p>※準備中※</p>
 
+          <!--
           <div class="grid-2">
             <article id="tier-1-adversaries-2">
               <h5>ティア1（レベル1）<span class="en-sub">Tier 1 (Level 1)</span></h5>
@@ -4864,15 +4906,27 @@
               </ul>
             </article>
           </div>
+          -->
         </article>
       </article>
 
       <article id="adversary-stat-block">
         <h3>敵キャラクターのデータブロック</h3>
 
+        <select id="adversary-tier-select">
+          <option value="" disabled>ティアを選択</option>
+          <option value="1" selected>ティア1</option>
+          <option value="2">ティア2</option>
+          <option value="3">ティア3</option>
+          <option value="4">ティア4</option>
+          <option value="1-2">（2.0）ティア1</option>
+          <option value="2-2">（2.0）ティア2</option>
+          <option value="3-2">（2.0）ティア3</option>
+          <option value="4-2">（2.0）ティア4</option>
+        </select>
+
         <select id="adversary-select">
           <option value="" disabled>表示する敵キャラクターを選択</option>
-          <option value="" disabled>------ティア1------</option>
           <option value="acid-burrower" selected>アシッド・バロワー</option>
         </select>
 
@@ -4888,7 +4942,7 @@
           </aside>
           <h6>特徴</h6>
           <p class="feature"><em><b>連続攻撃（3）<span class="en-sub">Relentless(3)</span> — 受動：</b></em>このバロワーにはGMターンごとに最大3回までスポットライトを当てることができる。スポットライトを当てる際は通常通りに恐怖を消費する。</p>
-          <p class="feature"><em><b>土噴出<span class="en-sub">Earth Eruption</span> — 行動：</b></em>ストレスを1つマークすることで、このバロワーを地面から飛び出させる。至近距離射程内にいるあらゆるクリーチャーは、【敏捷】反応ロールに成功しなければひっくり返り、次の行動時まで脆弱状態になる。</p>
+          <p class="feature"><em><b>土噴出<span class="en-sub">Earth Eruption</span> — 行動：</b></em>ストレスを1つマークすることで、このバロワーを地面から飛び出させる。至近距離射程内にいるあらゆるクリーチャーは、【敏捷】反応ロールに成功しなければひっくり返り、次の行動時まで<a href="#vulnerable" class="reference">脆弱状態</a>になる。</p>
           <p class="feature"><em><b>酸吐き<span class="en-sub">Spit Acid</span> — 行動：</b></em>近距離射程内でこのバロワーの前にいるあらゆる目標に対して攻撃ロールを行う。このバロワーが成功した目標は2d6の物理ダメージを受け、防具スロットを1つマークしなければならないがその利益は得られない（それでも防具を使用してダメージを減少させることはできる）。防具スロットをマークすることができないなら、HPを追加で1つマークしなければならず、君は恐怖を1つ得る。</p>
           <p class="feature"><em><b>酸浴び<span class="en-sub">Acid Bath</span> — 反応：</b></em>このバロワーが大ダメージを受けた時、近距離射程内にいるすべてのクリーチャーは酸性の血を浴び、1d10の物理ダメージを受ける。この飛沫は至近距離射程内の地面を血で覆い、そこを通り抜けるこのバロワー以外のあらゆるクリーチャーは1d6の物理ダメージを受ける。</p>
         </div>
@@ -4999,16 +5053,20 @@
         <div class="grid-2">
           <article id="tier-1-environments">
             <h5>ティア1（レベル1）<span class="en-sub">Tier 1 (Level 1)</span></h5>
-            <ul>
-              <li>放棄された木立（探索）</li>
-              <li>待ち伏せ（出来事）</li>
-              <li>奇襲（出来事）</li>
-              <li>賑やかな市場（社交）</li>
-              <li>崖登り（移動）</li>
-              <li>地元の酒場（社交）</li>
-              <li>辺境の町（社交）</li>
-              <li>激流（移動）</li>
-            </ul>
+            <div class="grid-2">
+              <ul>
+                <li>放棄された木立（探索）</li>
+                <li>待ち伏せ（出来事）</li>
+                <li>奇襲（出来事）</li>
+                <li>賑やかな市場（社交）</li>
+              </ul>
+              <ul>
+                <li>崖登り（移動）</li>
+                <li>地元の酒場（社交）</li>
+                <li>辺境の町（社交）</li>
+                <li>激流（移動）</li>
+              </ul>
+            </div>
           </article>
 
           <article id="tier-2-environments">
@@ -5041,8 +5099,10 @@
           </article>
         </div>
 
-        <h4>（2.0）ティア別の環境データブロック<span class="en-sub">Environment Stat Blocks by Tier</span></h4>
+        <h4>【2.0】ティア別の環境データブロック<span class="en-sub">Environment Stat Blocks by Tier</span></h4>
+        <p>※準備中※</p>
 
+        <!--
         <div class="grid-2">
           <article id="tier-1-environments-2">
             <h5>ティア1（レベル1）<span class="en-sub">Tier 1 (Level 1)</span></h5>
@@ -5096,13 +5156,26 @@
             </ul>
           </article>
         </div>
+        -->
       </article>
 
       <article id="environment-stat-block">
         <h3>環境のデータブロック</h3>
 
+        <select id="environment-tier-select">
+          <option value="" disabled>ティアを選択</option>
+          <option value="1" selected>ティア1</option>
+          <option value="2">ティア2</option>
+          <option value="3">ティア3</option>
+          <option value="4">ティア4</option>
+          <option value="1-2">（2.0）ティア1</option>
+          <option value="2-2">（2.0）ティア2</option>
+          <option value="3-2">（2.0）ティア3</option>
+          <option value="4-2">（2.0）ティア4</option>
+        </select>
+
         <select id="environment-select">
-          <option value="">表示する環境を選択</option>
+          <option value="" disabled>表示する環境を選択</option>
         </select>
 
         <div id="environment-stat-block-display" class="environment-statblock">
@@ -5122,7 +5195,7 @@
             <li>今も立っている木々は、強力な魔法を受けたかのように奇妙な形にねじれている。</li>
           </ul>
           <p class="feature-text"><em>なぜこれらの集団は争うことになったのか？なぜこの木立は使われなくなったのか？</em></p>
-          <p class="feature"><em><b>棘蔓 — 行動：</b></em>木立の中の一点を選ぶ。その地点から至近距離射程内にいるすべての目標は、【敏捷】反応ロールに成功しなければ、1d8＋3の物理ダメージを受け、棘のある蔦に拘束される。この拘束状態は、【技巧】または【筋力】ロールに成功することで自由にるか、蔦に6以上のダメージを与えるまで継続する。</p>
+          <p class="feature"><em><b>棘蔓 — 行動：</b></em>木立の中の一点を選ぶ。その地点から至近距離射程内にいるすべての目標は、【敏捷】反応ロールに成功しなければ、1d8＋3の物理ダメージを受け、棘のある蔦に拘束される。この<a href="#restrained" class="reference">拘束状態</a>は、【技巧】または【筋力】ロールに成功することで自由にるか、蔦に6以上のダメージを与えるまで継続する。</p>
           <p class="feature-text"><em>蔦の数はどれくらい？どこを掴んでくる？地面へ引きずり下ろす？それとも地面から持ち上げる？</em></p>
           <p class="feature"><em><b>お前たちの来るべき場所ではない — 行動：</b></em>侵入者であるパーティを迎え撃つため、《ヤング・ドライアド》1体、《シルヴァンの兵士》2体、およびPCと同じ数の《マイナー・トリエント》が現れる。</p>
           <p class="feature-text"><em>木立の守護者たちが隠しているものは何？ドライアドをなだめるためにPCたちが立ち向かうことのできる森にとっての脅威とは？</em></p>
@@ -5543,7 +5616,16 @@
   </section>
 
   <!-- ==================== -->
-  <!-- APPENDIX -->
+  <!-- 補足的キャンペーンメカニクス -->
+  <!-- ==================== -->
+
+  <section id="supplemental-campaign-mechanics" class="chapter">
+    <h1>補足的キャンペーンメカニクス<span class="en-sub">Supplemental Campign Mechanics</span></h1>
+    <p>※準備中※</p>
+  </section>
+
+  <!-- ==================== -->
+  <!-- 付録 -->
   <!-- ==================== -->
 
   <section id="appendix" class="chapter">
@@ -6057,7 +6139,7 @@
           <article id="book-of-norai">
             <h5>ノライの書<span class="en-sub">Book of Norai</span></h5>
             <p><b>レベル3・書究魔導書<br>想起コスト：2</b></p>
-            <p><em><b>神秘の鎖<span class="en-sub">Mystic Tether</span>：</b></em>遠距離射程内の目標1体に対して<b>呪文発動ロール</b>を行う。成功したなら、目標は一時的に拘束状態になり、ストレスを1つマークしなければならない。目標が飛行中のクリーチャーならば、この呪文は目標を地面に落とし、一時的に拘束状態にする。</p>
+            <p><em><b>神秘の鎖<span class="en-sub">Mystic Tether</span>：</b></em>遠距離射程内の目標1体に対して<b>呪文発動ロール</b>を行う。成功したなら、目標は一時的に<a href="#restrained" class="reference">拘束状態</a>になり、ストレスを1つマークしなければならない。目標が飛行中のクリーチャーならば、この呪文は目標を地面に落とし、一時的に拘束状態にする。</p>
             <p><em><b>火球<span class="en-sub">Fireball</span>：</b></em>超遠距離射程内の目標1体に対して<b>呪文発動ロール</b>を行う。成功したなら、目標に向かって衝撃で爆発する火の玉を投げつける。目標とその至近距離射程内にいるすべてのクリーチャーは、反応ロール（13）を行わなければならない。失敗した目標は君の習熟度を用いた<b>d20＋5</b>の魔法ダメージを受ける。成功した目標は半分のダメージを受ける。</p>
           </article>
 
@@ -6142,7 +6224,7 @@
             <h5>ローニンの書<span class="en-sub">Book of Ronin</span></h5>
             <p><b>レベル9・書究魔導書<br>想起コスト：4</b></p>
             <p><em><b>変身<span class="en-sub">Transform</span>：</b></em><b>呪文発動ロール（15）</b>を行う。成功したなら、君の大きさの2倍未満の動かない物体に変身する。君はダメージを受けるまでこの形を維持できる。</p>
-            <p><em><b>永久衰弱<span class="en-sub">Eternal Enervation</span>：</b></em>大休憩ごとに1回、近距離射程内の目標1体に対して<b>呪文発動ロール</b>を行う。成功したなら、目標は永続的に脆弱状態になる。目標はいかなる手段でもこの状態を解除できない。</p>
+            <p><em><b>永久衰弱<span class="en-sub">Eternal Enervation</span>：</b></em>大休憩ごとに1回、近距離射程内の目標1体に対して<b>呪文発動ロール</b>を行う。成功したなら、目標は永続的に<a href="#vulnerable" class="reference">脆弱状態</a>になる。目標はいかなる手段でもこの状態を解除できない。</p>
           </article>
 
           <article id="disintegration-wave">
@@ -6309,7 +6391,7 @@
           <article id="notorious">
             <h5>悪名轟く<span class="en-sub">Notorious</span></h5>
             <p><b>レベル10・風雅能力<br>想起コスト：0</b></p>
-            <p>人々は君が何者で何をしてきたかを知っており、それゆえに君を特別扱いする。君は悪評を利用して望むものを手に入れる時、ダイスを振る前に<b>ストレスを1つマーク</b>することで、出目に＋10のボーナスを得ることができる。君はどこへ行っても常に無料で飲食ができ、その他に購入するものはすべて価格が金1袋ぶん割引される（最低1包みまで）。このカードは準備枠の領域カード上限の5枚には数えず、保管枠に置くことはできない。</p>
+            <p>人々は君が何者で何をしてきたかを知っており、それゆえに君を特別扱いする。君は悪評を利用して望むものを手に入れる時、ダイスを振る前に<b>ストレスを1つマーク</b>することで、出目に＋10のボーナスを得ることができる。君はどこへ行っても常に無料で飲食ができ、その他に購入するものはすべて価格が金1袋ぶん割引される（最低1握りみまで）。このカードは準備枠の領域カード上限の5枚には数えず、保管枠に置くことはできない。</p>
           </article>
         </div>
       </article>
@@ -6328,7 +6410,7 @@
             <h5>刃の雨<span class="en-sub">Rain of Blades</span></h5>
             <p><b>レベル1・闇夜呪文<br>想起コスト：1</b></p>
             <p><b>希望を1つ消費する</b>ことで、呪文発動ロールを行って無数の刃を召喚し、至近距離射程内にいるすべての目標に浴びせつける。君が成功した目標は、君の習熟度を用いた<b>d8＋2</b>の魔法ダメージを受ける。</p>
-            <p>君がヒットさせた目標が脆弱状態なら、追加で<b>1d8</b>のダメージを受ける。</p>
+            <p>君がヒットさせた目標が<a href="#vulnerable" class="reference">脆弱状態</a>なら、追加で<b>1d8</b>のダメージを受ける。</p>
           </article>
 
           <article id="uncanny-disguise">
@@ -6350,20 +6432,20 @@
           <article id="shadowbind">
             <h5>影縛り<span class="en-sub">Shadowbind</span></h5>
             <p><b>レベル2・闇夜呪文<br>想起コスト：0</b></p>
-            <p>至近距離射程内にいるすべての敵キャラクターに対して<b>呪文発動ロール</b>を行う。君が成功した目標は、その場で自分の影に縛られ、一時的に拘束状態になる。</p>
+            <p>至近距離射程内にいるすべての敵キャラクターに対して<b>呪文発動ロール</b>を行う。君が成功した目標は、その場で自分の影に縛られ、一時的に<a href="#restrained" class="reference">拘束状態</a>になる。</p>
           </article>
 
           <article id="chokehold">
             <h5>喉絞め<span class="en-sub">Chokehold</span></h5>
             <p><b>レベル3・闇夜能力<br>想起コスト：1</b></p>
-            <p>君はほとんど同じ大きさのクリーチャーの背後に位置どった時、<b>ストレスを1つマーク</b>してそのクリーチャーの喉を絞め、一時的に脆弱状態にすることができる。</p>
+            <p>君はほとんど同じ大きさのクリーチャーの背後に位置どった時、<b>ストレスを1つマーク</b>してそのクリーチャーの喉を絞め、一時的に<a href="#vulnerable" class="reference">脆弱状態</a>にすることができる。</p>
             <p>こうして脆弱状態になっている目標にクリーチャーが攻撃した時、そのクリーチャーは<b>2d6</b>の追加ダメージを与える。</p>
           </article>
 
           <article id="veil-of-night">
             <h5>夜の帷<span class="en-sub">Veil of Night</span></h5>
             <p><b>レベル3・闇夜呪文<br>想起コスト：1</b></p>
-            <p><b>呪文発動ロール（13）</b>を行う。成功したなら、君は遠距離射程内の二点間に一時的な暗闇の幕を生み出すことができる。この暗闇を見通すことができるのは君だけである。君はこの幕の反対側にいる敵キャラクターに対して隠れ身状態とみなされ、この暗闇越しに行う攻撃に有利を得る。この幕は君が別の呪文を発動するまで持続する。</p>
+            <p><b>呪文発動ロール（13）</b>を行う。成功したなら、君は遠距離射程内の二点間に一時的な暗闇の幕を生み出すことができる。この暗闇を見通すことができるのは君だけである。君はこの幕の反対側にいる敵キャラクターに対して<a href="#hidden" class="reference">隠れ身状態<a></a>とみなされ、この暗闇越しに行う攻撃に有利を得る。この幕は君が別の呪文を発動するまで持続する。</p>
           </article>
 
           <article id="stealth-expertise">
@@ -6424,7 +6506,7 @@
           <article id="vanishing-dodge">
             <h5>消失回避<span class="en-sub">Vanishing Dodge</span></h5>
             <p><b>レベル7・闇夜呪文<br>想起コスト：1</b></p>
-            <p>君に対して行われた物理ダメージを与えうる攻撃が失敗した時、君は<b>希望を1つ消費</b>して君自身を陰で包み込み、隠れ身状態になって攻撃者から近距離射程内の一点へ転移することができる。君は次に行動ロールを行うまで隠れ身状態のままである。</p>
+            <p>君に対して行われた物理ダメージを与えうる攻撃が失敗した時、君は<b>希望を1つ消費</b>して君自身を陰で包み込み、<a href="#hidden" class="reference">隠れ身状態</a>になって攻撃者から近距離射程内の一点へ転移することができる。君は次に行動ロールを行うまで隠れ身状態のままである。</p>
           </article>
 
           <article id="shadowhunter">
@@ -6443,7 +6525,7 @@
           <article id="night-terror">
             <h5>夜の恐怖<span class="en-sub">Night Terror</span></h5>
             <p><b>レベル9・闇夜呪文<br>想起コスト：2</b></p>
-            <p>大休憩ごとに1回、至近距離射程内にいる任意の目標を選び、君を悪夢の怪物だと認識させる。目標は反応ロール（16）に成功しなければ、一時的に恐慌状態になる。恐慌状態の間、目標は脆弱状態になる。GMから“恐慌状態の目標の数”に等しい数の恐怖を盗む（最大でGMの恐怖プールにある恐怖の数まで）。盗んだ恐怖の数に等しい数の<b>d6</b>を振り、恐慌状態の目標それぞれ合計ダメージを与える。盗んだ恐怖は捨てる。</p>
+            <p>大休憩ごとに1回、至近距離射程内にいる任意の目標を選び、君を悪夢の怪物だと認識させる。目標は反応ロール（16）に成功しなければ、一時的に恐慌状態になる。恐慌状態の間、目標は<a href="#vulnerable" class="reference">脆弱状態</a>になる。GMから“恐慌状態の目標の数”に等しい数の恐怖を盗む（最大でGMの恐怖プールにある恐怖の数まで）。盗んだ恐怖の数に等しい数の<b>d6</b>を振り、恐慌状態の目標それぞれ合計ダメージを与える。盗んだ恐怖は捨てる。</p>
           </article>
 
           <article id="twilight-toll">
@@ -6496,7 +6578,7 @@
           <article id="vicious-entangle">
             <h5>苛烈な絡みつき<span class="en-sub">Vicious Entangle</span></h5>
             <p><b>レベル1・賢智呪文<br>想起コスト：1</b></p>
-            <p>遠距離射程内の目標1体に対して<b>呪文発動ロール</b>を行う。成功したなら、地面から根や蔦が伸びてきて、目標に<b>1d8＋1</b>の物理ダメージを与え、一時的に拘束状態にする。</p>
+            <p>遠距離射程内の目標1体に対して<b>呪文発動ロール</b>を行う。成功したなら、地面から根や蔦が伸びてきて、目標に<b>1d8＋1</b>の物理ダメージを与え、一時的に<a href="#restrained" class="reference">拘束状態</a>にする。</p>
             <p>さらに、成功した時、君は<b>希望を1つ消費する</b>ことで、目標の至近距離射程内にいる別の敵キャラクター1体を一時的に拘束状態にすることができる。</p>
           </article>
 
@@ -6538,7 +6620,7 @@
               <li>目標を締め付けて、ストレスを2つマークさせる。</li>
               <li>君と目標の間にいるすべての目標は、反応ロール（13）に成功しなければ蔦に打たれ、<b>3d6＋2</b>の物理ダメージを受ける。</li>
             </ul>
-            <p>成功したなら、君の手から蔦が伸び、選択した効果を発生させ、目標を拘束状態にする。</p>
+            <p>成功したなら、君の手から蔦が伸び、選択した効果を発生させ、目標を<a href="#restrained" class="reference">拘束状態</a>にする。</p>
           </article>
 
           <article id="healing-field">
@@ -6638,7 +6720,7 @@
             <ul>
               <li>君が攻撃または呪文発動ロールに成功した時、ダメージロールに＋10のボーナスを得る。</li>
               <li>君は近距離射程内のクリーチャーを倒せるだけのダメージを与えた時、目標を吸収して防具スロットを1つ回復する。</li>
-              <li>君は拘束状態にならない。</li>
+              <li>君は<a href="#restrained" class="reference">拘束状態</a>にならない。</li>
             </ul>
             <p>君は行動ロールを行う前に<b>希望を1つ消費</b>しなければならない。消費できないなら、君は通常の形態に戻る。</p>
           </article>
@@ -6648,7 +6730,7 @@
             <p><b>レベル10・賢智呪文<br>想起コスト：2</b></p>
             <p>以下の嵐の1つを選び、遠距離射程内にいるすべての目標に対して呪文発動ロールを行う。君が成功した目標は、GMがGMターンに恐怖を1つ消費するか、この呪文が終了するまで、その効果にさらされる。</p>
             <ul>
-              <li><em><b>吹雪<span class="en-sub">Blizzard</span>：</b></em><b>2d20＋8</b>の魔法ダメージを与え、目標は一時的に脆弱状態になる。</li>
+              <li><em><b>吹雪<span class="en-sub">Blizzard</span>：</b></em><b>2d20＋8</b>の魔法ダメージを与え、目標は一時的に<a href="#vulnerable" class="reference">脆弱状態</a>になる。</li>
               <li><em><b>暴風<span class="en-sub">Hurricane</span>：</b></em><b>3d10＋10</b>の魔法ダメージを与え、風が吹く方向を1つ選ぶ。目標は風上に向かって移動できない。</li>
               <li><em><b>砂嵐<span class="en-sub">Sandstorm</span>：</b></em><b>5d6＋9</b>の魔法ダメージを与える。近接射程より外側から行われる攻撃は不利を受ける。</li>
             </ul>
@@ -6663,7 +6745,7 @@
           <article id="bolt-beacon">
             <h5>灯火の矢<span class="en-sub">Bolt Beacon</span></h5>
             <p><b>レベル1・輝煌呪文<br>想起コスト：1</b></p>
-            <p>遠距離射程内の目標1体に対して<b>呪文発動ロール</b>を行う。成功したなら、<b>希望を1つ消費</b>して煌めく光の矢を放ち、君の習熟度を用いて<b>d8＋2</b>の魔法ダメージを与える。目標は一時的に脆弱状態になり、その状態が解除されるまで明るく輝く。</p>
+            <p>遠距離射程内の目標1体に対して<b>呪文発動ロール</b>を行う。成功したなら、<b>希望を1つ消費</b>して煌めく光の矢を放ち、君の習熟度を用いて<b>d8＋2</b>の魔法ダメージを与える。目標は一時的に<a href="#vulnerable" class="reference">脆弱状態</a>になり、その状態が解除されるまで明るく輝く。</p>
           </article>
 
           <article id="mending-touch">
@@ -6735,7 +6817,7 @@
             <h5>回復術<span class="en-sub">Restoration</span></h5>
             <p><b>レベル6・輝煌呪文<br>想起コスト：2</b></p>
             <p>大休憩後、このカードの上に君の呪文発動特性に等しい数のトークンを置く。クリーチャー1体に触れて任意の数のトークンを消費し、HPまたはストレスを消費したトークン1つにつき2つ回復する。</p>
-            <p>さらに、君はクリーチャーに触れる際にこのカードからトークンを1つ消費して、脆弱状態を解除するか、物理的または魔法的な病を1つを治癒することができる（病の強さに応じてGMが追加のトークンを要求する場合もある）。大休憩を取った時、消費していないトークンはすべてなくなる。</p>
+            <p>さらに、君はクリーチャーに触れる際にこのカードからトークンを1つ消費して、<a href="#vulnerable" class="reference">脆弱状態</a>を解除するか、物理的または魔法的な病を1つを治癒することができる（病の強さに応じてGMが追加のトークンを要求する場合もある）。大休憩を取った時、消費していないトークンはすべてなくなる。</p>
           </article>
 
           <article id="zone-of-protection">
@@ -6822,7 +6904,7 @@
             <h5>押しやり<span class="en-sub">Forceful Push</span></h5>
             <p><b>レベル1・勇護能力<br>想起コスト：0</b></p>
             <p>近接射程内の目標1体に対して、メイン武器を用いて攻撃を行う。成功したなら、君はダメージを与え、目標を近距離射程へ押し出す。希望成功したなら、ダメージロールに<b>d6</b>を加算する。</p>
-            <p>さらに、君は<b>希望を1つ消費する</b>ことで、目標を一時的に脆弱状態にすることができる。</p>
+            <p>さらに、君は<b>希望を1つ消費する</b>ことで、目標を一時的に<a href="#vulnerable" class="reference">脆弱状態</a>にすることができる。</p>
           </article>
 
           <article id="i-am-your-shield">
@@ -6927,7 +7009,7 @@
           <article id="hold-the-line">
             <h5>前線保持<span class="en-sub">Hold the Line</span></h5>
             <p><b>レベル9・勇護能力<br>想起コスト：1</b></p>
-            <p>君が取る守りの構えを説明し、<b>希望を1つ消費する</b>。敵キャラクター1体が至近距離射程内に移動してきたなら、その敵キャラクターは近接射程内に引き寄せられて拘束状態になる。</p>
+            <p>君が取る守りの構えを説明し、<b>希望を1つ消費する</b>。敵キャラクター1体が至近距離射程内に移動してきたなら、その敵キャラクターは近接射程内に引き寄せられて<a href="#restrained" class="reference">拘束状態</a>になる。</p>
             <p>この状態は、君が移動するか、ロールに恐怖失敗するか、GMがGMターンに恐怖を2つ消費して解除するまで持続する。</p>
           </article>
 
@@ -6975,7 +7057,7 @@
           <article id="voice-of-dread">
             <h5>戦慄の声<span class="en-sub">Voice of Dread</span></h5>
             <p><b>レベル1・戦慄呪文<br>想起コスト：0</b></p>
-            <p>君は自分から見えるクリーチャーに魔法的に話しかけ、君の言葉で苛むことができる。目標に対して<b>呪文発動ロール</b>を行う。成功したなら、目標はストレスを1つマークしなければならず、恐怖で凍りついて一時的に拘束状態になる。</p>
+            <p>君は自分から見えるクリーチャーに魔法的に話しかけ、君の言葉で苛むことができる。目標に対して<b>呪文発動ロール</b>を行う。成功したなら、目標はストレスを1つマークしなければならず、恐怖で凍りついて一時的に<a href="#restrained" class="reference">拘束状態</a>になる。</p>
           </article>
 
           <article></article>
@@ -7001,7 +7083,7 @@
           <article id="terrify">
             <h5>恐怖喚起<span class="en-sub">Terrify</span></h5>
             <p><b>レベル3・戦慄呪文<br>想起コスト：1</b></p>
-            <p>近距離射程内の目標1体に対して<b>呪文発動ロール</b>を行う。成功したなら、目標はストレスを<b>1d4</b>つマークする。さらに、君は目標を自分から離れるように射程1段階ぶん逃げさせることができる（例：至近距離から近距離、近距離から遠距離）。恐怖成功したなら、目標は一時的に脆弱状態になる。</p>
+            <p>近距離射程内の目標1体に対して<b>呪文発動ロール</b>を行う。成功したなら、目標はストレスを<b>1d4</b>つマークする。さらに、君は目標を自分から離れるように射程1段階ぶん逃げさせることができる（例：至近距離から近距離、近距離から遠距離）。恐怖成功したなら、目標は一時的に<a href="#vulnerable" class="reference">脆弱状態</a>になる。</p>
           </article>
 
           <article id="chains-of-affliction">
@@ -7038,7 +7120,7 @@
           <article id="jump-scare">
             <h5>不意の恐怖<span class="en-sub">Jump Scare</span></h5>
             <p><b>レベル6・戦慄呪文<br>想起コスト：1</b></p>
-            <p>君は目標に魔法ダメージを与えた時、<b>ストレスを1つ</b>マークして、目標の近接射程内に転移することができる。そうしたなら、目標はHPを1つ以上マークするまで脆弱状態になる。</p>
+            <p>君は目標に魔法ダメージを与えた時、<b>ストレスを1つ</b>マークして、目標の近接射程内に転移することができる。そうしたなら、目標はHPを1つ以上マークするまで<a href="#vulnerable" class="reference">脆弱状態</a>になる。</p>
           </article>
 
           <article id="dread-touched">
