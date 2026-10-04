@@ -977,7 +977,7 @@
           "name": "消耗の流れ",
           "name_en": "Sickening Flux",
           "type": "行動",
-          "description": "<b>HPを1つマーク</b>して、近距離射程内にいるすべての目標にストレスを1つマークさせ、<em>脆弱状態</em>にする。この状態は、次の休憩か、HPを1つ回復するまで継続する。"
+          "description": "<b>HPを1つマーク</b>して、近距離射程内にいるすべての目標にストレスを1つマークさせ、脆弱状態にする。この状態は、次の休憩か、HPを1つ回復するまで継続する。"
         },
         {
           "name": "現実改変",
@@ -3710,7 +3710,7 @@
         "damage": "3d20",
         "damage_type": "物理"
       },
-      "experiences": [],
+      "experiences": "",
       "features": [
         {
           "name": "連続攻撃（4）",
@@ -3778,13 +3778,7 @@
         "damage": "3d6＋5",
         "damage_type": "魔法"
       },
-      "experiences": [
-        {
-          "name": "人心操作",
-          "name_en": "Manipulation",
-          "modifier": 3
-        }
-      ],
+      "experiences": "人心操作＋3",
       "features": [
         {
           "name": "地獄の沙汰も金次第",
@@ -3828,13 +3822,7 @@
         "damage": "3d6＋1",
         "damage_type": "魔法"
       },
-      "experiences": [
-        {
-          "name": "人心操作",
-          "name_en": "Manipulation",
-          "modifier": 3
-        }
-      ],
+      "experiences": "人心操作＋3",
       "features": [
         {
           "name": "絶望の深さ",
@@ -3884,13 +3872,7 @@
         "damage": "3d10",
         "damage_type": "物理"
       },
-      "experiences": [
-        {
-          "name": "人心操作",
-          "name_en": "Manipulation",
-          "modifier": 2
-        }
-      ],
+      "experiences": "人心操作＋2",
       "features": [
         {
           "name": "恐怖喚起",
@@ -3946,13 +3928,7 @@
         "damage": "3d8＋3",
         "damage_type": "魔法"
       },
-      "experiences": [
-        {
-          "name": "人心操作",
-          "name_en": "Manipulation",
-          "modifier": 3
-        }
-      ],
+      "experiences": "人心操作＋3",
       "features": [
         {
           "name": "剥き出しの精神",
@@ -4002,13 +3978,7 @@
         "damage": "3d8＋1",
         "damage_type": "魔法"
       },
-      "experiences": [
-        {
-          "name": "威圧",
-          "name_en": "Intimidation",
-          "modifier": 3
-        }
-      ],
+      "experiences": "威圧＋3",
       "features": [
         {
           "name": "容赦なき怒り",
@@ -4058,13 +4028,7 @@
         "damage": "2d6＋7",
         "damage_type": "物理"
       },
-      "experiences": [
-        {
-          "name": "血の渇望",
-          "name_en": "Bloodthirsty",
-          "modifier": 3
-        }
-      ],
+      "experiences": "血の渇望＋3",
       "features": [
         {
           "name": "飛行",
@@ -4108,13 +4072,7 @@
         "damage": "3d10＋1",
         "damage_type": "物理"
       },
-      "experiences": [
-        {
-          "name": "森林知識",
-          "name_en": "Forest Knowledge",
-          "modifier": 4
-        }
-      ],
+      "experiences": "森林知識＋4",
       "features": [
         {
           "name": "茨の群生",
@@ -4158,7 +4116,7 @@
         "damage": "5",
         "damage_type": "魔法"
       },
-      "experiences": [],
+      "experiences": "",
       "features": [
         {
           "name": "雑魚（9）",
@@ -4196,7 +4154,7 @@
         "damage": "3d10＋1",
         "damage_type": "物理"
       },
-      "experiences": [],
+      "experiences": "",
       "features": [
         {
           "name": "鈍重",
@@ -4252,7 +4210,7 @@
         "damage": "3d4＋1",
         "damage_type": "魔法"
       },
-      "experiences": [],
+      "experiences": "",
       "features": [
         {
           "name": "高圧水流",
@@ -4296,13 +4254,7 @@
         "damage": "3d8＋1",
         "damage_type": "魔法"
       },
-      "experiences": [
-        {
-          "name": "溶け込む",
-          "name_en": "Blend In",
-          "modifier": 3
-        }
-      ],
+      "experiences": "溶け込む＋3",
       "features": [
         {
           "name": "鈍重",
@@ -4352,7 +4304,7 @@
         "damage": "2d12＋2",
         "damage_type": "物理"
       },
-      "experiences": [],
+      "experiences": "",
       "features": [
         {
           "name": "多頭の怪物",
@@ -4408,18 +4360,7 @@
         "damage": "3d6＋3",
         "damage_type": "物理"
       },
-      "experiences": [
-        {
-          "name": "歴史",
-          "name_en": "History",
-          "modifier": 3
-        },
-        {
-          "name": "高貴",
-          "name_en": "Nobility",
-          "modifier": 3
-        }
-      ],
+      "experiences": "歴史＋3、高貴＋3",
       "features": [
         {
           "name": "処刑せよ！",
@@ -4463,12 +4404,7 @@
         "damage": "3d8＋3",
         "damage_type": "物理"
       },
-      "experiences": [
-        {
-          "name": "森林知識",
-          "modifier": 3
-        }
-      ],
+      "experiences": "森林知識＋3",
       "features": [
         {
           "name": "高所",
@@ -4512,12 +4448,7 @@
         "damage": "3d8＋2",
         "damage_type": "物理"
       },
-      "experiences": [
-        {
-          "name": "森林知識",
-          "modifier": 3
-        }
-      ],
+      "experiences": "森林知識＋3",
       "features": [
         {
           "name": "ありふれた木",
@@ -4561,7 +4492,7 @@
         "damage": "8",
         "damage_type": "物理"
       },
-      "experiences": [],
+      "experiences": "",
       "features": [
         {
           "name": "雑魚（6）",
@@ -4599,12 +4530,7 @@
         "damage": "2d20＋4",
         "damage_type": "物理"
       },
-      "experiences": [
-        {
-          "name": "貴族",
-          "modifier": 3
-        }
-      ],
+      "experiences": "貴族＋3",
       "features": [
         {
           "name": "恐怖喚起",
@@ -4660,12 +4586,7 @@
         "damage": "3d8",
         "damage_type": "物理"
       },
-      "experiences": [
-        {
-          "name": "夜の狩人",
-          "modifier": 3
-        }
-      ],
+      "experiences": "夜の狩人＋3",
       "features": [
         {
           "name": "吸血の噛みつき",
@@ -4703,7 +4624,7 @@
         "damage": "3d6＋2",
         "damage_type": "物理"
       },
-      "experiences": [],
+      "experiences": "",
       "features": [
         {
           "name": "妨害の盾",
@@ -4741,7 +4662,7 @@
         "damage": "2d12＋1",
         "damage_type": "物理"
       },
-      "experiences": [],
+      "experiences": "",
       "features": [
         {
           "name": "運動叩きつけ",
@@ -4791,7 +4712,7 @@
         "damage": "3d10＋3",
         "damage_type": "魔法"
       },
-      "experiences": [],
+      "experiences": "",
       "features": [
         {
           "name": "鈍重射撃",
@@ -4841,12 +4762,7 @@
         "damage": "4d10",
         "damage_type": "物理"
       },
-      "experiences": [
-        {
-          "name": "所有物保護",
-          "modifier": 3
-        }
-      ],
+      "experiences": "所有物保護＋3",
       "features": [
         {
           "name": "連続攻撃（3）",
@@ -4916,16 +4832,7 @@
         "damage": "4d12＋8",
         "damage_type": "魔法"
       },
-      "experiences": [
-        {
-          "name": "禁忌知識",
-          "modifier": 3
-        },
-        {
-          "name": "世紀の知恵",
-          "modifier": 3
-        }
-      ],
+      "experiences": "禁忌知識＋3、世紀の知恵＋3",
       "features": [
         {
           "name": "死の踊り",
@@ -4981,7 +4888,7 @@
         "damage": "12",
         "damage_type": "物理"
       },
-      "experiences": [],
+      "experiences": "",
       "features": [
         {
           "name": "雑魚（12）",
@@ -5025,12 +4932,7 @@
         "damage": "4d6＋10",
         "damage_type": "魔法"
       },
-      "experiences": [
-        {
-          "name": "古代知識",
-          "modifier": 2
-        }
-      ],
+      "experiences": "古代知識＋2",
       "features": [
         {
           "name": "大火",
@@ -5080,20 +4982,7 @@
         "damage": "4d8＋7",
         "damage_type": "物理"
       },
-      "experiences": [
-        {
-          "name": "征服",
-          "modifier": 3
-        },
-        {
-          "name": "歴史",
-          "modifier": 2
-        },
-        {
-          "name": "威圧",
-          "modifier": 3
-        }
-      ],
+      "experiences": "征服＋3、歴史＋2、威圧＋3",
       "features": [
         {
           "name": "連続攻撃（2）",
@@ -5155,20 +5044,7 @@
         "damage": "4d12＋13",
         "damage_type": "物理"
       },
-      "experiences": [
-        {
-          "name": "征服",
-          "modifier": 3
-        },
-        {
-          "name": "歴史",
-          "modifier": 2
-        },
-        {
-          "name": "威圧",
-          "modifier": 3
-        }
-      ],
+      "experiences": "征服＋3、歴史＋2、威圧＋3",
       "features": [
         {
           "name": "連続攻撃（3）",
@@ -5236,7 +5112,7 @@
         "damage": "4d8＋8",
         "damage_type": "物理"
       },
-      "experiences": [],
+      "experiences": "",
       "features": [
         {
           "name": "懲罰",
@@ -5274,7 +5150,7 @@
         "damage": "10",
         "damage_type": "物理"
       },
-      "experiences": [],
+      "experiences": "",
       "features": [
         {
           "name": "雑魚（13）",
@@ -5318,12 +5194,7 @@
         "damage": "4d10＋10",
         "damage_type": "物理"
       },
-      "experiences": [
-        {
-          "name": "神聖知識",
-          "modifier": 3
-        }
-      ],
+      "experiences": "神聖知識＋3",
       "features": [
         {
           "name": "連続攻撃（3）",
@@ -5354,6 +5225,549 @@
           "name_en": "We Are One",
           "type": "行動",
           "description": "場面ごとに1回、<b>恐怖を1つ消費</b>して、遠距離射程内にいる自分以外のすべての敵キャラクターにスポットライトを当てる。こうしてスポットライトを浴びている敵キャラクターが行った攻撃が与えるダメージは半分になる。"
+        }
+      ]
+    },
+    {
+      "id": "kraken",
+      "name": "クラーケン",
+      "name_en": "Kraken",
+      "tier": 4,
+      "type": "単体",
+      "description": "最大級のガレオン船より大きな、伝説の海の獣。びっしりと吸盤の並んだ触手と、恐ろしい大口を持つ。",
+      "motives-and-tactics": "食い尽くす、押しつぶす、溺れさせる、掴む",
+      "stats": {
+        "difficulty": 20,
+        "thresholds": "35／70",
+        "hp": 11,
+        "stress": 8
+      },
+      "standard_attack": {
+        "modifier": 7,
+        "name": "触手",
+        "name_en": "Tentacles",
+        "range": "近距離",
+        "damage": "4d12＋10",
+        "damage_type": "物理"
+      },
+      "experiences": "水泳＋3",
+      "features": [
+        {
+          "name": "連続攻撃（3）",
+          "name_en": "Relentless (3)",
+          "type": "受動",
+          "description": "このクラーケンにはGMターンごとに最大3回までスポットライトを当てることができる。スポットライトを当てる際は通常通りに恐怖を消費する。"
+        },
+        {
+          "name": "無数の触手",
+          "name_en": "Many Tentacles",
+          "type": "受動",
+          "description": "このクラーケンは、マークしているHPが7つ以下の間、射程内の目標2体に対して通常攻撃を行うことができる。"
+        },
+        {
+          "name": "掴んで沈める",
+          "name_en": "Grapple and Drown",
+          "type": "行動",
+          "description": "近距離射程内の目標1体に対して攻撃ロールを行う。成功したなら、<b>ストレスを1つマーク</b>して、目標を触手で掴んで水中に引きずり込む。目標は拘束状態かつ脆弱状態になる。これらの状態は、目標が【筋力】ロールに成功して脱出するか、このクラーケンが中ダメージ以上を受けるまで継続する。こうして拘束状態と脆弱状態にある間、目標は行動ロールを行う際にストレスを1つマークしなければならない。"
+        },
+        {
+          "name": "沸騰爆砕",
+          "name_en": "Boiling Blast",
+          "type": "行動",
+          "description": "<b>恐怖を1つ消費</b>して、遠距離射程までの直線上にいる任意の数の目標に沸き立つ水を吐く。すべての目標は【敏捷】反応ロールを行わなければならず、失敗すると<b>4d6＋9</b>の物理ダメージを受ける。目標は、このダメージを軽減するために防具スロットを1つマークするなら、ストレスも1つマークしなければならない。"
+        },
+        {
+          "name": "優勢",
+          "name_en": "Momentum",
+          "type": "反応",
+          "description": "このクラーケンがPCに対する攻撃に成功した時、君は恐怖を1つ得る。"
+        }
+      ]
+    },
+    {
+      "id": "oracle-of-doom",
+      "name": "破滅のオラクル",
+      "name_en": "Oracle of Doom",
+      "tier": 4,
+      "type": "単体",
+      "description": "不死身の巨体を持つ運命の化身。呪われているため、悪い結末しか見ることができない。",
+      "motives-and-tactics": "環境を変える、非難する、意気消沈させる、見捨てる",
+      "stats": {
+        "difficulty": 20,
+        "thresholds": "38／68",
+        "hp": 11,
+        "stress": 10
+      },
+      "standard_attack": {
+        "modifier": 8,
+        "name": "精神攻撃",
+        "name_en": "Psychic Attack",
+        "range": "遠距離",
+        "damage": "4d8＋9",
+        "damage_type": "魔法"
+      },
+      "experiences": "無限の知識＋4",
+      "features": [
+        {
+          "name": "恐怖喚起",
+          "name_en": "Terrifying",
+          "type": "受動",
+          "description": "このオラクルが攻撃に成功した時、遠距離射程内にいるすべてのPCは希望を1つ失い、君は恐怖を1つ得る。"
+        },
+        {
+          "name": "恐怖喚起",
+          "name_en": "Terrifying",
+          "type": "受動",
+          "description": "このオラクルが攻撃に成功した時、遠距離射程内にいるすべてのPCは希望を1つ失い、君は恐怖を1つ得る。"
+        },
+        {
+          "name": "閉塞感",
+          "name_en": "Walls Closing In",
+          "type": "受動",
+          "description": "このオラクルの超遠距離射程内でロールに失敗したクリーチャーは、ストレスを1つマークしなければならない。"
+        },
+        {
+          "name": "運命宣告",
+          "name_en": "Pronounce Fate",
+          "type": "行動",
+          "description": "<b>恐怖を1つ消費</b>して、遠距離射程内の目標1体に個人的な悪夢の幻視を見せる。目標は【知識】反応ロールを行わなければならない。失敗したなら、目標は希望をすべて失い、<b>2d20＋4</b>の直接魔法ダメージを受ける。成功したなら、目標は半分のダメージを受け、希望を1つ失う。"
+        },
+        {
+          "name": "拷問者召喚",
+          "name_en": "Summon Tormentors",
+          "type": "行動",
+          "description": "1日に1回、<b>恐怖を2つ消費</b>して、PCの個人的な悪夢の1つに関連したティア2以下の雑魚クリーチャーを<b>2d4</b>体召喚する。召喚したクリーチャーはそのPCの近距離射程に現れる。"
+        },
+        {
+          "name": "不吉な知識",
+          "name_en": "Ominous Knowledge",
+          "type": "反応",
+          "description": "このオラクルは定命のクリーチャーを見た時、そのクリーチャーの個人的な悪夢1つが瞬時にわかる。"
+        },
+        {
+          "name": "復讐の運命",
+          "name_en": "Vengeful Fate",
+          "type": "反応",
+          "description": "このオラクルが至近距離射程内の攻撃によってHPをマークした時、君は<b>ストレスを1つマーク</b>して、攻撃者を遠距離射程へ吹き飛ばし、<b>2d10＋4</b>の物理ダメージを与えることができる。"
+        }
+      ]
+    },
+    {
+      "id": "outer-realms-abomination",
+      "name": "外方界のアボミネーション",
+      "name_en": "Outer Realms Abomination",
+      "tier": 4,
+      "type": "暴力",
+      "description": "絶えず変化し続ける、生命を愚弄する混沌。",
+      "motives-and-tactics": "取り壊す、貪り尽くす、弱らせる",
+      "stats": {
+        "difficulty": 19,
+        "thresholds": "35／71",
+        "hp": 7,
+        "stress": 5
+      },
+      "standard_attack": {
+        "modifier": "2d4",
+        "name": "巨大擬足",
+        "name_en": "Massive Pseudopod",
+        "range": "至近距離",
+        "damage": "4d6＋13",
+        "damage_type": "魔法"
+      },
+      "features": [
+        {
+          "name": "混沌の体",
+          "name_en": "Chaotic Form",
+          "type": "受動",
+          "description": "このアボミネーションが攻撃する時、<b>2d4</b>を振り、出た目を攻撃修正値として使用する。"
+        },
+        {
+          "name": "方向感覚を狂わせる存在",
+          "name_en": "Disorienting Presence",
+          "type": "受動",
+          "description": "このアボミネーションによってダメージを受けた目標は、【直観】反応ロールを行わなければならない。失敗したなら、目標は次の行動ロールに不利を受け、君は恐怖を1つ得る。"
+        },
+        {
+          "name": "現実震撼",
+          "name_en": "Reality Quake",
+          "type": "行動",
+          "description": "<b>恐怖を1つ消費</b>して、このアボミネーションの遠距離射程内の現実の境界線を揺るがす。この範囲内にいるすべての目標は【知識】反応ロールを行わなければならず、失敗すると場面の終了時まで現実からの隔離状態になる。<em>現実からの隔離状態</em>の目標は、希望を消費するか、防具スロット、HP、ストレスをマークする時、消費またはマークする量を2倍にしなければならない。"
+        },
+        {
+          "name": "非現実体",
+          "name_en": "Unreal Form",
+          "type": "反応",
+          "description": "このアボミネーションがダメージを受けた時、そのダメージを<b>1d20</b>だけ減少させる。このアボミネーションに対して成功した攻撃によってマークしたHPが1つ以下だったなら、君は恐怖を1つ得る。"
+        }
+      ]
+    },
+    {
+      "id": "outer-realms-corrupter",
+      "name": "外方界のコラプター",
+      "name_en": "Outer Realms Corrupter",
+      "tier": 4,
+      "type": "支援",
+      "description": "色とりどりの光でできているかのような、移ろう形なき塊。",
+      "motives-and-tactics": "混乱させる、注意をそらす、圧倒する",
+      "stats": {
+        "difficulty": 19,
+        "thresholds": "27／47",
+        "hp": 4,
+        "stress": 3
+      },
+      "standard_attack": {
+        "modifier": 7,
+        "name": "腐食の擬足",
+        "name_en": "Corroding Pseudopod",
+        "range": "至近距離",
+        "damage": "4d8＋5",
+        "damage_type": "魔法"
+      },
+      "features": [
+        {
+          "name": "意思を砕く接触",
+          "name_en": "Will-Shattering Touch",
+          "type": "受動",
+          "description": "このコラプターによってダメージを受けたPCは、希望を1つ失う。"
+        },
+        {
+          "name": "現実漂流物吐き出し",
+          "name_en": "Disgorge Reality Flotsam",
+          "type": "行動",
+          "description": "ストレスを1つマークして、近距離射程内にいるすべての目標に、飲み込んでいた現実の一部を未消化のまま吐き出す。目標は【知識】反応ロールを行わなければならず、失敗するとストレスを2つマークする。"
+        }
+      ]
+    },
+    {
+      "id": "outer-realms-thrall",
+      "name": "外方界のスロール",
+      "name_en": "Outer Realms Thrall",
+      "tier": 4,
+      "type": "雑魚",
+      "description": "記憶とアイデンティティを奪われた、ぼんやりと人型をした生き物。",
+      "motives-and-tactics": "破壊する、嫌悪させる、方向感覚を狂わせる、威圧する",
+      "stats": {
+        "difficulty": 17,
+        "thresholds": "なし",
+        "hp": 1,
+        "stress": 1
+      },
+      "standard_attack": {
+        "modifier": 3,
+        "name": "爪と歯",
+        "name_en": "Claws and Teeth",
+        "range": "至近距離",
+        "damage": "11",
+        "damage_type": "物理"
+      },
+      "features": [
+        {
+          "name": "雑魚（13）",
+          "name_en": "Minion (13)",
+          "type": "受動",
+          "description": "このスロールはダメージを受けると倒れる。PCがこのスロールに13ダメージを与えるごとに、その攻撃が成功する射程内の雑魚クリーチャーを追加で1体倒す。"
+        },
+        {
+          "name": "集団攻撃",
+          "name_en": "Group Attack",
+          "type": "行動",
+          "description": "<b>恐怖を1つ消費</b>して目標1体を選び、目標の近距離射程内にいるすべての《外方界のスロール》にスポットライトを当てる。それらの雑魚クリーチャーは目標の近接射程内に移動し、全員で1回の攻撃ロールを行う。成功したなら、それぞれ11の物理ダメージを与える（ダメージは合計すること）。"
+        }
+      ]
+    },
+    {
+      "id": "volcanic-dragon-obsidian-predator",
+      "name": "ヴォルカニック・ドラゴン：黒曜の捕食獣",
+      "name_en": "Volcanic Dragon: Obsidian Predator",
+      "tier": 4,
+      "type": "単体",
+      "description": "黒曜石の鱗と信じがたいほど鋭い爪を持つ、巨大な翼のある生き物。",
+      "motives-and-tactics": "住処を守る、急降下して攻撃する、飛ぶ、狩る、威圧する",
+      "stats": {
+        "difficulty": 19,
+        "thresholds": "33／65",
+        "hp": 6,
+        "stress": 5
+      },
+      "standard_attack": {
+        "modifier": 8,
+        "name": "黒曜爪",
+        "name_en": "Obsidian Claws",
+        "range": "近距離",
+        "damage": "4d10＋4",
+        "damage_type": "物理"
+      },
+      "experiences": "上空狩猟＋5",
+      "features": [
+        {
+          "name": "連続攻撃（2）",
+          "name_en": "Relentless (2)",
+          "type": "受動",
+          "description": "この黒曜の捕食獣にはGMターンごとに最大2回までスポットライトを当てることができる。スポットライトを当てる際は通常通りに恐怖を消費する。"
+        },
+        {
+          "name": "飛行",
+          "name_en": "Flying",
+          "type": "受動",
+          "description": "飛行中、この黒曜の捕食獣は難易度に＋3のボーナスを得る。"
+        },
+        {
+          "name": "黒曜鱗",
+          "name_en": "Obsidian Scales",
+          "type": "受動",
+          "description": "この黒曜の捕食獣は物理ダメージへの抵抗を持つ。"
+        },
+        {
+          "name": "滑落の尾",
+          "name_en": "Avalanche Tail",
+          "type": "行動",
+          "description": "<b>ストレスを1つマーク</b>して、近距離射程内にいるすべての目標に対して攻撃を行う。この黒曜の捕食獣が成功した目標は<b>4d6＋4</b>の物理ダメージを受け、遠距離射程へ吹き飛ばされて、次に自分のロール結果が希望となるまで脆弱状態になる。"
+        },
+        {
+          "name": "急降下攻撃",
+          "name_en": "Dive-Bomb",
+          "type": "行動",
+          "description": "この黒曜の捕食獣が飛行しているなら、ストレスを1つマークして、遠距離射程内の一点を選ぶ。その地点へ移動し、至近距離射程内にいるすべての目標に攻撃を行う。この黒曜の捕食獣が成功した目標は<b>2d10＋6</b>の物理ダメージを受け、ストレスを1つマークしなければならず、希望を1つ失う。"
+        },
+        {
+          "name": "噴火する激怒（相変化）",
+          "name_en": "Erupting Rage (Phase Change)",
+          "type": "反応",
+          "description": "この黒曜の捕食獣が最後のHPをマークした時、《溶岩の厄災獣》に置き換え、即座にスポットライトを当てる。"
+        }
+      ]
+    },
+    {
+      "id": "volcanic-dragon-molten-scourge",
+      "name": "ヴォルカニック・ドラゴン：溶岩の厄災獣",
+      "name_en": "Volcanic Dragon: Molten Scourge",
+      "tier": 4,
+      "type": "単体",
+      "description": "傷を負って激怒し、ドラゴンは爆発して溶岩となる。",
+      "motives-and-tactics": "溶岩を浴びせる、焼き尽くす、侵入者を撃退する、位置取りを変える",
+      "stats": {
+        "difficulty": 20,
+        "thresholds": "30／58",
+        "hp": 7,
+        "stress": 5
+      },
+      "standard_attack": {
+        "modifier": 9,
+        "name": "溶岩爪",
+        "name_en": "Lava-Coated Claws",
+        "range": "近距離",
+        "damage": "4d12＋4",
+        "damage_type": "物理"
+      },
+      "experiences": "上空狩猟＋5",
+      "features": [
+        {
+          "name": "連続攻撃（3）",
+          "name_en": "Relentless (3)",
+          "type": "受動",
+          "description": "この溶岩の厄災獣にはGMターンごとに最大3回までスポットライトを当てることができる。スポットライトを当てる際は通常通りに恐怖を消費する。"
+        },
+        {
+          "name": "ひび割れた鱗",
+          "name_en": "Cracked Scales",
+          "type": "受動",
+          "description": "この溶岩の厄災獣がダメージを受けた時、マークしているHPと同じ数の<b>d6</b>を振る。4以上の目が1つ出るごとに、君は恐怖を1つ得る。"
+        },
+        {
+          "name": "破砕の力",
+          "name_en": "Shattering Might",
+          "type": "行動",
+          "description": "<b>ストレスを1つマーク</b>して、至近距離射程内の目標1体に対して攻撃を行う。成功したなら、目標は<b>4d8＋1</b>の物理ダメージを受け、希望を1つ失い、近距離射程へ吹き飛ばされる。この溶岩の厄災獣はストレスを1つ回復する。"
+        },
+        {
+          "name": "噴火",
+          "name_en": "Eruption",
+          "type": "行動",
+          "description": "<b>恐怖を1つ消費</b>して、この溶岩の厄災獣の鱗の下から溶岩を噴出し、至近距離射程内の範囲を流れる溶岩で満たす。その範囲内にいるすべての目標は【敏捷】反応ロールを行わなければならず、失敗すると<b>4d6＋6</b>の物理ダメージを受けて近距離射程へ吹き飛ばされる。この範囲には溶岩が残る。この溶岩の厄災獣以外のクリーチャーは、その範囲に入るか、その中で行動したなら、HPを6つマークしなければならない。"
+        },
+        {
+          "name": "火山ブレス",
+          "name_en": "Volcanic Breath",
+          "type": "反応",
+          "description": "この溶岩の厄災獣が中ダメージを受けた時、<b>d10</b>を振る。8以上の目が出たなら、この溶岩の厄災獣は前方の遠距離射程内に溶岩を吐く。その範囲内にいるすべての目標は【敏捷】反応ロールを行わなければならない。失敗した目標は<b>2d10＋4</b>の物理ダメージを受け、ストレスを<b>1d4</b>つマークし、ストレスを回復するまで脆弱状態になる。成功した目標は半分のダメージを受け、ストレスを1つマークしなければならない。"
+        },
+        {
+          "name": "溶岩噴射",
+          "name_en": "Lava Splash",
+          "type": "反応",
+          "description": "この溶岩の厄災獣が至近距離射程内の攻撃によって大ダメージを受けた時、傷口から溶けた血液が湧き出し、攻撃者に<b>2d10＋4</b>の直接物理ダメージを与える。"
+        },
+        {
+          "name": "灰の復讐（相変化）",
+          "name_en": "Ashen Vengeance (Phase Change)",
+          "type": "反応",
+          "description": "この溶岩の厄災獣が最後のHPをマークした時、《灰燼の暴獣》に置き換え、即座にスポットライトを当てる。"
+        }
+      ]
+    },
+    {
+      "id": "volcanic-dragon-ashen-tyrant",
+      "name": "ヴォルカニック・ドラゴン：灰燼の暴獣",
+      "name_en": "Volcanic Dragon: Ashen Tyrant",
+      "tier": 4,
+      "type": "単体",
+      "description": "不遜にもこのドラゴンをこれほど傷つけた敵は初めてだ。溶岩が落ち着くにつれ、ドラゴンは自分がこれまで倒してきた敵と同じように、灰と化す。",
+      "motives-and-tactics": "締め上げる、飛行する、威圧する、殺すか殺されるか",
+      "stats": {
+        "difficulty": 18,
+        "thresholds": "29／55",
+        "hp": 8,
+        "stress": 5
+      },
+      "standard_attack": {
+        "modifier": 10,
+        "name": "爪と牙",
+        "name_en": "Claws and Teeth",
+        "range": "近距離",
+        "damage": "4d12＋15",
+        "damage_type": "物理"
+      },
+      "experiences": "上空狩猟＋5",
+      "features": [
+        {
+          "name": "連続攻撃（4）",
+          "name_en": "Relentless (4)",
+          "type": "受動",
+          "description": "この灰燼の暴獣にはGMターンごとに最大4回までスポットライトを当てることができる。スポットライトを当てる際は通常通りに恐怖を消費する。"
+        },
+        {
+          "name": "背水の陣",
+          "name_en": "Cornered",
+          "type": "受動",
+          "description": "恐怖を消費する代わりに<b>ストレスを1つマーク</b>して、この灰燼の暴獣にスポットライトを当てる。"
+        },
+        {
+          "name": "傷ついた翼",
+          "name_en": "Injured Wings",
+          "type": "受動",
+          "description": "飛行中、この灰燼の暴獣は難易度に＋1のボーナスを得る。"
+        },
+        {
+          "name": "灰は灰へ",
+          "name_en": "Ashes to Ashes",
+          "type": "受動",
+          "description": "PCがこの灰燼の暴獣の近距離射程内でロールに失敗した時、そのPCは希望を1つ失い、君は恐怖を1つ得る。希望を失えないなら、PCはHPを1つマークする。"
+        },
+        {
+          "name": "絶望の大暴れ",
+          "name_en": "Desperate Rampage",
+          "type": "行動",
+          "description": "<b>ストレスを1つマーク</b>して、近距離射程内にいるすべての目標に対して攻撃を行う。この灰燼の暴獣が成功した目標は<b>2d20＋2</b>の物理ダメージを受け、元いた場所から近距離射程へ吹き飛ばされ、ストレスを1つマークしなければならない。"
+        },
+        {
+          "name": "灰の雲",
+          "name_en": "Ashen Cloud",
+          "type": "行動",
+          "description": "<b>恐怖を1つ消費</b>して地面を叩きつけ、遠距離射程内に灰を巻き上げる。この灰の雲の中にいる間、目標は行動ロールに不利を受ける。次に敵キャラクターがスポットライトを浴びた時、この灰の雲は晴れる。"
+        },
+        {
+          "name": "終末の叩きつけ",
+          "name_en": "Apocalyptic Thrashing",
+          "type": "行動",
+          "description": "<em>カウントダウン（1d12）。</em><b>恐怖を1つ消費</b>して開始する。PCのロール結果が恐怖だった時、カウントダウンが進む。カウントダウンが作動した時、この灰燼の暴獣が辺りを打ちつけ、環境的損害（地震、滑落、壁の崩落など）を引き起こす。遠距離射程内にいるすべての目標は【筋力】反応ロールを行わなければならない。失敗した目標は<b>2d10＋10</b>の物理ダメージを受け、瓦礫によって拘束状態になる。この状態は【筋力】ロールに成功して脱出するまで継続する。成功した目標は半分のダメージを受ける。カウントダウンの途中でこの灰燼の暴獣が倒されたなら、断末魔のあがきとして即座にカウントダウンを作動させる。"
+        }
+      ]
+    },
+    {
+      "id": "perfected-zombie",
+      "name": "完成化ゾンビ",
+      "name_en": "Perfected Zombie",
+      "tier": 4,
+      "type": "暴力",
+      "description": "魔法によって力と技能を注ぎ込まれた、巨体で筋肉質のゾンビ。",
+      "motives-and-tactics": "食い尽くす、執拗に追いかける、傷つける、恐怖を与える",
+      "stats": {
+        "difficulty": 20,
+        "thresholds": "40／70",
+        "hp": 9,
+        "stress": 4
+      },
+      "standard_attack": {
+        "modifier": 4,
+        "name": "大斧",
+        "name_en": "Greataxe",
+        "range": "至近距離",
+        "damage": "4d12＋15",
+        "damage_type": "物理"
+      },
+      "features": [
+        {
+          "name": "恐怖喚起",
+          "name_en": "Terrifying",
+          "type": "受動",
+          "description": "このゾンビが攻撃に成功した時、遠距離射程内にいるすべてのPCは希望を1つ失い、君は恐怖を1つ得る。"
+        },
+        {
+          "name": "恐ろしの存在",
+          "name_en": "Fearsome Presence",
+          "type": "受動",
+          "description": "PCはこのゾンビに対して特徴を使用するために希望を消費することができない。"
+        },
+        {
+          "name": "完全攻撃",
+          "name_en": "Perfect Strike",
+          "type": "行動",
+          "description": "<b>ストレスを1つマーク</b>して、至近距離射程内にいるすべての目標に対して通常攻撃を行う。このゾンビが成功した目標は次の休憩まで脆弱状態になる。"
+        },
+        {
+          "name": "熟練の便乗主義",
+          "name_en": "Skilled Opportunist",
+          "type": "反応",
+          "description": "他の敵キャラクターがこのゾンビの至近距離射程内の目標にダメージを与えた時、君は<b>恐怖を1つ消費</b>して、そのダメージロールにこのゾンビの通常攻撃のダメージを加えることができる。"
+        }
+      ]
+    },
+    {
+      "id": "zombie-legion",
+      "name": "ゾンビ軍団",
+      "name_en": "Zombie Legion",
+      "tier": 4,
+      "type": "大群（3／HP）",
+      "description": "肉体が腐敗してなお力強い、大規模なアンデッドの群れ。",
+      "motives-and-tactics": "脳みそを食らう、肉を細切れにする、取り囲む",
+      "stats": {
+        "difficulty": 17,
+        "thresholds": "25／45",
+        "hp": 8,
+        "stress": 5
+      },
+      "standard_attack": {
+        "modifier": 2,
+        "name": "不死の手",
+        "name_en": "Undead Hands",
+        "range": "近距離",
+        "damage": "4d6＋10",
+        "damage_type": "物理"
+      },
+      "features": [
+        {
+          "name": "大群（2d6＋5）",
+          "name_en": "Horde (2d6+5)",
+          "type": "受動",
+          "description": "この大軍がHPを半分以上マークしている時、通常攻撃が与える物理ダメージは<b>2d6＋5</b>になる。"
+        },
+        {
+          "name": "不屈",
+          "name_en": "Unyielding",
+          "type": "受動",
+          "description": "この大軍は物理ダメージへの抵抗を持つ。"
+        },
+        {
+          "name": "連続攻撃（2）",
+          "name_en": "Relentless (2)",
+          "type": "受動",
+          "description": "この大軍にはGMターンごとに最大2回までスポットライトを当てることができる。スポットライトを当てる際は通常通りに恐怖を消費する。"
+        },
+        {
+          "name": "圧倒",
+          "name_en": "Overwhelm",
+          "type": "反応",
+          "description": "この大軍が近接射程内の攻撃から小ダメージを受けた時、君は<b>ストレスを1つマーク</b>して、攻撃者に対して有利で通常攻撃を行うことができる。"
         }
       ]
     }
