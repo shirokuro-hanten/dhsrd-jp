@@ -43,6 +43,11 @@ input {
 /* メニュー */
 /* ==================== */
 
+#menu-open,
+#menu-close {
+  display: none;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -422,17 +427,72 @@ img {
 }
 
 /* ==================== */
-/* MOBILE */
+/* モバイル */
 /* ==================== */
 
 @media (max-width: 700px) {
-
   html {
     scroll-padding-top: 8rem;
+  }
+  header {
+    margin-left: 0;
+  }
+  
+  #menu-open,
+  #menu-close {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 800;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+
+    border: 0;
+    border-radius: 10%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  #menu-open::after {
+    content: "☰";
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+  #menu-close::after {
+    content: "×";
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+
+  nav {
+    display: none;
+  }
+  nav.is-open {
+    display: block;
+    width: 100%;
   }
 
   main {
     width: min(100% - 1.25rem, 1100px);
+    margin-left: 0;
+  }
+  .foreword,
+  .chapter {
+    margin: 1rem 1rem 0;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    display: block;
+  }
+  th, td {
+  min-width: 0;
   }
 
   .reference-popup {
