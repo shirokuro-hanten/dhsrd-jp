@@ -26,6 +26,21 @@ function initMenu() {
       submenu.hidden = isOpen;
     });
   });
+
+  // モバイル用
+  const menuOpen = document.querySelector("#menu-open");
+  const menuClose = document.querySelector("#menu-close");
+  const nav = document.querySelector("#site-menu");
+
+  menuOpen.addEventListener("click", () => {
+    nav.classList.add("is-open");
+    menuOpen.setAttribute("aria-expanded", "true");
+  });
+
+  menuClose.addEventListener("click", () => {
+    nav.classList.remove("is-open");
+    menuOpen.setAttribute("aria-expanded", "false");
+  });
 }
 
 /* ==================== */
