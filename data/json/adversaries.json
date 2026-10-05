@@ -96,7 +96,7 @@
     },
     {
       "id": "cave-ogre",
-      "name": "ケイヴ・オーガ",
+      "name": "洞窟オーガ",
       "name_en": "Cave Ogre",
       "tier": 1,
       "type": "単体",
@@ -315,7 +315,7 @@
     },
     {
       "id": "giant-mosquitoes",
-      "name": "ジャイアント・モスキートの群れ",
+      "name": "巨大モスキートの群れ",
       "name_en": "Giant Mosquitoes",
       "tier": 1,
       "type": "大群（2／HP）",
@@ -359,7 +359,7 @@
     },
     {
       "id": "giant-rat",
-      "name": "ジャイアント・ラット",
+      "name": "巨大ラット",
       "name_en": "Giant Rat",
       "tier": 1,
       "type": "雑魚",
@@ -397,7 +397,7 @@
     },
     {
       "id": "giant-scorpion",
-      "name": "ジャイアント・スコーピオン",
+      "name": "巨大スコーピオン",
       "name_en": "Giant Scorpion",
       "tier": 1,
       "type": "暴力",
@@ -636,7 +636,7 @@
     },
     {
       "id": "jagged-knife-bandit",
-      "name": "稲妻ナイフ団の山賊",
+      "name": "鋸ナイフ団の山賊",
       "name_en": "Jagged Knife Bandit",
       "tier": 1,
       "type": "標準",
@@ -674,7 +674,7 @@
     },
     {
       "id": "jagged-knife-hexer",
-      "name": "稲妻ナイフ団の呪術師",
+      "name": "鋸ナイフ団の呪術師",
       "name_en": "Jagged Knife Hexer",
       "tier": 1,
       "type": "支援",
@@ -712,7 +712,7 @@
     },
     {
       "id": "jagged-knife-kneebreaker",
-      "name": "稲妻ナイフ団の膝砕き",
+      "name": "鋸ナイフ団の膝砕き",
       "name_en": "Jagged Knife Kneebreaker",
       "tier": 1,
       "type": "暴力",
@@ -750,7 +750,7 @@
     },
     {
       "id": "jagged-knife-lackey",
-      "name": "稲妻ナイフ団の使い走り",
+      "name": "鋸ナイフ団の使い走り",
       "name_en": "Jagged Knife Lackey",
       "tier": 1,
       "type": "雑魚",
@@ -782,13 +782,13 @@
           "name": "集団攻撃",
           "name_en": "Group Attack",
           "type": "行動",
-          "description": "<b>恐怖を1つ消費</b>して目標1体を選び、目標の近距離射程内にいるすべての《稲妻ナイフ団の使い走り》にスポットライトを当てる。それらの雑魚クリーチャーは目標の近接射程内に移動し、全員で1回の攻撃ロールを行う。成功したなら、それぞれ2の物理ダメージを与える（ダメージは合計すること）。"
+          "description": "<b>恐怖を1つ消費</b>して目標1体を選び、目標の近距離射程内にいるすべての《鋸ナイフ団の使い走り》にスポットライトを当てる。それらの雑魚クリーチャーは目標の近接射程内に移動し、全員で1回の攻撃ロールを行う。成功したなら、それぞれ2の物理ダメージを与える（ダメージは合計すること）。"
         }
       ]
     },
     {
       "id": "jagged-knife-lieutenant",
-      "name": "稲妻ナイフ団の部隊長",
+      "name": "鋸ナイフ団の部隊長",
       "name_en": "Jagged Knife Lieutenant",
       "tier": 1,
       "type": "指揮",
@@ -820,7 +820,7 @@
           "name": "まだまだいるぞ",
           "name_en": "More Where That Came From",
           "type": "行動",
-          "description": "遠距離射程内に3人の《稲妻ナイフ団の使い走り》を召喚する。"
+          "description": "遠距離射程内に3人の《鋸ナイフ団の使い走り》を召喚する。"
         },
         {
           "name": "とどめの一撃",
@@ -838,7 +838,7 @@
     },
     {
       "id": "jagged-knife-shadow",
-      "name": "稲妻ナイフ団の影",
+      "name": "鋸ナイフ団の影",
       "name_en": "Jagged Knife Shadow",
       "tier": 1,
       "type": "潜伏",
@@ -876,7 +876,7 @@
     },
     {
       "id": "jagged-knife-sniper",
-      "name": "稲妻ナイフ団の狙撃手",
+      "name": "鋸ナイフ団の狙撃手",
       "name_en": "Jagged Knife Sniper",
       "tier": 1,
       "type": "射撃",
@@ -2866,7 +2866,7 @@
     },
     {
       "id": "giant-eagle",
-      "name": "ジャイアント・イーグル",
+      "name": "巨大イーグル",
       "name_en": "Giant Eagle",
       "tier": 2,
       "type": "潜伏",
@@ -2972,7 +2972,7 @@
     },
     {
       "id": "juvenile-flickerfly",
-      "name": "ジュヴナイル・フリッカーフライ",
+      "name": "幼体フリッカーフライ",
       "name_en": "Juvenile Flickerfly",
       "tier": 2,
       "type": "単体",
@@ -3632,7 +3632,7 @@
     },
     {
       "id": "war-wizard",
-      "name": "戦闘ウィザード",
+      "name": "戦闘魔術師",
       "name_en": "War Wizard",
       "tier": 2,
       "type": "射撃",
@@ -3690,7 +3690,7 @@
   "tier-3": [
     {
       "id": "adult-flickerfly",
-      "name": "フリッカーフライの成体",
+      "name": "成体フリッカーフライ",
       "name_en": "Adult Flickerfly",
       "tier": 3,
       "type": "単体",
@@ -3959,7 +3959,7 @@
     {
       "id": "demon-of-wrath",
       "name": "憤怒のデーモン",
-      "name_en": "Demon of Wraith",
+      "name_en": "Demon of Wrath",
       "tier": 3,
       "type": "暴力",
       "description": "終わりなき怒りに駆られた、丸岩大の拳を持つ巨躯の悪魔",
@@ -4912,7 +4912,7 @@
     },
     {
       "id": "fallen-sorcerer",
-      "name": "堕落魔術師",
+      "name": "堕落道士",
       "name_en": "Fallen Sorcerer",
       "tier": 4,
       "type": "支援",

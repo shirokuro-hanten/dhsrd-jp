@@ -1,84 +1,45 @@
 // ページ読み込み時の動作
 document.addEventListener("DOMContentLoaded", () => {
   initMenu();
-  initReferencePopup();
   loadWeaponData();
   loadWheelchairData();
   loadArmorData();
   loadLootData();
   loadConsumableData();
-  initSelectors();
+  loadAdversaries();
+  loadEnvironments();
+  initReferencePopup();
 });
 
 // メニュー
 function initMenu() {
-  const menuButton = document.querySelector(".menu-button");
-  const menu = document.querySelector(".site-menu");
-  const submenuButtons = document.querySelectorAll(".submenu-toggle");
+  const expandButtons = document.querySelectorAll(".expand");
 
-  if (!menuButton || !menu) return;
-
-  /* メインメニュー開閉 */
-  menuButton.addEventListener("click", () => {
-    const isOpen = menu.classList.toggle("is-open");
-
-    menuButton.setAttribute("aria-expanded", isOpen);
-    menu.setAttribute("aria-hidden", !isOpen);
-  });
-
-  /* サブメニュー開閉 */
-  submenuButtons.forEach((button) => {
+  expandButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      const navItem = button.closest(".nav-item");
+      const submenu = button.parentElement.nextElementSibling;
+      if (!submenu) return;
 
-      if (!navItem) return;
+      const isOpen = button.getAttribute("aria-expanded") === "true";
 
-      const submenu = button.nextElementSibling;
-
-      if (!submenu || !submenu.classList.contains("submenu")) return;
-
-      const isOpen = navItem.classList.toggle("is-open");
-
-      button.setAttribute("aria-expanded", isOpen);
-      submenu.hidden = !isOpen;
-    });
-  });
-
-  /* メニュー内のリンクをクリックしたら閉じる */
-  menu.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      menu.classList.remove("is-open");
-
-      menuButton.setAttribute("aria-expanded", "false");
-      menu.setAttribute("aria-hidden", "true");
-
-      menu.querySelectorAll(".nav-item.is-open").forEach((item) => {
-        item.classList.remove("is-open");
-      });
-
-      menu.querySelectorAll(".submenu-toggle").forEach((button) => {
-        button.setAttribute("aria-expanded", "false");
-      });
-
-      menu.querySelectorAll(".submenu").forEach((submenu) => {
-        submenu.hidden = true;
-      });
+      button.setAttribute("aria-expanded", String(!isOpen));
+      submenu.hidden = isOpen;
     });
   });
 }
 
 /* ==================== */
-/* REFERENCE POPUP */
+/* 参照ポップアップ */
 /* ==================== */
 
 function initReferencePopup() {
   const references = document.querySelectorAll(
-    'a.reference[href^="#"]'
+    'a.refer[href^="#"]'
   );
 
   if (!references.length) return;
 
-  /* ポップアップ本体はHTMLに用意せず、JavaScriptで1つだけ生成する。 */
+  // ポップアップ本体はHTMLに用意せず、JavaScriptで1つだけ生成する。
   const popup = document.createElement("div");
   popup.className = "reference-popup";
   popup.setAttribute("role", "dialog");
@@ -93,11 +54,7 @@ function initReferencePopup() {
     "(max-width: 700px)"
   ).matches;
 
-
-  /* ==================== */
-  /* 表示 */
-  /* ==================== */
-
+  // 表示
   const showPopup = (reference) => {
     const href = reference.getAttribute("href");
 
@@ -110,10 +67,8 @@ function initReferencePopup() {
 
     clearTimeout(closeTimer);
 
-    /*
-     * 対象要素の内容をコピー。
-     * 元の要素そのものは移動しない。
-     */
+    // 対象要素の内容をコピー。
+    // 元の要素そのものは移動しない。
     popup.innerHTML = target.innerHTML;
 
     activeReference = reference;
@@ -124,17 +79,11 @@ function initReferencePopup() {
     positionPopup(reference);
   };
 
-
-  /* ==================== */
-  /* 位置 */
-  /* ==================== */
-
+  // 位置
   const positionPopup = (reference) => {
     const rect = reference.getBoundingClientRect();
 
-    /*
-     * 一度表示状態にしてサイズを取得する。
-     */
+    // 一度表示状態にしてサイズを取得する。
     const popupRect = popup.getBoundingClientRect();
 
     const margin = 8;
@@ -142,30 +91,22 @@ function initReferencePopup() {
     let top = rect.bottom + margin;
     let left = rect.left;
 
-    /*
-     * 右端からはみ出す場合
-     */
+    // 右端からはみ出す場合
     if (left + popupRect.width > window.innerWidth - margin) {
       left = window.innerWidth - popupRect.width - margin;
     }
 
-    /*
-     * 左端からはみ出す場合
-     */
+    // 左端からはみ出す場合
     if (left < margin) {
       left = margin;
     }
 
-    /*
-     * 下にはみ出す場合はリンクの上に表示
-     */
+    // 下にはみ出す場合はリンクの上に表示
     if (top + popupRect.height > window.innerHeight - margin) {
       top = rect.top - popupRect.height - margin;
     }
 
-    /*
-     * 上にも入りきらない場合
-     */
+    // 上にも入りきらない場合
     if (top < margin) {
       top = margin;
     }
@@ -174,37 +115,25 @@ function initReferencePopup() {
     popup.style.top = `${top}px`;
   };
 
-
-  /* ==================== */
   /* 非表示 */
-  /* ==================== */
-
   const hidePopup = () => {
     popup.classList.remove("is-visible");
     popup.setAttribute("aria-hidden", "true");
     activeReference = null;
   };
 
-
-  /* ==================== */
   /* PC：ホバー */
-  /* ==================== */
-
   references.forEach((reference) => {
-
     reference.addEventListener("mouseenter", () => {
       if (isMobile()) return;
-
       showPopup(reference);
     });
 
     reference.addEventListener("mouseleave", () => {
       if (isMobile()) return;
 
-      /*
-       * すぐ消すのではなく少し待つ。
-       * リンク → ポップアップへマウスを移動できるようにする。
-       */
+      // すぐ消すのではなく少し待つ。
+      // リンク → ポップアップへマウスを移動できるようにする。
       closeTimer = setTimeout(() => {
         if (!popup.matches(":hover")) {
           hidePopup();
@@ -213,10 +142,7 @@ function initReferencePopup() {
     });
   });
 
-  /* ==================== */
   /* PC：ポップアップから離れる */
-  /* ==================== */
-
   popup.addEventListener("mouseenter", () => {
     if (isMobile()) return;
     clearTimeout(closeTimer);
@@ -232,15 +158,13 @@ function initReferencePopup() {
     reference.addEventListener("click", (event) => {
 
       if (!isMobile()) {
-        /*
-         * PCでは通常のリンク動作を止める。
-         * ホバーでポップアップを表示するため。
-         */
+        // PCでは通常のリンク動作を止める。
+        // ホバーでポップアップを表示するため。
         event.preventDefault();
         return;
       }
 
-      /* スマホではタップでポップアップ。 */
+      // スマホではタップでポップアップ。
       event.preventDefault();
 
       if (activeReference === reference) {
@@ -572,74 +496,28 @@ function createConsumableTable(tableId, consumableData) {
   });
 }
 
-let adversaryData = {};
-let environmentData = {};
-function initSelectors() {
-  Promise.all([
-    fetch("data/json/adversaries.json").then(response => response.json()),
-    fetch("data/json/environments.json").then(response => response.json())
-  ])
-    .then(([adversaries, environments]) => {
-      adversaryData = adversaries;
-      environmentData = environments;
+function loadAdversaries() {
+  fetch("data/json/adversaries.json")
+    .then(response => response.json())
+    .then(adversaries => {
+      for (let tier = 1; tier <= 4; tier++) {
+        const article = document.querySelector(`#tier-${tier}-adversaries .grid-2`);
+        const tierAdversaries = adversaries[`tier-${tier}`];
 
-      document.querySelector("#adversary-tier-select").addEventListener("change", updateAdversarySelector);
-      document.querySelector("#adversary-select").addEventListener("change", updateAdversaryStatBlock);
-
-      document.querySelector("#environment-tier-select").addEventListener("change", updateEnvironmentSelector);
-      document.querySelector("#environment-select").addEventListener("change", updateEnvironmentStatBlock);
-
-      updateAdversarySelector();
-      updateEnvironmentSelector();
+        tierAdversaries.forEach(adversary => {
+          const block = createAdversaryStatBlock(adversary);
+          article.appendChild(block);
+        });
+      }
     });
 }
 
-function updateAdversarySelector() {
-  const tierKey = document.querySelector("#adversary-tier-select").value;
-  const adversaries = adversaryData[`tier-${tierKey}`];
-  const selector = document.querySelector("#adversary-select");
+function createAdversaryStatBlock(adversary) {
+  const block = document.createElement("article");
+  block.id = adversary.id;
+  block.className = "statblock adversary";
 
-  selector.innerHTML = `
-    <option value="" disabled selected>表示する敵キャラクターを選択</option>
-  `;
-
-  updateSelector(selector, adversaries);
-}
-
-function updateEnvironmentSelector() {
-  const tierKey = document.querySelector("#environment-tier-select").value;
-  const environments = environmentData[`tier-${tierKey}`];
-  const selector = document.querySelector("#environment-select");
-
-  selector.innerHTML = `
-    <option value="" disabled selected>表示する環境を選択</option>
-  `;
-
-  updateSelector(selector, environments);
-}
-
-function updateSelector(selector, items) {
-  items.forEach(item => {
-    const option = document.createElement("option");
-    option.value = item.id;
-    option.textContent = item.name;
-    selector.appendChild(option);
-  });
-
-  //if (items.length > 0) selector.selectedIndex = 1;
-}
-
-function updateAdversaryStatBlock() {
-  const display = document.querySelector("#adversary-stat-block-display");
-  const tierKey = document.querySelector("#adversary-tier-select").value;
-  const id = document.querySelector("#adversary-select").value;
-  const adversary = adversaryData[`tier-${tierKey}`].find(
-    adversary => adversary.id === id
-  );
-
-  if (!display) return;
-
-  display.innerHTML = `
+  block.innerHTML = `
     <h3>${adversary.name}<span class="en-sub">${adversary.name_en}</span></h3>
     <p><b><em>ティア${adversary.tier}・${adversary.type}</em></b></p>
     <p><em>${adversary.description}</em></p>
@@ -660,19 +538,32 @@ function updateAdversaryStatBlock() {
       <p class="feature"><b><em>${feature.name}<span class="en-sub">${feature.name_en}</span> — ${feature.type}：</em></b>${feature.description}</p>
     `).join("")}
   `;
+
+  return block;
 }
 
-function updateEnvironmentStatBlock() {
-  const display = document.querySelector("#environment-stat-block-display");
-  const tierKey = document.querySelector("#environment-tier-select").value;
-  const id = document.querySelector("#environment-select").value;
-  const environment = environmentData[`tier-${tierKey}`].find(
-    environment => environment.id === id
-  );
+function loadEnvironments() {
+  fetch("data/json/environments.json")
+    .then(response => response.json())
+    .then(environments => {
+      for (let tier = 1; tier <= 4; tier++) {
+        const article = document.querySelector(`#tier-${tier}-environments .grid-2`);
+        const tierEnvironments = environments[`tier-${tier}`];
 
-  if (!display) return;
+        tierEnvironments.forEach(environment => {
+          const block = createEnvironmentStatBlock(environment);
+          article.appendChild(block);
+        });
+      }
+    });
+}
 
-  display.innerHTML = `
+function createEnvironmentStatBlock(environment) {
+  const block = document.createElement("article");
+  block.id = environment.id;
+  block.className = "statblock environment";
+
+  block.innerHTML = `
     <h3>${environment.name}<span class="en-sub">${environment.name_en}</span></h3>
     <p><b><em>ティア${environment.tier}・${environment.type}</em></b></p>
     <p><em>${environment.description}</em></p>
@@ -686,9 +577,10 @@ function updateEnvironmentStatBlock() {
     <h6>特徴</h6>
     ${environment.features.map(feature => `
       <p class="feature">
-        <b><em>${feature.name}<span class="en-sub">${feature.name_en}</span> — ${feature.type}：</em></b>
-        ${feature.description}
+        <b><em>${feature.name}<span class="en-sub">${feature.name_en}</span> — ${feature.type}：</em></b>${feature.description}
       </p>
     `).join("")}
   `;
+
+  return block;
 }
