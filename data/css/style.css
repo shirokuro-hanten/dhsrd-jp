@@ -107,7 +107,8 @@ nav a:hover {
 }
 
 .layer-2,
-.layer-3 {
+.layer-3,
+.layer-4 {
   margin-left: 1rem;
   padding-left: 0.5rem;
   border-left: 2px solid #777;
@@ -145,63 +146,65 @@ main {
   padding-top: 0;
   border-top: 0 none;
 }
+article {
+  margin: 1.5em 0 0;
+}
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 1rem 0 1rem;
+  margin: 1em 0 0.5em;
   color: #111;
   line-height: 1;
 }
 
-h1 {
+h1 {  /* chapter */
   font-size: 2rem;
 }
-h2 {
+h2 {  /* subchapter */
   font-size: 1.7rem;
 }
-h3 {
+h3 {  /* article */
   font-size: 1.4rem;
 }
-h4 {
-  margin: 1.5rem 0 0.5rem;
+h4 {  /* article */
   font-size: 1.4rem;
   font-weight: normal;
 }
 h5 {
   font-size: 1.1em;
-  margin: 1em 0 0.5rem;
 }
 h5::before {
   content: "■";
   color: #777;
-  margin-right: 0.5em;
+  margin-right: 0.3em;
 }
 h6 {
-  display: block;
   font-size: 1.1em;
-  font-weight: bold;
-  margin: 1rem 0 0.5rem;
 }
 
-/*
-article h2:first-child,
-article h3:first-child,
-article h4:first-child,
-article h5:first-child,
-article h6:first-child {
+article > h2:first-child,
+article > h3:first-child,
+article > h4:first-child,
+article > h5:first-child,
+article > h6:first-child {
   margin-top: 0;
-}*/
+}
 
 /* 見出しの背景色 */
-h4.class, h4.trait, h3.card-domain {
+h4.class,
+h4.trait,
+h3.card-domain {
   background: #000;
   color: #fff;
-  padding: 0.25em 0.5em;
+  padding: 0.3em 0.5em;
 }
 
-h4.subclass, h4.ancestry, h4.community, h4.transformation {
+h4.subclass,
+h4.ancestry,
+h4.community,
+h4.transformation {
   background: #ccc;
   color: #000;
-  padding: 0.25em 0.25em;
+  padding: 0.3em 0.5em;
 }
 
 .en-sub {
@@ -217,19 +220,15 @@ h4.subclass, h4.ancestry, h4.community, h4.transformation {
 }
 
 /* ==================== */
-
+div,
 p {
   margin: 0.5rem 0 0;
 }
 p:first-child {
   margin-top: 0;
 }
-p.indent {
+.indent {
   margin-left: 1em;
-}
-
-article {
-  margin: 1.5em 0 0;
 }
 
 .grid-2 {
@@ -272,15 +271,16 @@ blockquote.indent {
   margin-left: 1em;
 }
 
-ul, ol {
-  margin: 0.5em 0 0;
+ul {
+  margin: 0;
+  padding-left: 1em;
+}
+ol {
+  margin: 0;
   padding-left: 1.5em;
 }
 li {
   margin-top: 0.5em;
-}
-li:first-child {
-  margin-top: 0;
 }
 
 table {
@@ -328,21 +328,7 @@ img {
 }
 
 /* ==================== */
-/* REFERENCE LINK */
-/* ==================== */
-
-.refer {
-  color: #000;
-  cursor: pointer;
-  text-decoration: underline dotted 1px;
-  text-underline-offset: 3px;
-}
-.refer:hover {
-  color: #325cbc;
-}
-
-/* ==================== */
-/* データブロック */
+/*      データブロック    */
 /* ==================== */
 
 .statblock {
@@ -377,7 +363,21 @@ img {
 }
 
 /* ==================== */
-/* 参照用ポップアップ */
+/*      参照用リンク      */
+/* ==================== */
+
+.refer {
+  color: #000;
+  cursor: pointer;
+  text-decoration: underline dotted 1px;
+  text-underline-offset: 3px;
+}
+.refer:hover {
+  color: #325cbc;
+}
+
+/* ==================== */
+/*    参照用ポップアップ   */
 /* ==================== */
 
 .reference-popup {
@@ -427,7 +427,7 @@ img {
 }
 
 /* ==================== */
-/* モバイル */
+/*        モバイル       */
 /* ==================== */
 
 @media (max-width: 700px) {

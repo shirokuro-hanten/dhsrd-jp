@@ -1,13 +1,13 @@
 // ページ読み込み時の動作
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   initMenu();
-  loadWeaponData();
-  loadWheelchairData();
-  loadArmorData();
-  loadLootData();
-  loadConsumableData();
-  loadAdversaries();
-  loadEnvironments();
+  await loadWeaponData();
+  await loadWheelchairData();
+  await loadArmorData();
+  await loadLootData();
+  await loadConsumableData();
+  await loadAdversaries();
+  await loadEnvironments();
   initReferencePopup();
 });
 
@@ -72,12 +72,10 @@ function initReferencePopup() {
   // 表示
   const showPopup = (reference) => {
     const href = reference.getAttribute("href");
-
     if (!href || href === "#") return;
 
     const id = href.substring(1);
     const target = document.getElementById(id);
-
     if (!target) return;
 
     clearTimeout(closeTimer);
@@ -85,7 +83,6 @@ function initReferencePopup() {
     // 対象要素の内容をコピー。
     // 元の要素そのものは移動しない。
     popup.innerHTML = target.innerHTML;
-
     activeReference = reference;
 
     popup.classList.add("is-visible");
@@ -100,7 +97,6 @@ function initReferencePopup() {
 
     // 一度表示状態にしてサイズを取得する。
     const popupRect = popup.getBoundingClientRect();
-
     const margin = 8;
 
     let top = rect.bottom + margin;
@@ -110,17 +106,14 @@ function initReferencePopup() {
     if (left + popupRect.width > window.innerWidth - margin) {
       left = window.innerWidth - popupRect.width - margin;
     }
-
     // 左端からはみ出す場合
     if (left < margin) {
       left = margin;
     }
-
     // 下にはみ出す場合はリンクの上に表示
     if (top + popupRect.height > window.innerHeight - margin) {
       top = rect.top - popupRect.height - margin;
     }
-
     // 上にも入りきらない場合
     if (top < margin) {
       top = margin;
@@ -197,7 +190,7 @@ function initReferencePopup() {
     if (
       popup.classList.contains("is-visible") &&
       !popup.contains(event.target) &&
-      !event.target.closest("a.reference")
+      !event.target.closest("a.refer")
     ) {
       hidePopup();
     }
@@ -209,7 +202,6 @@ function initReferencePopup() {
       positionPopup(activeReference);
     }
   });
-
   window.addEventListener("resize", () => {
     if (activeReference) {
       positionPopup(activeReference);
@@ -221,44 +213,42 @@ function initReferencePopup() {
 /* 表の作成 */
 /* ==================== */
 
-function loadWeaponData() {
-  Promise.all([
+async function loadWeaponData() {
+  const [primaryWeaponData, secondaryWeaponData] = await Promise.all([
     fetch("data/json/weapons_primary.json").then(response => response.json()),
     fetch("data/json/weapons_secondary.json").then(response => response.json())
-  ])
-    .then(([primaryWeaponData, secondaryWeaponData]) => {
-      for (let tier = 1; tier <= 4; tier++) {
-        createWeaponTable(
-          `primary-tier-${tier}-physical-weapons`,
-          primaryWeaponData[`tier${tier}-physical`]
-        );
-        createWeaponTable(
-          `primary-tier-${tier}-physical-weapons-2`,
-          primaryWeaponData[`tier${tier}-physical-2`]
-        );
-        createWeaponTable(
-          `primary-tier-${tier}-magic-weapons`,
-          primaryWeaponData[`tier${tier}-magic`]
-        );
-        createWeaponTable(
-          `primary-tier-${tier}-magic-weapons-2`,
-          primaryWeaponData[`tier${tier}-magic-2`]
-        );
-        createWeaponTable(
-          `secondary-tier-${tier}-weapons`,
-          secondaryWeaponData[`tier${tier}`]
-        );
-        createWeaponTable(
-          `secondary-tier-${tier}-weapons-2`,
-          secondaryWeaponData[`tier${tier}-2`]
-        );
-      };
-    });
+  ]);
+  
+  for (let tier = 1; tier <= 4; tier++) {
+    createWeaponTable(
+      `primary-tier-${tier}-physical-weapons`,
+      primaryWeaponData[`tier${tier}-physical`]
+    );
+    createWeaponTable(
+      `primary-tier-${tier}-physical-weapons-2`,
+      primaryWeaponData[`tier${tier}-physical-2`]
+    );
+    createWeaponTable(
+      `primary-tier-${tier}-magic-weapons`,
+      primaryWeaponData[`tier${tier}-magic`]
+    );
+    createWeaponTable(
+      `primary-tier-${tier}-magic-weapons-2`,
+      primaryWeaponData[`tier${tier}-magic-2`]
+    );
+    createWeaponTable(
+      `secondary-tier-${tier}-weapons`,
+      secondaryWeaponData[`tier${tier}`]
+    );
+    createWeaponTable(
+      `secondary-tier-${tier}-weapons-2`,
+      secondaryWeaponData[`tier${tier}-2`]
+    );
+  };
 };
 
 function createWeaponTable(tableId, weapons) {
   const table = document.querySelector(`#${tableId}`);
-
   if (!table || !weapons) return;
 
   table.innerHTML = `
@@ -274,7 +264,7 @@ function createWeaponTable(tableId, weapons) {
     </thead>
     <tbody>
       ${weapons.map(weapon => `
-        <tr>
+        <tr id="${weapon.id}">
           <th>
             ${weapon.name}<br>
             <span class="en-sub">${weapon.name_en}</span>
@@ -296,28 +286,26 @@ function createWeaponTable(tableId, weapons) {
   `;
 };
 
-function loadWheelchairData() {
-  fetch("data/json/wheelchair-frames.json")
-    .then(response => response.json())
-    .then(data => {
-      createWheelchairTable(
-        "light-frame-models-table",
-        data["light"]
-      );
-      createWheelchairTable(
-        "heavy-frame-models-table",
-        data["heavy"]
-      );
-      createWheelchairTable(
-        "arcane-frame-models-table",
-        data["arcane"]
-      );
-    });
+async function loadWheelchairData() {
+  const response = await fetch("data/json/wheelchair-frames.json");
+  const wheelchairData = await response.json();
+  
+  createWheelchairTable(
+    "light-frame-models-table",
+    wheelchairData["light"]
+  );
+  createWheelchairTable(
+    "heavy-frame-models-table",
+    wheelchairData["heavy"]
+  );
+  createWheelchairTable(
+    "arcane-frame-models-table",
+    wheelchairData["arcane"]
+  );
 };
 
 function createWheelchairTable(tableId, wheelchairs) {
   const table = document.querySelector(`#${tableId}`);
-
   if (!table || !wheelchairs) return;
 
   table.innerHTML = `
@@ -334,7 +322,7 @@ function createWheelchairTable(tableId, wheelchairs) {
     </thead>
     <tbody>
       ${wheelchairs.map(wheelchair => `
-        <tr>
+        <tr id="${wheelchair.id}">
           <th>
             ${wheelchair.name}<br>
             <span class="en-sub">${wheelchair.name_en}</span>
@@ -357,26 +345,24 @@ function createWheelchairTable(tableId, wheelchairs) {
   `;
 };
 
-function loadArmorData() {
-  fetch("data/json/armors.json")
-    .then(response => response.json())
-    .then(armorData => {
-      for (let tier = 1; tier <= 4; tier++) {
-        createArmorTable(
-          `tier-${tier}-armor`,
-          armorData[`tier${tier}`]
-        );
-        createArmorTable(
-          `tier-${tier}-armor-2`,
-          armorData[`tier${tier}-2`]
-        );
-      };
-    });
+async function loadArmorData() {
+  const response = await fetch("data/json/armors.json");
+  const armorData = await response.json();
+  
+  for (let tier = 1; tier <= 4; tier++) {
+    createArmorTable(
+      `tier-${tier}-armor`,
+      armorData[`tier${tier}`]
+    );
+    createArmorTable(
+      `tier-${tier}-armor-2`,
+      armorData[`tier${tier}-2`]
+    );
+  };
 };
 
 function createArmorTable(tableId, armors) {
   const table = document.querySelector(`#${tableId}`);
-
   if (!table || !armors) return;
 
   table.innerHTML = `
@@ -384,13 +370,13 @@ function createArmorTable(tableId, armors) {
       <tr>
         <th>名称</th>
         <th>基本<br>閾値</th>
-        <th>基本<br>防御値</th>
+        <th>基本<br>防具値</th>
         <th>特徴</th>
       </tr>
     </thead>
     <tbody>
       ${armors.map(armor => `
-        <tr>
+        <tr id="${armor.id}">
           <th>
             ${armor.name}<br>
             <span class="en-sub">${armor.name_en}</span>
@@ -410,27 +396,25 @@ function createArmorTable(tableId, armors) {
   `;
 };
 
-function loadLootData() {
-  fetch("data/json/loots.json")
-    .then(response => response.json())
-    .then(lootData => {
-      const coreLeft = lootData.loots.filter(loot => loot.roll <= 30);
-      const coreRight = lootData.loots.filter(loot => loot.roll >= 31);
+async function loadLootData() {
+  const response = await fetch("data/json/loots.json");
+  const lootData = await response.json();
+  
+  const coreLeft = lootData["loots"].filter(loot => loot.roll <= 30);
+  const coreRight = lootData["loots"].filter(loot => loot.roll >= 31);
 
-      const additionalLeft = lootData["additional-loots"].filter(loot => loot.roll <= 30);
-      const additionalRight = lootData["additional-loots"].filter(loot => loot.roll >= 31);
+  const additionalLeft = lootData["additional-loots"].filter(loot => loot.roll <= 30);
+  const additionalRight = lootData["additional-loots"].filter(loot => loot.roll >= 31);
 
-      createLootTable("loot-table-left", coreLeft);
-      createLootTable("loot-table-right", coreRight);
+  createLootTable("loot-table-left", coreLeft);
+  createLootTable("loot-table-right", coreRight);
 
-      createLootTable("loot-table-2-left", additionalLeft);
-      createLootTable("loot-table-2-right", additionalRight);
-    });
+  createLootTable("loot-table-2-left", additionalLeft);
+  createLootTable("loot-table-2-right", additionalRight);
 }
 
 function createLootTable(tableId, lootData) {
   const table = document.querySelector(`#${tableId}`);
-
   if (!table) return;
 
   table.innerHTML = `
@@ -448,6 +432,7 @@ function createLootTable(tableId, lootData) {
 
   lootData.forEach(loot => {
     const row = document.createElement("tr");
+    row.id = loot.id;
 
     row.innerHTML = `
       <td>${loot.roll}</td>
@@ -459,27 +444,25 @@ function createLootTable(tableId, lootData) {
   });
 }
 
-function loadConsumableData() {
-  fetch("data/json/consumables.json")
-    .then(response => response.json())
-    .then(consumableData => {
-      const coreLeft = consumableData.consumables.filter(consumable => consumable.roll <= 30);
-      const coreRight = consumableData.consumables.filter(consumable => consumable.roll >= 31);
+async function loadConsumableData() {
+  const response = await fetch("data/json/consumables.json");
+  const consumableData = await response.json();
+  
+  const coreLeft = consumableData["consumables"].filter(consumable => consumable.roll <= 30);
+  const coreRight = consumableData["consumables"].filter(consumable => consumable.roll >= 31);
 
-      const additionalLeft = consumableData["additional-consumables"].filter(consumable => consumable.roll <= 30);
-      const additionalRight = consumableData["additional-consumables"].filter(consumable => consumable.roll >= 31);
+  const additionalLeft = consumableData["additional-consumables"].filter(consumable => consumable.roll <= 30);
+  const additionalRight = consumableData["additional-consumables"].filter(consumable => consumable.roll >= 31);
 
-      createConsumableTable("consumable-table-left", coreLeft);
-      createConsumableTable("consumable-table-right", coreRight);
+  createConsumableTable("consumable-table-left", coreLeft);
+  createConsumableTable("consumable-table-right", coreRight);
 
-      createConsumableTable("consumable-table-2-left", additionalLeft);
-      createConsumableTable("consumable-table-2-right", additionalRight);
-    });
+  createConsumableTable("consumable-table-2-left", additionalLeft);
+  createConsumableTable("consumable-table-2-right", additionalRight);
 }
 
 function createConsumableTable(tableId, consumableData) {
   const table = document.querySelector(`#${tableId}`);
-
   if (!table) return;
 
   table.innerHTML = `
@@ -497,6 +480,7 @@ function createConsumableTable(tableId, consumableData) {
 
   consumableData.forEach(consumable => {
     const row = document.createElement("tr");
+    row.id = consumable.id;
 
     row.innerHTML = `
       <td>${consumable.roll}</td>
@@ -511,20 +495,19 @@ function createConsumableTable(tableId, consumableData) {
   });
 }
 
-function loadAdversaries() {
-  fetch("data/json/adversaries.json")
-    .then(response => response.json())
-    .then(adversaries => {
-      for (let tier = 1; tier <= 4; tier++) {
-        const article = document.querySelector(`#tier-${tier}-adversaries .grid-2`);
-        const tierAdversaries = adversaries[`tier-${tier}`];
+async function loadAdversaries() {
+  const response = await fetch("data/json/adversaries.json");
+  const adversaries = await response.json();
+  
+  for (let tier = 1; tier <= 4; tier++) {
+    const article = document.querySelector(`#tier-${tier}-adversaries .grid-2`);
+    const tierAdversaries = adversaries[`tier-${tier}`];
 
-        tierAdversaries.forEach(adversary => {
-          const block = createAdversaryStatBlock(adversary);
-          article.appendChild(block);
-        });
-      }
+    tierAdversaries.forEach(adversary => {
+      const block = createAdversaryStatBlock(adversary);
+      article.appendChild(block);
     });
+  }
 }
 
 function createAdversaryStatBlock(adversary) {
@@ -557,20 +540,19 @@ function createAdversaryStatBlock(adversary) {
   return block;
 }
 
-function loadEnvironments() {
-  fetch("data/json/environments.json")
-    .then(response => response.json())
-    .then(environments => {
-      for (let tier = 1; tier <= 4; tier++) {
-        const article = document.querySelector(`#tier-${tier}-environments .grid-2`);
-        const tierEnvironments = environments[`tier-${tier}`];
+async function loadEnvironments() {
+  const response = await fetch("data/json/environments.json");
+  const environments = await response.json();
+  
+  for (let tier = 1; tier <= 4; tier++) {
+    const article = document.querySelector(`#tier-${tier}-environments .grid-2`);
+    const tierEnvironments = environments[`tier-${tier}`];
 
-        tierEnvironments.forEach(environment => {
-          const block = createEnvironmentStatBlock(environment);
-          article.appendChild(block);
-        });
-      }
+    tierEnvironments.forEach(environment => {
+      const block = createEnvironmentStatBlock(environment);
+      article.appendChild(block);
     });
+  }
 }
 
 function createEnvironmentStatBlock(environment) {
