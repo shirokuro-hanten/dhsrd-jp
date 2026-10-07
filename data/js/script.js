@@ -445,7 +445,10 @@ function createLootTable(tableId, lootData) {
 }
 
 async function loadConsumableData() {
-  const response = await fetch("data/json/consumables.json");
+  const response = await fetch(
+    `data/json/consumables.json?v=${Date.now()}`,
+    { cache: "no-store" }
+  );
   const consumableData = await response.json();
   
   const coreLeft = consumableData["consumables"].filter(consumable => consumable.roll <= 30);

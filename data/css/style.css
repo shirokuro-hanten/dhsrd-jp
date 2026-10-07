@@ -70,6 +70,9 @@ nav {
   font-weight: bold;
 }
 
+nav div{
+  margin: 0;
+}
 nav a {
   display: block;
   padding: 0.4rem 0.5rem;
@@ -294,7 +297,7 @@ table {
 }
 thead {
   color: #fff;
-  background-color: #000;
+  background-color: #555;
   /*border-bottom: 2px solid #222;*/
 }
 th, td {
@@ -318,6 +321,19 @@ tbody tr:nth-child(even) {
 .item th:nth-child(3),
 .item td:nth-child(3) {
   line-height: normal;
+}
+.benchmark {
+  position: relative;
+  border-left: 3rem solid #000;
+}
+.benchmark::before {
+  content: attr(data-label);
+  position: absolute;
+  left: -1.25rem;
+  font-size: 1.5rem;
+  color: #fff;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
 }
 
 img {

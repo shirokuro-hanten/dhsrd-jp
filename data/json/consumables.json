@@ -222,7 +222,7 @@
       "roll": 32,
       "name": "ホメットの秘密の水薬",
       "name_en": "Homet’s Secret Potion",
-      "description": "<p>この水薬を飲んだ後、君が次に成功した攻撃は<a href='#critically-success' class='refer'>クリティカル成功</a>になる。</p>"
+      "description": "<p>この水薬を飲んだ後、君が次に成功した攻撃は<a href='#critical-success' class='refer'>クリティカル成功</a>になる。</p>"
     },
     {
       "id": "redthorn-saliva",
@@ -285,21 +285,21 @@
       "roll": 41,
       "name": "太陽樹の樹液",
       "name_en": "Sun Tree Sap",
-      "description": "<p>この樹液を摂取してd6を振る。5〜6の目が出たなら、<a href='#hit-points' class='refer'>HP</a>を2つ回復する。2〜4の目が出たなら、<a href='#stress' class='refer'>ストレス</a>を3つ回復する。1の目が出たなら、死の帷の向こう側が見え、戻った際に変化として<a href='#scar' class='refer'>傷跡</a>を1つ得る。</p>"
+      "description": "<p>この樹液を摂取してd6を振る。5〜6の目が出たなら、<a href='#hit-points' class='refer'>HP</a>を2つ回復する。2〜4の目が出たなら、<a href='#stress' class='refer'>ストレス</a>を3つ回復する。1の目が出たなら、死の帷の向こう側が見え、戻った際に変化として<a href='#scar' class='refer'>傷跡</a>を1つ負う。</p>"
     },
     {
       "id": "dripfang-poison",
       "roll": 42,
       "name": "ドリップファング毒",
       "name_en": "Dripfang Poison",
-      "description": "<p>この毒を摂取したクリーチャーは8d10の直接魔法ダメージを受ける。</p>"
+      "description": "<p>この毒を摂取したクリーチャーは8d10の<a href='#direct-damage' class='refer'>直接</a>魔法ダメージを受ける。</p>"
     },
     {
       "id": "major-health-potion",
       "roll": 43,
       "name": "上級健康薬",
       "name_en": "Major Health Potion",
-      "description": "<<a href='#hit-points' class='refer'>HP</a>をp>1d4＋2つ回復する。</p>"
+      "description": "<p><a href='#hit-points' class='refer'>HP</a>を1d4＋2つ回復する。</p>"
     },
     {
       "id": "major-stamina-potion",
@@ -404,7 +404,7 @@
       "roll": 58,
       "name": "死茶",
       "name_en": "Death Tea",
-      "description": "<p>このお茶を飲んだ後、君は攻撃に<a href='#critically-success' class='refer'>クリティカル成功</a>すると目標を即死させることができる。次の<a href='#long-rest' class='refer'>大休憩</a>までに攻撃をクリティカル成功させなかったなら、君は死ぬ。</p>"
+      "description": "<p>このお茶を飲んだ後、君は攻撃に<a href='#critical-success' class='refer'>クリティカル成功</a>すると目標を即死させることができる。次の<a href='#long-rest' class='refer'>大休憩</a>までに攻撃をクリティカル成功させなかったなら、君は死ぬ。</p>"
     },
     {
       "id": "mirror-of-marigold",
@@ -518,21 +518,21 @@
       "roll": 14,
       "name": "輝苔茸",
       "name_en": "Glowmoss Mushroom",
-      "description": "<p>このキノコは細かく割くと、次の大休憩まで鮮やかな青い光を放つようになる。</p>"
+      "description": "<p>このキノコは細かく割くと、次の<a href='#long-rest' class='refer'>大休憩</a>まで鮮やかな青い光を放つようになる。</p>"
     },
     {
       "id": "red-ooze-oil",
       "roll": 15,
       "name": "レッド・ウーズの油",
       "name_en": "Red Ooze Oil",
-      "description": "<p>この油は武器に塗ることができる。次にその武器での攻撃に成功した時、君は1d8の追加魔法ダメージを与え、目標を一時的に着火状態にする。着火状態の目標は、スポットライトを受けるたびに1d4の魔法ダメージを受ける。</p>"
+      "description": "<p>この油は武器に塗ることができる。次にその武器での攻撃に成功した時、君は1d8の追加魔法ダメージを与え、目標を一時的に着火状態にする。着火状態の目標は、<a href='#the-spotlight' class='refer'>スポットライト</a>を受けるたびに1d4の魔法ダメージを受ける。</p>"
     },
     {
       "id": "instant-camp",
       "roll": 16,
       "name": "携帯野営地",
       "name_en": "Instant Camp",
-      "description": "<p>この小さな機械仕掛けの箱を広げると、6人が安全に過ごせる大きさの野営用テントになる。このテントは次の大休憩の終了時に折りたたまれる。</p>"
+      "description": "<p>この小さな機械仕掛けの箱を広げると、6人が安全に過ごせる大きさの野営用テントになる。このテントは次の<a href='#long-rest' class='refer'>大休憩</a>を終了すると折りたたまれる。</p>"
     },
     {
       "id": "bundle-of-spiderlegs",
@@ -553,33 +553,33 @@
       "roll": 19,
       "name": "スナップソーンの種",
       "name_en": "Snapthorn Seed",
-      "description": "<p>この種は自分が見ることのできる地点に投げられる。種は爆発して絡みつく蔓になり、その地点から<a href='#close' class='refer'>近距離</a>射程内にいるすべてのクリーチャーを一時的に拘束状態にする。</p>"
+      "description": "<p>この種は自分から見える一点に投げることができる。種は破裂して絡みつく蔓になり、その地点から<a href='#close' class='refer'>近距離</a>射程内にいるすべてのクリーチャーを一時的に<a href='#restrained' class='refer'>拘束状態</a>にする。</p>"
     },
     {
       "id": "sprite-bottle",
       "roll": 20,
-      "name": "スプライトの壺",
+      "name": "小妖精の壺",
       "name_en": "Sprite Bottle",
-      "description": "<p>君が最後の<a href='#hit-points' class='refer'>HP</a>をマークした時、この壺が砕け、中にいるスプライトが解放される。スプライトは君の<a href='#hit-points' class='refer'>HP</a>をすべて回復した後、定命界を去る。</p>"
+      "description": "<p>君が最後の<a href='#hit-points' class='refer'>HP</a>をマークした時、この壺が砕け、中にいる<ruby>小妖精<rt>スプライト</rt></ruby>が解放される。スプライトは君の<a href='#hit-points' class='refer'>HP</a>をすべて回復した後、定命界を去る。</p>"
     },
     {
       "id": "gravity-bomb",
       "roll": 21,
       "name": "重力爆弾",
       "name_en": "Gravity Bomb",
-      "description": "<p>この桃ほどの大きさの機械仕掛けの球体は、<a href='#far' class='refer'>遠距離</a>射程内の一点に投げることができる。球体は内破し、その地点から<a href='#close' class='refer'>近距離</a>射程内にあるすべてのクリーチャーと物体を、<a href='#melee' class='refer'>近接</a>射程内に引き寄せる。</p>"
+      "description": "<p>この桃ほどの大きさの機械仕掛けの球体は、<a href='#far' class='refer'>遠距離</a>射程内の一点に投げることができる。球体は内破し、その地点の<a href='#close' class='refer'>近距離</a>射程内にあるすべてのクリーチャーと物体を、<a href='#melee' class='refer'>近接</a>射程内に引き寄せる。</p>"
     },
     {
       "id": "gossip-flower",
       "roll": 22,
       "name": "噂花",
       "name_en": "Gossip Flower",
-      "description": "<p>この種は土に植えることができる。種は急速に成長して小さな花を咲かせ、最長1週間のあいだ花が聞いたものすべてを記録する。摘み取られると、この花は記録した内容を実際の時間で再現した後、しおれる。</p>"
+      "description": "<p>この種は土に植えることができる。種は急速に成長して小さな花を咲かせ、最長1週間のあいだ花が聞いたものすべてを記録する。摘み取られると、この花は記録した内容を実際の時間で再現し、その後しおれる。</p>"
     },
     {
       "id": "displacement-token",
       "roll": 23,
-      "name": "転位のトークン",
+      "name": "所くらましのトークン",
       "name_en": "Displacement Token",
       "description": "<p>このトークンを飲み込むと、君自身の幻を2体生み出し、それを操ることができる。それぞれの幻は、ダメージを受けるか、次の休憩まで持続する。</p>"
     },
@@ -588,152 +588,152 @@
       "roll": 24,
       "name": "ナイト・ハグの粉",
       "name_en": "Night Hag’s Dust",
-      "description": "<p>この粉は、敵キャラクターの顔に吹きかけて、次の大休憩までそのキャラクターが<a href='#stress' class='refer'>ストレス</a>を回復するのを妨げることができる。</p>"
+      "description": "<p>この粉は、敵キャラクターの顔に吹きかけて、次の<a href='#long-rest' class='refer'>大休憩</a>までそのキャラクターが<a href='#stress' class='refer'>ストレス</a>を回復するのを妨げることができる。</p>"
     },
     {
       "id": "self-sewing-thread",
       "roll": 25,
       "name": "自己縫合の糸",
       "name_en": "Self-Sewing Thread",
-      "description": "<p>君はこの糸を使用して、<a href='#hit-points' class='refer'>HP</a>を1つ、または防具スロットを2つ回復できる。</p>"
+      "description": "<p>この糸を使用すると、<a href='#hit-points' class='refer'>HP</a>を1つ、または防具スロットを2つ回復できる。</p>"
     },
     {
       "id": "stonemasons-fortune",
       "roll": 26,
-      "name": "石工の幸運",
+      "name": "石工の財産",
       "name_en": "Stonemason’s Fortune",
-      "description": "<p>この灰色の煉瓦を地面に投げると、即座に高さ6フィート、幅10フィート、奥行き2フィート（高さ1.8m、幅3m、奥行き0.6m）の固い石壁となる。</p>"
+      "description": "<p>この灰色の煉瓦を地面に投げると、即座に高さ6フィート幅10フィート奥行き2フィート（高さ1.8m幅3m奥行き0.6m）の固い石壁となる。</p>"
     },
     {
       "id": "mnemonic-potion",
       "roll": 27,
-      "name": "記憶のポーション",
+      "name": "記憶喚起薬",
       "name_en": "Mnemonic Potion",
-      "description": "<p>このポーションを飲んだ者は、<a href='#hope' class='refer'>希望</a>を消費せずに経験を1つ使用できる。</p>"
+      "description": "<p>この水薬を飲んだ者は、<a href='#hope' class='refer'>希望</a>を消費せずに経験を1つ使用できる。</p>"
     },
     {
       "id": "salamander-salve",
       "roll": 28,
       "name": "サラマンダーの軟膏",
       "name_en": "Salamander Salve",
-      "description": "<p>この軟膏を肌に塗った者は、次の休憩まで熱に完全耐性を得る。</p>"
+      "description": "<p>この軟膏を肌に塗った者は、次の休憩まで熱に<a href='#immunity' class='refer'>完全耐性</a>を得る。</p>"
     },
     {
       "id": "green-ooze-oil",
       "roll": 29,
       "name": "グリーン・ウーズの油",
       "name_en": "Green Ooze Oil",
-      "description": "<p>この油は武器に塗ることができる。次にその武器で攻撃に成功した時、君は1d8の追加魔法ダメージを与え、目標を一時的に腐食状態にする。腐食状態の間、目標はダメージ閾値に－2のペナルティを受ける。</p>"
+      "description": "<p>この油は武器に塗ることができる。次にその武器で攻撃に成功した時、君は1d8の追加魔法ダメージを与え、目標を一時的に腐食状態にする。腐食状態の間、目標は<a href='#damage-thresholds' class='refer'>ダメージ閾値</a>に－2のペナルティを受ける。</p>"
     },
     {
       "id": "sunlight-orb",
       "roll": 30,
       "name": "日光球",
       "name_en": "Sunlight Orb",
-      "description": "<p>君はこの球体を砕いて、超<a href='#far' class='refer'>遠距離</a>射程内の範囲を、以降24時間のあいだ太陽光に照らされた昼間のように見せることができる。</p>"
+      "description": "<p>君はこの球体を砕いて、<a href='#very-far' class='refer'>超遠距離</a>射程内の範囲を、以降24時間のあいだ太陽光に照らされた日中のように見せることができる。</p>"
     },
     {
       "id": "moonlight-orb",
       "roll": 31,
       "name": "月光球",
       "name_en": "Moonlight Orb",
-      "description": "<p>君はこの球体を砕いて、超<a href='#far' class='refer'>遠距離</a>射程内の範囲を、以降24時間のあいだ、月明かりに照らされた夜間のように見せることができる。</p>"
+      "description": "<p>君はこの球体を砕いて、<a href='#very-far' class='refer'>超遠距離</a>射程内の範囲を、以降24時間のあいだ月明かりに照らされた夜間のように見せることができる。</p>"
     },
     {
       "id": "midas-flask",
       "roll": 32,
       "name": "ミダスのフラスコ",
       "name_en": "Midas Flask",
-      "description": "<p>この小さなフラスコの錬金液をありふれたアイテムに注ぐと、そのアイテムを瞬時に1包の金へと変えることができる。</p>"
+      "description": "<p>この小さなフラスコの錬金液をありふれたアイテムに注ぐと、そのアイテムを瞬時に1握りの金へと変えることができる。</p>"
     },
     {
       "id": "staff-of-reversal",
       "roll": 33,
-      "name": "反転のスタッフ",
+      "name": "反転の長杖",
       "name_en": "Staff of Reversal",
-      "description": "<p>この杖を地面に叩きつけて折ると、<a href='#far' class='refer'>遠距離</a>射程内にある魔法的な変身または効果1つを反転させることができる。</p>"
+      "description": "<p>この長杖を地面に叩きつけて折ると、<a href='#far' class='refer'>遠距離</a>射程内にある魔法的な変身または効果1つを反転させることができる。</p>"
     },
     {
       "id": "berserkers-brew",
       "roll": 34,
-      "name": "狂戦士の酒",
+      "name": "狂戦士の醸造酒",
       "name_en": "Berserker’s Brew",
       "description": "<p>この少量の液体を飲んだ者は、【直観】に等しいぶんだけ（最低1）、【筋力】にボーナスを得て、【技巧】と【知識】にペナルティを受ける。この効果は、死亡ムーヴを行うか、次の休憩まで持続する。</p>"
     },
     {
       "id": "emberite-shard",
       "roll": 35,
-      "name": "エンバーライトの結晶",
+      "name": "エンバーライト結晶",
       "name_en": "Emberite Shard",
-      "description": "<p><a href='#far' class='refer'>遠距離</a>射程内の一点を選ぶ。その地点から<a href='#close' class='refer'>近距離</a>射程内にいるすべての目標は、反応ロール（16）に成功しなければ、3d6の魔法ダメージを受けて一時的に炎上状態になる。炎上状態のクリーチャーは、行動ロールを行うたびにd4を振る。1の目が出たなら、<a href='#hit-points' class='refer'>HP</a>を1つマークする。4の目がが出たなら炎上状態を解除する。</p>"
+      "description": "<p><a href='#far' class='refer'>遠距離</a>射程内の一点を選ぶ。その地点の<a href='#close' class='refer'>近距離</a>射程内にいるすべての目標は<a href='#reaction-rolls' class='refer'>反応ロール</a>（16）を行わなければならず、失敗すると3d6の魔法ダメージを受けて一時的に炎上状態になる。炎上状態のクリーチャーは、<a href='#action-rolls' class='refer'>行動ロール</a>を行うたびにd4を振る。1の目が出たなら、<a href='#hit-points' class='refer'>HP</a>を1つマークする。4の目が出たなら炎上状態を解除する。</p>"
     },
     {
       "id": "arcticite-shard",
       "roll": 36,
-      "name": "アークティサイトの結晶",
+      "name": "アークティサイト結晶",
       "name_en": "Arcticite Shard",
-      "description": "<p><a href='#far' class='refer'>遠距離</a>射程内の一点を選ぶ。その地点から<a href='#close' class='refer'>近距離</a>射程内にいるすべての目標は、反応ロール（16）に成功しなければ、3d6の魔法ダメージを受け、凍りついて一時的に拘束状態になる。</p>"
+      "description": "<p><a href='#far' class='refer'>遠距離</a>射程内の一点を選ぶ。その地点の<a href='#close' class='refer'>近距離</a>射程内にいるすべての目標は、<a href='#reaction-rolls' class='refer'>反応ロール</a>（16）を行わなければならず、失敗すると3d6の魔法ダメージを受け、凍りついて一時的に<a href='#restrained' class='refer'>拘束状態</a>になる。</p>"
     },
     {
       "id": "fulgurite-shard",
       "roll": 37,
-      "name": "フルグライトの結晶",
+      "name": "フルグライト結晶",
       "name_en": "Fulgurite Shard",
-      "description": "<p><a href='#far' class='refer'>遠距離</a>射程内の一点を選ぶ。その地点から<a href='#close' class='refer'>近距離</a>射程内にいるすべての目標は、反応ロール（16）に成功しなければ、3d6の魔法ダメージを受け、雷がその範囲を駆け巡って<a href='#stress' class='refer'>ストレス</a>を1d4つマークする。</p>"
+      "description": "<p><a href='#far' class='refer'>遠距離</a>射程内の一点を選ぶ。その地点の<a href='#close' class='refer'>近距離</a>射程内にいるすべての目標は、<a href='#reaction-rolls' class='refer'>反応ロール</a>（16）を行わなければならず、失敗すると3d6の魔法ダメージを受け、雷がその範囲を駆け巡って<a href='#stress' class='refer'>ストレス</a>を1d4つマークする。</p>"
     },
     {
       "id": "demiurges-draught",
       "roll": 38,
       "name": "デミウルゴスの麦酒",
       "name_en": "Demiurge’s Draught",
-      "description": "<p>この麦酒を飲んだ者は、次に攻撃ロールに成功するまで、習熟度に＋1のボーナスを得る。</p>"
+      "description": "<p>この麦酒を飲んだ者は、次に<a href='#attack-rolls' class='refer'>攻撃ロール</a>に成功するまで、<a href='#proficiency' class='refer'>習熟度</a>に＋1のボーナスを得る。</p>"
     },
     {
       "id": "cockerel-claw-tea",
       "roll": 39,
       "name": "雄鶏の爪茶",
       "name_en": "Cockerel Claw Tea",
-      "description": "<p>このお茶を飲んだ者は、あたかも大休憩を取ったかのように特徴をリセットする。</p>"
+      "description": "<p>このお茶を飲んだ者は、あたかも<a href='#long-rest' class='refer'>大休憩</a>を取ったかのように特徴をリセットする。</p>"
     },
     {
       "id": "potion-of-vigilance",
       "roll": 40,
-      "name": "警戒のポーション",
+      "name": "警戒の水薬",
       "name_en": "Potion of Vigilance",
-      "description": "<p>このポーションを飲んだ者は、<a href='#hit-points' class='refer'>HP</a>を1つマークするまで、<a href='#evasion' class='refer'>回避値</a>に＋1のボーナスを得る。</p>"
+      "description": "<p>この水薬を飲んだ者は、<a href='#hit-points' class='refer'>HP</a>を1つマークするまで、<a href='#evasion' class='refer'>回避値</a>に＋1のボーナスを得る。</p>"
     },
     {
       "id": "cacophonous-concoction",
       "roll": 41,
       "name": "不協和音の調合薬",
       "name_en": "Cacophonous Concoction",
-      "description": "<p>このポーションを飲んでから1時間のあいだの君の言動は、見聞きしても言い表せない。君について見たこと、聞いたこと、その他の方法で感じたことを伝えようとしても、支離滅裂な内容になる。</p>"
+      "description": "<p>この水薬を飲んでから1時間のあいだの君の言動は、見聞きしても言い表せない。君について見たこと、聞いたこと、その他の方法で感じたことを伝えようとしても、支離滅裂な内容になる。</p>"
     },
     {
       "id": "nightmare-mead",
       "roll": 42,
       "name": "悪夢の蜂蜜酒",
       "name_en": "Nightmare Mead",
-      "description": "<p>このポーションを飲んだ者は、次に目を合わせた人物の最も深い恐怖を知ることができる。そうしたなら、GMは恐怖を1つ得る。</p>"
+      "description": "<p>この水薬を飲んだ者は、次に目を合わせた人物の最も深い恐怖を知ることができる。そうしたなら、GMは<a href='#fear' class='refer'>恐怖</a>を1つ得る。</p>"
     },
     {
       "id": "stake-of-abjuration",
       "roll": 43,
-      "name": "防御の杭",
+      "name": "誓絶の杭",
       "name_en": "Stake of Abjuration",
       "description": "<p>君はこの杭を地面に打ち込んで、宣言を1つ行うことができる。次の休憩まで、この杭から<a href='#far' class='refer'>遠距離</a>射程内でその宣言に違反したクリーチャーは、<a href='#stress' class='refer'>ストレス</a>を1つマークしなければならない。杭は次の休憩まで持続し、その時点で砕け散る。</p>"
     },
     {
       "id": "psychopomps-shroud",
       "roll": 44,
-      "name": "霊魂案内人の衣",
+      "name": "魂案内人の衣",
       "name_en": "Psychopomp’s Shroud",
-      "description": "<p>君はこの衣を死んだばかりのクリーチャーの死体にかけることができる。そのクリーチャーの魂はこの衣の中に入り、次の日の出まで君の助手として霊体となる。霊魂はその時点で死の帳を越え、衣と共に去っていく。</p>"
+      "description": "<p>君はこの衣を死んだばかりのクリーチャーの死体にかけることができる。そのクリーチャーの魂はこの衣の中に入って霊体化し、君の助手となる。次の日の出、魂は死の帳を越え、衣と共に去っていく。</p>"
     },
     {
       "id": "phial-of-deep-ink",
       "roll": 45,
-      "name": "深淵のインク瓶",
+      "name": "深黒のインク瓶",
       "name_en": "Phial of Deep Ink",
       "description": "<p>このインク瓶を飲んだ者は、以後1時間のあいだ、自分とほぼ同じ大きさの頭足類へと変身する。君はゴムのような皮膚、柔らかな骨、水中で呼吸する能力を得て、合計8本になるまで新たな手足が生えてくる。</p>"
     },
@@ -742,14 +742,14 @@
       "roll": 46,
       "name": "メスマーの強壮剤",
       "name_en": "Mesmer’s Tonic",
-      "description": "<p>この強壮剤を飲むと、次の休憩まで、君に聞こえるのは至<a href='#close' class='refer'>近距離</a>射程内にいるクリーチャーの表層思考のみになる。</p>"
+      "description": "<p>この強壮剤を飲むと、次の休憩まで、君に聞こえるのは<a href='#very-close' class='refer'>至近距離</a>射程内にいるクリーチャーの表層思考のみになる。</p>"
     },
     {
       "id": "invisibility-potion",
       "roll": 47,
       "name": "透明化の水薬",
       "name_en": "Invisibility Potion",
-      "description": "<p>君は、他のクリーチャーにダメージを与えるか、次の休憩まで、隠れ身状態になる。</p>"
+      "description": "<p>君は、他のクリーチャーにダメージを与えるか、次の休憩まで、<a href='#hidden' class='refer'>隠れ身状態</a>になる。</p>"
     },
     {
       "id": "formoid-serum",
@@ -763,7 +763,7 @@
       "roll": 49,
       "name": "鋼肌の軟膏",
       "name_en": "Steelskin Salve",
-      "description": "<p>君はこの軟膏を肌に塗り、場面の終了時までダメージ閾値に自分のティアに等しいボーナスを得ることができる。</p>"
+      "description": "<p>君はこの軟膏を肌に塗り、場面の終了時まで<a href='#damage-thresholds' class='refer'>ダメージ閾値</a>に自分のティアに等しいボーナスを得ることができる。</p>"
     },
     {
       "id": "godlings-pomelo",
@@ -777,7 +777,7 @@
       "roll": 51,
       "name": "蛇肌の火酒",
       "name_en": "Snakeskin Spirit",
-      "description": "<p>君はこの水薬を飲むことで、皮膚を表層を脱ぎ捨て、傷跡を1つ癒すことができる。</p>"
+      "description": "<p>君はこの水薬を飲むことで、皮膚の表層を剥がし、<a href='#scar' class='refer'>傷跡</a>を1つ癒すことができる。</p>"
     },
     {
       "id": "magic-users-malison",
@@ -796,7 +796,7 @@
     {
       "id": "mask-of-the-echoed-self",
       "roll": 54,
-      "name": "こだまの仮面",
+      "name": "こだまする自己の仮面",
       "name_en": "Mask of the Echoed Self",
       "description": "<p>君は次のレベルアップ中にこの仮面を着用することで、自分の特性の任意の値を入れ替えることができる。そうしたなら、この仮面が君の永久的な顔になる。</p>"
     },
@@ -805,42 +805,42 @@
       "roll": 55,
       "name": "死霊術師の鈴",
       "name_en": "Necroprancer’s Bell",
-      "description": "<p>君はこの錆びた舌のない鈴を地面に叩きつけて砕くことで、骸骨の乗騎を召喚し地中から這い出させ、次の日の出まで君に従わせることができる。</p>"
+      "description": "<p>君はこの錆びた舌のない鈴を地面に叩きつけて砕くことで、骸骨の乗騎を召喚して地中から這い出させ、次の日の出まで君に従わせることができる。</p>"
     },
     {
       "id": "drakemantle",
       "roll": 56,
-      "name": "ドレイクマント",
+      "name": "竜種のマント",
       "name_en": "Drakemantle",
-      "description": "<p>君はこの魔法の古代竜の皮を使うことで、場面の終了時まで竜の特徴を得ることができる。場面の終了時、この皮はぼろぼろに崩れ落ちる。それまでの間、君は飛行でき、ダメージ閾値に＋5、習熟度に＋1のボーナスを得る。</p>"
+      "description": "<p>君はこの魔法の古代竜の皮を使うことで、場面の終了時まで竜の特徴を得ることができる。場面の終了時、この皮はぼろぼろに崩れ落ちる。それまでの間、君は飛行でき、<a href='#damage-thresholds' class='refer'>ダメージ閾値</a>に＋5、<a href='#proficiency' class='refer'>習熟度</a>に＋1のボーナスを得る。</p>"
     },
     {
       "id": "gamblers-fallacy",
       "roll": 57,
       "name": "賭博師の誤謬",
       "name_en": "Gambler’s Fallacy",
-      "description": "<p>君は豚の形をしたこの投入口の付いた陶器の壺に、金の包を任意の数だけ入れて消費できる。この壺は<a href='#far' class='refer'>遠距離</a>射程内の一点に向かって投げると爆発し、その地点から<a href='#close' class='refer'>近距離</a>射程内にいるすべてのクリーチャーに、消費した金1包ごとに1d20の魔法ダメージを与える。壺の中にある金はすべて破壊される。</p>"
+      "description": "<p>君は豚の形をしたこの投入口の付いた陶器の壺に、<a href='#gold' class='refer'>金</a>を好きなだけ入れて消費することができる。この壺は<a href='#far' class='refer'>遠距離</a>射程内の一点に向かって投げると爆発し、その地点から<a href='#close' class='refer'>近距離</a>射程内にいるすべてのクリーチャーに、消費した金1握りごとに1d20の魔法ダメージを与える。壺の中にある金はすべて破壊される。</p>"
     },
     {
       "id": "lionheart-tonic",
       "roll": 58,
       "name": "獅子心の強壮剤",
       "name_en": "Lionheart Tonic",
-      "description": "<p>君はこの強壮剤を飲むことで、ロール結果が恐怖となるまで習熟度に＋1のボーナスを得る。</p>"
+      "description": "<p>君はこの強壮剤を飲むことで、ロール結果が恐怖となるまで<a href='#proficiency' class='refer'>習熟度</a>に＋1のボーナスを得る。</p>"
     },
     {
       "id": "tears-of-the-undying-hero",
       "roll": 59,
-      "name": "死せざる英雄の涙",
+      "name": "不滅の英雄の涙",
       "name_en": "Tears of the Undying Hero",
-      "description": "<p>この水薬を飲むと、次の大休憩まで死が君に触れることはなくなる。君は最後の<a href='#hit-points' class='refer'>HP</a>をマークするところで、死亡ムーヴを行う代わりに、最期の行動ロールを1つ行った後、夢なきまどろみに落ちる。この状態は、味方が合間ムーヴ“応急治療”を選択して君の<a href='#hit-points' class='refer'>HP</a>を回復するまで継続する。</p>"
+      "description": "<p>この水薬を飲むと、次の大休憩まで死は君に触れられなくなる。君は最後の<a href='#hit-points' class='refer'>HP</a>をマークするところで、死亡ムーヴを行う代わりに最後の<a href='#action-rolls' class='refer'>行動ロール</a>を1つ行い、その後夢なきまどろみに落ちる。この状態は、味方が合間ムーヴ“<a href='#tend-to-wounds' class='refer'>応急治療</a>”を選択して君の<a href='#hit-points' class='refer'>HP</a>を回復するまで継続する。</p>"
     },
     {
       "id": "featherstep-potion",
       "roll": 60,
       "name": "羽根足の水薬",
       "name_en": "Featherstep Potion",
-      "description": "<p>君はこの水薬を飲むことで、足首から小さな翼を生やし、次の休憩まで<a href='#evasion' class='refer'>回避値</a>に自分のティアに等しいボーナスを得ることができる。</p>"
+      "description": "<p>この水薬を飲むと、足首から小さな翼を生え、次の休憩まで<a href='#evasion' class='refer'>回避値</a>に自分のティアに等しいボーナスを得ることができる。</p>"
     }
   ]
 }

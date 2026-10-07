@@ -777,7 +777,7 @@
       "roll": 51,
       "name": "英雄の兜",
       "name_en": "Hero’s Helm",
-      "description": "<p>君が攻撃に<a href='#critically-success' class='refer'>クリティカル成功</a>した時、<a href='#close' class='refer'>近距離</a>射程内にいるすべての味方は<a href='#hope' class='refer'>希望</a>を1つ得る。</p>"
+      "description": "<p>君が攻撃に<a href='#critical-success' class='refer'>クリティカル成功</a>した時、<a href='#close' class='refer'>近距離</a>射程内にいるすべての味方は<a href='#hope' class='refer'>希望</a>を1つ得る。</p>"
     },
     {
       "id": "rings-of-friendship",

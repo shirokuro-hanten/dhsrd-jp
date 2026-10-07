@@ -239,8 +239,8 @@
         <button class="expand" type="button" aria-expanded="false" aria-label="戦利品を展開"></button>
       </div>
       <div class="layer-3" hidden>
-        <a href="#loot-table-left">コアセットのアイテム</a>
-        <a href="#loot-table-2-left">追加アイテム</a>
+        <a href="#loot-table">コアセットのアイテム</a>
+        <a href="#loot-table-2">追加アイテム</a>
       </div>
 
       <div class="nav-item">
@@ -248,8 +248,8 @@
         <button class="expand" type="button" aria-expanded="false" aria-label="消耗品を展開"></button>
       </div>
       <div class="layer-3" hidden>
-        <a href="#consumable-table-left">コアセットの消耗品</a>
-        <a href="#consumable-table-2-left">追加の消耗品</a>
+        <a href="#consumable-table">コアセットの消耗品</a>
+        <a href="#consumable-table-2">追加の消耗品</a>
       </div>
 
       <a href="#gold">金</a>
@@ -457,8 +457,8 @@
     <ul>
       <li>ティア1の<a href="#primary-weapon-tables" class="refer">武器表</a>から、<b>両手用のメイン武器1つ</b>または<b>片手用のメイン武器1つと片手用のサブ武器1つ</b>のいずれかを選択すること。その後、キャラクターシートの「<ruby>装備武器<rt>Active Weapon</rt></ruby>」の欄に記入して選択した武器を装備すること。</li>
       <li>
-        レベル1時点の<b>習熟度</b>は1である。この数値をキャラクターシートの「<ruby>習熟度<rt>Proficiency</rt></ruby>」の欄に記入した後、習熟度の値と装備している武器の<b>ダメージダイス</b>を組み合わせて<b><a href="#damage-roll" class="refer">ダメージロール</a></b>を計算し、記録すること。
-        <p><em>例：習熟度が1で、武器のダメージダイスがd6＋1の場合、<a href="#damage-roll" class="refer">ダメージロール</a>は1d6＋1となる。習熟度が決定するのは振るダメージダイスの数のみであり、固定のダメージ修正値には影響しない。</em></p>
+        レベル1時点の<b>習熟度</b>は1である。この数値をキャラクターシートの「<ruby>習熟度<rt>Proficiency</rt></ruby>」の欄に記入した後、習熟度の値と装備している武器の<b>ダメージダイス</b>を組み合わせて<b><a href="#damage-rolls" class="refer">ダメージロール</a></b>を計算し、記録すること。
+        <p><em>例：習熟度が1で、武器のダメージダイスがd6＋1の場合、<a href="#damage-rolls" class="refer">ダメージロール</a>は1d6＋1となる。習熟度が決定するのは振るダメージダイスの数のみであり、固定のダメージ修正値には影響しない。</em></p>
       </li>
     </ul>
     <p>ティア1の<a href="#armor-tables" class="refer">防具表</a>から1揃いの<b>防具</b>を選んで装備した後、その詳細をキャラクターシートの「<ruby>装備防具<rt>Active Armor</rt></ruby>」の欄に記入すること。</p>
@@ -697,7 +697,7 @@
         <p><em><b>脚光<span class="en-sub">Make a Scene</span>：</b></em><b>希望を3つ消費</b>して、<a href="#close" class="refer">近距離</a>射程内にいる目標1体の注意を一時的にそらし、目標の難易度に－2のペナルティを与える。</p>
 
         <h5>クラス特徴<span class="en-sub">Class Feature</span></h5>
-        <p><em><b>鼓舞<span class="en-sub">Rally</span>：</b></em>セッションごとに1回、どのようにパーティを鼓舞するかを説明し、君自身と君の味方に鼓舞ダイスを1つずつ与える。レベル1時点の鼓舞ダイスは<b>d6</b>である。PCは自分の鼓舞ダイスを消費して振り、以下のいずれかを行うことができる：（1）その出目を<a href="#action-rolls" class="refer">行動ロール</a>、<a href="#reaction-rolls" class="refer">反応ロール</a>、または<a href="#damage-roll" class="refer">ダメージロール</a>に加える；（2）その出目に等しい数のストレスを回復する。各セッションの終了時、消費していない鼓舞ダイスはすべてなくなる。レベル5で鼓舞ダイスは<b>d8</b>になる。</p>
+        <p><em><b>鼓舞<span class="en-sub">Rally</span>：</b></em>セッションごとに1回、どのようにパーティを鼓舞するかを説明し、君自身と君の味方に鼓舞ダイスを1つずつ与える。レベル1時点の鼓舞ダイスは<b>d6</b>である。PCは自分の鼓舞ダイスを消費して振り、以下のいずれかを行うことができる：（1）その出目を<a href="#action-rolls" class="refer">行動ロール</a>、<a href="#reaction-rolls" class="refer">反応ロール</a>、または<a href="#damage-rolls" class="refer">ダメージロール</a>に加える；（2）その出目に等しい数のストレスを回復する。各セッションの終了時、消費していない鼓舞ダイスはすべてなくなる。レベル5で鼓舞ダイスは<b>d8</b>になる。</p>
 
         <h3>バードのサブクラス<span class="en-sub">Bard Subclasses</span></h3>
         <p><em><b><a href="#troubadour" class="refer">トルバドゥール</a></b>と<b><a href="#wordsmith" class="refer">ワードスミス</a></b>から、いずれかのサブクラスを選ぶこと。</em></p>
@@ -908,7 +908,7 @@
               <p><em>【筋力】＋2</em>｜<em><a href="#evasion" class="refer">回避値</a>＋1</em><br><em><a href="#melee" class="refer">近接</a>、【筋力】、d8＋2（物理）</em></p>
               <p><b>以下に有利を得る：</b>攻撃、疾走、追跡</p>
               <p><em><b>足止め攻撃<span class="en-sub">Hobbling Strike</span>：</b></em>君は<a href="#melee" class="refer">近接</a>射程内の目標に対する攻撃に成功した時、<b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して、その目標を一時的に<a href="#vulnerable" class="refer">脆弱状態</a>にすることができる。</p>
-              <p><em><b>群れ狩猟<span class="en-sub">Pack Hunting</span>：</b></em>君は“君の直前に行動した味方と同じ目標”に対する攻撃に成功した時、<a href="#damage-roll" class="refer">ダメージロール</a>に<b>d8</b>を加える。</p>
+              <p><em><b>群れ狩猟<span class="en-sub">Pack Hunting</span>：</b></em>君は“君の直前に行動した味方と同じ目標”に対する攻撃に成功した時、<a href="#damage-rolls" class="refer">ダメージロール</a>に<b>d8</b>を加える。</p>
             </article>
 
             <article id="aquatic-scout">
@@ -947,7 +947,7 @@
               <p>（クマ、雄牛、ヘラジカなど）</p>
               <p><em>【筋力】＋3</em>｜<em><a href="#evasion" class="refer">回避値</a>＋1</em><br><em><a href="#melee" class="refer">近接</a>、【筋力】、d10＋4（物理）</em></p>
               <p><b>以下に有利を得る：</b>道探し、保護、威嚇</p>
-              <p><em><b>大暴れ<span class="en-sub">Rampage</span>：</b></em>君はダメージダイスで1の目を出した時、d10をロールして出た目をその<a href="#damage-roll" class="refer">ダメージロール</a>に加えることができる。加えて、君は<a href="#attack-rolls" class="refer">攻撃ロール</a>を行う前に<b><a href="#stress" class="refer">ストレス</a>を1つマークする</b>ことで、その攻撃の習熟度に＋1のボーナスを得ることができる。</p>
+              <p><em><b>大暴れ<span class="en-sub">Rampage</span>：</b></em>君はダメージダイスで1の目を出した時、d10をロールして出た目をその<a href="#damage-rolls" class="refer">ダメージロール</a>に加えることができる。加えて、君は<a href="#attack-rolls" class="refer">攻撃ロール</a>を行う前に<b><a href="#stress" class="refer">ストレス</a>を1つマークする</b>ことで、その攻撃の習熟度に＋1のボーナスを得ることができる。</p>
               <p><em><b>厚い毛皮<span class="en-sub">Thick Hide</span>：</b></em>君はダメージ閾値に＋2のボーナスを得る。</p>
             </article>
 
@@ -1031,7 +1031,7 @@
               <p>（ティア1の形態の進化形）</p>
               <p><em><b>進化<span class="en-sub">Evolved</span>：</b></em>ティア1の野獣形態を1つ選び、その生き物のより大きく、力強いバージョンになる。この形態にある時、君は元の形態のすべての特性と特徴に加えて、以下のボーナスを得る：</p>
               <ul>
-                <li><a href="#damage-roll" class="refer">ダメージロール</a>に＋6のボーナス</li>
+                <li><a href="#damage-rolls" class="refer">ダメージロール</a>に＋6のボーナス</li>
                 <li>この形態が使用する特性に＋1のボーナス</li>
                 <li><a href="#evasion" class="refer">回避値</a>に＋2のボーナス</li>
               </ul>
@@ -1089,7 +1089,7 @@
               <p>（ティア1またはティア2の形態の進化形）</p>
               <p><em><b>進化形<span class="en-sub">Evolved</span>：</b></em>ティア1またはティア2の野獣形態を1つ選び、その生き物のより大きく、力強いバージョンになる。この形態にある時、君は元の形態のすべての特性と特徴に加えて、以下のボーナスを得る：</p>
               <ul>
-                <li><a href="#damage-roll" class="refer">ダメージロール</a>に＋9のボーナス</li>
+                <li><a href="#damage-rolls" class="refer">ダメージロール</a>に＋9のボーナス</li>
                 <li>この形態が使用する特性に＋2のボーナス</li>
                 <li><a href="#evasion" class="refer">回避値</a>に＋3のボーナス</li>
                 <li>君のダメージダイスは1段階大きくなる（d6ならd8に、d8ならd10に、など）</li>
@@ -1120,11 +1120,11 @@
         <p><em><b>前線防衛<span class="en-sub">Frontline Tank</span>：</b></em><b>希望を3つ消費</b>して、防具スロットを2つ回復する。</p>
 
         <h5>クラス特徴<span class="en-sub">Class Features</span></h5>
-        <p><em><b>暴走<span class="en-sub">Unstoppable</span>：</b></em>大休憩ごとに1回、君は暴走状態になることができる。君は暴走ダイスを得る。レベル1時点の暴走ダイスは<b>d4</b>である。このダイスをキャラクターシートの所定の欄に、1の面が上を向くように置くこと。君の行った<a href="#damage-roll" class="refer">ダメージロール</a>が目標にHPを1つ以上マークしたなら、暴走ダイスの目を1増やす。ダイスの目が最大値を超えるか、場面が終了したら、ダイスを取り除いて暴走状態を解除する。レベル5で暴走ダイスは<b>d6</b>になる。</p>
+        <p><em><b>暴走<span class="en-sub">Unstoppable</span>：</b></em>大休憩ごとに1回、君は暴走状態になることができる。君は暴走ダイスを得る。レベル1時点の暴走ダイスは<b>d4</b>である。このダイスをキャラクターシートの所定の欄に、1の面が上を向くように置くこと。君の行った<a href="#damage-rolls" class="refer">ダメージロール</a>が目標にHPを1つ以上マークしたなら、暴走ダイスの目を1増やす。ダイスの目が最大値を超えるか、場面が終了したら、ダイスを取り除いて暴走状態を解除する。レベル5で暴走ダイスは<b>d6</b>になる。</p>
         <p>暴走状態の間、君は以下の利益を得る：</p>
         <ul>
           <li>君は物理ダメージの深刻度を閾値1段階ぶん軽減させる（大ダメージなら中ダメージに、中ダメージなら小ダメージに、小ダメージならダメージなしになる）。</li>
-          <li>君は<a href="#damage-roll" class="refer">ダメージロール</a>に現在の暴走ダイスの値を加える。</li>
+          <li>君は<a href="#damage-rolls" class="refer">ダメージロール</a>に現在の暴走ダイスの値を加える。</li>
           <li>君は<a href="#restrained" class="refer">拘束状態</a>と<a href="#vulnerable" class="refer">脆弱状態</a>にならない。</li>
         </ul>
         <blockquote>
@@ -1239,7 +1239,7 @@
             <p>【敏捷】</p>
             
             <h5>基礎特徴<span class="en-sub">Foundation Features</span></h5>
-            <p><em><b>容赦なき捕食者<span class="en-sub">Ruthless Predator</span>：</b></em>君は<a href="#damage-roll" class="refer">ダメージロール</a>を行う時、<b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して、習熟度に＋1のボーナスを得ることができる。さらに、君が敵キャラクターに大ダメージを与える時、その敵キャラクターは<a href="#stress" class="refer">ストレス</a>を1つマークする。</p>
+            <p><em><b>容赦なき捕食者<span class="en-sub">Ruthless Predator</span>：</b></em>君は<a href="#damage-rolls" class="refer">ダメージロール</a>を行う時、<b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して、習熟度に＋1のボーナスを得ることができる。さらに、君が敵キャラクターに大ダメージを与える時、その敵キャラクターは<a href="#stress" class="refer">ストレス</a>を1つマークする。</p>
             <p><em><b>進むべき道<span class="en-sub">Path Forward</span>：</b></em>君は、目的地を以前訪れたことがあるか、以前その場所にあった物品を運搬しているなら、目的地までの最短かつ最も直線的な経路を特定することができる。</p>
 
             <h5>専門特徴<span class="en-sub">Specialized Feature</span></h5>
@@ -1297,7 +1297,7 @@
           <p><a href="#spellcast-rolls" class="refer">呪文発動ロール</a>を行って相棒と繋がり、行動を取るよう命令する。<a href="#hope" class="refer">希望</a>を1つ消費して、そのロールに適用可能な相棒経験を加算すること。希望成功したなら、君の次の行動が相棒の成功に基づくものであれば、君はそのロールに有利を得る。</p>
 
           <h6>相棒と攻撃する<span class="en-sub">Attacking with Your Companion</span></h6>
-          <p>君が相棒に攻撃を命令する時、相棒は通常なら君にのみ適用されるすべての利益（“レンジャーの標的”の効果など）を得る。成功したなら、相棒の<a href="#damage-roll" class="refer">ダメージロール</a>は君の習熟度と相棒自身のダメージダイスを使用する。</p>
+          <p>君が相棒に攻撃を命令する時、相棒は通常なら君にのみ適用されるすべての利益（“レンジャーの標的”の効果など）を得る。成功したなら、相棒の<a href="#damage-rolls" class="refer">ダメージロール</a>は君の習熟度と相棒自身のダメージダイスを使用する。</p>
 
           <h6>ダメージはストレスとして受ける<span class="en-sub">Taking Damage as Stress</span></h6>
           <ul>
@@ -1335,7 +1335,7 @@
 
         <h5>クラス特徴<span class="en-sub">Class Features</span></h5>
         <p><em><b>隠匿<span class="en-sub">Cloaked</span>：</b></em>君は<a href="#hidden" class="refer">隠れ身状態</a>になるところで、代わりに隠匿状態になる。隠匿状態の間、君は隠れ身状態の利益に加えて、通常なら敵キャラクターから見られる位置に移動してもじっとしていれば見られずにすむ。君が敵キャラクターの視線内で攻撃を行うかムーヴを終了したなら、君はもはや隠匿状態ではなくなる。</p>
-        <p><em><b>急所攻撃<span class="en-sub">Sneak Attack</span>：</b></em>君が攻撃に成功した時、君が隠匿状態にあるか、君の目標の<a href="#melee" class="refer">近接</a>射程内に味方がいるなら、君のティアに等しい数の<b>d6</b>を<a href="#damage-roll" class="refer">ダメージロール</a>に加える。</p>
+        <p><em><b>急所攻撃<span class="en-sub">Sneak Attack</span>：</b></em>君が攻撃に成功した時、君が隠匿状態にあるか、君の目標の<a href="#melee" class="refer">近接</a>射程内に味方がいるなら、君のティアに等しい数の<b>d6</b>を<a href="#damage-rolls" class="refer">ダメージロール</a>に加える。</p>
         <ul>
           <li>レベル1→ティア1</li>
           <li>レベル2〜4→ティア2</li>
@@ -1359,7 +1359,7 @@
 
             <h5>専門特徴<span class="en-sub">Specialized Features</span></h5>
             <p><em><b>暗雲<span class="en-sub">Dark Cloud</span>：</b></em><b><a href="#spellcast-rolls" class="refer">呪文発動ロール</a>（15）</b>を行う。成功したなら、一時的な暗雲を生み出し、<a href="#close" class="refer">近距離</a>射程内の任意の範囲を覆い隠す。この雲の中にいる者は外側を見ることができず、外にいる者は内側を見ることができない。この雲に視線を遮られている敵キャラクターにとって、君は隠匿状態とみなされる。</p>
-            <p><em><b>アドレナリン<span class="en-sub">Adrenaline</span>：</b></em>君が<a href="#vulnerable" class="refer">脆弱状態</a>にある間、<a href="#damage-roll" class="refer">ダメージロール</a>に君のレベルを加える。</p>
+            <p><em><b>アドレナリン<span class="en-sub">Adrenaline</span>：</b></em>君が<a href="#vulnerable" class="refer">脆弱状態</a>にある間、<a href="#damage-rolls" class="refer">ダメージロール</a>に君のレベルを加える。</p>
 
             <h5>極意特徴<span class="en-sub">Mastery Features</span></h5>
             <p><em><b>儚き影<span class="en-sub">Fleeting Shadow</span>：</b></em>君の<a href="#evasion" class="refer">回避値</a>に永続的な＋1のボーナスを得る。君は特徴“影渡り”を使用して<a href="#very-far" class="refer">超遠距離</a>射程まで移動できる。</p>
@@ -1388,7 +1388,7 @@
             <ul>
               <li>その人物は、金1握り、固有の道具1つ、または状況が必要とするありふれた物体1つをくれる。</li>
               <li>君は次の<a href="#action-rolls" class="refer">行動ロール</a>において、その人物の助けによって希望ダイスまたは恐怖ダイスの出目に＋3のボーナスを得る。</li>
-              <li>君が次にダメージを与える時、その人物が影から狙撃し、君の<a href="#damage-roll" class="refer">ダメージロール</a>に<b>2d8</b>を加える。</li>
+              <li>君が次にダメージを与える時、その人物が影から狙撃し、君の<a href="#damage-rolls" class="refer">ダメージロール</a>に<b>2d8</b>を加える。</li>
             </ul>
 
             <h5>極意特徴<span class="en-sub">Mastery Feature</span></h5>
@@ -1516,7 +1516,7 @@
         <p><em><b>天然魔力伝導<span class="en-sub">Channel Raw Power</span>：</b></em>大休憩ごとに1回、君は準備枠の領域カード1枚を保存枠に移し、以下いずれかを選ぶことができる：</p>
         <ul>
           <li>そのカードのレベルに等しい数の希望を得る。</li>
-          <li>ダメージを与える呪文1つを強化し、<a href="#damage-roll" class="refer">ダメージロール</a>にそのカードのレベルの2倍に等しいボーナスを得る。</li>
+          <li>ダメージを与える呪文1つを強化し、<a href="#damage-rolls" class="refer">ダメージロール</a>にそのカードのレベルの2倍に等しいボーナスを得る。</li>
         </ul>
 
         <h3>ソーサラーのサブクラス<span class="en-sub">Sorcerer Subclasses</span></h3>
@@ -1567,7 +1567,7 @@
             <p><em><b>強化援護<span class="en-sub">Empowered Aid</span>：</b></em>君は他者の魔法を自分の精髄で強化することができる。君は<a href="#spellcast-rolls" class="refer">呪文発動ロール</a>を用いて<a href="#help-an-ally" class="refer">味方援護</a>を行う時、有利ダイスとして<b>d8</b>を振ることができる。大休憩ごとに1回、味方が君の援護を受けて<a href="#spellcast-rolls" class="refer">呪文発動ロール</a>を行った後、君はその味方の二元ダイスの出目を入れ替えることができる。</p>
 
             <h5>極意特徴<span class="en-sub">Mastery Feature</span></h5>
-            <p><em><b>秘術充填<span class="en-sub">Arcane Charge</span>：</b></em>君は魔法エネルギーを集めて能力を高めることができる。君は魔法ダメージを受けると充填状態になる。あるいは、<b>希望を2つ消費</b>して充填状態になることもできる。充填状態の間、君は魔法ダメージを与える攻撃に成功した時、充填状態を解除して以下のいずれかの利益を得ることができる：（1）<a href="#damage-roll" class="refer">ダメージロール</a>に＋10のボーナスを得る、（2）その呪文が目標に行わせる<a href="#reaction-rolls" class="refer">反応ロール</a>の難易度に＋3のボーナスを得る。君は次の大休憩時に充填状態でなくなる。</p>
+            <p><em><b>秘術充填<span class="en-sub">Arcane Charge</span>：</b></em>君は魔法エネルギーを集めて能力を高めることができる。君は魔法ダメージを受けると充填状態になる。あるいは、<b>希望を2つ消費</b>して充填状態になることもできる。充填状態の間、君は魔法ダメージを与える攻撃に成功した時、充填状態を解除して以下のいずれかの利益を得ることができる：（1）<a href="#damage-rolls" class="refer">ダメージロール</a>に＋10のボーナスを得る、（2）その呪文が目標に行わせる<a href="#reaction-rolls" class="refer">反応ロール</a>の難易度に＋3のボーナスを得る。君は次の大休憩時に充填状態でなくなる。</p>
           </article>
         </div>
 
@@ -1610,7 +1610,7 @@
           <li>君は目標に、君のメイン武器のダメージに等しいダメージを与える。</li>
           <li>君は目標と共に移動する。</li>
         </ul>
-        <p><em><b>戦闘訓練<span class="en-sub">Combat Training</span>：</b></em>君は装備している武器の持ち方を無視する。君は物理ダメージを与える時、<a href="#damage-roll" class="refer">ダメージロール</a>に自分のレベルに等しいボーナスを得る。</p>
+        <p><em><b>戦闘訓練<span class="en-sub">Combat Training</span>：</b></em>君は装備している武器の持ち方を無視する。君は物理ダメージを与える時、<a href="#damage-rolls" class="refer">ダメージロール</a>に自分のレベルに等しいボーナスを得る。</p>
 
         <h3>ウォリアーのサブクラス<span class="en-sub">Warrior Subclasses</span></h3>
         <p><em><b>勇気の呼び声</b>と<b>討伐の呼び声</b>から、いずれかのサブクラスを選ぶこと。</em></p>
@@ -1637,13 +1637,13 @@
             <p>圧倒的な力で敵を打ち倒したいなら、討伐の呼び声をプレイしよう。</p>
 
             <h5>基礎特徴<span class="en-sub">Foundation Feature</span></h5>
-            <p><em><b>討伐<span class="en-sub">Slayer</span>：</b></em>君は討伐ダイスと呼ばれるダイスプールを得る。君はロール結果が希望だった時、希望を得る代わりに<b>d6</b>を1つこのカードの上に置いてプールに加えることができる。君が所持できる討伐ダイスの数は君の習熟度に等しい。君は<a href="#attack-rolls" class="refer">攻撃ロール</a>または<a href="#damage-roll" class="refer">ダメージロール</a>を行う時、この討伐ダイスを任意の数だけ消費して振り、出た目を合計に加えることができる。各セッションの終了時、このカード上にある消費していない討伐ダイスをすべて取り除き、取り除いたダイスの数だけ希望を得る。</p>
+            <p><em><b>討伐<span class="en-sub">Slayer</span>：</b></em>君は討伐ダイスと呼ばれるダイスプールを得る。君はロール結果が希望だった時、希望を得る代わりに<b>d6</b>を1つこのカードの上に置いてプールに加えることができる。君が所持できる討伐ダイスの数は君の習熟度に等しい。君は<a href="#attack-rolls" class="refer">攻撃ロール</a>または<a href="#damage-rolls" class="refer">ダメージロール</a>を行う時、この討伐ダイスを任意の数だけ消費して振り、出た目を合計に加えることができる。各セッションの終了時、このカード上にある消費していない討伐ダイスをすべて取り除き、取り除いたダイスの数だけ希望を得る。</p>
 
             <h5>専門特徴<span class="en-sub">Specialized Feature</span></h5>
-            <p><em><b>武器の達人<span class="en-sub">Weapon Specialist</span>：</b></em>君は複数の武器を驚くほど軽々と使いこなせる。君は攻撃に成功した時、<b><a href="#hope" class="refer">希望</a>を1つ消費</b>して、サブ武器のダメージダイス1つを<a href="#damage-roll" class="refer">ダメージロール</a>に加えることができる。さらに、大休憩ごとに1回、君が討伐ダイスを振った際、1の目をすべて振り直すことができる。</p>
+            <p><em><b>武器の達人<span class="en-sub">Weapon Specialist</span>：</b></em>君は複数の武器を驚くほど軽々と使いこなせる。君は攻撃に成功した時、<b><a href="#hope" class="refer">希望</a>を1つ消費</b>して、サブ武器のダメージダイス1つを<a href="#damage-rolls" class="refer">ダメージロール</a>に加えることができる。さらに、大休憩ごとに1回、君が討伐ダイスを振った際、1の目をすべて振り直すことができる。</p>
 
             <h5>極意特徴<span class="en-sub">Mastery Feature</span></h5>
-            <p><em><b>武技準備<span class="en-sub">Martial Preparation</span>：</b></em>君は共に旅する者みなに勇気を与える戦士である。君のパーティは、合間ムーヴ“武技準備”を使用できるようになる。休憩中にこのムーヴを使用する際は、君がどのようにパーティを指導、訓練するのか描写すること。君およびこの合間ムーヴを選んだ各味方は、討伐ダイス（<b>d6</b>）を1つ得る。討伐ダイスを持つPCは、そのダイスを消費して振り、出た目を任意の<a href="#attack-rolls" class="refer">攻撃ロール</a>または<a href="#damage-roll" class="refer">ダメージロール</a>に加えることができる。</p>
+            <p><em><b>武技準備<span class="en-sub">Martial Preparation</span>：</b></em>君は共に旅する者みなに勇気を与える戦士である。君のパーティは、合間ムーヴ“武技準備”を使用できるようになる。休憩中にこのムーヴを使用する際は、君がどのようにパーティを指導、訓練するのか描写すること。君およびこの合間ムーヴを選んだ各味方は、討伐ダイス（<b>d6</b>）を1つ得る。討伐ダイスを持つPCは、そのダイスを消費して振り、出た目を任意の<a href="#attack-rolls" class="refer">攻撃ロール</a>または<a href="#damage-rolls" class="refer">ダメージロール</a>に加えることができる。</p>
           </article>
         </div>
 
@@ -1676,7 +1676,7 @@
         <hr>
 
         <h5>ウィザードの希望特徴<span class="en-sub">Wizard’s Hope Feature</span></h5>
-        <p><em><b>今じゃない<span class="en-sub">Not This Time</span>：</b></em><b>希望を3つ消費</b>して、<a href="#far" class="refer">遠距離</a>射程内にいる敵キャラクター1体の<a href="#attack-rolls" class="refer">攻撃ロール</a>または<a href="#damage-roll" class="refer">ダメージロール</a>を振り直させる。</p>
+        <p><em><b>今じゃない<span class="en-sub">Not This Time</span>：</b></em><b>希望を3つ消費</b>して、<a href="#far" class="refer">遠距離</a>射程内にいる敵キャラクター1体の<a href="#attack-rolls" class="refer">攻撃ロール</a>または<a href="#damage-rolls" class="refer">ダメージロール</a>を振り直させる。</p>
 
         <h5>クラス特徴<span class="en-sub">Class Features</span></h5>
         <p><em><b>奇術<span class="en-sub">Prestidigitation</span>：</b></em>君は意のままに無害で些細な魔法効果を起こすことができる。たとえば、物体の色を変えたり、匂いを生んだり、蝋燭に火を灯したり、小さな物体を宙に浮かせたり、部屋を照らしたり、小さな物体を修理したりなどである。</p>
@@ -1761,7 +1761,7 @@
         <p><em><b>断固たる決意<span class="en-sub">Deadly Determination</span>：</b></em><b>希望を3つ消費</b>して、ストレスを2つ回復する。</p>
 
         <h5>クラス特徴<span class="en-sub">Class Features</span></h5>
-        <p><em><b>死印<span class="en-sub">Marked for Death</span>：</b></em>武器攻撃に成功した時、君は<b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して、目標を死印状態にする。君が死印状態にしている目標にダメージを与える時、<a href="#damage-roll" class="refer">ダメージロール</a>に君のティアに等しい数の<b>d4</b>を加える。</p>
+        <p><em><b>死印<span class="en-sub">Marked for Death</span>：</b></em>武器攻撃に成功した時、君は<b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して、目標を死印状態にする。君が死印状態にしている目標にダメージを与える時、<a href="#damage-rolls" class="refer">ダメージロール</a>に君のティアに等しい数の<b>d4</b>を加える。</p>
         <p>君が死印状態にしておける敵キャラクターは一度に1体のみである。この状態は、君が休憩を取るか、死印状態の敵キャラクターが倒れるか、GMが君のティアに等しい数の恐怖を消費して解除するまで継続する。</p>
         <p><em><b>素早い出入り<span class="en-sub">Get In & Get Out</span>：</b></em><b><a href="#hope" class="refer">希望</a>を1つ消費</b>して、GMに“君が見ることのできるある場所に、素早くまたは目立たずに出入りする方法”を尋ねる。この情報に基づいて君が行う次のダイスロールは有利を得る。</p>
 
@@ -1922,7 +1922,7 @@
           <div class="grid-2">
             <div>
               <h6>ティア1</h6>
-              <p><em><b>得意<span class="en-sub">Favored</span>：</b></em><a href="#damage-roll" class="refer">ダメージロール</a>に任意の特性に等しいボーナスを得る。</p>
+              <p><em><b>得意<span class="en-sub">Favored</span>：</b></em><a href="#damage-rolls" class="refer">ダメージロール</a>に任意の特性に等しいボーナスを得る。</p>
               <p><em><b>活力<span class="en-sub">Favored</span>：</b></em>君は攻撃に成功した時、<b>d4</b>を振る。4の目が出たら、集中力を1つ得る。
               <p><em><b>高速<span class="en-sub">Quick</span>：</b></em>君は攻撃を行う時、<b>集中力を1つ消費</b>するか<b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>することで、その攻撃で射程内の別のクリーチャー1体を目標とすることができる。
               <p><em><b>確実<span class="en-sub">Reliable</span>：</b></em>君の<a href="#attack-rolls" class="refer">攻撃ロール</a>に＋1のボーナスを得る。
@@ -2069,7 +2069,7 @@
             <p><em><b>敵減退<span class="en-sub">Diminish My Foes</span>：</b></em>君は目標1体に対する<a href="#action-rolls" class="refer">行動ロール</a>に希望成功した時、<b>任意の数の恩寵を消費</b>して、目標に同じ数のストレスをマークさせることができる。</p>
 
             <h5>極意特徴<span class="en-sub">Mastery Features</span></h5>
-            <p><em><b>畏怖攻撃<span class="en-sub">Fearsome Attack</span>：</b></em><b>恩寵を1つ消費</b>して、君のダメージダイスを任意の数だけ振り直す。恩寵を消費し続けるなら、この特徴は同一の<a href="#damage-roll" class="refer">ダメージロール</a>に対して繰り返し使用できる。</p>
+            <p><em><b>畏怖攻撃<span class="en-sub">Fearsome Attack</span>：</b></em><b>恩寵を1つ消費</b>して、君のダメージダイスを任意の数だけ振り直す。恩寵を消費し続けるなら、この特徴は同一の<a href="#damage-rolls" class="refer">ダメージロール</a>に対して繰り返し使用できる。</p>
             <p><em><b>異界の憤激<span class="en-sub">Otherworldly Ire</span>：</b></em>休憩ごとに1回、君はダメージを受けた際に<b>任意の数の恩寵を消費</b>して、その数だけ契約ダイスを振り、最も高い出目と同じ数だけ<a href="#close" class="refer">近距離</a>射程内のクリーチャーを目標とすることができる。各目標はHPを1つマークしなければならない。</p>
           </article>
         </div>
@@ -2106,7 +2106,7 @@
         <p><em><b>魔女の魅了<span class="en-sub">Witch’s Charm</span>：</b></em>君または<a href="#far" class="refer">遠距離</a>射程内の味方が<a href="#action-rolls" class="refer">行動ロール</a>に失敗した時、君は<b>希望を3つ消費</b>して、それを（失敗ではなく）恐怖成功に変えることができる。</p>
 
         <h5>クラス特徴<span class="en-sub">Class Features</span></h5>
-        <p><em><b>呪詛<span class="en-sub">Hex</span>：</b></em><b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して、<a href="#far" class="refer">遠距離</a>射程内の目標1体を一時的に呪詛状態にする。呪詛状態の間、目標は<a href="#damage-roll" class="refer">ダメージロール</a>と難易度に君のティアに等しいペナルティを受ける。君が一度に呪詛状態にしていられるクリーチャーの最大数は、君の呪文発動特性に等しい。</p>
+        <p><em><b>呪詛<span class="en-sub">Hex</span>：</b></em><b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して、<a href="#far" class="refer">遠距離</a>射程内の目標1体を一時的に呪詛状態にする。呪詛状態の間、目標は<a href="#damage-rolls" class="refer">ダメージロール</a>と難易度に君のティアに等しいペナルティを受ける。君が一度に呪詛状態にしていられるクリーチャーの最大数は、君の呪文発動特性に等しい。</p>
         <p><em><b>交信<span class="en-sub">Commune</span>：</b></em>大休憩ごとに1回、落ち着いた時間を過ごしている間、君は祖先、神格、精霊、または異界の存在と交信することができる。その相手に1つ質問を尋ねた後、君の呪文発動特性に等しい数の<b>d6</b>を振る。出目の1つを選び、下記の表で効果を参照する。</p>
         <table>
           <thead>
@@ -2188,7 +2188,7 @@
                 <tr>
                   <th>2〜3</th>
                   <td>上弦</td>
-                  <td><a href="#damage-roll" class="refer">ダメージロール</a>＋2</td>
+                  <td><a href="#damage-rolls" class="refer">ダメージロール</a>＋2</td>
                 </tr>
                 <tr>
                   <th>4</th>
@@ -2435,7 +2435,7 @@
 
           <h5>血統特徴<span class="en-sub">Ancestry Features</span></h5>
           <p><em><b>耐火性<span class="en-sub">Fireproof</span>：</b></em>君は魔法的な炎と普通の炎によるダメージに完全耐性を持つ。</p>
-          <p><em><b>点火<span class="en-sub">Ignition</span>：</b></em><b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して、場面の終了時まで君のメイン武器を炎で包む。その武器が燃えている間、武器は明るい光を放ち、君はその武器を用いた<a href="#damage-roll" class="refer">ダメージロール</a>に<em>1d6</em>のボーナスを得る。</p>
+          <p><em><b>点火<span class="en-sub">Ignition</span>：</b></em><b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して、場面の終了時まで君のメイン武器を炎で包む。その武器が燃えている間、武器は明るい光を放ち、君はその武器を用いた<a href="#damage-rolls" class="refer">ダメージロール</a>に<em>1d6</em>のボーナスを得る。</p>
         </article>
 
         <article id="skykin">
@@ -2654,7 +2654,7 @@
         <p>デミゴッドには神の力の断片が備わっているが、デミゴッドが受け継ぐものすべてが祝福だとは限らない。彼らは自分に適した任務においては卓越した能力を発揮することが多いが、彼らに課せられた期待に応えることは、しばしば困難を極め、多大な犠牲を伴う。</p>
 
         <h5>変異特徴<span class="en-sub">Transformation Features</span></h5>
-        <p><em><b>天賦<span class="en-sub">Gifted</span>：</b></em>君は<a href="#action-rolls" class="refer">行動ロール</a>、<a href="#reaction-rolls" class="refer">反応ロール</a>、<a href="#damage-roll" class="refer">ダメージロール</a>に＋1のボーナスを得る。</p>
+        <p><em><b>天賦<span class="en-sub">Gifted</span>：</b></em>君は<a href="#action-rolls" class="refer">行動ロール</a>、<a href="#reaction-rolls" class="refer">反応ロール</a>、<a href="#damage-rolls" class="refer">ダメージロール</a>に＋1のボーナスを得る。</p>
         <p><em><b>神性の重み<span class="en-sub">Weight of Divinity</span>：</b></em>君がロールに失敗した時、君が<a href="#stress" class="refer">ストレス</a>を1つマークするか、GMが<a href="#fear" class="refer">恐怖</a>を1つ得なければならない。</p>
 
         <aside>
@@ -2766,7 +2766,7 @@
         <p>ウェアウルフはオオカミの姿でいる間、狩猟本能や暴力性を抑えるのに苦労することが多く、愛する者を傷つけないためには、並外れた自制心を働かせたり、多大なエネルギーを費やしたり、あるいはやむをえず逃げ出したり自分を閉じ込めたりしなければならない。ウェアウルフでいる経験が長ければ長いほど、自分を制御する方法を身につけている可能性も高い。</p>
 
         <h5>変異特徴<span class="en-sub">Transformation Features</span></h5>
-        <p><em><b>オオカミ形態<span class="en-sub">Wolf Form</span>：</b></em>君はHPを1つ以上マークした時、<a href="#stress" class="refer">ストレス</a>を1つマークしてオオカミ形態に入ることができる。この形態でいる間、君は<a href="#attack-rolls" class="refer">攻撃ロール</a>と<a href="#damage-roll" class="refer">ダメージロール</a>に<b>1d10</b>のボーナスを得る。君のロール結果が希望だった時、オオカミ形態にあるなら、君は<a href="#stress" class="refer">ストレス</a>を1つマークしなければならない。オオカミ形態は、君が“遠吠え暴れ”に入るか、休憩を取るまで継続する。</p>
+        <p><em><b>オオカミ形態<span class="en-sub">Wolf Form</span>：</b></em>君はHPを1つ以上マークした時、<a href="#stress" class="refer">ストレス</a>を1つマークしてオオカミ形態に入ることができる。この形態でいる間、君は<a href="#attack-rolls" class="refer">攻撃ロール</a>と<a href="#damage-rolls" class="refer">ダメージロール</a>に<b>1d10</b>のボーナスを得る。君のロール結果が希望だった時、オオカミ形態にあるなら、君は<a href="#stress" class="refer">ストレス</a>を1つマークしなければならない。オオカミ形態は、君が“遠吠え暴れ”に入るか、休憩を取るまで継続する。</p>
         <p><em><b>遠吠え暴れ<span class="en-sub">Howling Rampage</span>：</b></em>君が最後のストレスをマークした時、オオカミ形態にあるなら、君は大暴れに入ることができる。君のティアに等しい数の<b>d20</b>を振り、<a href="#melee" class="refer">近接</a>射程内にいるすべてのクリーチャーに合計値ぶんの物理ダメージを与えた後、オオカミ形態を解除する。</p>
 
         <aside>
@@ -2799,29 +2799,28 @@
         <h3>プレイヤーの原則と推奨規範<span class="en-sub">Player Principles & Best Practices</span></h3>
         <p>ダガーハートを最大限に楽しむため、プレイヤーは各セッションを通じて以下の原則と規範を心に留めておくことをお勧めする：</p>
 
-        <div class="grid-2">
-          <article id="principles">
-            <h4>原則<span class="en-sub">Principles</span></h4>
-            <ul>
-              <li>自分のキャラクターとその旅路のファンになる。</li>
-              <li>友達にスポットライトを当てる。</li>
-              <li>キャラクターに語りかけ、プレイヤーにも語りかける。</li>
-              <li>一緒に世界を築き上げる。</li>
-              <li>プレイして何が起こるのか確かめる。</li>
-              <li>優しく待つ。</li>
-            </ul>
-          </article>
+        <article id="principles">
+          <h4>原則<span class="en-sub">Principles</span></h4>
+          <ul>
+            <li>自分のキャラクターとその旅路のファンになる。</li>
+            <li>友達にスポットライトを当てる。</li>
+            <li>キャラクターに語りかけ、プレイヤーにも語りかける。</li>
+            <li>一緒に世界を築き上げる。</li>
+            <li>プレイして何が起こるのか確かめる。</li>
+            <li>優しく待つ。</li>
+          </ul>
+        </article>
 
-          <article id="best-practices">
-            <h4>推奨規範<span class="en-sub">Best Practices</span></h4>
-            <ul>
-              <li>危険を受け入れる。</li>
-              <li>自分のリソースを活用する。</li>
-              <li>物語を紡ぐ。</li>
-              <li>自分のキャラクターを発見する。</li>
-            </ul>
-          </article>
-        </div>
+        <article id="best-practices">
+          <h4>推奨規範<span class="en-sub">Best Practices</span></h4>
+          <ul>
+            <li>危険を受け入れる。</li>
+            <li>自分のリソースを活用する。</li>
+            <li>物語を紡ぐ。</li>
+            <li>自分のキャラクターを発見する。</li>
+          </ul>
+        </article>
+        
         <blockquote>
           <p><em>さらに詳しくは、『Daggerheart Core Rulebook』9ページと108ページを参照。</em></p>
         </blockquote>
@@ -2883,7 +2882,7 @@
           <li id="success-with-fear"><b>恐怖成功：</b>合計値が難易度以上かつ恐怖ダイスの目が希望ダイスより高いなら、君のロール結果は“恐怖成功”となる。君は代償や障害を伴って成功し、GMが<a href="#fear" class="refer">恐怖</a>を1つ得る。</li>
           <li id="failure-with-hope"><b>希望失敗：</b>合計値が難易度未満かつ希望ダイスの目が恐怖ダイスより高いなら、君のロール結果は“希望失敗”となる。君は小さな弊害を伴って失敗し、<a href="#hope" class="refer">希望</a>を1つ得る。その後、<a href="#the-spotlight" class="refer">スポットライト</a>がGMに遷移する。</li>
           <li id="failure-with-fear"><b>恐怖失敗：</b>合計値が難易度未満かつ恐怖ダイスの目が希望ダイスより高いなら、君のロール結果は“恐怖失敗”となる。君は大きな弊害を伴って失敗し、GMが<a href="#fear" class="refer">恐怖</a>を1つ得る。その後、<a href="#the-spotlight" class="refer">スポットライト</a>がGMに遷移する。</li>
-          <li id="critically-success"><b>クリティカル成功：</b>二元ダイスの目が等しいなら、君のロール結果は“クリティカル成功”（“クリティカル”）となる。君は追加の利益を伴って自動的に成功し、<a href="#hope" class="refer">希望</a>を1つ得て、<a href="#stress" class="refer">ストレス</a>を1つ回復する。これが<a href="#attack-rolls" class="refer">攻撃ロール</a>だったなら、君は<a href="#critical-damage" class="refer">クリティカルダメージ</a>を与える。</li>
+          <li id="critical-success"><b>クリティカル成功：</b>二元ダイスの目が等しいなら、君のロール結果は“クリティカル成功”（“クリティカル”）となる。君は追加の利益を伴って自動的に成功し、<a href="#hope" class="refer">希望</a>を1つ得て、<a href="#stress" class="refer">ストレス</a>を1つ回復する。これが<a href="#attack-rolls" class="refer">攻撃ロール</a>だったなら、君は<a href="#critical-damage" class="refer">クリティカルダメージ</a>を与える。</li>
         </ul>
         <blockquote>
           <p><em><b>注：</b>クリティカル成功は“希望成功”とみなされる。</em></p>
@@ -2950,7 +2949,7 @@
 
       <article id="special-rolls">
         <h3>特殊ロール<span class="en-sub">Special Rolls</span></h3>
-        <p>以下のロールは、特有の仕様があったり、<a href="#action-rolls" class="refer">行動ロール</a>の手順を変更したりする：<a href="#trait-rolls" class="refer">特性ロール</a>、<a href="#spellcast-rolls" class="refer">呪文発動ロール</a>、<a href="#attack-rolls" class="refer">攻撃ロール</a>、<a href="#damage-roll" class="refer">ダメージロール</a>。特記のない限り、任意のボーナス、修正値、効果などは特殊ロールにも適用でき、標準的な<a href="#action-rolls" class="refer">行動ロール</a>と同様に扱う。</p>
+        <p>以下のロールは、特有の仕様があったり、<a href="#action-rolls" class="refer">行動ロール</a>の手順を変更したりする：<a href="#trait-rolls" class="refer">特性ロール</a>、<a href="#spellcast-rolls" class="refer">呪文発動ロール</a>、<a href="#attack-rolls" class="refer">攻撃ロール</a>、<a href="#damage-rolls" class="refer">ダメージロール</a>。特記のない限り、任意のボーナス、修正値、効果などは特殊ロールにも適用でき、標準的な<a href="#action-rolls" class="refer">行動ロール</a>と同様に扱う。</p>
 
         <article id="trait-rolls">
           <h5>特性ロール</a><span class="en-sub">Trait Rolls</span></h5>
@@ -2979,7 +2978,7 @@
           <h5>反応ロール<span class="en-sub">Reaction Rolls</span></h5>
           <p><b>反応ロール</b>は攻撃や危険への反応として行われるもので、キャラクターが差し迫った効果を避けたり耐え抜いたりしようと試みることを表す。</p>
           <p>反応ロールはほとんど<a href="#action-rolls" class="refer">行動ロール</a>と同じように働くが、希望や恐怖を生んだり追加のGMムーヴを作動させたりすることはなく、他のキャラクターが<a href="#help-an-ally" class="refer">味方援護</a>を使用して手伝うことはできない。</p>
-          <p>反応ロールで<a href="#critically-success" class="refer">クリティカル成功</a>した場合、ストレスを回復することも希望を得ることもないが、成功時に君にもたらされるはずだった効果（ダメージを受ける、ストレスをマークする、など）は無視される。</p>
+          <p>反応ロールで<a href="#critical-success" class="refer">クリティカル成功</a>した場合、ストレスを回復することも希望を得ることもないが、成功時に君にもたらされるはずだった効果（ダメージを受ける、ストレスをマークする、など）は無視される。</p>
         </article>
 
         <article id="group-action-rolls"></article>
@@ -3025,33 +3024,37 @@
         <h3>希望と恐怖<span class="en-sub">Hope & Fear</span></h3>
         <p><b><ruby>希望<rt>ホープ</rt></ruby></b>と<b><ruby>恐怖<rt>フィアー</rt></ruby></b>は、君のテーブルの物語上の出来事を形作る宇宙的な力を表すメタ通貨である。希望はPCの能力や特徴に力を与え、恐怖はGMやGMが制御する敵キャラクターと環境の能力に力を与える。</p>
 
-        <h5>希望<span class="en-sub">Hope</span></h5>
-        <p>各PCはキャラクター作成時に希望を2つ持って開始し、プレイを通してさらに希望を得てゆく。PCが一度に持てる希望は最大6つで、希望はセッション間で持ち越される。</p>
-        <p>プレイヤーが希望を消費して行えることは以下の通り：</p>
-        <ul>
-          <li id="help-an-ally">
-            <b>味方援護<span class="en-sub">Help an Ally</span></b>
-            <p>君が<a href="#action-rolls" class="refer">行動ロール</a>を行う味方1人を援護する際は、どのように援護するのか説明し、有利ダイスを振る。複数のプレイヤーが希望を消費して同じ行動中のプレイヤーを手伝うこともできるが、対象のプレイヤーが最終的な合計値に加えることができるのは最も高い出目のみである。</p>
-          </li>
-          <li id="utilize-an-experience">
-            <b>経験利用<span class="en-sub">Utilize an Experience</span></b>
-            <p>君は関連するロールに経験を利用し、その修正値を合計値に加えることができる。複数の希望を消費して複数の経験を利用することもできる。</p>
-          </li>
-          <li id="initiate-a-tag-team-roll">
-            <b>連携ロールの開始<span class="en-sub">Initiate a Tag Team Roll</span></b>
-            <p>希望を3つ消費して連携ロールを開始し、PC2人の行動を組み合わせて1つの見事な相乗効果を生み出す。連携ロールを行う際は、両プレイヤーが自分の<a href="#action-rolls" class="refer">行動ロール</a>を行ってから、どちらの出目を結果に適用するか決める。</p>
-          </li>
-          <li id="activate-a-hope-feature">
-            <b>希望特徴の起動<span class="en-sub">Activate a Hope Feature</span></b>
-            <p>希望特徴は、起動時に指定された数の希望を消費することができる（しなければならない）任意の効果である。<b>クラス希望特徴</b>はクラス固有の特徴で、キャラクターシートに詳述されており、起動には希望3つを必要とする。</p>
-          </li>
-        </ul>
-        <blockquote>
-          <p><em><b>注：</b>希望特徴を使用する際、その行動のロール結果が希望だったなら、君はそのロールから得る希望をその特徴に消費することができる（複数の希望を消費する必要がある場合は、その一部として消費することもできる）。</em></p>
-        </blockquote>
+        <article id="hope">
+          <h5>希望<span class="en-sub">Hope</span></h5>
+          <p>各PCはキャラクター作成時に希望を2つ持って開始し、プレイを通してさらに希望を得てゆく。PCが一度に持てる希望は最大6つで、希望はセッション間で持ち越される。</p>
+          <p>プレイヤーが希望を消費して行えることは以下の通り：</p>
+          <ul>
+            <li id="help-an-ally">
+              <b>味方援護<span class="en-sub">Help an Ally</span></b>
+              <p>君が<a href="#action-rolls" class="refer">行動ロール</a>を行う味方1人を援護する際は、どのように援護するのか説明し、有利ダイスを振る。複数のプレイヤーが希望を消費して同じ行動中のプレイヤーを手伝うこともできるが、対象のプレイヤーが最終的な合計値に加えることができるのは最も高い出目のみである。</p>
+            </li>
+            <li id="utilize-an-experience">
+              <b>経験利用<span class="en-sub">Utilize an Experience</span></b>
+              <p>君は関連するロールに経験を利用し、その修正値を合計値に加えることができる。複数の希望を消費して複数の経験を利用することもできる。</p>
+            </li>
+            <li id="initiate-a-tag-team-roll">
+              <b>連携ロールの開始<span class="en-sub">Initiate a Tag Team Roll</span></b>
+              <p>希望を3つ消費して連携ロールを開始し、PC2人の行動を組み合わせて1つの見事な相乗効果を生み出す。連携ロールを行う際は、両プレイヤーが自分の<a href="#action-rolls" class="refer">行動ロール</a>を行ってから、どちらの出目を結果に適用するか決める。</p>
+            </li>
+            <li id="activate-a-hope-feature">
+              <b>希望特徴の起動<span class="en-sub">Activate a Hope Feature</span></b>
+              <p>希望特徴は、起動時に指定された数の希望を消費することができる（しなければならない）任意の効果である。<b>クラス希望特徴</b>はクラス固有の特徴で、キャラクターシートに詳述されており、起動には希望3つを必要とする。</p>
+            </li>
+          </ul>
+          <blockquote>
+            <p><em><b>注：</b>希望特徴を使用する際、その行動のロール結果が希望だったなら、君はそのロールから得る希望をその特徴に消費することができる（複数の希望を消費する必要がある場合は、その一部として消費することもできる）。</em></p>
+          </blockquote>
+        </article>
 
-        <h5>恐怖<span class="en-sub">Fear</span></h5>
-        <p>プレイヤーのロール結果が恐怖のたび、GMは恐怖を得る。GMは任意のタイミングで恐怖を消費し、GMムーヴを行うか、GMムーヴを強化するか、恐怖特徴を使用することができる。GMは一度に最大12個の恐怖を持つことができる。恐怖はセッション間で持ち越される。</p>
+        <article id="fear">
+          <h5>恐怖<span class="en-sub">Fear</span></h5>
+          <p>プレイヤーのロール結果が恐怖のたび、GMは恐怖を得る。GMは任意のタイミングで恐怖を消費し、GMムーヴを行うか、GMムーヴを強化するか、恐怖特徴を使用することができる。GMは一度に最大12個の恐怖を持つことができる。恐怖はセッション間で持ち越される。</p>
+        </article>
       </article>
     </section>
 
@@ -3117,7 +3120,7 @@
 
       <article id="critical-damage">
         <h5>クリティカルダメージ<span class="en-sub">Critical Damage</span></h5>
-        <p><a href="#attack-rolls" class="refer">攻撃ロール</a>にクリティカル成功すると（すなわち、二元ダイスで同じ目を出したなら）、追加ダメージを与える。通常通りに<a href="#damage-roll" class="refer">ダメージロール</a>を行うが、最終的な合計値にダメージダイスが出しうる目の最大値を加えること。たとえば、通常2d8＋1のダメージを与える攻撃ならば、クリティカル成功では2d8＋1＋16のダメージを与えることになる。</p>
+        <p><a href="#attack-rolls" class="refer">攻撃ロール</a>にクリティカル成功すると（すなわち、二元ダイスで同じ目を出したなら）、追加ダメージを与える。通常通りに<a href="#damage-rolls" class="refer">ダメージロール</a>を行うが、最終的な合計値にダメージダイスが出しうる目の最大値を加えること。たとえば、通常2d8＋1のダメージを与える攻撃ならば、クリティカル成功では2d8＋1＋16のダメージを与えることになる。</p>
       </article>
 
       <article id="damage-types">
@@ -3135,14 +3138,14 @@
 
       <article id="muti-target-attack-rolls">
         <h5>複数目標への攻撃ロール<span class="en-sub">Multi-Target Attack Rolls</span></h5>
-        <p>呪文や能力によって複数の敵キャラクターを目標とできるなら、1回の<a href="#attack-rolls" class="refer">攻撃ロール</a>と1回の<a href="#damage-roll" class="refer">ダメージロール</a>を行ってから、その結果を各目標それぞれに適用すること。〔訳注：1回の<a href="#attack-rolls" class="refer">攻撃ロール</a>の結果を各目標の難易度と比較し、個別に成功／失敗を判定する。〕</p>
+        <p>呪文や能力によって複数の敵キャラクターを目標とできるなら、1回の<a href="#attack-rolls" class="refer">攻撃ロール</a>と1回の<a href="#damage-rolls" class="refer">ダメージロール</a>を行ってから、その結果を各目標それぞれに適用すること。〔訳注：1回の<a href="#attack-rolls" class="refer">攻撃ロール</a>の結果を各目標の難易度と比較し、個別に成功／失敗を判定する。〕</p>
       </article>
 
       <article id="multiple-damage-sources">
         <h5>複数のダメージ源<span class="en-sub">Multiple Damage Sources</span></h5>
         <p>複数のダメージ源から同時にダメージを与える際は、常に目標のダメージ閾値と比較する前に合算する。</p>
         <aside>
-          <p>たとえば、血統がオークのPCが<a href="#melee" class="refer">近接</a>射程内にいる目標に対して攻撃を成功させ、<a href="#hope" class="refer">希望</a>を1つ消費して特徴「牙」（<a href="#damage-roll" class="refer">ダメージロール</a>に1d6の追加ダメージを加える）を使用することにしたとしよう。そのPCは、通常の武器ダメージを振って出た目に1d6を加えてから、敵キャラクターに合計ダメージを与える。</p>
+          <p>たとえば、血統がオークのPCが<a href="#melee" class="refer">近接</a>射程内にいる目標に対して攻撃を成功させ、<a href="#hope" class="refer">希望</a>を1つ消費して特徴「牙」（<a href="#damage-rolls" class="refer">ダメージロール</a>に1d6の追加ダメージを加える）を使用することにしたとしよう。そのPCは、通常の武器ダメージを振って出た目に1d6を加えてから、敵キャラクターに合計ダメージを与える。</p>
         </aside>
       </article>
     </section>
@@ -3261,7 +3264,7 @@
       <p>PCが最後のHPをマークしたなら、そのPCは以下の死亡ムーヴの1つを選んで行わなければならない：</p>
       <ul>
         <li id="blaze-of-glory"><b>最期の勇姿<span class="en-sub">Blaze of Glory</span>：</b>君のキャラクターは死を受け入れ、栄光に包まれてこの世を去る。最期の行動を1つ行う。（GMが認めるなら）その行動は自動的にクリティカル成功となり、その後キャラクターは死の<ruby>帷<rt>とばり</rt></ruby>を越えてゆく。</li>
-        <li id="avoid-death"><b>死亡回避<span class="en-sub">Avoid Death</span>：</b>君のキャラクターは死を回避し、その弊害に直面する。キャラクターは一時的に意識を失い、その後GMと協力して状況がどのように悪化するか描写する。意識を失っている間、キャラクターは移動も行動もできず、攻撃の目標とならない。君のキャラクターは、味方にHPを1つ以上回復してもらうか、パーティが大休憩を終えると意識を取り戻す。キャラクターが意識を失った後、希望ダイスを振ること。出た目がキャラクターのレベル以下だった場合、キャラクターは傷跡を負う。すなわち、希望スロット1つを永続的に×で消し、GMと協力してその傷跡が物語に与える長期的な影響や、（可能であれば）どのように回復できるかを決定する。最後の希望スロットを×で消したなら、君のキャラクターの旅は終わりを迎える。</li>
+        <li id="avoid-death"><b>死亡回避<span class="en-sub">Avoid Death</span>：</b>君のキャラクターは死を回避し、その弊害に直面する。キャラクターは一時的に意識を失い、その後GMと協力して状況がどのように悪化するか描写する。意識を失っている間、キャラクターは移動も行動もできず、攻撃の目標とならない。君のキャラクターは、味方にHPを1つ以上回復してもらうか、パーティが大休憩を終えると意識を取り戻す。キャラクターが意識を失った後、希望ダイスを振ること。出た目がキャラクターのレベル以下だった場合、<span id="scar">キャラクターは傷跡を負う。すなわち、希望スロット1つを永続的に×で消し、GMと協力してその傷跡が物語に与える長期的な影響や、（可能であれば）どのように回復できるかを決定する。最後の希望スロットを×で消したなら、君のキャラクターの旅は終わりを迎える。</span></li>
         <li id="risk-it-all"><b>決死の覚悟<span class="en-sub">Risk It All</span>：</b>二元ダイスを振ること。希望ダイスの方が高い場合、キャラクターは踏みとどまり、希望ダイスの値に等しいHPまたはストレスを回復する（希望ダイスの値をHPとストレスにどう配分するかは自由に決めてよい）。恐怖ダイスの方が高い場合、キャラクターは死のベールを越える。二元ダイスの目が同じだった場合、キャラクターは踏みとどまり、HPとストレスをすべて回復する。</li>
       </ul>
       <p>キャラクターが死亡した場合、GMと相談して、次のセッションまでにパーティの他のメンバーの現在レベルで新たなキャラクターを作成すること。</p>
@@ -3597,7 +3600,7 @@
       <blockquote>
         <em>以下の表は、ダガーハートのコアセットに含まれるアイテムである。</em>
       </blockquote>
-      <div class="grid-2">
+      <div id="loot-table" class="grid-2">
         <table id="loot-table-left" class="item"></table>
         <table id="loot-table-right" class="item"></table>
       </div>
@@ -3606,7 +3609,7 @@
       <blockquote>
         <em>以下の表は、『Hope & Fear Expansion Set』に含まれるアイテムである。</em>
       </blockquote>
-      <div class="grid-2">
+      <div id="loot-table-2" class="grid-2">
         <table id="loot-table-2-left" class="item"></table>
         <table id="loot-table-2-right" class="item"></table>
       </div>
@@ -3627,7 +3630,7 @@
       <blockquote>
         <em>以下の表は、ダガーハートのコアセットに含まれる消耗品である。</em>
       </blockquote>
-      <div class="grid-2">
+      <div id="consumable-table" class="grid-2">
         <table id="consumable-table-left" class="item"></table>
         <table id="consumable-table-right" class="item"></table>
       </div>
@@ -3636,7 +3639,7 @@
       <blockquote>
         <em>以下の表は、『Hope & Fear Expansion Set』に含まれる消耗品である。</em>
       </blockquote>
-      <div class="grid-2">
+      <div id="consumable-table-2" class="grid-2">
         <table id="consumable-table-2-left" class="item"></table>
         <table id="consumable-table-2-right" class="item"></table>
       </div>
@@ -3656,7 +3659,7 @@
   </section>
 
   <!-- ==================== -->
-  <!-- RUNNING AN ADVENTURE -->
+  <!--   アドベンチャーの実行  -->
   <!-- ==================== -->
 
   <section id="running-an-adventure" class="chapter">
@@ -3768,20 +3771,20 @@
         <p>GMに二元ダイスはない。その代わり、GMは“GMダイス”と呼ばれる1つのd20を振る。</p>
 
         <article id="adversary-attack-rolls">
-          <h5>敵キャラクターの<a href="#attack-rolls" class="refer">攻撃ロール</a><span class="en-sub">Adversary Attack Rolls</span></h5>
-          <p>敵キャラクターがPCを攻撃する際は、君のd20を振って出た目にその敵キャラクターの攻撃ボーナスを加える。合計値が目標の<a href="#evasion" class="refer">回避値</a>以上なら、攻撃は成功する。それ以外の場合、攻撃は失敗する。攻撃に成功したなら、その攻撃の<a href="#damage-roll" class="refer">ダメージロール</a>を振り、与えるダメージ量を決定する。</p>
-          <p>君が攻撃でナチュラル20〔※訳注：修正値のないd20自体で20の目が出ること〕を振ったなら、君のロールは自動的に成功し、君は追加ダメージを与える。通常通りにダメージを振ってから、合計値にダメージダイスの最大値を加える。たとえば、3d6＋2のダメージを与える攻撃なら、クリティカル成功時には（18＋3d6＋2）のダメージを与える。クリティカル成功は固定のダメージ修正値には影響しない。</p>
+          <h5>敵キャラクターの攻撃ロール<span class="en-sub">Adversary Attack Rolls</span></h5>
+          <p>敵キャラクターがPCを攻撃する際は、君のd20を振って出た目にその敵キャラクターの攻撃ボーナスを加える。合計値が目標の<a href="#evasion" class="refer">回避値</a>以上なら、攻撃は成功する。それ以外の場合、攻撃は失敗する。攻撃に成功したなら、その攻撃の<a href="#damage-rolls" class="refer">ダメージロール</a>を振り、与えるダメージ量を決定する。</p>
+          <p id="critical-damage">君が攻撃でナチュラル20〔※訳注：修正値のないd20自体で20の目が出ること〕を振ったなら、君のロールは自動的に成功し、君は追加ダメージを与える。通常通りにダメージを振ってから、合計値にダメージダイスの最大値を加える。たとえば、3d6＋2のダメージを与える攻撃なら、クリティカル成功時には（18＋3d6＋2）のダメージを与える。クリティカル成功は固定のダメージ修正値には影響しない。</p>
           <blockquote>
             <p><em><b>注：</b></em><em>敵キャラクターの<a href="#reaction-rolls" class="refer">反応ロール</a>でのクリティカル成功は自動的に成功するが、追加の利益はもたらさない。</em></p>
           </blockquote>
         </article>
 
         <article id="guidance-on-action-rolls">
-          <h5><a href="#action-rolls" class="refer">行動ロール</a>の指針<span class="en-sub">Guidance on Action Rolls</span></h5>
+          <h5>行動ロールの指針<span class="en-sub">Guidance on Action Rolls</span></h5>
           <p>プレイヤーがゲーム中に行いたいムーヴを説明した後、その場面の展開を決めるために<a href="#action-rolls" class="refer">行動ロール</a>が必要だと判断する場合がある。この指針を参考にして、状況に最も適した選択肢を選び、プレイヤーに提示すること：</p>
           <ul>
             <li>PCの経験や背景、行動にかかっているプレッシャー、そして考えられる結果を考慮し、ロールが必要かどうかを判断する。</li>
-            <li>プレイヤーがロールを行う前に、その<a href="#action-rolls" class="refer">行動ロール</a>の賭け金となる要素を明確にしておく。</li>
+            <li>プレイヤーが<a href="#action-rolls" class="refer">行動ロール</a>を行う前に、その利害を明確にしておく。</li>
             <li>避けられない弊害があれば、事前に伝えておく。</li>
             <li>君が望むなら、興味深い結果、代償、障害を受け入れることを条件に、<a href="#action-rolls" class="refer">行動ロール</a>を省略する機会をプレイヤーに提示することもできる。</li>
           </ul>
@@ -3835,7 +3838,7 @@
         </article>
 
         <article id="quick-reference-resolving-action-rolls">
-          <h5>簡易参照：<a href="#action-rolls" class="refer">行動ロール</a>の解決<span class="en-sub">Quick Reference: Resolving Action Rolls</span></h5>
+          <h5>簡易参照：行動ロールの解決<span class="en-sub">Quick Reference: Resolving Action Rolls</span></h5>
           <p><em>ロールの解決方法に迷ったときは、以下の簡単な表現を参考にすること：</em></p>
           <p><b>希望成功：</b>はい、そして…（望むものが得られ、君は<a href="#hope" class="refer">希望</a>を1つ得る）。</p>
           <p><b>恐怖成功：</b>はい、ただし…（望むものが得られるが弊害を伴い、GMは<a href="#fear" class="refer">恐怖</a>を1つ得る）</p>
@@ -3857,24 +3860,28 @@
 
           <aside>
             <h6>GMムーヴの例<span class="en-sub">Example GM Moves</span></h6>
-            <ul>
-              <li>世界の反応を示す</li>
-              <li>質問を投げかけ、その答えを基に構築する</li>
-              <li>NPCに動機に沿った行動を取らせる</li>
-              <li>目標をちらつかせてPCに行動を促す</li>
-              <li>画面外で差し迫った脅威を仄めかす</li>
-              <li>望まぬ真実や予期せぬ危険を明かす</li>
-              <li>パーティを分断させる</li>
-              <li>PC1人にストレスをマークさせる</li>
-              <li>キャラクターたちには見えないムーヴを行う</li>
-              <li>巻き添え被害を示す</li>
-              <li>敵キャラクター1体の状態を解除する</li>
-              <li>環境を変化させる</li>
-              <li>敵キャラクターに<a href="#the-spotlight" class="refer">スポットライト</a>を当てる</li>
-              <li>重要な人物や物を捕らえる</li>
-              <li>PCの背景を逆手に取る</li>
-              <li>ある機会を永久に奪う</li>
-            </ul>
+            <div class="grid-2">
+              <ul>
+                <li>世界の反応を示す</li>
+                <li>質問を投げかけ、その答えを基に構築する</li>
+                <li>NPCに動機に沿った行動を取らせる</li>
+                <li>目標をちらつかせてPCに行動を促す</li>
+                <li>画面外で差し迫った脅威を仄めかす</li>
+                <li>望まぬ真実や予期せぬ危険を明かす</li>
+                <li>パーティを分断させる</li>
+                <li>PC1人にストレスをマークさせる</li>
+              </ul>
+              <ul>
+                <li>キャラクターたちには見えないムーヴを行う</li>
+                <li>巻き添え被害を示す</li>
+                <li>敵キャラクター1体の状態を解除する</li>
+                <li>環境を変化させる</li>
+                <li>敵キャラクターに<a href="#the-spotlight" class="refer">スポットライト</a>を当てる</li>
+                <li>重要な人物や物を捕らえる</li>
+                <li>PCの背景を逆手に取る</li>
+                <li>ある機会を永久に奪う</li>
+              </ul>
+            </div>
           </aside>
         </article>
       </article>
@@ -3882,8 +3889,8 @@
       <article id="using-fear">
         <h4>恐怖を利用する<span class="en-sub">Using Fear</span></h4>
         <p>キャンペーンの開始時、君はパーティのPC人数分の恐怖を持つ。</p>
-        <p>PCのロール結果が恐怖だった時、PCが休憩（「合間」参照）を取った時、または能力や効果に恐怖を得ると書かれている時、君は恐怖を得る。</p>
-        <p>君は、一度に13個以上の恐怖を持つことはできない。</p>
+        <p>PCのロール結果が恐怖だった時、PCが休憩（「<a href="#downtime">合間</a>」参照）を取った時、または能力や効果に恐怖を得ると書かれている時、君は恐怖を得る。</p>
+        <p>一度に13個以上の恐怖を持つことはできない。</p>
         <p>恐怖はセッション間で持ち越される。</p>
         <p>恐怖は以下の用途で使用する：</p>
         <ul>
@@ -3900,27 +3907,27 @@
             <tr>
               <td><b>付帯的</b></td>
               <td>感情的に熱のこもった場面の後のPC同士の状況報告；情報収集；地元市場での物資補充；合間時間中の休憩。</td>
-              <td>恐怖：0〜1個</td>
+              <td>恐怖0〜1つ</td>
             </tr>
             <tr>
               <td><b>軽微</b></td>
               <td>移動シーン；新たな敵を導入する、または今後のトラブルを予感させるような小規模な小競り合い。</td>
-              <td>恐怖：1〜3個</td>
+              <td>恐怖1〜3つ</td>
             </tr>
             <tr>
               <td><b>標準</b></td>
               <td>重要な目的を伴う大規模な戦闘；力と知恵が試される危険な旅；重要情報や援助を求める緊迫した社交場面。</td>
-              <td>恐怖：2〜4個</td>
+              <td>恐怖2〜4つ</td>
             </tr>
             <tr>
               <td><b>主要</b></td>
               <td>単独型または指揮型の敵キャラクターとの大規模な戦闘；キャラクター個々の物語に重大な変化をもたらす、キャラクターを形作るような場面（真実の暴露、成長、裏切りなど）。</td>
-              <td>恐怖：4〜8個</td>
+              <td>恐怖4〜8つ</td>
             </tr>
             <tr>
               <td><b>クライマックス</b></td>
               <td>一連の物語の悪役との大規模な対決；壮大な決戦；重要NPCの運命を決定づける決闘。</td>
-              <td>恐怖：6〜12個</td>
+              <td>恐怖6〜12個</td>
             </tr>
           </tbody>
         </table>
@@ -3928,7 +3935,7 @@
         <p><b>大量の恐怖</b>を抱えてしまったら、以下を検討すること：</p>
         <ul>
           <li><b>素早く消費する：</b>プレイヤーに反応の隙を与えないうちに恐怖を消費する</li>
-          <li><b>頻繁に消費する：</b><a href="#the-spotlight" class="refer">スポットライト</a>が自分に当たるたびに恐怖を消費する</li>
+          <li><b>頻繁に消費する：</b><a href="#the-spotlight" class="refer">スポットライト</a>が回ってくるたびに恐怖を消費する</li>
           <li><b>大胆に消費する：</b>恐怖を消費して、連続で複数のムーヴを行う</li>
         </ul>
         <p>恐怖を消費してムーヴを行うことは、君の行動の影響力を増大させることを示す。恐怖ムーヴには多くの場合、以下の要素の1つまたは複数が含まれる：</p>
@@ -3944,8 +3951,7 @@
         <p>ある敵キャラクターに対する<a href="#attack-rolls" class="refer">攻撃ロール</a>の難易度は、その敵キャラクターの難易度の値に等しい。ある敵キャラクターに対するその他の<a href="#action-rolls" class="refer">行動ロール</a>の難易度は、その敵キャラクターの難易度の値に、（適用可能ならば）その敵キャラクターが持つ関連した経験修正値の1つの値を加えたものに等しい。</p>
         <p>プレイヤーが難易度の記載されていない<a href="#action-rolls" class="refer">行動ロール</a>を行う際は、GMが状況を総合的に判断して難易度を設定する。詳しい指針については以下の指標表を参照。</p>
 
-        <h4 class="trait">【敏捷】<span class="en-sub">Agility</span></h4>
-        <table id="agility-benchmark-table">
+        <table id="agility-benchmark-table" class="benchmark" data-label="【敏捷】">
           <thead>
             <tr>
               <th>出目</th>
@@ -3994,8 +4000,7 @@
           </tbody>
         </table>
 
-        <h4 class="trait">【筋力】<span class="en-sub">Strength</span></h4>
-        <table id="strength-benchmark-table">
+        <table id="strength-benchmark-table" class="benchmark" data-label="【筋力】">
           <thead>
             <tr>
               <th>出目</th>
@@ -4044,8 +4049,7 @@
           </tbody>
         </table>
 
-        <h4 class="trait">【技巧】<span class="en-sub">Finesse</span></h4>
-        <table id="finesse-benchmark-table">
+        <table id="finesse-benchmark-table" class="benchmark" data-label="【技巧】">
           <thead>
             <tr>
               <th>出目</th>
@@ -4094,8 +4098,7 @@
           </tbody>
         </table>
 
-        <h4 class="trait">【直観】<span class="en-sub">Instinct</span></h4>
-        <table id="instinct-benchmark-table">
+        <table id="instinct-benchmark-table" class="benchmark" data-label="【直観】">
           <thead>
             <tr>
               <th>出目</th>
@@ -4144,8 +4147,7 @@
           </tbody>
         </table>
 
-        <h4 class="trait">【存在】<span class="en-sub">Presence</span></h4>
-        <table id="presence-benchmark-table">
+        <table id="presence-benchmark-table" class="benchmark" data-label="【存在】">
           <thead>
             <tr>
               <th>出目</th>
@@ -4194,8 +4196,7 @@
           </tbody>
         </table>
 
-        <h4 class="trait">【知識】<span class="en-sub">Knowledge</span></h4>
-        <table id="knowledge-benchmark-table">
+        <table id="knowledge-benchmark-table" class="benchmark" data-label="【知識】">
           <thead>
             <tr>
               <th>出目</th>
@@ -4250,42 +4251,42 @@
         <p>あるPCの行動や状況が行動能力にどのような影響を与えるかを直感的に伝える際は、<a href="#action-rolls" class="refer">行動ロール</a>の難易度を調整するのではなく、有利ダイスを与える（または不利ダイスを課す）こと。</p>
 
         <article id="adversary-action-rolls">
-          <h5>敵キャラクターの<a href="#action-rolls" class="refer">行動ロール</a><span class="en-sub">Adversary Action Rolls</span></h5>
-          <p>基本的に、<a href="#attack-rolls" class="refer">攻撃ロール</a>やデータブロックに記載されている固有行動を除いて、敵キャラクターは<a href="#action-rolls" class="refer">行動ロール</a>を行わないのが通常である。敵キャラクターが試みるその他の行動は、<a href="#action-rolls" class="refer">行動ロール</a>不要でただ成功する。敵キャラクターの行動に失敗の可能性を持たせたいなら、（敵キャラクターに<a href="#action-rolls" class="refer">行動ロール</a>を行わせるのではなく）関連するすべてのPCに<a href="#reaction-rolls" class="refer">反応ロール</a>を行わせること。</p>
-          <p>ただし、PCが影響を及ぼせないようなとりわけ劇的または困難な課題については、敵キャラクターに<a href="#action-rolls" class="refer">行動ロール</a>を行わせてもよい。敵キャラクターの<a href="#action-rolls" class="refer">行動ロール</a>には、d20を振る。結果がその行動の難易度以上だったなら、その行動は成功する——さもなくば失敗する。君はダイスを振る前に<a href="#fear" class="refer">恐怖</a>を1つ消費することで、敵キャラクターのデータブロックから関連する経験を合計値に加えることができる。敵キャラクターが<a href="#reaction-rolls" class="refer">反応ロール</a>を行う場合も、同様の手順を使用する。</p>
+          <h5>敵キャラクターの行動ロール<span class="en-sub">Adversary Action Rolls</span></h5>
+          <p>基本的に、<a href="#attack-rolls" class="refer">攻撃ロール</a>やデータブロックに記載されている固有行動を除いて、敵キャラクターは<a href="#action-rolls" class="refer">行動ロール</a>を行わないのが通常である。敵キャラクターが試みるその他の行動は、行動ロール不要でただ成功する。敵キャラクターの行動に失敗の可能性を持たせたいなら、（敵キャラクターに行動ロールを行わせるのではなく）関連するすべてのPCに<a href="#reaction-rolls" class="refer">反応ロール</a>を行わせること。</p>
+          <p id="adversary-action-rolls">ただし、PCが影響を及ぼせないようなとりわけ劇的または困難な課題については、敵キャラクターに行動ロールを行わせてもよい。敵キャラクターの行動ロールには、d20を振る。結果がその行動の難易度以上だったなら、その行動は成功する——さもなくば失敗する。君はダイスを振る前に<a href="#fear" class="refer">恐怖</a>を1つ消費して、敵キャラクターのデータブロックから関連する経験を合計値に加えることができる。敵キャラクターが反応ロールを行う場合も、同様の手順を使用する。</p>
         </article>
 
         <article id="adversary-advantage-and-disadvantage">
           <h5>敵キャラクターの有利と不利<span class="en-sub">Adversary Advantage & Disadvantage</span></h5>
-          <p>敵キャラクターが<a href="#action-rolls" class="refer">行動ロール</a>に有利を得ているなら、GMはもう1つd20を振り、高い方の出目のみを数える。敵キャラクターが<a href="#action-rolls" class="refer">行動ロール</a>に不利を受けているなら、GMはもう1つd20を振り、低い方の出目のみを数える。</p>
+          <p>敵キャラクターが行動ロールに有利を得ているなら、GMはもう1つd20を振り、高い方の出目のみを数える。敵キャラクターが行動ロールに不利を受けているなら、GMはもう1つd20を振り、低い方の出目のみを数える。</p>
         </article>
 
         <article id="adversary-attacks">
           <h5>敵キャラクターの攻撃<span class="en-sub">Adversary Attacks</span></h5>
           <p>敵キャラクターがPCを攻撃する時、GMはd20を振り、出た目にその敵キャラクターの攻撃修正値を加える。合計値が目標の<a href="#evasion" class="refer">回避値</a>以上なら、その攻撃は成功する。さもなくば攻撃は失敗する。GMはダイスを振る前に、攻撃する敵キャラクターに有利を与えるか、不利を課すか、<a href="#fear" class="refer">恐怖</a>を1つ消費してその敵キャラクターのデータブロックから関連する経験を合計値に加えることができる。</p>
           <p>成功したなら、その敵キャラクターは目標にデータブロックに記載されたダメージを与える。</p>
-          <p>敵キャラクターの行動が複数の目標に対する攻撃を可能にする時、GMは1回の<a href="#attack-rolls" class="refer">攻撃ロール</a>を行い、それを各目標の<a href="#evasion" class="refer">回避値</a>と別々に比較する。</p>
+          <p>敵キャラクターの行動が複数の目標に対する攻撃を可能にする時、GMは1回の<a href="#adversary-attack-rolls" class="refer">攻撃ロール</a>を行い、それを各目標の<a href="#evasion" class="refer">回避値</a>と別々に比較する。</p>
         </article>
       </article>
 
       <article id="countdown">
-        <h3><a href="#countdown" class="refer">カウントダウン</a><span class="en-sub">Countdowns</span></h3>
-        <p><b><a href="#countdown" class="refer">カウントダウン</a></b>は、将来的な効果に先立つ期間や一連の出来事を表す。<a href="#countdown" class="refer">カウントダウン</a>は初期値から始まる。<a href="#countdown" class="refer">カウントダウン</a>が<b>進行</b>すると、値が1ずつ減少する。<a href="#countdown" class="refer">カウントダウン</a>が0になると、<a href="#countdown" class="refer">カウントダウン</a>の効果が作動する。</p>
+        <h3>カウントダウン<span class="en-sub">Countdowns</span></h3>
+        <p><b>カウントダウン</b>は、将来的な効果に先立つ期間や一連の出来事を表す。カウントダウンには初期値がある。カウントダウンが<b>進行</b>すると、値が1ずつ減少する。カウントダウンが0になると、カウントダウンの効果が作動する。</p>
         <aside>
-          <p><b>注：</b><a href="#countdown" class="refer">カウントダウン</a>は、ダイスを回して目を減少させたり、チェックボックスに印をつけたりして追跡できる。</p>
+          <p><b>注：</b>カウントダウンの追跡には、ダイスを回して目を減少させたり、チェックボックスに印をつけたりするとよい。</p>
         </aside>
-        <p><b>標準<a href="#countdown" class="refer">カウントダウン</a></b>はプレイヤーが<a href="#action-rolls" class="refer">行動ロール</a>を行うたびに進行する。敵キャラクターや環境の能力に“<a href="#countdown" class="refer">カウントダウン</a>[n]”と記載されているなら、初期値がnの標準<a href="#countdown" class="refer">カウントダウン</a>を意味する。</p>
-        <p><b>動的<a href="#countdown" class="refer">カウントダウン</a></b>は<a href="#action-rolls" class="refer">行動ロール</a>の結果に応じて1〜3ずつ進行する。<b>弊害<a href="#countdown" class="refer">カウントダウン</a></b>は負の効果に対する動的<a href="#countdown" class="refer">カウントダウン</a>である。<b>進展<a href="#countdown" class="refer">カウントダウン</a></b>は正の効果に対する動的<a href="#countdown" class="refer">カウントダウン</a>である。動的<a href="#countdown" class="refer">カウントダウン</a>は、以下の表に従って進行する：</p>
+        <p id="standard-countdown"><b>標準カウントダウン</b>は、プレイヤーが<a href="#action-rolls" class="refer">行動ロール</a>を行うたびに進行する。敵キャラクターや環境の能力に“カウントダウン［n］”と記載されているなら、初期値がnの標準カウントダウンを意味する。</p>
+        <p id="dynamic-countdown"><b>動的カウントダウン</b>は、<a href="#action-rolls" class="refer">行動ロール</a>の結果に応じて1〜3ずつ進行する。<b>弊害カウントダウン</b>は負の効果に対する動的カウントダウンである。<b>進展カウントダウン</b>は正の効果に対する動的カウントダウンである。動的カウントダウンは、以下の表に従って進行する：</p>
       </article>
 
       <article id="dynamic-countdown-advancement">
-        <h4>動的<a href="#countdown" class="refer">カウントダウン</a>の進行<span class="en-sub">Dynamic Countdown Advancement</span></h4>
+        <h4>動的カウントダウンの進行<span class="en-sub">Dynamic Countdown Advancement</span></h4>
         <table>
           <thead>
             <tr>
               <th>ロール結果</th>
-              <th>進展<a href="#countdown" class="refer">カウントダウン</a></th>
-              <th>弊害<a href="#countdown" class="refer">カウントダウン</a></th>
+              <th>進展カウントダウン</th>
+              <th>弊害カウントダウン</th>
             </tr>
           </thead>
           <tbody>
@@ -4318,14 +4319,14 @@
         </table>
 
         <article id="advanced-countdown-features">
-          <h4>発展的<a href="#countdown" class="refer">カウントダウン</a>特徴<span class="en-sub">Advanced Countdown Features</span></h4>
+          <h4>発展的特徴<span class="en-sub">Advanced Countdown Features</span></h4>
           <ul>
-            <li>初期値がランダムな<a href="#countdown" class="refer">カウントダウン</a></li>
-            <li><a href="#countdown" class="refer">カウントダウン</a>効果が作動した後で初期値にリセットされる<b>繰り返し型</b><a href="#countdown" class="refer">カウントダウン</a>。</li>
-            <li>繰り返しのたびに初期値が1ずつ増加する<b>増加型</b><a href="#countdown" class="refer">カウントダウン</a>。</li>
-            <li>繰り返しのたびに初期値が1ずつ減少する<b>減少型</b><a href="#countdown" class="refer">カウントダウン</a>。</li>
-            <li>同一の<a href="#action-rolls" class="refer">行動ロール</a>の結果に応じて同時に進行する、<b>連動</b>した進展<a href="#countdown" class="refer">カウントダウン</a>と弊害<a href="#countdown" class="refer">カウントダウン</a>。</li>
-            <li>（<a href="#action-rolls" class="refer">行動ロール</a>ではなく）<b>休憩</b>後に進行する<b>長期型</b><a href="#countdown" class="refer">カウントダウン</a></li>
+            <li>初期値がランダムなカウントダウン</li>
+            <li id="loop-countdown">カウントダウン効果が作動した後で初期値にリセットされる<b>繰り返し型</b>カウントダウン。</li>
+            <li id="incresing-countdown">繰り返しのたびに初期値が1ずつ増加する<b>増加型</b>カウントダウン。</li>
+            <li id="decreasing-countdown">繰り返しのたびに初期値が1ずつ減少する<b>減少型</b>カウントダウン。</li>
+            <li id="linked-countdowns">同一の<a href="#action-rolls" class="refer">行動ロール</a>の結果に応じて同時に進行する、<b>連動</b>した進展カウントダウンと弊害カウントダウン。</li>
+            <li id="long-term-countdown">（<a href="#action-rolls" class="refer">行動ロール</a>ではなく）<b>休憩</b>後に進行する<b>長期型</b>カウントダウン</li>
           </ul>
         </article>
       </article>
@@ -4338,12 +4339,6 @@
         <p>それ以外の場合は、「平均価格」表の項目を調整して商品やサービスの価格を設定し、キャンペーン設定に反映させること：</p>
 
         <table id="average-costs">
-          <thead>
-            <tr>
-              <th>項目</th>
-              <th>価格</th>
-            </tr>
-          </thead>
           <tbody>
             <tr>
               <td>冒険者パーティ1組分の食事（一晩）</td>
@@ -4402,11 +4397,11 @@
         <p>GMとしてNPCを運用する際は、常にGM原則に従い、それを利用して世界に命を吹き込むよう心がけるべきである。話し方や行動パターンでNPCを差別化し、それぞれの目標や欲求が行動の動機となるようにすること。</p>
         <p>NPCに不可欠な要素は、<b>名前、説明、動機</b>だけだ。PCがNPCに対して行動ダイスを振る可能性がある場合は、難易度を設けること。敵キャラクターは、新たに作り出してもよいし、別の敵キャラクターのデータブロックを修正することで即興で作ってもよい。</p>
         <p>戦闘中にNPCが味方になった場合、データブロックは必要ない——そのNPCが何をするかに焦点を当て、その関与が物語をどのように変えるかを示すだけで十分である。場面中にPCがその助けをうまく活用したなら、そのPCに有利を与えること。HPやストレスを持たないNPCでも、物語の展開上必要であれば、負傷または死亡させてもよい。</p>
-        <p>重要なNPCをメカニクス的にシステムと関わらせたいなら、作動条件や効果のある特徴を1つまたは複数与えてもよい。また、NPCは自分のパラメータを調整する選択肢を持っていることもある。たとえば：</p>
+        <p>重要なNPCをメカニクス的にシステムと関わらせたいなら、作動条件や効果のある特徴を1つまたは複数与えてもよい。また、NPCは自分のパラメータを調整する特徴を持っていることもある。例：</p>
 
         <h6>秘術捕縛</h6>
         <p class="indent"><em><b>選択肢：</b></em>戦闘が開始した時、気に入ったPC1人を選ぶ。</p>
-        <p class="indent"><em><b>作動条件：</b></em>ある戦闘中に初めて、気に入ったPCが<a href="#close" class="refer">近距離</a>射程におり、攻撃をヒットさせた時。</p>
+        <p class="indent"><em><b>作動条件：</b></em>ある戦闘中に初めて、気に入ったPCが<a href="#close" class="refer">近距離</a>射程におり、攻撃を命中させた時。</p>
         <p class="indent"><em><b>効果：</b></em>その敵キャラクターに対して修正値＋6で<a href="#attack-rolls" class="refer">攻撃ロール</a>を行う。成功したなら、目標は強力な魔法の触手によって一時的に<a href="#restrained" class="refer">拘束状態</a>になる。</p>
 
         <article id="npc-feature-examples">
@@ -4414,10 +4409,10 @@
 
           <h6>矢の雨</h6>
           <p class="indent"><em><b>作動条件：</b></em>戦闘が開始し、このNPCが巻き込まれる。</p>
-          <p class="indent"><em><b>効果：</b></em><a href="#countdown" class="refer">カウントダウン</a>（繰り返し3）を起動する。この<a href="#countdown" class="refer">カウントダウン</a>はPCが攻撃をミスすると進行する。<a href="#countdown" class="refer">カウントダウン</a>が作動すると、このNPCはそのPCが選んだ目標1体に矢の雨を放ち、<b>2d8＋3</b>の物理ダメージを与える。</p>
+          <p class="indent"><em><b>効果：</b></em><a href="#countdown" class="refer">カウントダウン</a>（<a href="#loop-countdown" class="refer">繰り返し3</a>）を開始する。PCが攻撃を外した時、カウントダウンが進行する。カウントダウンが作動した時、このNPCはそのPCが選んだ目標1体に矢の雨を放ち、<b>2d8＋3</b>の物理ダメージを与える。</p>
 
-          <h6>師匠</h6>
-          <p class="indent"><em><b>選択：</b></em>戦闘が開始した時、弟子のPCを1人選ぶ。</p>
+          <h6>指南</h6>
+          <p class="indent"><em><b>選択：</b></em>戦闘が開始した時、弟子PCを1人選ぶ。</p>
           <p class="indent"><em><b>条件：</b></em><a href="#close" class="refer">近距離</a>射程内にいる君の弟子が<a href="#attack-rolls" class="refer">攻撃ロール</a>に失敗する。</p>
           <p class="indent"><em><b>効果：</b></em>そのPCの<a href="#melee" class="refer">近接</a>射程内に移動し、助言や指針を与える。そのPCが行う次の<a href="#attack-rolls" class="refer">攻撃ロール</a>は有利を得る。</p>
 
@@ -4426,24 +4421,24 @@
           <p class="indent"><em><b>条件：</b></em>すべてのPCがすべての防具スロットをマークする。</p>
           <p class="indent"><em><b>効果：</b></em>すべてのPCとこのNPCを選択した地点に転移させ、各目標の防具スロットを1つずつ回復する。</p>
 
-          <h6>夜の中へ</h6>
-          <p class="indent"><em><b>条件：</b></em>PCたちがこのNPCと共に大休憩を開始する。</p>
-          <p class="indent"><em><b>効果：</b></em>1d4を振る。2以下の目が出たなら、このNPCはPCたちが眠っている間にパーティから金1握りを盗んだ後、夜の中へ姿を消す。</p>
+          <h6>夜に消える</h6>
+          <p class="indent"><em><b>条件：</b></em>PCたちがこのNPCと共に<a href="#long-rest" class="refer">大休憩</a>を開始する。</p>
+          <p class="indent"><em><b>効果：</b></em>1d4を振る。2以下の目が出たなら、このNPCはPCたちが眠っている間にパーティから<a href="#gold" class="refer">金</a>1握りを盗んだ後、夜の中へ姿を消す。</p>
         </article>
       </article>
 
       <article id="optional-gm-mechanics">
-        <h3>選択GMメカニクス<span class="en-sub">Optional GM Mechanics</span></h3>
+        <h3>選択的GMメカニクス<span class="en-sub">Optional GM Mechanics</span></h3>
 
         <article id="fate-rolls">
           <h5>運命ロール<span class="en-sub">Fate Rolls</span></h5>
-          <p>結果を完全に運に委ねたい時、GMは運命ロールを要求する。GMは賭けるものと、ロールの解釈方法を設ける。そうしたら、プレイヤーの1人が二元ダイスのどちらかを振り、出た目を解釈する。</p>
+          <p>結果を完全に運に委ねたい時、GMは運命ロールを要求する。GMは対象のものごとと、ロールの解釈方法を設定する。そうしたら、プレイヤーの1人が二元ダイスのどちらかを振り、出た目を解釈する。</p>
           <aside>
             <h6>例：</h6>
             <p><em>「恐怖ダイスを振ってください。出た目が4以下なら、この家の外へ火が広がります」</em></p>
-            <p><em>「援軍が間に合うかどうかは、本当に運次第だと思います。さあ、恐怖ダイスを振ってください——それで<a href="#countdown" class="refer">カウントダウン</a>の初期値が決定します。作動すると、<a href="#far" class="refer">遠距離</a>射程内に援軍が到着します」</em></p>
+            <p><em>「援軍が間に合うかどうかは、本当に運次第だと思います。さあ、恐怖ダイスを振ってください——それで<a href="#countdown" class="refer">カウントダウン</a>の初期値が決定します。これが作動すると、<a href="#far" class="refer">遠距離</a>射程内に援軍が到着します」</em></p>
             <p><em>「さあ、希望ダイスを振って、今夜この宿にどれだけの客がいるか見てみましょう。出た目が高いほど、客の数は多くなります」</em></p>
-            <p><em>「希望ダイスを用いてロールを行い、この店に在庫のあるスタミナポーションの数を決定しましょう」</em></p>
+            <p><em>「希望ダイスでロールを行い、この店の在庫にスタミナ薬がいくつあるか決定しましょう」</em></p>
           </aside>
         </article>
 
@@ -4461,8 +4456,8 @@
         <article id="moving-and-fighting-underwater">
           <h5>水中での移動と戦闘<span class="en-sub">Moving and Fighting Underwater</span></h5>
           <p>基本的には、攻撃者が水中にいる状態で行われる<a href="#attack-rolls" class="refer">攻撃ロール</a>は不利を受ける。</p>
-          <p>水中で呼吸できないクリーチャーについては、どれだけ息を堪えておけるか管理するために標準<a href="#countdown" class="refer">カウントダウン</a>（3）を使用する。そのPCが行動を取るたびに<a href="#countdown" class="refer">カウントダウン</a>を進行させること。加えて、そのPCが水中でロールに失敗するかロール結果が恐怖だったなら、君はGMムーヴを消費して追加で1段階ぶん——恐怖失敗なら2段階ぶん——進行させることができる。</p>
-          <p><a href="#countdown" class="refer">カウントダウン</a>が終了したら、水中にいるPCは行動を取るたびに<a href="#stress" class="refer">ストレス</a>を1つマークしなければならない。</p>
+          <p>水中で呼吸できないクリーチャーについては、どれだけ息を堪えておけるか管理するために<a href="#standard-countdown" class="refer">標準カウントダウン</a>（3）を使用する。そのPCが行動を取るたびにカウントダウンを進行させること。加えて、そのPCが水中でロールに失敗するか、ロール結果が恐怖だったなら、君はGMムーヴを消費して追加で1段階ぶん——恐怖失敗なら2段階ぶん——進行させることができる。</p>
+          <p>カウントダウンが終了したなら、水中にいるPCは行動を取るたびに<a href="#stress" class="refer">ストレス</a>を1つマークしなければならない。</p>
         </article>
 
         <article id="conflict-between-pcs">
@@ -4483,17 +4478,17 @@
           <h4>敵キャラクターのデータブロック<span class="en-sub">Adversary Stat Blocks</span></h4>
           <p><ruby>敵キャラクター<rt>アドバーザリー</rt></ruby>を運用するために必要な情報は、すべてそのデータブロックに記載されている。敵キャラクターのデータブロックには、以下の情報が含まれている：</p>
 
-          <article id="adversary-stat-blocks-name">
+          <article id="adversary-name">
             <h5>名称<span class="en-sub">Name</span></h5>
             <p>各データブロックには固有の<b>名称</b>が付いている。特定の名称の敵キャラクターに影響を与える能力は、物語内の名前にかかわらず、そのデータブロックを使用するすべての敵キャラクターを含む。</p>
           </article>
 
-          <article id="adversary-stat-blocks-tier">
+          <article id="adversary-tier">
             <h5>ティア<span class="en-sub">Tier</span></h5>
             <p>敵キャラクターはそれぞれ、特定の<b>ティア</b>のPCと敵対するよう設計されている。パーティを異なるティアの敵キャラクターと対峙させる場合は、データを調整すること。</p>
           </article>
 
-          <article id="adversary-stat-blocks-type">
+          <article id="adversary-type">
             <h5>種別<span class="en-sub">Type</span></h5>
             <p>敵キャラクターの種別はティアに併記されている。敵キャラクターの<b>種別</b>は、衝突において担う役割を表す。敵キャラクターの種別は以下の通り：</p>
             <ul>
@@ -4503,7 +4498,7 @@
               </li>
               <li><b>指導：</b>他の敵キャラクターを指揮、召喚する。</li>
               <li><b>雑魚：</b>簡単に倒せるが、集団になると危険。</li>
-              <li><b>射撃：</b>接近戦では脆弱だが、<a href="#far" class="refer">遠距離</a>から高ダメージを与える。</li>
+              <li><b>射撃：</b>接近戦では脆弱だが、遠距離から高ダメージを与える。</li>
               <li><b>潜伏：</b>機動性を活かし、好機を捉えて敵を奇襲する。</li>
               <li><b>社交：</b>戦闘ではなく会話を通じて困難をもたらす。</li>
               <li><b>単体：</b>支援の有無にかかわらず、パーティ全体にとって手強い相手となる。</li>
@@ -4512,37 +4507,37 @@
             </ul>
           </article>
 
-          <article id="adversary-stat-blocks-description">
+          <article id="adversary-description">
             <h5>説明<span class="en-sub">Description</span></h5>
             <p>その敵キャラクターの外見とふるまいをまとめたもの。</p>
           </article>
 
-          <article id="adversary-stat-blocks-motives-tactics">
+          <article id="adversary-motives-and-tactics">
             <h5>動機と戦術<span class="en-sub">Motives & Tactics</span></h5>
             <p>その敵キャラクターについて推奨される行動原理、行動、目的。</p>
           </article>
 
-          <article id="adversary-stat-blocks-difficulty">
+          <article id="adversary-difficulty">
             <h5>難易度<span class="en-sub">Difficulty</span></h5>
             <p>その敵キャラクターに対して行われるあらゆるロールの難易度（特記のある場合は除く）。</p>
           </article>
 
-          <article id="adversary-stat-blocks-thresholds-hp-stress">
+          <article id="adversary-thresholds-hp-and-stress">
             <h5>ダメージ閾値、HP、ストレス<span class="en-sub">Damage Thresholds, Hit Points, and Stress</span></h5>
             <p>これらのシステムは、PCについてのものと同じように機能する。“閾値”の後ろに記載されている数値は、その敵キャラクターの中ダメージ閾値と大ダメージ閾値である。</p>
           </article>
 
-          <article id="adversary-stat-blocks-attack-modifier">
+          <article id="adversary-attack-modifier">
             <h5>攻撃修正値<span class="en-sub">Attack Modifier</span></h5>
             <p>その敵キャラクターで攻撃する際は、このボーナスまたはペナルティを<a href="#attack-rolls" class="refer">攻撃ロール</a>に適用する。</p>
           </article>
 
-          <article id="adversary-stat-blocks-standard-attack">
+          <article id="adversary-standard-attack">
             <h5>通常攻撃<span class="en-sub">Standard Attack</span></h5>
             <p>その敵キャラクターがPCに危害を与える主な手段の説明。これには、攻撃の<b>名称</b>、有効な<b>射程</b>、攻撃が成功した際に与える<b>ダメージ</b>が含まれる。敵キャラクターの<b>通常攻撃</b>を使用することはGMムーヴである。</p>
           </article>
 
-          <article id="adversary-stat-blocks-experience">
+          <article id="adversary-experience">
             <h5>経験（ない場合もある）<span class="en-sub">Experience (Optional)</span></h5>
             <p>GMは<a href="#fear" class="refer">恐怖</a>を1つ消費することで、ある敵キャラクターの関連する経験を使用し、その敵キャラクターの<a href="#attack-rolls" class="refer">攻撃ロール</a>を上昇させるか、その敵キャラクターに対して行われるロールの難易度を上げることができる。</p>
 
@@ -4583,7 +4578,7 @@
             </table>
           </article>
 
-          <article id="adversary-stat-blocks-features">
+          <article id="adversary-feature">
             <h5>特徴<span class="en-sub">Feature(s)</span></h5>
             <p>敵キャラクターの特徴には以下の3種類がある：<b>行動</b>、<b>反応</b>、<b>受動</b>。注：各敵キャラクターのストレスは個別に管理される。ある特徴を起動させるためにGMがストレスを消費する必要があるなら、そのストレスは、起動する特徴を持つ敵キャラクターから消費されなければならない。ある特徴が恐怖を必要とするなら、その恐怖はそれ以前に消費された恐怖（例：PCを遮って敵キャラクターに<a href="#the-spotlight" class="refer">スポットライト</a>を当てるのに消費したもの）とは別に消費されなければならない。</p>
             <ul>
@@ -4593,7 +4588,7 @@
             </ul>
           </article>
 
-          <article id="adversary-stat-blocks-fear-features">
+          <article id="fear-feature">
             <h5>恐怖特徴<span class="en-sub">Fear Feature(s)</span></h5>
             <p>恐怖1つを消費して発動する、威力の絶大な効果。</p>
           </article>
@@ -4605,13 +4600,13 @@
           <article id="example-adversary-features-action">
             <h5>行動<span class="en-sub">Action</span></h5>
             <p><b>強打<span class="en-sub">Haymaker</span> — 行動：</b><a href="#very-close" class="refer">至近距離</a>射程内の目標1体に対して攻撃を行う。成功したなら、Xの直接物理ダメージを与える。</p>
-            <p><b>細断攻撃<span class="en-sub">Shredding Strike</span> — 行動：</b><a href="#very-close" class="refer">至近距離</a>射程内の目標1体に対して攻撃を行う。成功したなら、Xの物理ダメージを与える。目標は防具スロットを1つマークしなければならないが、その利益は得られない（ただし、防具を利用してダメージを軽減することはできる）。</p>
-            <p><b>まだまだいるぞ<span class="en-sub">More Where That Came From</span> — 行動：</b><a href="#far" class="refer">遠距離</a>射程に《鋸ナイフ団の子分》3人を召喚する。</p>
+            <p><b>細断攻撃<span class="en-sub">Shredding Strike</span> — 行動：</b><a href="#very-close" class="refer">至近距離</a>射程内の目標1体に対して攻撃を行う。成功したなら、Xの物理ダメージを与える。目標は防具スロットを1つマークしなければならない（これはなんの利益ももたらさないが、さらに防具を使用してダメージを軽減することはできる）。</p>
+            <p><b>まだまだいるぞ<span class="en-sub">More Where That Came From</span> — 行動：</b><a href="#far" class="refer">遠距離</a>射程に3人の《鋸ナイフ団の子分》を召喚する。</p>
           </article>
 
           <article id="example-adversary-features-reactions">
             <h5>反応<span class="en-sub">Reactions</span></h5>
-            <p><b>強打者<span class="en-sub">Heavy Hitter</span> — 反応：</b>この敵キャラクターが通常攻撃でダメージを与える時、君は<a href="#fear" class="refer">恐怖</a>を1つ消費して<a href="#damage-roll" class="refer">ダメージロール</a>に＋Xのボーナスを得ることができる。</p>
+            <p><b>強打者<span class="en-sub">Heavy Hitter</span> — 反応：</b>この敵キャラクターが通常攻撃でダメージを与える時、君は<a href="#fear" class="refer">恐怖</a>を1つ消費して<a href="#damage-rolls" class="refer">ダメージロール</a>に＋Xのボーナスを得ることができる。</p>
             <p><b>協力戦闘<span class="en-sub">Team-Up</span> — 反応：</b>この敵キャラクターの<a href="#very-close" class="refer">至近距離</a>射程内にいる別の敵キャラクターがクリーチャーにXのダメージを与えた時、君は<a href="#stress" class="refer">ストレス</a>を1つマークすることで同じクリーチャーに対して通常攻撃を行うことができる。成功したなら、ダメージを合算する。</p>
             <p><b>優勢<span class="en-sub">Momentum</span> — 反応：</b>この敵キャラクターがPCに対する攻撃に成功した時、君は<a href="#fear" class="refer">恐怖</a>を1つ得る。</p>
           </article>
@@ -4619,10 +4614,10 @@
           <article id="example-adversary-features-passives">
             <h5>受動効果<span class="en-sub">Passives</span></h5>
             <p><b>大群（X）<span class="en-sub">Horde (X)</span> — 受動：</b>この大群がHPを半分以上マークしているなら、通常攻撃が与えるダメージはXになる。</p>
-            <p><b>雑魚（X）<span class="en-sub">Minion (X)</span> — 受動：</b>この敵キャラクターは少しでもダメージを受けると倒される。PCがこの敵キャラクターに与えたダメージのXごとに、その攻撃が成功する射程内の雑魚を追加で1体倒す。</p>
-            <p><b>連続攻撃（X）<span class="en-sub">Relentless (X)</span> — 受動：</b>この敵キャラクターにはGMターンごとに最大X回まで<a href="#the-spotlight" class="refer">スポットライト</a>を当てることができる。<a href="#the-spotlight" class="refer">スポットライト</a>を当てる際は通常通りに恐怖を消費する。</p>
-            <p><b>鈍重<span class="en-sub">Slow</span> — 受動：</b>この敵キャラクターに<a href="#the-spotlight" class="refer">スポットライト</a>を当てた時、データブロック上にトークンがなければこの敵キャラクターは行動できない。この敵キャラクターのデータブロック上にトークンを置き、どんな行動を準備しているか説明すること。この敵キャラクターに<a href="#the-spotlight" class="refer">スポットライト</a>を当てた時、データブロック上にトークンがあればトークンを取り除き、この敵キャラクターは行動可能になる。</p>
-            <p><b>魔法の体<span class="en-sub">Arcane Form</span> — 受動：</b>この敵キャラクターは魔法ダメージに抵抗を持つ。</p>
+            <p><b>雑魚（X）<span class="en-sub">Minion (X)</span> — 受動：</b>この敵キャラクターはダメージを受けると倒れる。PCがこの敵キャラクターに与えたダメージのXごとに、その攻撃が成功する射程内の雑魚クリーチャーを追加で1体倒す。</p>
+            <p><b>連続攻撃（X）<span class="en-sub">Relentless (X)</span> — 受動：</b>この敵キャラクターにはGMターンごとに最大X回まで<a href="#the-spotlight" class="refer">スポットライト</a>を当てることができる。スポットライトを当てる際は通常通りに恐怖を消費する。</p>
+            <p><b>鈍重<span class="en-sub">Slow</span> — 受動：</b>この敵キャラクターに<a href="#the-spotlight" class="refer">スポットライト</a>を当てた時、データブロックの上にトークンがなければ、この敵キャラクターは行動できない。データブロックにトークンを置き、どんな行動を準備しているか説明すること。この敵キャラクターに<a href="#the-spotlight" class="refer">スポットライト</a>を当てた時、データブロックの上にトークンがあれば、この敵キャラクターは行動できる。トークンを取り除くこと</p>
+            <p><b>魔法抵抗<span class="en-sub">Arcane Form</span> — 受動：</b>この敵キャラクターは魔法ダメージに抵抗を持つ。</p>
             <p><b>装甲<span class="en-sub">Armored Carapace</span> — 受動：</b>この敵キャラクターが物理ダメージを受ける時、ダメージをXだけ減少させる。</p>
           </article>
 
@@ -4650,10 +4645,10 @@
           <p>戦闘を計画する際は、まず<b>（3×戦闘に参加するPC数＋2）の戦闘ポイント</b>を用意し、以下の調整を加える：</p>
           <ul>
             <li>簡単または短時間の戦闘には<b>－1</b></li>
-            <li>単体の敵キャラクターを2体以上使用するなら<b>－2</b></li>
-            <li>すべての敵キャラクターの<a href="#damage-roll" class="refer">ダメージロール</a>に1d4（または固定値2）を加えるなら<b>－2</b></li>
+            <li>単体型の敵キャラクターを2体以上使用するなら<b>－2</b></li>
+            <li>すべての敵キャラクターの<a href="#damage-rolls" class="refer">ダメージロール</a>に1d4（または固定値2）を加えるなら<b>－2</b></li>
             <li>ティアの低い敵キャラクターを1体選ぶなら<b>＋1</b></li>
-            <li>腕力、大群、指導、単体の敵キャラクターを一切含めないなら<b>＋1</b></li>
+            <li>暴力、大群、指導、単体型の敵キャラクターを一切含めないなら<b>＋1</b></li>
             <li>困難または長時間の戦闘には<b>＋2</b></li>
           </ul>
           <p>その後、戦闘ポイントを消費して遭遇に敵キャラクターを加える：</p>
@@ -4662,7 +4657,7 @@
             <li>社交または支援型の敵キャラクター1体につき<b>1ポイントを消費する</b>。</li>
             <li>大群、射撃、隠密、標準型の敵キャラクター1体につき<b>2ポイントを消費する</b>。</li>
             <li>指導型の敵キャラクター1体につき<b>3ポイントを消費する</b>。</li>
-            <li>腕力型の敵キャラクター1体につき<b>4ポイントを消費する</b>。</li>
+            <li>暴力型の敵キャラクター1体につき<b>4ポイントを消費する</b>。</li>
             <li>単体型の敵キャラクター1体につき<b>3ポイントを消費する</b>。</li>
           </ul>
         </article>
@@ -4954,7 +4949,7 @@
             <li><b>探索</b> — 謎や驚異が待ち受ける、不思議な場所</li>
             <li><b>社交</b> — 主に人間関係上の課題が提示される場所</li>
             <li><b>移動</b> — その空間内や周囲を移動すること自体が課題となる危険な場所</li>
-            <li><b>出来事</b> — （物理的な空間ではない）特別な活動や出来事</li>
+            <li><b>イベント</b> — （物理的な空間ではない）特別な活動や出来事</li>
           </ul>
         </article>
 
@@ -4964,7 +4959,7 @@
         </article>
 
         <article id="environment-impulses">
-          <h5>衝撃<span class="en-sub">Impulses</span></h5>
+          <h5>影響<span class="en-sub">Impulses</span></h5>
           <p>その環境が、その中にいる人々にどのような形で影響を与え、行動に影響を与えるかという様子や様式。</p>
         </article>
 
@@ -5036,13 +5031,13 @@
             <div class="grid-2">
               <ul>
                 <li><a href="#abandoned-grove" class="refer">放棄された木立（探索）</a></li>
-                <li><a href="#ambushed" class="refer">待ち伏せ（出来事）</a></li>
-                <li><a href="#ambushers" class="refer">奇襲（出来事）</a></li>
+                <li><a href="#ambushed" class="refer">待ち伏せ（イベント）</a></li>
+                <li><a href="#ambushers" class="refer">奇襲計画（イベント）</a></li>
                 <li><a href="#bustling-marketplace" class="refer">賑やかな市場（社交）</a></li>
               </ul>
               <ul>
                 <li><a href="#cliffside-ascent" class="refer">崖登り（移動）</a></li>
-                <li><a href="#local-tavern" class="refer">地元の酒場（社交）</a></li>
+                <li><a href="#local-tavern" class="refer">地元酒場（社交）</a></li>
                 <li><a href="#outpost-town" class="refer">辺境の町（社交）</a></li>
                 <li><a href="#raging-river" class="refer">激流（移動）</a></li>
               </ul>
@@ -5052,8 +5047,8 @@
           <article>
             <h5>ティア2（レベル2〜4）<span class="en-sub">Tier 2 (Levels 2-4)</span></h5>
             <ul>
-              <li><a href="#cult-ritual" class="refer">教団の儀式（出来事）</a></li>
-              <li><a href="#hallowed-temple" class="refer">聖なる寺院（社交）</a></li>
+              <li><a href="#cult-ritual" class="refer">カルト教団の儀式（イベント）</a></li>
+              <li><a href="#hallowed-temple" class="refer">聖なる神殿（社交）</a></li>
               <li><a href="#haunted-city" class="refer">幽霊都市（探索）</a></li>
               <li><a href="#mountain-pass" class="refer">山道（移動）</a></li>
             </ul>
@@ -5063,8 +5058,8 @@
             <h5>ティア3（レベル5〜8）<span class="en-sub">Tier 3 (Levels 5-8)</span></h5>
             <ul>
               <li><a href="#burning-heart-of-the-woods" class="refer">森の燃えさかる心臓部（探索）</a></li>
-              <li><a href="#castle-siege" class="refer">城塞包囲戦（出来事）</a></li>
-              <li><a href="#pitched-battle" class="refer">会戦（出来事）</a></li>
+              <li><a href="#castle-siege" class="refer">攻城戦（イベント）</a></li>
+              <li><a href="#pitched-battle" class="refer">合戦（イベント）</a></li>
             </ul>
           </article>
 
@@ -5072,7 +5067,7 @@
             <h5>ティア4（レベル8〜10）<span class="en-sub">Tier 4 (Levels 8-10)</span></h5>
             <ul>
               <li><a href="#chaos-realm" class="refer">混沌の領域（移動）</a></li>
-              <li><a href="#divine-usurpation" class="refer">神権簒奪（出来事）</a></li>
+              <li><a href="#divine-usurpation" class="refer">神権簒奪（イベント）</a></li>
               <li><a href="#imperial-court" class="refer">帝国宮廷（社交）</a></li>
               <li><a href="#necromancers-ossuary" class="refer">死霊術師の納骨堂（探索）</a></li>
             </ul>
@@ -5238,14 +5233,14 @@
 
       <article id="projects-during-downtime">
         <h4>合間時間中の計画<span class="en-sub">Projects During Downtime</span></h4>
-        <p>合間ムーヴ“計画に取り組む”は他の合間ムーヴよりもGMの関与が多く必要であり、PCたちが取り組みたいと考えている長期的な努力に最も適している。</p>
-        <p>こうした計画は通常、進展型<a href="#countdown" class="refer">カウントダウン</a>を用いて管理される。<a href="#countdown" class="refer">カウントダウン</a>の初期値を決める際には、計画の複雑さ、関連する道具の入手難度、計画が物語に与える影響を考慮すること。</p>
-        <p>単純な計画は、プレイヤーがムーヴ“計画に取り組む”を使用するたびに<a href="#countdown" class="refer">カウントダウン</a>が進行させるが、複雑な計画はロールを要求する。</p>
+        <p>合間ムーヴ“<a href="#work-on-a-project" class="refer">計画進行</a>”は他の合間ムーヴよりもGMの関与が多く必要であり、PCたちが取り組みたいと考えている長期的な努力に最も適している。</p>
+        <p>こうした計画は通常、<a href="#dynamic-countdown" class="refer">進展カウントダウン</a>を用いて管理される。カウントダウンの初期値を決める際には、計画の複雑さ、関連する道具の入手難度、計画が物語に与える影響を考慮すること。</p>
+        <p>単純な計画は、プレイヤーがムーヴ“計画進行”を使用するたびにカウントダウンが進行するが、複雑な計画はロールを要求する。</p>
       </article>
 
       <article id="extended-downtime">
         <h4>合間時間の延長<span class="en-sub">Extended Downtime</span></h4>
-        <p>物語を長い期間にわたって早送りする時は、モンタージュを用いて時間経過を表現する。君はPC1人につき1d6の恐怖を得て、任意の長期的な<a href="#countdown" class="refer">カウントダウン</a>を適切に進行させる。</p>
+        <p>物語を長い期間にわたって早送りする時は、モンタージュを用いて時間経過を表現する。君はPC1人につき1d6の恐怖を得て、任意の<a href="#long-term-countdown" class="refer">長期型カウントダウン</a>を適切に進行させる。</p>
       </article>
 
       <article id="campaign-frames">
@@ -5770,7 +5765,7 @@
           <article id="rage-up">
             <h5>激怒<span class="en-sub">Rage Up</span></h5>
             <p><b>レベル6・武刃能力<br>想起コスト：1</b></p>
-            <p>君は攻撃を行う前に、<b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して<a href="#damage-roll" class="refer">ダメージロール</a>に【筋力】の2倍に等しいボーナスを得ることができる。君が攻撃1回につき2回まで激怒できる。</p>
+            <p>君は攻撃を行う前に、<b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して<a href="#damage-rolls" class="refer">ダメージロール</a>に【筋力】の2倍に等しいボーナスを得ることができる。君が攻撃1回につき2回まで激怒できる。</p>
           </article>
 
           <article id="blade-touched">
@@ -5798,7 +5793,7 @@
           <article id="frenzy">
             <h5>狂乱<span class="en-sub">Frenzy</span></h5>
             <p><b>レベル8・武刃能力<br>想起コスト：3</b></p>
-            <p>大休憩ごとに1回、君は狂乱状態に入ることができる。この状態は視界内に敵キャラクターがいなくなるまで持続する。狂乱状態の間、君は防具スロットを使用できず、<a href="#damage-roll" class="refer">ダメージロール</a>に＋10のボーナスと、大ダメージ閾値に＋8のボーナスを得る。</p>
+            <p>大休憩ごとに1回、君は狂乱状態に入ることができる。この状態は視界内に敵キャラクターがいなくなるまで持続する。狂乱状態の間、君は防具スロットを使用できず、<a href="#damage-rolls" class="refer">ダメージロール</a>に＋10のボーナスと、大ダメージ閾値に＋8のボーナスを得る。</p>
           </article>
 
           <article id="gore-and-glory">
@@ -5865,7 +5860,7 @@
             <ul>
               <li>君はその攻撃を有利で行う。</li>
               <li>君は敵キャラクターの<a href="#melee" class="refer">近接</a>射程内にいる味方1体の<a href="#stress" class="refer">ストレス</a>を1つ回復する。</li>
-              <li>君は<a href="#damage-roll" class="refer">ダメージロール</a>にd8を1つ加える。</li>
+              <li>君は<a href="#damage-rolls" class="refer">ダメージロール</a>にd8を1つ加える。</li>
             </ul>
             <p>大休憩を行う時、消費していないトークンはすべてなくなる。</p>
           </article>
@@ -5886,7 +5881,7 @@
           <article id="boost">
             <h5>飛び上がり<span class="en-sub">Boost</span></h5>
             <p><b>レベル4・骨法能力<br>想起コスト：1</b></p>
-            <p><b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して<a href="#close" class="refer">近距離</a>射程内の同意する味方1体を踏み台にして空中に飛び上がり、<a href="#far" class="refer">遠距離</a>射程内にいる目標1体に対して空中攻撃を行うことができる。君はその攻撃に有利を得て、<a href="#damage-roll" class="refer">ダメージロール</a>にd10を加え、目標の<a href="#melee" class="refer">近接</a>射程内でムーヴを終了する。</p>
+            <p><b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して<a href="#close" class="refer">近距離</a>射程内の同意する味方1体を踏み台にして空中に飛び上がり、<a href="#far" class="refer">遠距離</a>射程内にいる目標1体に対して空中攻撃を行うことができる。君はその攻撃に有利を得て、<a href="#damage-rolls" class="refer">ダメージロール</a>にd10を加え、目標の<a href="#melee" class="refer">近接</a>射程内でムーヴを終了する。</p>
           </article>
 
           <article id="redirect">
@@ -5939,7 +5934,7 @@
           <article id="cruel-precision">
             <h5>冷酷な精度<span class="en-sub">Cruel Precision</span></h5>
             <p><b>レベル7・骨法能力<br>想起コスト：1</b></p>
-            <p>君が武器を用いた攻撃に成功した時、<a href="#damage-roll" class="refer">ダメージロール</a>に【技巧】または【敏捷】のいずれかに等しいボーナスを得る。</p>
+            <p>君が武器を用いた攻撃に成功した時、<a href="#damage-rolls" class="refer">ダメージロール</a>に【技巧】または【敏捷】のいずれかに等しいボーナスを得る。</p>
           </article>
 
           <article id="breaking-blow">
@@ -5969,7 +5964,7 @@
           <article id="deathrun">
             <h5>死走<span class="en-sub">Deathrun</span></h5>
             <p><b>レベル10・骨法能力<br>想起コスト：1</b></p>
-            <p>希望を3つ消費して、<a href="#far" class="refer">遠距離</a>射程内の一点に向かって戦場を真っ直ぐに走り向け、その道沿いで君の武器の射程内にいるすべての敵キャラクターに対して攻撃を行う。君が成功した目標にダメージを与える順番を選ぶこと。1体目について、習熟度に＋1のボーナスを得て武器ダメージを振る。その後、<a href="#damage-roll" class="refer">ダメージロール</a>からダイスを1つ取り除き、残りのダメージを次の目標に与える。以降の各目標について、ダメージダイスがなくなるか敵キャラクターがいなくなるまで、ダイスを1つずつ取り除いてこれを繰り返す。1回の攻撃につき2回以上同一の敵キャラクターを目標とすることはできない。</p>
+            <p>希望を3つ消費して、<a href="#far" class="refer">遠距離</a>射程内の一点に向かって戦場を真っ直ぐに走り向け、その道沿いで君の武器の射程内にいるすべての敵キャラクターに対して攻撃を行う。君が成功した目標にダメージを与える順番を選ぶこと。1体目について、習熟度に＋1のボーナスを得て武器ダメージを振る。その後、<a href="#damage-rolls" class="refer">ダメージロール</a>からダイスを1つ取り除き、残りのダメージを次の目標に与える。以降の各目標について、ダメージダイスがなくなるか敵キャラクターがいなくなるまで、ダイスを1つずつ取り除いてこれを繰り返す。1回の攻撃につき2回以上同一の敵キャラクターを目標とすることはできない。</p>
           </article>
 
           <article id="swift-step">
@@ -6086,7 +6081,7 @@
           <article id="sigil-of-retribution">
             <h5>反撃の印形<span class="en-sub">Sigil of Retribution</span></h5>
             <p><b>レベル6・書究呪文<br>想起コスト：2</b></p>
-            <p><a href="#close" class="refer">近距離</a>射程内の敵キャラクターに反撃の印形を刻みつける。GMは<a href="#fear" class="refer">恐怖</a>を1つ得る。印形を刻まれた敵キャラクターが君または君の味方にダメージを与えた時、このカードの上に<b>d8</b>を置く。君が保持できる<b>d8</b>の数はレベルに等しい。君が印形を刻んだ敵キャラクターへの攻撃に成功した時、このカード上にあるダイスを振って合計値を<a href="#damage-roll" class="refer">ダメージロール</a>に加え、その後ダイスはなくなる。この効果は、印形を刻まれた敵キャラクターが倒れるか、君が再度“反撃の印形”を発動すると終了する。</p>
+            <p><a href="#close" class="refer">近距離</a>射程内の敵キャラクターに反撃の印形を刻みつける。GMは<a href="#fear" class="refer">恐怖</a>を1つ得る。印形を刻まれた敵キャラクターが君または君の味方にダメージを与えた時、このカードの上に<b>d8</b>を置く。君が保持できる<b>d8</b>の数はレベルに等しい。君が印形を刻んだ敵キャラクターへの攻撃に成功した時、このカード上にあるダイスを振って合計値を<a href="#damage-rolls" class="refer">ダメージロール</a>に加え、その後ダイスはなくなる。この効果は、印形を刻まれた敵キャラクターが倒れるか、君が再度“反撃の印形”を発動すると終了する。</p>
           </article>
 
           <article id="book-of-homet">
@@ -6231,7 +6226,7 @@
           <article id="never-upstaged">
             <h5>主役は譲らぬ<span class="en-sub">Never Upstaged</span></h5>
             <p><b>レベル6・風雅能力<br>想起コスト：2</b></p>
-            <p>君は攻撃からHPを1つ以上マークした時、<b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>してこのカードの上に“君がマークしたHPの数”に等しい数のトークンを置くことができる。次に君が攻撃に成功した時、<a href="#damage-roll" class="refer">ダメージロール</a>に“このカード上にあるトークン1つにつき＋5”のボーナスを得る。その後、すべてのトークンを取り除く。</p>
+            <p>君は攻撃からHPを1つ以上マークした時、<b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>してこのカードの上に“君がマークしたHPの数”に等しい数のトークンを置くことができる。次に君が攻撃に成功した時、<a href="#damage-rolls" class="refer">ダメージロール</a>に“このカード上にあるトークン1つにつき＋5”のボーナスを得る。その後、すべてのトークンを取り除く。</p>
           </article>
 
           <article id="share-the-burden">
@@ -6398,7 +6393,7 @@
             <p>君の準備枠に闇夜の領域のカードが4枚以上ある時、以下の利益を得る：</p>
             <ul>
               <li>休憩ごとに1回、君が希望を持っておらずGMが<a href="#fear" class="refer">恐怖</a>を1つ得るところで、（GMが恐怖を得る代わりに）君が<a href="#hope" class="refer">希望</a>を1つ得ることができる。</li>
-              <li>君は攻撃に成功した時、<b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して、<a href="#damage-roll" class="refer">ダメージロール</a>に恐怖ダイスの出目を加えることができる。</li>
+              <li>君は攻撃に成功した時、<b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して、<a href="#damage-rolls" class="refer">ダメージロール</a>に恐怖ダイスの出目を加えることができる。</li>
             </ul>
           </article>
 
@@ -6418,7 +6413,7 @@
             <h5>呪文充填<span class="en-sub">Spellcharge</span></h5>
             <p><b>レベル8・闇夜呪文<br>想起コスト：1</b></p>
             <p>君が魔法ダメージを与えた時、このカードの上にマークされている君のHPの数に等しいトークンを置く。君が溜めておけるトークンの数は呪文発動特性に等しい。</p>
-            <p>君は目標に対する攻撃に成功した時、任意の数のトークンを消費して、<a href="#damage-roll" class="refer">ダメージロール</a>に“消費したトークン1つにつき1つ”の<b>d6</b>を加えることができる。</p>
+            <p>君は目標に対する攻撃に成功した時、任意の数のトークンを消費して、<a href="#damage-rolls" class="refer">ダメージロール</a>に“消費したトークン1つにつき1つ”の<b>d6</b>を加えることができる。</p>
           </article>
 
           <article id="night-terror">
@@ -6430,7 +6425,7 @@
           <article id="twilight-toll">
             <h5>黄昏の鐘<span class="en-sub">Twilight Toll</span></h5>
             <p><b>レベル9・闇夜呪文<br>想起コスト：1</b></p>
-            <p><a href="#far" class="refer">遠距離</a>射程内の目標1体を選ぶ。君が目標に対する<a href="#action-rolls" class="refer">行動ロール</a>に成功した時、その結果として<a href="#damage-roll" class="refer">ダメージロール</a>を行うものでなければ、このカードの上にトークンを1つ置く。君がこの目標にダメージを与えた時、任意の数のトークンを消費して、消費したトークン1つにつき1つのd12を<a href="#damage-roll" class="refer">ダメージロール</a>に加える。君が一度に保持できる“黄昏の鐘”は1体のクリーチャーに対してのみである。</p>
+            <p><a href="#far" class="refer">遠距離</a>射程内の目標1体を選ぶ。君が目標に対する<a href="#action-rolls" class="refer">行動ロール</a>に成功した時、その結果として<a href="#damage-rolls" class="refer">ダメージロール</a>を行うものでなければ、このカードの上にトークンを1つ置く。君がこの目標にダメージを与えた時、任意の数のトークンを消費して、消費したトークン1つにつき1つのd12を<a href="#damage-rolls" class="refer">ダメージロール</a>に加える。君が一度に保持できる“黄昏の鐘”は1体のクリーチャーに対してのみである。</p>
             <p>君が新たな目標を選ぶか休憩を取ったなら、消費していないトークンはすべて取り除く。</p>
           </article>
 
@@ -6494,7 +6489,7 @@
             <h5>自然の使い魔<span class="en-sub">Natural Familiar</span></h5>
             <p><b>レベル2・賢智呪文<br>想起コスト：1</b></p>
             <p><b><a href="#hope" class="refer">希望</a>を1つ消費する</b>ことで、小さな自然精霊または森の小動物1体を君のそばに召喚する。これは、次の休憩か、君が再び“自然の使い魔”を発動するか、使い魔が攻撃の目標となるまで持続する。<b>希望を追加で1つ消費する</b>なら、飛行する使い魔を召喚することができる。君は、使い魔と意思疎通すること、<b><a href="#spellcast-rolls" class="refer">呪文発動ロール</a></b>を行って簡単な作業を行うよう指示すること、<b><a href="#stress" class="refer">ストレス</a>を1つマークする</b>ことで使い魔の目を通してものを見ることができる。</p>
-            <p>使い魔の<a href="#melee" class="refer">近接</a>射程内にいる敵キャラクターにダメージを与えた時、君は<a href="#damage-roll" class="refer">ダメージロール</a>に<b>d6</b>を加えられる。</p>
+            <p>使い魔の<a href="#melee" class="refer">近接</a>射程内にいる敵キャラクターにダメージを与えた時、君は<a href="#damage-rolls" class="refer">ダメージロール</a>に<b>d6</b>を加えられる。</p>
           </article>
 
           <article id="corrosive-projectile">
@@ -6545,7 +6540,7 @@
           <article id="conjure-steeds">
             <h5>騎馬召喚<span class="en-sub">Conjure Steeds</span></h5>
             <p><b>レベル6・賢智呪文<br>想起コスト：0</b></p>
-            <p><b>任意の数の希望を消費</b>して、その分だけ君と君の味方が乗ることのできる魔法の乗騎（馬、ラクダ、象など）を召喚する。乗騎は次の大休憩か乗騎がダメージを受けるまで持続する。乗騎は移動中の陸上移動速度を2倍にし、君は危険が迫った時にロール不要で<a href="#far" class="refer">遠距離</a>射程内を移動できるようになる。乗騎に乗っているクリーチャーは<a href="#attack-rolls" class="refer">攻撃ロール</a>に－2のペナルティを受け、<a href="#damage-roll" class="refer">ダメージロール</a>に＋2のボーナスを得る。</p>
+            <p><b>任意の数の希望を消費</b>して、その分だけ君と君の味方が乗ることのできる魔法の乗騎（馬、ラクダ、象など）を召喚する。乗騎は次の大休憩か乗騎がダメージを受けるまで持続する。乗騎は移動中の陸上移動速度を2倍にし、君は危険が迫った時にロール不要で<a href="#far" class="refer">遠距離</a>射程内を移動できるようになる。乗騎に乗っているクリーチャーは<a href="#attack-rolls" class="refer">攻撃ロール</a>に－2のペナルティを受け、<a href="#damage-rolls" class="refer">ダメージロール</a>に＋2のボーナスを得る。</p>
           </article>
 
           <article id="forager">
@@ -6617,7 +6612,7 @@
             <p><b>レベル10・賢智呪文<br>想起コスト：2</b></p>
             <p><b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して巨大な自然の精霊に変身し、以下の利益を得る：</p>
             <ul>
-              <li>君が攻撃または<a href="#spellcast-rolls" class="refer">呪文発動ロール</a>に成功した時、<a href="#damage-roll" class="refer">ダメージロール</a>に＋10のボーナスを得る。</li>
+              <li>君が攻撃または<a href="#spellcast-rolls" class="refer">呪文発動ロール</a>に成功した時、<a href="#damage-rolls" class="refer">ダメージロール</a>に＋10のボーナスを得る。</li>
               <li>君は<a href="#close" class="refer">近距離</a>射程内のクリーチャーを倒せるだけのダメージを与えた時、目標を吸収して防具スロットを1つ回復する。</li>
               <li>君は<a href="#restrained" class="refer">拘束状態</a>にならない。</li>
             </ul>
@@ -6684,7 +6679,7 @@
             <h5>理性の声<span class="en-sub">Voice of Reason</span></h5>
             <p><b>レベル3・輝煌能力<br>想起コスト：1</b></p>
             <p>君の言葉には比類なき力と威厳が伴う。君は、暴力的な状況を収めたり、誰かを説得して自分の指示に従わせたりするための<a href="#action-rolls" class="refer">行動ロール</a>に有利を得る。</p>
-            <p>加えて、君は窮地に立たされると勇気が湧いてくる。君はストレススロットがすべてマークされた時、<a href="#damage-roll" class="refer">ダメージロール</a>の習熟度に＋1のボーナスを得る。</p>
+            <p>加えて、君は窮地に立たされると勇気が湧いてくる。君はストレススロットがすべてマークされた時、<a href="#damage-rolls" class="refer">ダメージロール</a>の習熟度に＋1のボーナスを得る。</p>
           </article>
 
           <article id="divination">
@@ -6709,7 +6704,7 @@
           <article id="smite">
             <h5>一撃必殺<span class="en-sub">Smite</span></h5>
             <p><b>レベル5・輝煌呪文<br>想起コスト：2</b></p>
-            <p>休憩ごとに1回、<b>希望を3つ消費</b>して強力な一撃を溜める。次に君が武器を用いた攻撃に成功した時、<a href="#damage-roll" class="refer">ダメージロール</a>の結果を2倍にする。その攻撃は（武器のダメージ種別にかかわらず）魔法ダメージを与える。</p>
+            <p>休憩ごとに1回、<b>希望を3つ消費</b>して強力な一撃を溜める。次に君が武器を用いた攻撃に成功した時、<a href="#damage-rolls" class="refer">ダメージロール</a>の結果を2倍にする。その攻撃は（武器のダメージ種別にかかわらず）魔法ダメージを与える。</p>
           </article>
 
           <article id="restoration">
@@ -6802,7 +6797,7 @@
           <article id="forceful-push">
             <h5>押しやり<span class="en-sub">Forceful Push</span></h5>
             <p><b>レベル1・勇護能力<br>想起コスト：0</b></p>
-            <p><a href="#melee" class="refer">近接</a>射程内の目標1体に対して、メイン武器を用いて攻撃を行う。成功したなら、君はダメージを与え、目標を<a href="#close" class="refer">近距離</a>射程へ押し出す。希望成功したなら、<a href="#damage-roll" class="refer">ダメージロール</a>に<b>d6</b>を加算する。</p>
+            <p><a href="#melee" class="refer">近接</a>射程内の目標1体に対して、メイン武器を用いて攻撃を行う。成功したなら、君はダメージを与え、目標を<a href="#close" class="refer">近距離</a>射程へ押し出す。希望成功したなら、<a href="#damage-rolls" class="refer">ダメージロール</a>に<b>d6</b>を加算する。</p>
             <p>さらに、君は<b><a href="#hope" class="refer">希望</a>を1つ消費する</b>ことで、目標を一時的に<a href="#vulnerable" class="refer">脆弱状態</a>にすることができる。</p>
           </article>
 
@@ -6817,7 +6812,7 @@
           <article id="body-basher">
             <h5>体当たり<span class="en-sub">Body Basher</span></h5>
             <p><b>レベル2・勇護能力<br>想起コスト：1</b></p>
-            <p>君は戦闘において肉体の力をすべて引き出す。射程が<a href="#melee" class="refer">近接</a>の武器を用いた攻撃に成功した時、<a href="#damage-roll" class="refer">ダメージロール</a>に【筋力】に等しいボーナスを得る。</p>
+            <p>君は戦闘において肉体の力をすべて引き出す。射程が<a href="#melee" class="refer">近接</a>の武器を用いた攻撃に成功した時、<a href="#damage-rolls" class="refer">ダメージロール</a>に【筋力】に等しいボーナスを得る。</p>
           </article>
 
           <article id="bold-presence">
@@ -7041,7 +7036,7 @@
           <article id="dark-army">
             <h5>闇の軍隊<span class="en-sub">Dark Army</span></h5>
             <p><b>レベル8・戦慄呪文<br>想起コスト：2</b></p>
-            <p><b><a href="#spellcast-rolls" class="refer">呪文発動ロール</a>（14）</b>を行う。大休憩ごとに1回、成功した時、君は悪魔の群れを召喚し、自分の周囲を回らせることができる。このカードの上にトークンを8つ置くこと。君は<a href="#very-close" class="refer">至近距離</a>射程内の目標にダメージを与えた時、任意の数のトークンを消費して、消費したトークン1つごとに<b>1d8</b>を<a href="#damage-roll" class="refer">ダメージロール</a>に加えることができる。加えて、君はダメージを受けた時、任意の数のトークンを消費して、消費したトークン1つごとに<b>1d8</b>だけダメージを減らすことができる。君がトークンを1つ消費するたび、1体の悪魔が君のために動き、その後姿を消す。トークンを1つ消費するたび、1体の悪魔が君のために動き、その後姿を消す。</p>
+            <p><b><a href="#spellcast-rolls" class="refer">呪文発動ロール</a>（14）</b>を行う。大休憩ごとに1回、成功した時、君は悪魔の群れを召喚し、自分の周囲を回らせることができる。このカードの上にトークンを8つ置くこと。君は<a href="#very-close" class="refer">至近距離</a>射程内の目標にダメージを与えた時、任意の数のトークンを消費して、消費したトークン1つごとに<b>1d8</b>を<a href="#damage-rolls" class="refer">ダメージロール</a>に加えることができる。加えて、君はダメージを受けた時、任意の数のトークンを消費して、消費したトークン1つごとに<b>1d8</b>だけダメージを減らすことができる。君がトークンを1つ消費するたび、1体の悪魔が君のために動き、その後姿を消す。トークンを1つ消費するたび、1体の悪魔が君のために動き、その後姿を消す。</p>
             <p>君が休憩を取った時、消費していないトークンはすべて取り除く。</p>
           </article>
 
@@ -7067,7 +7062,7 @@
           <article id="avatar-of-terror">
             <h5>恐怖の化身<span class="en-sub">Avatar of Terror</span></h5>
             <p><b>レベル10・戦慄呪文<br>想起コスト：2</b></p>
-            <p><b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して、恐怖を糧とする生き物に変身する。この姿でいる間、君は<a href="#damage-roll" class="refer">ダメージロール</a>にGMのプールにある恐怖1つにつき<b>1d6</b>のボーナスを得る。加えて、GMが恐怖を消費して<a href="#very-close" class="refer">至近距離</a>内の敵キャラクターに<a href="#the-spotlight" class="refer">スポットライト</a>を当てた時、君は<a href="#fear" class="refer">恐怖</a>を1つ得る。</p>
+            <p><b><a href="#stress" class="refer">ストレス</a>を1つマーク</b>して、恐怖を糧とする生き物に変身する。この姿でいる間、君は<a href="#damage-rolls" class="refer">ダメージロール</a>にGMのプールにある恐怖1つにつき<b>1d6</b>のボーナスを得る。加えて、GMが恐怖を消費して<a href="#very-close" class="refer">至近距離</a>内の敵キャラクターに<a href="#the-spotlight" class="refer">スポットライト</a>を当てた時、君は<a href="#fear" class="refer">恐怖</a>を1つ得る。</p>
             <p>君は<a href="#action-rolls" class="refer">行動ロール</a>を行う前に<a href="#hope" class="refer">希望</a>を1つ消費しなければならない。それができなければ、君は元の姿に戻る。</p>
           </article>
 
